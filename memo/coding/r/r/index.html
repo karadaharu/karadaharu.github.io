@@ -196,6 +196,25 @@ cond &lt;- FALSE</p>
 <li>データフレーム：二次元の行列で、行、列にラベルがあり、列ごとに異なるデータ型をもてる is.data.frame()</li>
 </ul>
 
+<h2 id="グラフの描画:cf8cb7f2f92ef3d4fe6e1f6d490de425">グラフの描画</h2>
+
+<p>グラフにタイトルをつける
+plot(data, main=&ldquo;タイトル&rdquo;)</p>
+
+<p>グラフに日本語を使う
+par(family=&ldquo;HiraMaruProN-W4&rdquo;)
+par:グラフのパラメータを決める
+x,y軸名に文字列を指定する
+xlab = &ldquo;&rdquo;, ylab =&ldquo;&rdquo;</p>
+
+<p>傾きa、切片bの直線を描く
+abline(a,b),abline(c(a,b))</p>
+
+<p>関数の曲線を描く
+plot(関数名, xの下限, xの上限)</p>
+
+<p>軸の区切りの数字がどこを指しているの要注意だわ、</p>
+
 <h3 id="その他:cf8cb7f2f92ef3d4fe6e1f6d490de425">その他</h3>
 
 <p>日付オブジェクトのクラス&rdquo;Date&rdquo;
