@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Memos on Kazumasa KANEKO</title>
-    <link>http://karadaharu.org/memo/</link>
+    <link>http://karadaharu.github.io/memo/</link>
     <description>Recent content in Memos on Kazumasa KANEKO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 05 Mar 2016 14:03:15 +0900</lastBuildDate>
-    <atom:link href="http://karadaharu.org/memo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://karadaharu.github.io/memo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>test</title>
-      <link>http://karadaharu.org/memo/test/</link>
+      <link>http://karadaharu.github.io/memo/test/</link>
       <pubDate>Sat, 05 Mar 2016 14:03:15 +0900</pubDate>
       
-      <guid>http://karadaharu.org/memo/test/</guid>
+      <guid>http://karadaharu.github.io/memo/test/</guid>
       <description>
 
 &lt;h2 id=&#34;this-is-memo:b128b7694e4de962e0088bcb1bcb254f&#34;&gt;this is memo&lt;/h2&gt;

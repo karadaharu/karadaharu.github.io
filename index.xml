@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kazumasa KANEKO</title>
-    <link>http://karadaharu.org/</link>
+    <link>http://karadaharu.github.io/</link>
     <description>Recent content on Kazumasa KANEKO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 05 Mar 2016 14:03:15 +0900</lastBuildDate>
-    <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://karadaharu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>test</title>
-      <link>http://karadaharu.org/memo/test/</link>
+      <link>http://karadaharu.github.io/memo/test/</link>
       <pubDate>Sat, 05 Mar 2016 14:03:15 +0900</pubDate>
       
-      <guid>http://karadaharu.org/memo/test/</guid>
+      <guid>http://karadaharu.github.io/memo/test/</guid>
       <description>
 
 &lt;h2 id=&#34;this-is-memo:b128b7694e4de962e0088bcb1bcb254f&#34;&gt;this is memo&lt;/h2&gt;
@@ -23,10 +23,10 @@
     
     <item>
       <title>hilty and bosch</title>
-      <link>http://karadaharu.org/works/hilty-and-bosch/</link>
+      <link>http://karadaharu.github.io/works/hilty-and-bosch/</link>
       <pubDate>Sat, 05 Mar 2016 13:52:33 +0900</pubDate>
       
-      <guid>http://karadaharu.org/works/hilty-and-bosch/</guid>
+      <guid>http://karadaharu.github.io/works/hilty-and-bosch/</guid>
       <description>
 
 &lt;h2 id=&#34;hilty-bosch-dance-live:eb30ec25b6ac5289172c5c2903da3d94&#34;&gt;Hilty&amp;amp;Bosch Dance live&lt;/h2&gt;
@@ -35,10 +35,10 @@
     
     <item>
       <title></title>
-      <link>http://karadaharu.org/about/</link>
+      <link>http://karadaharu.github.io/about/</link>
       <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
       
-      <guid>http://karadaharu.org/about/</guid>
+      <guid>http://karadaharu.github.io/about/</guid>
       <description>
 
 &lt;h2 id=&#34;profile:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;PROFILE&lt;/h2&gt;
@@ -53,10 +53,10 @@
     
     <item>
       <title>PUBLICATIONS</title>
-      <link>http://karadaharu.org/publications/</link>
+      <link>http://karadaharu.github.io/publications/</link>
       <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
       
-      <guid>http://karadaharu.org/publications/</guid>
+      <guid>http://karadaharu.github.io/publications/</guid>
       <description>
 
 &lt;h2 id=&#34;jounal-papers:480c4de99851329b51acecc000e2e84f&#34;&gt;JOUNAL PAPERS&lt;/h2&gt;
