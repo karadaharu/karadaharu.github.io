@@ -27,7 +27,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</loc>
   </url>
   
   <url>
@@ -35,19 +35,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/Linux/NFS/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</loc>
   </url>
   
   <url>
@@ -55,11 +43,23 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/Linux/NFS/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/OS/X11/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/Linux/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</loc>
   </url>
   
   <url>
@@ -67,11 +67,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/OS/lib-include-bin%E3%81%AE%E9%81%95%E3%81%84/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/OS/X11/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/Linux/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/OS/lib-include-bin%E3%81%AE%E9%81%95%E3%81%84/</loc>
   </url>
   
   <url>
@@ -83,11 +83,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/R/R%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E6%9C%80%E9%81%A9%E5%8C%96/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/R/R%E3%81%8B%E3%82%89%E4%BB%96%E3%81%AE%E8%A8%80%E8%AA%9E%E3%82%92%E4%BD%BF%E3%81%86/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/R/R%E3%81%8B%E3%82%89%E4%BB%96%E3%81%AE%E8%A8%80%E8%AA%9E%E3%82%92%E4%BD%BF%E3%81%86/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/R/R%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E6%9C%80%E9%81%A9%E5%8C%96/</loc>
   </url>
   
   <url>
@@ -103,11 +103,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/R/%E3%82%A8%E3%83%A9%E3%83%BC%E4%BE%8B/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/R/r/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/R/r/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/R/%E3%82%A8%E3%83%A9%E3%83%BC%E4%BE%8B/</loc>
   </url>
   
   <url>
@@ -119,15 +119,15 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/R/%E4%BB%AE%E8%AA%AC%E6%A4%9C%E5%AE%9A%E3%81%AE%E5%9F%BA%E6%9C%AC/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/R/%E3%83%86%E3%82%99%E3%83%BC%E3%82%BF%E3%81%AE%E6%89%B1%E3%81%84%E6%96%B9/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/R/%E3%83%86%E3%82%99%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/R/%E4%BB%AE%E8%AA%AC%E6%A4%9C%E5%AE%9A%E3%81%AE%E5%9F%BA%E6%9C%AC/</loc>
   </url>
   
   <url>
@@ -151,15 +151,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/R/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E7%95%8C%E9%9A%88%E3%81%AE%E3%83%95%E3%82%99%E3%83%AD%E3%82%AF%E3%82%99/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/R/%E6%B1%BA%E5%AE%9A%E6%9C%A8/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/SQL/MySQL/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/R/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E7%95%8C%E9%9A%88%E3%81%AE%E3%83%95%E3%82%99%E3%83%AD%E3%82%AF%E3%82%99/</loc>
   </url>
   
   <url>
@@ -167,7 +163,15 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/SQL/MySQL/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/SQL/pgAdmin%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/SQL/postgresql/</loc>
   </url>
   
   <url>
@@ -187,10 +191,6 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/adobe/%E3%83%88%E3%83%B3%E3%83%9B%E3%82%99/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/Web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8B/</loc>
   </url>
   
@@ -203,6 +203,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/adobe/%E3%83%88%E3%83%B3%E3%83%9B%E3%82%99/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/aws%E3%81%A8%E3%81%8B%E3%81%A8%E3%81%8B/</loc>
   </url>
   
@@ -211,19 +215,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99C%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C%E8%A8%80%E8%AA%9E/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99C%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86/</loc>
   </url>
   
   <url>
@@ -231,7 +227,15 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/GPGPU/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C%E8%A8%80%E8%AA%9E/</loc>
   </url>
   
   <url>
@@ -239,19 +243,19 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/SQL/postgresql/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/c&#43;&#43;/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/oF%E3%82%92%E5%8B%95%E7%94%BB%E3%81%A6%E3%82%99%E6%9B%B8%E3%81%8D%E3%81%9F%E3%82%99%E3%81%99/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/include%E3%83%86%E3%82%99%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%86%E3%82%A3%E3%83%95%E3%82%99%E3%81%AE%E9%81%95%E3%81%84/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/oFshader%E7%BF%BB%E8%A8%B3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/oF%E3%82%92%E5%8B%95%E7%94%BB%E3%81%A6%E3%82%99%E6%9B%B8%E3%81%8D%E3%81%9F%E3%82%99%E3%81%99/</loc>
   </url>
   
   <url>
@@ -268,10 +272,6 @@
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/ofxopen_ni/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/c&#43;&#43;/include%E3%83%86%E3%82%99%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%86%E3%82%A3%E3%83%95%E3%82%99%E3%81%AE%E9%81%95%E3%81%84/</loc>
   </url>
   
   <url>
@@ -303,11 +303,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/fortran/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/git/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/git/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/fortran/</loc>
   </url>
   
   <url>
@@ -319,11 +319,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/gmail/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/glsl/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/glsl/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/gmail/</loc>
   </url>
   
   <url>
@@ -331,15 +331,15 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/grass%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/go/hugo/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/homebrew%E3%81%AB%E3%82%88%E3%82%8B%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/grass%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/how_to_use_git_n_github/</loc>
   </url>
   
   <url>
@@ -347,7 +347,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/how_to_use_git_n_github/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/homebrew%E3%81%AB%E3%82%88%E3%82%8B%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</loc>
   </url>
   
   <url>
@@ -363,11 +363,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/iOS%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/autolayout/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/ios/bluetooth%E9%80%9A%E4%BF%A1/</loc>
   </url>
   
   <url>
@@ -375,15 +371,15 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/ios/autolayout/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/ios/iOS%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/ios/ios%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/bluetooth%E9%80%9A%E4%BF%A1/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/objective-c/</loc>
   </url>
   
   <url>
@@ -395,11 +391,19 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/storyboard/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/ios/objective-c/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/ios/swift/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/ios/storyboard/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/ios/swift%E3%81%A6%E3%82%99%E9%80%9A%E4%BF%A1/</loc>
   </url>
   
   <url>
@@ -411,7 +415,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/swift%E3%81%A6%E3%82%99%E9%80%9A%E4%BF%A1/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/ios/swift%E3%81%AE%E3%83%86%E3%82%99%E3%83%8F%E3%82%99%E3%83%83%E3%82%AF%E3%82%99/</loc>
   </url>
   
   <url>
@@ -419,7 +423,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/swift%E3%81%AE%E3%83%86%E3%82%99%E3%83%8F%E3%82%99%E3%83%83%E3%82%AF%E3%82%99/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/ios/swift%E3%82%AF%E3%83%A9%E3%82%B9/</loc>
   </url>
   
   <url>
@@ -427,15 +431,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/swift%E3%82%AF%E3%83%A9%E3%82%B9/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/ios/swift%E6%96%87%E5%AD%97%E5%88%97%E6%93%8D%E4%BD%9C/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
   </url>
   
   <url>
@@ -443,11 +439,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/%E3%83%A1%E3%83%A2%E3%83%AA%E7%AE%A1%E7%90%86/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/ios/%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ios/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/ios/%E3%83%A1%E3%83%A2%E3%83%AA%E7%AE%A1%E7%90%86/</loc>
   </url>
   
   <url>
@@ -455,7 +451,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/js/JS%E3%81%A6%E3%82%99%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%93%8D%E4%BD%9C/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/ios/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</loc>
   </url>
   
   <url>
@@ -463,11 +459,15 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/js/electron%E3%81%A6%E3%82%99%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/js/JS%E3%81%A6%E3%82%99%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%93%8D%E4%BD%9C/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/js/electron_tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/js/electron%E3%81%A6%E3%82%99%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC/</loc>
   </url>
   
   <url>
@@ -499,7 +499,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/language/%E3%82%A2%E3%82%BB%E3%83%B3%E3%83%95%E3%82%99%E3%83%A9/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/js/%E3%83%95%E3%82%9A%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%95%E3%82%9A%E3%83%98%E3%82%99%E3%83%BC%E3%82%B9%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99/</loc>
   </url>
   
   <url>
@@ -507,15 +507,15 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/js/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3tutorial/popup/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/js/%E3%83%95%E3%82%9A%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%95%E3%82%9A%E3%83%98%E3%82%99%E3%83%BC%E3%82%B9%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/language/%E3%82%A2%E3%82%BB%E3%83%B3%E3%83%95%E3%82%99%E3%83%A9/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/language/%E3%82%B3%E3%83%BC%E3%83%AB%E3%83%8F%E3%82%99%E3%83%83%E3%82%AF%E9%96%A2%E6%95%B0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/markup/css/</loc>
   </url>
   
   <url>
@@ -527,19 +527,19 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/markup/css/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/markup/d3.js/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/markup/javascript/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/js/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3tutorial/popup/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/opengl/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/markup/javascript/</loc>
   </url>
   
   <url>
@@ -559,19 +559,19 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/PHP%E5%9F%BA%E6%9C%AC%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%86%E3%82%99%E3%82%A3%E3%83%B3%E3%82%AF%E3%82%99%E8%A6%8F%E7%B4%84/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/PHP%E5%9F%BA%E6%9C%AC%E3%83%A9%E3%82%A4%E3%83%95%E3%82%99%E3%83%A9%E3%83%AA/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/php/PHP%E6%96%87%E5%AD%97%E5%88%97%E5%87%A6%E7%90%86/</loc>
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/php/PHP%E5%9F%BA%E6%9C%AC%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%86%E3%82%99%E3%82%A3%E3%83%B3%E3%82%AF%E3%82%99%E8%A6%8F%E7%B4%84/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/php/PHP%E6%96%87%E6%B3%95/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/php/PHP%E5%9F%BA%E6%9C%AC%E3%83%A9%E3%82%A4%E3%83%95%E3%82%99%E3%83%A9%E3%83%AA/</loc>
   </url>
   
   <url>
@@ -583,11 +583,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/fuelphp%E3%81%A6%E3%82%991%E3%81%8B%E3%82%89%E3%81%A4%E3%81%8F%E3%82%8B/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/php/php/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/phpsessid/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/php/fuelphp%E3%81%A6%E3%82%991%E3%81%8B%E3%82%89%E3%81%A4%E3%81%8F%E3%82%8B/</loc>
   </url>
   
   <url>
@@ -595,11 +595,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/php/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/php%E3%81%A6%E3%82%99html_request/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/php/phpsessid/</loc>
   </url>
   
   <url>
@@ -607,11 +603,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/wordpress%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/php/php%E3%81%A6%E3%82%99html_request/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/wordpress%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%83%AA%E3%83%BC%E3%83%86%E3%82%99%E3%82%A3%E3%83%B3%E3%82%AF%E3%82%99/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/php/wordpress%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</loc>
   </url>
   
   <url>
@@ -619,7 +615,15 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/php/wordpress%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%83%AA%E3%83%BC%E3%83%86%E3%82%99%E3%82%A3%E3%83%B3%E3%82%AF%E3%82%99/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/php/wp/%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%95%E3%83%83%E3%82%AF%E3%81%BE%E3%81%A8%E3%82%81/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/php/wp/%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0/</loc>
   </url>
   
   <url>
@@ -631,15 +635,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/wp/%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/php/wp/%E3%83%8F%E3%82%9A%E3%83%BC%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AE%E5%A4%89%E6%9B%B4/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/%E3%82%A2%E3%83%8E%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</loc>
   </url>
   
   <url>
@@ -647,7 +643,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/php/%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/php/%E3%82%A2%E3%83%8E%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</loc>
   </url>
   
   <url>
@@ -655,15 +651,11 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/php/%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/ping%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/powerpoint/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/programming/gpgpu/</loc>
   </url>
   
   <url>
@@ -671,15 +663,23 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/powerpoint/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/python/architecture_x86_64%E3%81%A8%E3%81%AF%EF%BC%9F%EF%BC%9F%EF%BC%9F/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/programming/%E3%81%84%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E3%83%8F%E3%82%99%E3%82%AF%E3%82%99%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E3%81%8B/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/python/installed-port/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/python/installed-port/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/programming/gpgpu/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/programming/%E3%81%84%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E3%83%8F%E3%82%99%E3%82%AF%E3%82%99%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E3%81%8B/</loc>
   </url>
   
   <url>
@@ -691,19 +691,23 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/python/python_json/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/python/pyenv/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/python/python%E3%81%A6%E3%82%99%E3%81%AE%E3%83%86%E3%82%99%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/python/python_json/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/python/python%E3%81%8B%E3%82%89sqlite%E3%82%92%E4%BD%BF%E3%81%86/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/python/python%E3%81%A8%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/python/python%E3%81%A6%E3%82%99%E3%81%AE%E3%83%86%E3%82%99%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90/</loc>
   </url>
   
   <url>
@@ -715,7 +719,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/python/python%E3%81%A8%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/python/python%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</loc>
   </url>
   
   <url>
@@ -723,7 +727,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/python/python%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/python/r/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/python/scipy,numpy/</loc>
   </url>
   
   <url>
@@ -731,15 +739,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/python/r/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/python/urllib2%E3%81%A8beautifulsoup/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/python/scipy,numpy/</loc>
   </url>
   
   <url>
@@ -748,10 +748,6 @@
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/python/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC%E3%81%A6%E3%82%99python%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/python/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE%E5%AE%9F%E8%A3%85/</loc>
   </url>
   
   <url>
@@ -771,6 +767,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/python/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE%E5%AE%9F%E8%A3%85/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/python/%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86/</loc>
   </url>
   
@@ -787,7 +787,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ruby/rails%20console%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/ruby/rails%E8%A9%B0%E3%81%BE%E3%81%A3%E3%81%9F%E3%83%9B%E3%82%9A%E3%82%A4%E3%83%B3%E3%83%88/</loc>
   </url>
   
   <url>
@@ -795,11 +795,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ruby/rails%E3%81%A6%E3%82%99%E3%81%AE%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/ruby/rails%E8%A9%B0%E3%81%BE%E3%81%A3%E3%81%9F%E3%83%9B%E3%82%9A%E3%82%A4%E3%83%B3%E3%83%88/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/ruby/rails%20console%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</loc>
   </url>
   
   <url>
@@ -811,6 +807,14 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/ruby/vagrant%E4%B8%8A%E3%81%ABrails%E7%92%B0%E5%A2%83%E3%82%92%E6%95%B4%E5%82%99%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A6%E3%82%99/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/ruby/rails%E3%81%A6%E3%82%99%E3%81%AE%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/ruby/%E3%82%A2%E3%82%AF%E3%83%86%E3%82%A3%E3%83%95%E3%82%99%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E9%96%A2%E4%BF%82/</loc>
   </url>
   
@@ -819,15 +823,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/ruby/vagrant%E4%B8%8A%E3%81%ABrails%E7%92%B0%E5%A2%83%E3%82%92%E6%95%B4%E5%82%99%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A6%E3%82%99/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/ruby_%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%95%B4%E3%81%88%E6%96%B9/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/sftp%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC%E3%81%8B%E3%82%89%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99/</loc>
   </url>
   
   <url>
@@ -839,7 +835,15 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/sftp%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC%E3%81%8B%E3%82%89%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/tar%E3%81%AA%E3%81%A8%E3%82%99%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/tex%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</loc>
   </url>
   
   <url>
@@ -847,7 +851,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E3%82%99%E8%A6%9A%E6%9B%B8/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/vi/</loc>
   </url>
   
   <url>
@@ -855,7 +859,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/vi/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E3%82%99%E8%A6%9A%E6%9B%B8/</loc>
   </url>
   
   <url>
@@ -871,19 +875,15 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/csrf%EF%BC%88%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E5%BC%B7%E8%A6%81%EF%BC%89/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/HTTP/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/google_api/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/%E3%83%8F%E3%82%9A%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%88%E3%82%99%E3%81%AE%E6%9A%97%E5%8F%B7%E5%8C%96/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/tex%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/csrf%EF%BC%88%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E5%BC%B7%E8%A6%81%EF%BC%89/</loc>
   </url>
   
   <url>
@@ -891,7 +891,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/%E3%83%8F%E3%82%9A%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%88%E3%82%99%E3%81%AE%E6%9A%97%E5%8F%B7%E5%8C%96/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/google_api/</loc>
   </url>
   
   <url>
@@ -911,11 +911,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%A8%A9%E3%81%AE%E5%95%8F%E9%A1%8C/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A2%E3%83%AB%E3%82%B3%E3%82%99%E3%83%AA%E3%82%B9%E3%82%99%E3%83%A0/%E3%82%A2%E3%83%AB%E3%82%B3%E3%82%99%E3%83%AA%E3%82%B9%E3%82%99%E3%83%A0/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A2%E3%83%AB%E3%82%B3%E3%82%99%E3%83%AA%E3%82%B9%E3%82%99%E3%83%A0/%E3%82%A2%E3%83%AB%E3%82%B3%E3%82%99%E3%83%AA%E3%82%B9%E3%82%99%E3%83%A0/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%A8%A9%E3%81%AE%E5%95%8F%E9%A1%8C/</loc>
   </url>
   
   <url>
@@ -931,27 +931,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/Vagrant&#43;Ansible/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/ansible%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B7%E3%82%99/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/Vagrant_ChefSolo/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/ansible%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/vagrant/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</loc>
   </url>
   
   <url>
@@ -959,7 +943,23 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/vagrant/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/ansible%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B7%E3%82%99/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/%E3%82%A6%E3%82%A7%E3%83%95%E3%82%99%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84%E3%81%A8%E3%81%8D%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E9%A0%85%E7%9B%AE/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/ansible%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/Vagrant_ChefSolo/</loc>
   </url>
   
   <url>
@@ -971,10 +971,6 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/ssh_key/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/user_group/</loc>
   </url>
   
@@ -983,11 +979,15 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/%E3%83%88%E3%82%99%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%A8%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/ssh_key/</loc>
   </url>
   
   <url>
@@ -999,15 +999,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</loc>
-  </url>
-  
-  <url>
     <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/%E3%83%A1%E3%83%BC%E3%83%AB%E9%80%81%E5%8F%97%E4%BF%A1%E3%81%AE%E3%83%95%E3%82%9A%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/%E3%83%AC%E3%83%BC%E3%83%88%E3%82%99/</loc>
   </url>
   
   <url>
@@ -1015,15 +1007,15 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B5%E3%83%BC%E3%83%8F%E3%82%99%E3%83%BC/%E3%83%AC%E3%83%BC%E3%83%88%E3%82%99/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%95%E3%82%9A%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/SSL%E3%81%A8%E3%81%8BTSL%E3%81%A8%E3%81%8B/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/%E5%8F%8D%E5%BF%9C%E6%8B%A1%E6%95%A3%E6%96%B9%E7%A8%8B%E5%BC%8F/</loc>
   </url>
   
   <url>
@@ -1031,11 +1023,19 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/SQL%E3%82%A4%E3%83%B3%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/%E5%8F%8D%E5%BF%9C%E6%8B%A1%E6%95%A3%E6%96%B9%E7%A8%8B%E5%BC%8F/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/%E6%9A%97%E5%8F%B7%E5%8C%96/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/SQL%E3%82%A4%E3%83%B3%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/SSL%E3%81%A8%E3%81%8BTSL%E3%81%A8%E3%81%8B/</loc>
   </url>
   
   <url>
@@ -1063,7 +1063,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88/ajax/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88/XML/</loc>
   </url>
   
   <url>
@@ -1071,19 +1071,19 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88/ajax/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.github.io/memo/coding/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88/cookie/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88/XML/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88/javascript/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.github.io/memo/coding/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88/html_css/</loc>
-  </url>
-  
-  <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88/javascript/</loc>
   </url>
   
   <url>
@@ -1103,11 +1103,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E6%84%9F%E9%9B%BB/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E5%AE%9A%E6%9C%9F%E7%9A%84%E3%81%AB%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E5%AE%9A%E6%9C%9F%E7%9A%84%E3%81%AB%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E6%84%9F%E9%9B%BB/</loc>
   </url>
   
   <url>
@@ -1147,11 +1147,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/sublime%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%EF%BC%88emacs%E3%82%AD%E3%83%BC%E3%83%8F%E3%82%99%E3%82%A4%E3%83%B3%E3%83%88%E3%82%99%EF%BC%89/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/vi/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.github.io/memo/coding/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/vi/</loc>
+    <loc>http://karadaharu.github.io/memo/coding/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/sublime%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%EF%BC%88emacs%E3%82%AD%E3%83%BC%E3%83%8F%E3%82%99%E3%82%A4%E3%83%B3%E3%83%88%E3%82%99%EF%BC%89/</loc>
   </url>
   
   <url>
