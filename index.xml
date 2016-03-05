@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kazumasa KANEKO</title>
-    <link>http://karadaharu.github.io/</link>
+    <link>http://karadaharu.org/</link>
     <description>Recent content on Kazumasa KANEKO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 05 Mar 2016 13:52:33 +0900</lastBuildDate>
-    <atom:link href="http://karadaharu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>hilty and bosch</title>
-      <link>http://karadaharu.github.io/works/hilty-and-bosch/</link>
+      <link>http://karadaharu.org/works/hilty-and-bosch/</link>
       <pubDate>Sat, 05 Mar 2016 13:52:33 +0900</pubDate>
       
-      <guid>http://karadaharu.github.io/works/hilty-and-bosch/</guid>
+      <guid>http://karadaharu.org/works/hilty-and-bosch/</guid>
       <description>
 
 &lt;h2 id=&#34;hilty-bosch-dance-live:eb30ec25b6ac5289172c5c2903da3d94&#34;&gt;Hilty&amp;amp;Bosch Dance live&lt;/h2&gt;
@@ -23,10 +23,10 @@
     
     <item>
       <title></title>
-      <link>http://karadaharu.github.io/about/</link>
+      <link>http://karadaharu.org/about/</link>
       <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
       
-      <guid>http://karadaharu.github.io/about/</guid>
+      <guid>http://karadaharu.org/about/</guid>
       <description>
 
 &lt;h2 id=&#34;profile:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;PROFILE&lt;/h2&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title>PUBLICATIONS</title>
-      <link>http://karadaharu.github.io/publications/</link>
+      <link>http://karadaharu.org/publications/</link>
       <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
       
-      <guid>http://karadaharu.github.io/publications/</guid>
+      <guid>http://karadaharu.org/publications/</guid>
       <description>
 
 &lt;h2 id=&#34;jounal-papers:480c4de99851329b51acecc000e2e84f&#34;&gt;JOUNAL PAPERS&lt;/h2&gt;
@@ -63,10 +63,10 @@
     
     <item>
       <title>20151014ソースコードが違う</title>
-      <link>http://karadaharu.github.io/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</link>
+      <link>http://karadaharu.org/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</guid>
+      <guid>http://karadaharu.org/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</guid>
       <description>&lt;p&gt;結局コミットしわすれていた&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;最初にソースコードの違い、人のミスを疑うべき&lt;/em&gt;&lt;/p&gt;
@@ -105,10 +105,10 @@ htmlspecialchars() 特殊文字をHTMLエンティティに変換する　htmlen
     
     <item>
       <title>Android開発</title>
-      <link>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</link>
+      <link>http://karadaharu.org/memo/coding/Android%E9%96%8B%E7%99%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</guid>
+      <guid>http://karadaharu.org/memo/coding/Android%E9%96%8B%E7%99%BA/</guid>
       <description>
 
 &lt;h1 id=&#34;android開発:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Android開発&lt;/h1&gt;
@@ -147,10 +147,10 @@ res
     
     <item>
       <title>FreeBSDでのパッケージ管理</title>
-      <link>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</link>
+      <link>http://karadaharu.org/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</guid>
+      <guid>http://karadaharu.org/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</guid>
       <description>
 
 &lt;h1 id=&#34;freebsdでのパッケージ管理:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;FreeBSDでのパッケージ管理&lt;/h1&gt;
@@ -198,10 +198,10 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     
     <item>
       <title>:usr:binと:usr:local:bin</title>
-      <link>http://karadaharu.github.io/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</link>
+      <link>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</guid>
+      <guid>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</guid>
       <description>
 
 &lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
@@ -245,53 +245,11 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     </item>
     
     <item>
-      <title>ターミナルの日本語環境</title>
-      <link>http://karadaharu.github.io/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</guid>
-      <description>
-
-&lt;h1 id=&#34;ターミナルの日本語環境:9668eb065dc46476bb95069698b89707&#34;&gt;ターミナルの日本語環境&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ユーザーの言語設定&lt;/li&gt;
-&lt;li&gt;シェルの言語設定&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;の2つを設定する&lt;/p&gt;
-
-&lt;h2 id=&#34;ユーザーの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;ユーザーの言語設定&lt;/h2&gt;
-
-&lt;p&gt;.login_conf
-に&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;me:\
-   :charset=UTF-8:\
-   :lang=ja_JP.UTF-8:
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追記&lt;/p&gt;
-
-&lt;h2 id=&#34;シェルの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;シェルの言語設定&lt;/h2&gt;
-
-&lt;p&gt;.bashrc
-に&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export LANG=ja_JP.UTF-8
-export LANG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追記&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>GCC、LLVM、Clang</title>
-      <link>http://karadaharu.github.io/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</link>
+      <link>http://karadaharu.org/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</guid>
+      <guid>http://karadaharu.org/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</guid>
       <description>
 
 &lt;h2 id=&#34;brew-install-gccできない:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;brew install gccできない&lt;/h2&gt;
@@ -329,11 +287,87 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     </item>
     
     <item>
-      <title>sshで接続できない</title>
-      <link>http://karadaharu.github.io/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</link>
+      <title>ターミナルの日本語環境</title>
+      <link>http://karadaharu.org/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</guid>
+      <guid>http://karadaharu.org/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</guid>
+      <description>
+
+&lt;h1 id=&#34;ターミナルの日本語環境:9668eb065dc46476bb95069698b89707&#34;&gt;ターミナルの日本語環境&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ユーザーの言語設定&lt;/li&gt;
+&lt;li&gt;シェルの言語設定&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;の2つを設定する&lt;/p&gt;
+
+&lt;h2 id=&#34;ユーザーの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;ユーザーの言語設定&lt;/h2&gt;
+
+&lt;p&gt;.login_conf
+に&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;me:\
+   :charset=UTF-8:\
+   :lang=ja_JP.UTF-8:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追記&lt;/p&gt;
+
+&lt;h2 id=&#34;シェルの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;シェルの言語設定&lt;/h2&gt;
+
+&lt;p&gt;.bashrc
+に&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export LANG=ja_JP.UTF-8
+export LANG
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追記&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FreeBSDでのユーザーのしくみ</title>
+      <link>http://karadaharu.org/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</guid>
+      <description>
+
+&lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
+
+&lt;h2 id=&#34;基本:a83760d81f5fb2874b12c55209763bac&#34;&gt;基本&lt;/h2&gt;
+
+&lt;p&gt;グループ:wheel&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NFS</title>
+      <link>http://karadaharu.org/memo/coding/Linux/NFS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/coding/Linux/NFS/</guid>
+      <description>
+
+&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
+
+&lt;p&gt;NFS:network file system
+別のPCのディレクトリを共有する仕組み&lt;/p&gt;
+
+&lt;p&gt;設定
+/etc/exportsに書く&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sshで接続できない</title>
+      <link>http://karadaharu.org/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</guid>
       <description>
 
 &lt;h1 id=&#34;sshで接続できない:c7c10a772b1970026ca58fea43d1194b&#34;&gt;sshで接続できない&lt;/h1&gt;
@@ -357,10 +391,10 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     
     <item>
       <title>文字コード</title>
-      <link>http://karadaharu.github.io/memo/coding/Linux/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</link>
+      <link>http://karadaharu.org/memo/coding/Linux/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/Linux/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</guid>
+      <guid>http://karadaharu.org/memo/coding/Linux/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</guid>
       <description>
 
 &lt;h1 id=&#34;文字コード:9c80cf1b51178ae7ae158bb4bf0a62c0&#34;&gt;文字コード&lt;/h1&gt;
@@ -378,41 +412,11 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     </item>
     
     <item>
-      <title>NFS</title>
-      <link>http://karadaharu.github.io/memo/coding/Linux/NFS/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.github.io/memo/coding/Linux/NFS/</guid>
-      <description>
-
-&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
-
-&lt;p&gt;NFS:network file system
-別のPCのディレクトリを共有する仕組み&lt;/p&gt;
-
-&lt;p&gt;設定
-/etc/exportsに書く&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>X11</title>
-      <link>http://karadaharu.github.io/memo/coding/OS/X11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.github.io/memo/coding/OS/X11/</guid>
-      <description>
-
-&lt;h1 id=&#34;x11:f190c42441d892576de3fd0265fa6387&#34;&gt;X11&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
       <title>OAuth認証の仕組み</title>
-      <link>http://karadaharu.github.io/memo/coding/OAuth%E8%AA%8D%E8%A8%BC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</link>
+      <link>http://karadaharu.org/memo/coding/OAuth%E8%AA%8D%E8%A8%BC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/OAuth%E8%AA%8D%E8%A8%BC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</guid>
+      <guid>http://karadaharu.org/memo/coding/OAuth%E8%AA%8D%E8%A8%BC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</guid>
       <description>
 
 &lt;h1 id=&#34;oauth認証の仕組み:545adab97b59e1ac6faa0e5796154321&#34;&gt;OAuth認証の仕組み&lt;/h1&gt;
@@ -430,18 +434,14 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     </item>
     
     <item>
-      <title>FreeBSDでのユーザーのしくみ</title>
-      <link>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</link>
+      <title>X11</title>
+      <link>http://karadaharu.org/memo/coding/OS/X11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</guid>
+      <guid>http://karadaharu.org/memo/coding/OS/X11/</guid>
       <description>
 
-&lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
-
-&lt;h2 id=&#34;基本:a83760d81f5fb2874b12c55209763bac&#34;&gt;基本&lt;/h2&gt;
-
-&lt;p&gt;グループ:wheel&lt;/p&gt;
+&lt;h1 id=&#34;x11:f190c42441d892576de3fd0265fa6387&#34;&gt;X11&lt;/h1&gt;
 </description>
     </item>
     
