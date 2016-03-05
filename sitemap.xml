@@ -2,12 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://karadaharu.org/</loc>
+    <lastmod>2016-03-05T14:03:15+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://karadaharu.org/memo/test/</loc>
+    <lastmod>2016-03-05T14:03:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/works/hilty-and-bosch/</loc>
+    <lastmod>2016-03-05T13:52:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/about/</loc>
+    <lastmod>2016-03-05T13:19:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/publications/</loc>
+    <lastmod>2016-03-05T13:19:40+09:00</lastmod>
   </url>
   
 </urlset>

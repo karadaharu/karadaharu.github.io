@@ -30,6 +30,7 @@ body {
 }
 .header ul li {
 		height: auto;
+	display: inline-block;
 }
 
 .header ul li a {

@@ -1,22 +1,75 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Kazumasa KANEKO</title>
+    <link>http://karadaharu.org/</link>
+    <description>Recent content on Kazumasa KANEKO</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language>
+    <lastBuildDate>Sat, 05 Mar 2016 14:03:15 +0900</lastBuildDate>
+    <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>about</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>test</title>
+      <link>http://karadaharu.org/memo/test/</link>
+      <pubDate>Sat, 05 Mar 2016 14:03:15 +0900</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://karadaharu.org/memo/test/</guid>
       <description>
 
-&lt;h1 id=&#34;date-2016-03-05t13-00-56-09-00:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;date = 2016-03-05T13:00:56+09:00&lt;/h1&gt;
+&lt;h2 id=&#34;this-is-memo:b128b7694e4de962e0088bcb1bcb254f&#34;&gt;this is memo&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hilty and bosch</title>
+      <link>http://karadaharu.org/works/hilty-and-bosch/</link>
+      <pubDate>Sat, 05 Mar 2016 13:52:33 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/works/hilty-and-bosch/</guid>
+      <description>
+
+&lt;h2 id=&#34;hilty-bosch-dance-live:eb30ec25b6ac5289172c5c2903da3d94&#34;&gt;Hilty&amp;amp;Bosch Dance live&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://karadaharu.org/about/</link>
+      <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;profile:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;PROFILE&lt;/h2&gt;
+
+&lt;h2 id=&#34;education:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;EDUCATION&lt;/h2&gt;
+
+&lt;h2 id=&#34;work-experience:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;WORK EXPERIENCE&lt;/h2&gt;
+
+&lt;h2 id=&#34;contact:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;CONTACT&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PUBLICATIONS</title>
+      <link>http://karadaharu.org/publications/</link>
+      <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/publications/</guid>
+      <description>
+
+&lt;h2 id=&#34;jounal-papers:480c4de99851329b51acecc000e2e84f&#34;&gt;JOUNAL PAPERS&lt;/h2&gt;
+
+&lt;h2 id=&#34;international-conferences:480c4de99851329b51acecc000e2e84f&#34;&gt;INTERNATIONAL CONFERENCES&lt;/h2&gt;
+
+&lt;h2 id=&#34;domestic-conferences-symposiums:480c4de99851329b51acecc000e2e84f&#34;&gt;DOMESTIC CONFERENCES &amp;amp; SYMPOSIUMS&lt;/h2&gt;
+
+&lt;h2 id=&#34;media-coverage:480c4de99851329b51acecc000e2e84f&#34;&gt;MEDIA COVERAGE&lt;/h2&gt;
+
+&lt;h2 id=&#34;awards-honors:480c4de99851329b51acecc000e2e84f&#34;&gt;AWARDS / HONORS&lt;/h2&gt;
+
+&lt;h2 id=&#34;fundings:480c4de99851329b51acecc000e2e84f&#34;&gt;FUNDINGS&lt;/h2&gt;
 </description>
     </item>
     
