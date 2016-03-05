@@ -104,6 +104,48 @@ htmlspecialchars() 特殊文字をHTMLエンティティに変換する　htmlen
     </item>
     
     <item>
+      <title>Android開発</title>
+      <link>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</guid>
+      <description>
+
+&lt;h1 id=&#34;android開発:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Android開発&lt;/h1&gt;
+
+&lt;h2 id=&#34;ファイル構成:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;ファイル構成&lt;/h2&gt;
+
+&lt;p&gt;manifests
+ AndroidManifest.xml
+java
+ com.example.kazumasa.test22
+  MainActivity
+ com.example.kazumasa.test22
+  ApplicationTest
+res
+ drawable
+  ic_lancher.png
+ layout
+  activity_main.xml
+ menu
+  menu_main.xml
+ values
+  dmens.xml
+  strings.xml
+  styles.xml&lt;/p&gt;
+
+&lt;h2 id=&#34;javaのキホン:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Javaのキホン&lt;/h2&gt;
+
+&lt;p&gt;クラス名を一意に決めるために、パッケージというという仕組みでクラスを
+フォルダにまとめたものを一意に決めることができる。&lt;/p&gt;
+
+&lt;p&gt;JAR:コンパイルされたjavaをひとつにzipでまとめたもの。&lt;/p&gt;
+
+&lt;p&gt;Javadoc:クラスやメソッドのコメントから自動でドキュメントを作成してくれるツール&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>FreeBSDでのパッケージ管理</title>
       <link>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -151,48 +193,6 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;勝手にportsツリーが変わっちゃうと困るときはsubversionで管理する&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Android開発</title>
-      <link>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</guid>
-      <description>
-
-&lt;h1 id=&#34;android開発:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Android開発&lt;/h1&gt;
-
-&lt;h2 id=&#34;ファイル構成:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;ファイル構成&lt;/h2&gt;
-
-&lt;p&gt;manifests
- AndroidManifest.xml
-java
- com.example.kazumasa.test22
-  MainActivity
- com.example.kazumasa.test22
-  ApplicationTest
-res
- drawable
-  ic_lancher.png
- layout
-  activity_main.xml
- menu
-  menu_main.xml
- values
-  dmens.xml
-  strings.xml
-  styles.xml&lt;/p&gt;
-
-&lt;h2 id=&#34;javaのキホン:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Javaのキホン&lt;/h2&gt;
-
-&lt;p&gt;クラス名を一意に決めるために、パッケージというという仕組みでクラスを
-フォルダにまとめたものを一意に決めることができる。&lt;/p&gt;
-
-&lt;p&gt;JAR:コンパイルされたjavaをひとつにzipでまとめたもの。&lt;/p&gt;
-
-&lt;p&gt;Javadoc:クラスやメソッドのコメントから自動でドキュメントを作成してくれるツール&lt;/p&gt;
 </description>
     </item>
     
@@ -287,22 +287,6 @@ export LANG
     </item>
     
     <item>
-      <title>FreeBSDでのユーザーのしくみ</title>
-      <link>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</guid>
-      <description>
-
-&lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
-
-&lt;h2 id=&#34;基本:a83760d81f5fb2874b12c55209763bac&#34;&gt;基本&lt;/h2&gt;
-
-&lt;p&gt;グループ:wheel&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>GCC、LLVM、Clang</title>
       <link>http://karadaharu.github.io/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -341,24 +325,6 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
 
 &lt;p&gt;一方、GCCは分離されていない。
 ここを分離してしまうと、GCCの政治的な力が弱くなるため、らしい。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NFS</title>
-      <link>http://karadaharu.github.io/memo/coding/Linux/NFS/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.github.io/memo/coding/Linux/NFS/</guid>
-      <description>
-
-&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
-
-&lt;p&gt;NFS:network file system
-別のPCのディレクトリを共有する仕組み&lt;/p&gt;
-
-&lt;p&gt;設定
-/etc/exportsに書く&lt;/p&gt;
 </description>
     </item>
     
@@ -412,6 +378,36 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     </item>
     
     <item>
+      <title>NFS</title>
+      <link>http://karadaharu.github.io/memo/coding/Linux/NFS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/Linux/NFS/</guid>
+      <description>
+
+&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
+
+&lt;p&gt;NFS:network file system
+別のPCのディレクトリを共有する仕組み&lt;/p&gt;
+
+&lt;p&gt;設定
+/etc/exportsに書く&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>X11</title>
+      <link>http://karadaharu.github.io/memo/coding/OS/X11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/OS/X11/</guid>
+      <description>
+
+&lt;h1 id=&#34;x11:f190c42441d892576de3fd0265fa6387&#34;&gt;X11&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
       <title>OAuth認証の仕組み</title>
       <link>http://karadaharu.github.io/memo/coding/OAuth%E8%AA%8D%E8%A8%BC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -434,14 +430,18 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     </item>
     
     <item>
-      <title>X11</title>
-      <link>http://karadaharu.github.io/memo/coding/OS/X11/</link>
+      <title>FreeBSDでのユーザーのしくみ</title>
+      <link>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/coding/OS/X11/</guid>
+      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</guid>
       <description>
 
-&lt;h1 id=&#34;x11:f190c42441d892576de3fd0265fa6387&#34;&gt;X11&lt;/h1&gt;
+&lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
+
+&lt;h2 id=&#34;基本:a83760d81f5fb2874b12c55209763bac&#34;&gt;基本&lt;/h2&gt;
+
+&lt;p&gt;グループ:wheel&lt;/p&gt;
 </description>
     </item>
     
