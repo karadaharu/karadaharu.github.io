@@ -6,20 +6,8 @@
     <description>Recent content on Kazumasa KANEKO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 05 Mar 2016 14:03:15 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 Mar 2016 13:52:33 +0900</lastBuildDate>
     <atom:link href="http://karadaharu.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>test</title>
-      <link>http://karadaharu.github.io/memo/test/</link>
-      <pubDate>Sat, 05 Mar 2016 14:03:15 +0900</pubDate>
-      
-      <guid>http://karadaharu.github.io/memo/test/</guid>
-      <description>
-
-&lt;h2 id=&#34;this-is-memo:b128b7694e4de962e0088bcb1bcb254f&#34;&gt;this is memo&lt;/h2&gt;
-</description>
-    </item>
     
     <item>
       <title>hilty and bosch</title>
@@ -70,6 +58,388 @@
 &lt;h2 id=&#34;awards-honors:480c4de99851329b51acecc000e2e84f&#34;&gt;AWARDS / HONORS&lt;/h2&gt;
 
 &lt;h2 id=&#34;fundings:480c4de99851329b51acecc000e2e84f&#34;&gt;FUNDINGS&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>20151014ソースコードが違う</title>
+      <link>http://karadaharu.github.io/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</guid>
+      <description>&lt;p&gt;結局コミットしわすれていた&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;最初にソースコードの違い、人のミスを疑うべき&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;流れ&lt;/p&gt;
+
+&lt;p&gt;string json_encode();&lt;/p&gt;
+
+&lt;p&gt;エスケープする可能性があるもの&lt;/p&gt;
+
+&lt;p&gt;Apache
+PHP
+CMS
+PHPTAL&lt;/p&gt;
+
+&lt;p&gt;開発と本番で差があるのは何か？&lt;/p&gt;
+
+&lt;p&gt;開発
+nginx 1.8.0
+php 5.6.12
+gulp 3.9.0&lt;/p&gt;
+
+&lt;p&gt;本番
+php 5.6.12&lt;/p&gt;
+
+&lt;p&gt;confファイル
+APP_MODE
+CACHE_LIFETIME&lt;/p&gt;
+
+&lt;p&gt;トップページは直書きでOKになってる&lt;/p&gt;
+
+&lt;p&gt;magic quotes
+htmlspecialchars() 特殊文字をHTMLエンティティに変換する　htmlentities()も同じ&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>:usr:binと:usr:local:bin</title>
+      <link>http://karadaharu.github.io/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</guid>
+      <description>
+
+&lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
+
+&lt;p&gt;/bin:もっとも基本的なコマンドmakeやwhoなど
+/usr/bin:システム標準
+/usr/local/bin:そうでないもの(OSが勝手に書き換えることはない)
+/opt:アプリケーションごとにサブディレクトリを分けることを想定。大きいもの用。
+/sbin:起動に必要なファイル
+/etc:設定ファイル&lt;/p&gt;
+
+&lt;p&gt;例えば、評価版は/usr/local/binにインストールして、コマンドパスを/usr/local/binを先にすれば、そっちが実行される。問題があればコマンドパスを戻せば良い&lt;/p&gt;
+
+&lt;p&gt;コマンドのフルパスが知りたいときはwhereis&lt;/p&gt;
+
+&lt;p&gt;launchd:PID 1で最初に起動して初期化、シェルの起動などを行う&lt;/p&gt;
+
+&lt;h2 id=&#34;homebrewが指定しているサービス:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;homebrewが指定しているサービス&lt;/h2&gt;
+
+&lt;p&gt;~/Library/LaunchAgents/
+にhombrewがサービスに指定しているファイルがある。
+勝手に起動するように指定するかしないか。
+&lt;a href=&#34;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&#34;&gt;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;その他:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;その他&lt;/h2&gt;
+
+&lt;p&gt;/opt
+/include
+/Library&lt;/p&gt;
+
+&lt;h2 id=&#34;exportコマンド:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;exportコマンド&lt;/h2&gt;
+
+&lt;p&gt;例&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ export PATH=$PATH:/Applications/android-sdk/tools
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;環境変数を設定するために使用．ターミナルからログアウトしたらリセットされる
+→毎回ターミナル起動時に実行した→~/.bash_profileに記述しておく．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Android開発</title>
+      <link>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</guid>
+      <description>
+
+&lt;h1 id=&#34;android開発:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Android開発&lt;/h1&gt;
+
+&lt;h2 id=&#34;ファイル構成:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;ファイル構成&lt;/h2&gt;
+
+&lt;p&gt;manifests
+ AndroidManifest.xml
+java
+ com.example.kazumasa.test22
+  MainActivity
+ com.example.kazumasa.test22
+  ApplicationTest
+res
+ drawable
+  ic_lancher.png
+ layout
+  activity_main.xml
+ menu
+  menu_main.xml
+ values
+  dmens.xml
+  strings.xml
+  styles.xml&lt;/p&gt;
+
+&lt;h2 id=&#34;javaのキホン:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Javaのキホン&lt;/h2&gt;
+
+&lt;p&gt;クラス名を一意に決めるために、パッケージというという仕組みでクラスを
+フォルダにまとめたものを一意に決めることができる。&lt;/p&gt;
+
+&lt;p&gt;JAR:コンパイルされたjavaをひとつにzipでまとめたもの。&lt;/p&gt;
+
+&lt;p&gt;Javadoc:クラスやメソッドのコメントから自動でドキュメントを作成してくれるツール&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FreeBSDでのパッケージ管理</title>
+      <link>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</guid>
+      <description>
+
+&lt;h1 id=&#34;freebsdでのパッケージ管理:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;FreeBSDでのパッケージ管理&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports.html&#34;&gt;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;package:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;package&lt;/h3&gt;
+
+&lt;p&gt;ソフトウェアのインストール方法
+* コンパイル済みのパッケージ→pkg_*からpkgngになった
+* ソースからコンパイルするports:こっちのほうがfreeBSDでは人気らしい。オプションとかが色々設定できる&lt;/p&gt;
+
+&lt;p&gt;Pythonマニュアルにかかれているこれはだめ
+pkg_add -r python
+&lt;a href=&#34;http://docs.python.jp/2/using/unix.html&#34;&gt;http://docs.python.jp/2/using/unix.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;pkgng:新しい管理ツール
+pkgngにしたら、pkg_* は使うべきではない
+portmasterなどを置き換えるものではない。&lt;/p&gt;
+
+&lt;p&gt;packageでインストールしたソフトウェアの関連ソフトウェアは
+/usr/local/etc/内に入る&lt;/p&gt;
+
+&lt;p&gt;サービスを実行するためのファイルは/etc/rc.d/下に入るが，
+実際にサービスを実行するためには/etc/rc.confに書かないといけない．&lt;/p&gt;
+
+&lt;h3 id=&#34;portsの使い方:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;portsの使い方&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports-using.html&#34;&gt;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports-using.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ports Collectionの利用
+Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パッチ、 説明文などの一連のファイルのことです。&lt;/p&gt;
+
+&lt;h4 id=&#34;初期設定:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;初期設定&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;# portsnap fetch
+# portsnap extract
+# portsnap fetch
+# portsnap update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;勝手にportsツリーが変わっちゃうと困るときはsubversionで管理する&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NFS</title>
+      <link>http://karadaharu.github.io/memo/coding/Linux/NFS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/Linux/NFS/</guid>
+      <description>
+
+&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
+
+&lt;p&gt;NFS:network file system
+別のPCのディレクトリを共有する仕組み&lt;/p&gt;
+
+&lt;p&gt;設定
+/etc/exportsに書く&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GCC、LLVM、Clang</title>
+      <link>http://karadaharu.github.io/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</guid>
+      <description>
+
+&lt;h2 id=&#34;brew-install-gccできない:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;brew install gccできない&lt;/h2&gt;
+
+&lt;p&gt;brew link gcc
+Linking /usr/local/Cellar/gcc/4.8.3_1&amp;hellip;
+Error: Could not symlink lib/gcc/x86_64-apple-darwin13.2.0
+/usr/local/lib/gcc is not writable.
+MBPkazu-2:site-packages kazumasa$ which gcc
+/usr/bin/gcc&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/14527521/brew-doctor-says-warning-usr-local-include-isnt-writable&#34;&gt;sudo chown -R $USER /usr/local/include
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gccとは:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;gccとは&lt;/h2&gt;
+
+&lt;p&gt;GNU Compiler Collection.様々な言語のコンパイラ&lt;/p&gt;
+
+&lt;p&gt;LLVMはGCCとは別のコンパイラ。low level virtual compiler
+ClangはLLVMの一部(?)C,C++,Objective-Cのコンパイラ。”LLVMはClangのバックエンド”という表現のしかたをする。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://easyramble.com/install-gcc-with-homebrew.html&#34;&gt;使い終わったら標準LLVMに戻したほうがいい？&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;clang-llvmとgccの違い:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;Clang&amp;amp;LLVMとGCCの違い&lt;/h2&gt;
+
+&lt;p&gt;ClangはLLVMが読み込める形のバイナリコードを吐き出す
+LLVMはClangが吐き出したバイナリコードを読み込んで、それぞれのマシンのアーキテクチャ？にあわせた機械語を出力する
+これによって、LLVMが読み込める形に出力できる各言語のClangに対応するものを作れば、どんな言語で書いたプログラムも動くことになる。
+また、同じ言語で書いたプログラムで、OS XでもiOSでも動くようにできる。
+openFrameworksでつくるiOSとかAndroidのアプリというのはそういうことらしい。&lt;/p&gt;
+
+&lt;p&gt;一方、GCCは分離されていない。
+ここを分離してしまうと、GCCの政治的な力が弱くなるため、らしい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FreeBSDでのユーザーのしくみ</title>
+      <link>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</guid>
+      <description>
+
+&lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
+
+&lt;h2 id=&#34;基本:a83760d81f5fb2874b12c55209763bac&#34;&gt;基本&lt;/h2&gt;
+
+&lt;p&gt;グループ:wheel&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ターミナルの日本語環境</title>
+      <link>http://karadaharu.github.io/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</guid>
+      <description>
+
+&lt;h1 id=&#34;ターミナルの日本語環境:9668eb065dc46476bb95069698b89707&#34;&gt;ターミナルの日本語環境&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ユーザーの言語設定&lt;/li&gt;
+&lt;li&gt;シェルの言語設定&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;の2つを設定する&lt;/p&gt;
+
+&lt;h2 id=&#34;ユーザーの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;ユーザーの言語設定&lt;/h2&gt;
+
+&lt;p&gt;.login_conf
+に&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;me:\
+   :charset=UTF-8:\
+   :lang=ja_JP.UTF-8:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追記&lt;/p&gt;
+
+&lt;h2 id=&#34;シェルの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;シェルの言語設定&lt;/h2&gt;
+
+&lt;p&gt;.bashrc
+に&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export LANG=ja_JP.UTF-8
+export LANG
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追記&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sshで接続できない</title>
+      <link>http://karadaharu.github.io/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</guid>
+      <description>
+
+&lt;h1 id=&#34;sshで接続できない:c7c10a772b1970026ca58fea43d1194b&#34;&gt;sshで接続できない&lt;/h1&gt;
+
+&lt;p&gt;いつも使っているサーバーにSSH接続しようとしたところ、下記エラーで接続できませんでした。&lt;/p&gt;
+
+&lt;p&gt;ssh_exchange_identification: Connection closed by remote host&lt;/p&gt;
+
+&lt;h2 id=&#34;sshとは:c7c10a772b1970026ca58fea43d1194b&#34;&gt;SSHとは&lt;/h2&gt;
+
+&lt;p&gt;SSH:secure shellの略
+ネットワークを介して別のコンピュータにログインして操作するためのソフトウェアのひとつ。&lt;/p&gt;
+
+&lt;h2 id=&#34;サーバー側でアクセス元ipを制限している:c7c10a772b1970026ca58fea43d1194b&#34;&gt;サーバー側でアクセス元IPを制限している&lt;/h2&gt;
+
+&lt;p&gt;/etc/hosts.deny
+/etc/hosts.allow
+で設定できます。これが変わっているのかどうかはサーバーに接続することができないので、管理者に問い合わせるしかなさそうです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>X11</title>
+      <link>http://karadaharu.github.io/memo/coding/OS/X11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/OS/X11/</guid>
+      <description>
+
+&lt;h1 id=&#34;x11:f190c42441d892576de3fd0265fa6387&#34;&gt;X11&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OAuth認証の仕組み</title>
+      <link>http://karadaharu.github.io/memo/coding/OAuth%E8%AA%8D%E8%A8%BC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/OAuth%E8%AA%8D%E8%A8%BC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</guid>
+      <description>
+
+&lt;h1 id=&#34;oauth認証の仕組み:545adab97b59e1ac6faa0e5796154321&#34;&gt;OAuth認証の仕組み&lt;/h1&gt;
+
+&lt;p&gt;登場人物
+* サービスプロバイダー
+* コンシューマー
+* ユーザー&lt;/p&gt;
+
+&lt;p&gt;手順
+1.  コンシューマーはサービスプロバイダーに事前にOAuth利用許可を得る
+2.  ユーザーはコンシューマーにアクセス権を取得するよう指示
+3.  コンシューマーはサービスプロバイダーに対して&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>lib-include-binの違い</title>
+      <link>http://karadaharu.github.io/memo/coding/OS/lib-include-bin%E3%81%AE%E9%81%95%E3%81%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/OS/lib-include-bin%E3%81%AE%E9%81%95%E3%81%84/</guid>
+      <description>
+
+&lt;h1 id=&#34;lib-include-binの違い:cca55045ed5dc010e43436ccb7314194&#34;&gt;lib,include,binの違い&lt;/h1&gt;
+
+&lt;p&gt;bin:コマンド
+lib:共有ライブラリ
+inlude:C言語で使うヘッダーファイル&lt;/p&gt;
+
+&lt;p&gt;/opt:/opt/{package/provider}というディレクトリ構造をもつので、アプリケーションごとにひとつのフォルダを作ってよい。そうするとアンインストールが簡単。&lt;/p&gt;
+
+&lt;p&gt;C言語でライブラリの関数を使うには、その関数のプロトタイプ宣言が必要。&lt;/p&gt;
 </description>
     </item>
     

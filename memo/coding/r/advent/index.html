@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>advent</title>
+  <meta name="description" content="advent">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.github.io/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.github.io/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>advent</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>私のようなちゃんとマニュアルや参考書を読まずにRを使っているR初心者だと、データを集計するときに、こういう条件のデータが取り出したいのに、なんか思ったとおりの挙動が得られない、ということがままあります。</p>
+
+<p>検索のしかたがよく分からず、網羅的に情報が集まっているところがなさそうなので、◯◯で△△な××を取り出す方法を以下にまとめてみます。</p>
+
+<h2 id="ベクトルで:1adc5afe947fb36c2436a2ca0ca40d53">ベクトルで</h2>
+
+<h2 id="データフレームで:1adc5afe947fb36c2436a2ca0ca40d53">データフレームで</h2>
+
+<p>ベクトルから</p>
+
+<ul>
+<li>値&gt;x</li>
+<li>値=x</li>
+<li>値!=NA</li>
+<li>値!=NULL</li>
+
+<li><p>値=&ldquo;hoge&rdquo;</p></li>
+
+<li><p>上記のような値が入っている順序</p></li>
+</ul>
+
+<p>行列から</p>
+
+<ul>
+<li>列1,行1&gt;x</li>
+<li>列1,行1=x</li>
+<li>列1,行1!=NA</li>
+<li>列1,行1!=NULL</li>
+
+<li><p>列1,行1=&ldquo;hoge&rdquo;</p></li>
+
+<li><p>上記のような値が入っている順序</p></li>
+</ul>
+
+<p>ベクトル中の特定の成分の添字を取得する
+<a href="http://d.hatena.ne.jp/tsutatsutatsuta/20110811/1313040216">http://d.hatena.ne.jp/tsutatsutatsuta/20110811/1313040216</a></p>
+
+<p>ベクトル
+<a href="http://stat.biopapyrus.net/vector/vector.html">http://stat.biopapyrus.net/vector/vector.html</a></p>
+
+<p>factor to numeric
+<a href="http://stackoverflow.com/questions/4798343/convert-factor-to-integer">http://stackoverflow.com/questions/4798343/convert-factor-to-integer</a></p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>依存性</title>
+  <meta name="description" content="依存性">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.github.io/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.github.io/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>依存性</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="依存性:8988e721738b543c5b7a4723e261e068">依存性</h1>
+
+<h2 id="概要:8988e721738b543c5b7a4723e261e068">概要</h2>
+
+<h3 id="制御の反転-inversion-of-control:8988e721738b543c5b7a4723e261e068">制御の反転(Inversion of Control)</h3>
+
+<p>ライブラリはユーザーが呼び出して使う。フレームワークはフレームワークがメインになってユーザーのプログラムを制御する。これをIoCと呼ぶ。</p>
+
+<p>Ralph Johnson氏とBrian Foote氏が書いた1988年の論文「Designing Reusable Classes」（<a href="http://www.laputan.org/drc/drc.html）で提唱された。">http://www.laputan.org/drc/drc.html）で提唱された。</a></p>
+
+<pre><code>&lt;?php
+namespace Database;
+
+class Database
+{
+    protected $adapter;
+
+    public function __construct()
+    {
+        $this-&gt;adapter = new MySqlAdapter;
+    }
+}
+
+class MysqlAdapter {}
+</code></pre>
+
+<p>これだとDatabaseクラスがアダプターと密接に結びついてしまう。</p>
+
+<pre><code>&lt;?php
+namespace Database;
+
+class Database
+{
+    protected $adapter;
+
+    public function __construct(MySqlAdapter $adapter)
+    {
+        $this-&gt;adapter = $adapter;
+    }
+}
+
+class MysqlAdapter {}
+</code></pre>
+
+<p>こうすると依存関係を緩やかにできる。依存関係を外部から渡せるようになった。これでクラス自体の問題なのかそうでないのかが分かりやすくなるとかなのか？</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

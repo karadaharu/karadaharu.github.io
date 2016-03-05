@@ -1,0 +1,380 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>swift</title>
+  <meta name="description" content="swift">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.github.io/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.github.io/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>swift</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="swift:9ba7d4d50c31dd7166688703e242142d">swift</h1>
+
+<h2 id="変数:9ba7d4d50c31dd7166688703e242142d">変数</h2>
+
+<p>型付は存在しない。
+let:定数
+var:変数</p>
+
+<p>変数にnilは入れられない</p>
+
+<h3 id="空を表すもの-nil-nill-null-nsnull:9ba7d4d50c31dd7166688703e242142d">空を表すもの:nil, Nill, NULL, NSNull</h3>
+
+<p>nil:オブジェクトに対して空
+NSNull:空の意味を表すオブジェクト（Array要素などに使う）</p>
+
+<h3 id="as:9ba7d4d50c31dd7166688703e242142d">as</h3>
+
+<p>インスタンスをダウンキャストする。
+数字=&gt;文字列みたいなものではない。</p>
+
+<h2 id="optional-value:9ba7d4d50c31dd7166688703e242142d">optional value</h2>
+
+<p>nilでもOKにするためのもの。!と?がある。
+var hoge:String?
+printIn(hoge?) // エラーにならない
+printIn(hoge!) // 実行時にエラー</p>
+
+<p>Optional型:nilの代入OK
+非Optional型:nilダメ</p>
+
+<pre><code>var a = 1 // OK
+var a = &quot;hoge&quot; // OK
+var a // NG 型も初期値も書いてないから
+var a: Int // OK 型が書いてあるから
+var a: Int? // OK ?がつくとOptional型になる
+var a: Optional&lt;Int&gt; // OK ?はOptional&lt;T&gt;のシンタックスシュガー
+var a: Int! // OK
+var a: ImplicitlyUnwrappedOptional&lt;Int&gt; // OK
+</code></pre>
+
+<p>!は自動的にアンラップされるoptional型</p>
+
+<p>wrap:Optional型の変数は「wrapされている」
+Optional<T>型とT型は違う
+Optional<T>からTを取り出すことを「unwrapする」という</p>
+
+<h3 id="optional-value-使い方:9ba7d4d50c31dd7166688703e242142d">optional value 使い方</h3>
+
+<pre><code>var hoge:String?
+println(hoge?) // エラーにはならない
+println(hoge!) // エラーになる
+</code></pre>
+
+<h4 id="unwrapする方法:9ba7d4d50c31dd7166688703e242142d">unwrapする方法</h4>
+
+<ol>
+<li>Forced unwrapping</li>
+</ol>
+
+<p>!をつける</p>
+
+<pre><code>var a: Int?
+var b = 10
+b = a!
+</code></pre>
+
+<ol>
+<li><p>Optional chaining</p></li>
+
+<li><p>Optional binding</p></li>
+
+<li><p>比較演算子</p></li>
+</ol>
+
+<h2 id="基本の型:9ba7d4d50c31dd7166688703e242142d">基本の型</h2>
+
+<p>NSMutableString:可変長の文字列</p>
+
+<h2 id="配列:9ba7d4d50c31dd7166688703e242142d">配列</h2>
+
+<ul>
+<li>Array</li>
+<li>Dictionary</li>
+</ul>
+
+<p>Arrayにはkeyはない。</p>
+
+<p>var array1: Int[] = [0,1,2] // 型は決まっている
+println(array1[0])
+var dic1: Dictionary = [&ldquo;name&rdquo;:&ldquo;taro&rdquo;, &ldquo;age&rdquo;:10] // valueの型は自由
+println(dic1[&ldquo;name&rdquo;])
+var arrayAnyObj: [AnyObject] = [&ldquo;a&rdquo;,1,&ldquo;b&rdquo;,3]
+aObj[0]</p>
+
+<h2 id="クラス:9ba7d4d50c31dd7166688703e242142d">クラス</h2>
+
+<p>Obj-CではNSObjectをベースとするクラスしかダメだったが、
+Swiftではユーザー定義のクラスを作れる</p>
+
+<p>NS:Next Stepの略。OSXの前のnextstepを作るための言語だったときの名残</p>
+
+<h2 id="メソッド:9ba7d4d50c31dd7166688703e242142d">メソッド</h2>
+
+<p>Obj-C編　メソッドの呼び出し</p>
+
+<pre><code>hello-&gt;SayHello(); // C++
+[ hello SayHello ]; // Obj-C
+NSString *str = [myClass myMethod:array label:10];
+</code></pre>
+
+<p>この書き方はSmallTalkに由来しているらしい。
+arrayとlabelが引数</p>
+
+<p>Swift</p>
+
+<pre><code>func funcName (引数:引数の型) -&gt; 戻り値の型{
+
+}
+</code></pre>
+
+<ul>
+<li>(戻り値の型) メソッド名 : (第1引数の型) 第1引数名 : (第2引数の型) 第2引数名;</li>
+</ul>
+
+<h2 id="delegate:9ba7d4d50c31dd7166688703e242142d">delegate</h2>
+
+<p>ある特定のインスタンスを保持する、別のインスタンスへ通知を送ることができる</p>
+
+<p>プロトコル句内に処理を移譲したいメソッドを定義</p>
+
+<p>例：モーダルビューを閉じるときに、
+もとのビューのコントローラーで定義したメソッドを実行する
+実装：Obj-Cでは
+モーダルVCにデリゲートメソッドを宣言、デリゲートプロパティをつくる、
+デリゲートメソッドがどのタイミングで呼ばれるかを書く
+もとVCでモーダルVCのインスタンスを作成、
+モーダルVCのデリゲートプロパティに自分を入れる
+デリゲートメソッドを定義する。</p>
+
+<p>デリゲートクラスを継承、デリゲートメソッドを定義しないと
+デリゲートプロパティにselfを入れてもエラーになる</p>
+
+<h2 id="クロージャー:9ba7d4d50c31dd7166688703e242142d">クロージャー</h2>
+
+<p>obj-cではブロック構文と呼ばれる
+<a href="http://www.objectivec-iphone.com/introduction/block/block.html">http://www.objectivec-iphone.com/introduction/block/block.html</a></p>
+
+<h3 id="ブロック構文:9ba7d4d50c31dd7166688703e242142d">ブロック構文</h3>
+
+<p>関数に対して、ブロックとして作った関数を引数にして渡すことができる。
+提供されているAPI（ボタンを押したイベント発生時に呼ばれる関数など）に関数を渡して好きな処理をさせることができる。</p>
+
+<pre><code>/**
+ * 配列にフィルタをかけ,結果を返す.
+ * @param array フィルターをかける配列
+ * @param func int型の引数を1つもつ真偽値を返すメソッド
+ * @return 結果を格納した配列
+ */
+- (NSArray *)filter:(NSArray *)array func:(BOOL (^)(int))func
+{
+    NSMutableArray *result = [NSMutableArray array];
+    for (NSNumber *num in array) {
+        // 引数として与えられたメソッドの条件を満たすか?
+        // ここで渡されたブロック構文を使う
+        if (func(num.intValue)) { // yes
+            // 結果に格納
+            [result addObject:num];
+        }
+    }
+    return result;
+}
+
+// 入力データをセット（0から9までの数値をセット）
+NSMutableArray *numbers = [NSMutableArray array];
+for (int i = 0; i &lt; 10; i++) {
+    [numbers addObject:[NSNumber numberWithInt:i]];
+}
+
+// 配列にフィルターをかける
+NSArray *result = [self filter:numbers func:^(int n) {
+    // 偶数の場合に真を返す
+    if (n % 2 == 0) {
+        return YES;
+    } else {
+        return NO;
+    }
+}];
+
+// 結果を表示
+for (NSNumber *num in result) {
+    NSLog(@&quot;%d&quot;, num.intValue);
+}
+</code></pre>
+
+<h3 id="クロージャー-1:9ba7d4d50c31dd7166688703e242142d">クロージャー</h3>
+
+<h2 id="データ保存:9ba7d4d50c31dd7166688703e242142d">データ保存</h2>
+
+<p>データの保存方法</p>
+
+<ul>
+<li>NSUserDefaults</li>
+<li>sqlite</li>
+<li>カメラロール</li>
+<li>ディレクトリに保存</li>
+</ul>
+
+<h3 id="画像を保存する:9ba7d4d50c31dd7166688703e242142d">画像を保存する</h3>
+
+<h4 id="1-ディレクトリに保存する:9ba7d4d50c31dd7166688703e242142d">1.  ディレクトリに保存する</h4>
+
+<p>NSdataオブジェクトをwriteToFIleで書き込む</p>
+
+<ol>
+<li>パスをNSUserDefaultsに保存</li>
+</ol>
+
+<h2 id="クラス-1:9ba7d4d50c31dd7166688703e242142d">クラス</h2>
+
+<p>swiftファイルをターゲットに追加するとそこに書かれているクラスは
+もうimportとかしなくてもインスタンス化できる</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

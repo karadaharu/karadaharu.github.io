@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>wordpressコードリーディング</title>
+  <meta name="description" content="wordpressコードリーディング">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.github.io/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.github.io/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>wordpressコードリーディング</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="wordpressコードリーディング:6be4bbdd3c27f6e5356d584fec434311">wordpressコードリーディング</h1>
+
+<h2 id="index-php:6be4bbdd3c27f6e5356d584fec434311">index.php</h2>
+
+<p>→wp-blog-header.php</p>
+
+<h2 id="wp-blog-header-php:6be4bbdd3c27f6e5356d584fec434311">wp-blog-header.php</h2>
+
+<p>→wp()→functions.php</p>
+
+<h2 id="functions-php:6be4bbdd3c27f6e5356d584fec434311">functions.php</h2>
+
+<p>$wp:class WP
+$wp-&gt;main()→class-wp.php</p>
+
+<h2 id="class-wp-php:6be4bbdd3c27f6e5356d584fec434311">class-wp.php</h2>
+
+<p>$wp-&gt;main()→int()→wp_set_current_user()→pluggable.php</p>
+
+<p>parse_request()</p>
+
+<p>$wp_rewrite:class WP_Rewrite
+htaccessを書き換えたり、URLリクエストをパースしたりする</p>
+
+<p>matched_ruleにセットして終わり</p>
+
+<p>send_headers:HTTPヘッダーを送る</p>
+
+<p>query_posts:ルーブを設定する</p>
+
+<p>wp-rewrite_rules()
+get_option(&lsquo;rewrite_rules&rsquo;)
+で取得して、更新、返す</p>
+
+<p>値渡しと参照渡し</p>
+
+<pre><code>$a = 1;
+$b =&amp; $a;
+$b = 10;
+echo $a; // 10
+</code></pre>
+
+<h2 id="pluggable-php:6be4bbdd3c27f6e5356d584fec434311">pluggable.php</h2>
+
+<p>global変数：関数内部からグローバルスコープの変数にアクセスするための宣言をする</p>
+
+<p>static変数：初めて関数が呼ばれたときだけ初期化される。関数内部での変数の値を保存しておける</p>
+
+<p>wp_set_current_user</p>
+
+<h2 id="plugin-php:6be4bbdd3c27f6e5356d584fec434311">plugin.php</h2>
+
+<p>do_action():アクションフックが実行される</p>
+
+<p>$wp_actions,$wp_filter:array(&ldquo;action_nam&rdquo;=&gt;int)</p>
+
+<p>_wp_call_all_hook()</p>
+
+<p>reset($array):配列の最初の要素を取り出す</p>
+
+<p>current($array):
+配列には内部ポインタがあり、配列のうちのどこかを指している。currentは現在ポインタがさしている要素を返す。next,prevでポインタが移動する。</p>
+
+<h2 id="wp-config-php:6be4bbdd3c27f6e5356d584fec434311">wp-config.php</h2>
+
+<p>define(string, mixed)
+定数</p>
+
+<p>require_once(&lsquo;wp-settings.php&rsquo;);
+外部ファイルを一度だけ読み込む</p>
+
+<h2 id="wp-settings-php:6be4bbdd3c27f6e5356d584fec434311">wp-settings.php</h2>
+
+<h2 id="wp-content-themes-theme-index-php:6be4bbdd3c27f6e5356d584fec434311">wp-content/themes/theme/index.php</h2>
+
+<p>get_header</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

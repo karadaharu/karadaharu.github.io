@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Ruby入門</title>
+  <meta name="description" content="Ruby入門">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.github.io/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.github.io/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>Ruby入門</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="ruby入門:e6e71ed15b56248c76757312ad5b2846">Ruby入門</h1>
+
+<h2 id="概要:e6e71ed15b56248c76757312ad5b2846">概要</h2>
+
+<p>バージョン
+2.0と2.1であまり変わらなさそうなので、このままで。</p>
+
+<p>gem:rubyのパッケージングされたアプリケーション</p>
+
+<h2 id="文法:e6e71ed15b56248c76757312ad5b2846">文法</h2>
+
+<p>@:インスタンス変数</p>
+
+<h3 id="ハッシュ-連想配列-と配列:e6e71ed15b56248c76757312ad5b2846">ハッシュ(連想配列)と配列</h3>
+
+<h4 id="配列:e6e71ed15b56248c76757312ad5b2846">配列</h4>
+
+<p>ary = [&ldquo;hoge&rdquo;, 10, &ldquo;hii&rdquo;]</p>
+
+<h4 id="ハッシュ:e6e71ed15b56248c76757312ad5b2846">ハッシュ</h4>
+
+<p>hash= {キー1 =&gt; 値1, キー2 =&gt; 値2, &hellip;}</p>
+
+<h3 id="関数:e6e71ed15b56248c76757312ad5b2846">関数</h3>
+
+<p>def my_func(name)
+  greeting = &ldquo;Hello&rdquo; + name
+  return greeting
+end</p>
+
+<h3 id="if:e6e71ed15b56248c76757312ad5b2846">if</h3>
+
+<p>if 条件 then
+elsif 条件 then
+else
+end</p>
+
+<h3 id="while:e6e71ed15b56248c76757312ad5b2846">while</h3>
+
+<p>while 条件式 do
+  hogehoge
+end</p>
+
+<h3 id="for:e6e71ed15b56248c76757312ad5b2846">for</h3>
+
+<h4 id="each:e6e71ed15b56248c76757312ad5b2846">each</h4>
+
+<pre><code>range = 5..10
+range.each do |num|
+  p num
+end
+</code></pre>
+
+<h2 id="クラス:e6e71ed15b56248c76757312ad5b2846">クラス</h2>
+
+<h3 id="クラスメソッドとインスタンスメソッド:e6e71ed15b56248c76757312ad5b2846">クラスメソッドとインスタンスメソッド</h3>
+
+<pre><code>class Post
+  def render # インスタンスメソッド
+  end
+  def self.find # クラスメソッド
+  end
+end
+
+post = Post.find('hoge') # クラスオブジェクトから呼ぶ
+post.render # インスタンスオブジェクトから呼ぶ
+</code></pre>
+
+<p>どういう処理をするかによって使い分ける</p>
+
+<p>require:ファイルの読み込みだけ</p>
+
+<p>include:モジュールを読み込んでインスタンスメソッドとして使えるようにする
+extend:インスタンスメソッドのひとつ。そのオブジェクトのクラスにモジュールのメソッドを追加する</p>
+
+<h2 id="モジュール:e6e71ed15b56248c76757312ad5b2846">モジュール</h2>
+
+<p>モジュールはクラスと違ってオブジェクトを作ることができない</p>
+
+<h2 id="標準関数:e6e71ed15b56248c76757312ad5b2846">標準関数</h2>
+
+<p>rand:乱数を生成
+to_s:文字列に変換
+tr:文字列から指定の文字列を取り除く</p>
+
+<h2 id="ブロック:e6e71ed15b56248c76757312ad5b2846">ブロック</h2>
+
+<p>ブロック：メソッドの引数として渡す処理
+do endで囲まれる
+メソッドの中でyieldを呼ぶと実行される</p>
+
+<pre><code>File.open(&quot;text.txt&quot;,&quot;r&quot;) do |file|
+  処理
+end
+</code></pre>
+
+<p>は下と同じ</p>
+
+<pre><code>file = File.open(&quot;text.txt&quot;,&quot;r&quot;)
+  処理
+file.close
+</code></pre>
+
+<h2 id="文字列:e6e71ed15b56248c76757312ad5b2846">文字列</h2>
+
+<pre><code>str = &quot;Hello&quot;
+str2 = str[1,2]
+</code></pre>
+
+<p>1:先頭のバイト数
+2:長さ(バイト数)</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

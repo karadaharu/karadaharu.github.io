@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>C言語</title>
+  <meta name="description" content="C言語">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.github.io/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.github.io/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>C言語</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="c言語:528e7ba55f25836d53bc1e90abc6a643">C言語</h1>
+
+<p>C99以降では、変数を配列の大きさとして使える。</p>
+
+<h2 id="文字列:528e7ba55f25836d53bc1e90abc6a643">文字列</h2>
+
+<p>&lsquo;A&rsquo;はchar型、&rdquo;ABC&rdquo;は&rsquo;A&rsquo;のアドレス</p>
+
+<pre><code>#include &lt;string.h&gt;
+int strcmp(const char *s1, const char *s2);
+</code></pre>
+
+<p>s1&gt;s2のとき正、s2&gt;s1のとき負。
+大小関係は文字コードによる。</p>
+
+<p>アスキーコードの場合、大文字のほうが先なので、</p>
+
+<pre><code>int result = strcmp(&quot;BBB&quot;,&quot;aaa&quot;) // result &lt; 0
+</code></pre>
+
+<h2 id="複数ファイルの扱い:528e7ba55f25836d53bc1e90abc6a643">複数ファイルの扱い</h2>
+
+<p>ヘッダーファイルを重複して読み込むとエラーになる。以下のように書くことで二回目以降の読み込みをしないようにできる。</p>
+
+<pre><code>#ifndef _SAMPLE
+#define _SAMPLE
+
+// 中身
+
+#endif
+</code></pre>
+
+<h2 id="古い書き方:528e7ba55f25836d53bc1e90abc6a643">古い書き方</h2>
+
+<p>仮引数宣言を用いた関数の宣言</p>
+
+<pre><code>int max(var1, var2)
+int var1, var2;
+{
+  if(var1 &gt; var2){
+    return var1;
+  }else{
+    return var2;
+  }
+}
+</code></pre>
+
+<p>引数をかかない関数宣言</p>
+
+<pre><code>double add(); // 古い
+double add(double a, double b); // 普通
+</code></pre>
+
+<p>古い</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

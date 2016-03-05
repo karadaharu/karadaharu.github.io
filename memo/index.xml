@@ -6,18 +6,641 @@
     <description>Recent content in Memos on Kazumasa KANEKO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 05 Mar 2016 14:03:15 +0900</lastBuildDate>
     <atom:link href="http://karadaharu.github.io/memo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>test</title>
-      <link>http://karadaharu.github.io/memo/test/</link>
-      <pubDate>Sat, 05 Mar 2016 14:03:15 +0900</pubDate>
+      <title> C&#43;&#43;で多次元配列の動的確保</title>
+      <link>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.github.io/memo/test/</guid>
+      <guid>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D/</guid>
       <description>
 
-&lt;h2 id=&#34;this-is-memo:b128b7694e4de962e0088bcb1bcb254f&#34;&gt;this is memo&lt;/h2&gt;
+&lt;h1 id=&#34;c-で多次元配列の動的確保:0e0dcc3084c07dff107c8e3d88346111&#34;&gt;C++で多次元配列の動的確保&lt;/h1&gt;
+
+&lt;h2 id=&#34;1次元:0e0dcc3084c07dff107c8e3d88346111&#34;&gt;1次元&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;int n;
+double * a = new double[n];
+delete [] a;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;2次元:0e0dcc3084c07dff107c8e3d88346111&#34;&gt;2次元&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;int n,m;
+double ** a = new double*[n];
+for (int i = 0; i &amp;lt; n; i++){
+  a[i] = new double[m];
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>20150115vagrant開発環境構築</title>
+      <link>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</guid>
+      <description>
+
+&lt;h1 id=&#34;20150115-vagrant開発環境構築:ed16e1026ac5fe953f50944b382b246f&#34;&gt;20150115 vagrant開発環境構築&lt;/h1&gt;
+
+&lt;h2 id=&#34;現状:ed16e1026ac5fe953f50944b382b246f&#34;&gt;現状&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;php-fpm,nginxはサービスに登録してある&lt;/li&gt;
+&lt;li&gt;postgresはサービスに登録されていない（/etc/rc.confにはpostgresql_enable=&amp;ldquo;YES&amp;rdquo;は書いてある）&lt;/li&gt;
+&lt;li&gt;192.168.33.10にアクセスすると403
+directory index of &amp;ldquo;/www/docs/d00.tampen.jp/&amp;rdquo; is forbidden&lt;/li&gt;
+&lt;li&gt;192.168.33.10/info.phpは見られる&lt;/li&gt;
+&lt;li&gt;192.168.33.10/index.phpは
+PHP message: PHP Fatal error:  Call to undefined function mb_language() in
+/www/docs/d00.tampen.jp/protected/controller/CoreController.php on line 28&amp;rdquo;
+でエラー&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;解決するべきこと:ed16e1026ac5fe953f50944b382b246f&#34;&gt;解決するべきこと&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;postgresの起動 done&lt;/li&gt;
+&lt;li&gt;nginxでのindexの設定 done&lt;/li&gt;
+&lt;li&gt;phpファイルでのパス関係の設定 done&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;postgresの起動:ed16e1026ac5fe953f50944b382b246f&#34;&gt;Postgresの起動&lt;/h3&gt;
+
+&lt;p&gt;参考：&lt;a href=&#34;http://symfoware.blog68.fc2.com/blog-entry-1219.html&#34;&gt;http://symfoware.blog68.fc2.com/blog-entry-1219.html&lt;/a&gt;
+初期化
+/usr/local/etc/rc.d/postgresql initdb
+エラー：/usr/local/pgsql/のユーザー，グループともにpgsqlであるため．
+/usr/local/pgsql/dataはpostgresユーザーになっている．
+一旦/usr/local/pgsql/dataを削除，再度&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/usr/local/etc/rc.d/postgresql initdb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;初期化OK
+pgsqlユーザーで初期化された&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/usr/local/etc/rc.d/postgresql start
+sudo su - pgsql
+psql postgres # 管理データベース&amp;quot;postgres&amp;quot;を指定して接続
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;データベースの作成・テーブルのリストア&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;createdb -E UTF8 tampen_dev
+psql tampen_dev &amp;lt; tampen_schema.sql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;エラー．
+下記を解決する必要がある．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;role:postgresの作成&lt;/li&gt;
+&lt;li&gt;pg_bigmのインストール&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;pg-bigmのインストール:ed16e1026ac5fe953f50944b382b246f&#34;&gt;pg_bigmのインストール&lt;/h4&gt;
+
+&lt;p&gt;curl,またはwgetでソースコードのダウンロード
+注意点：URLに?や&amp;amp;が入る場合は&amp;rdquo;でURLをかこって区切らないようにしてあげる必要がある&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ curl -L -o curl.tar.gz &#39;http://sourceforge.jp/frs/redir.php?m=osdn&amp;amp;f=%2Fpgbigm%2F59914%2Fpg_bigm-1.1-20131122.tar.gz&#39;
+$ wget -O tat.tar.gz &#39;http://sourceforge.jp/frs/redir.php?m=osdn&amp;amp;f=%2Fpgbigm%2F59914%2Fpg_bigm-1.1-20131122.tar.gz&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;インストール&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gmake USE_PGXS=1 PG_CONFIG=/usr/local/bin/pg_config
+$ sudo gmake USE_PGXS=1 PG_CONFIG=/usr/local/bin/pg_config install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再度postgresの初期化&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# /usr/local/etc/rc.d/postgresql initdb
+# /usr/local/etc/rc.d/postgresql start
+# sudo su - pgsql
+$ createdb -E UTF8 tampen_test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;role-postgresの作成:ed16e1026ac5fe953f50944b382b246f&#34;&gt;role:postgresの作成&lt;/h3&gt;
+
+&lt;p&gt;CREATE ROLE postgres WITH SUPERUSER;&lt;/p&gt;
+
+&lt;p&gt;リストア&lt;/p&gt;
+
+&lt;h2 id=&#34;phpファイルでのパス関係の設定:ed16e1026ac5fe953f50944b382b246f&#34;&gt;phpファイルでのパス関係の設定&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://php1st.com/419/&#34;&gt;http://php1st.com/419/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;デフォルトでは，mb_ではじまるマルチバイト関数が無効になっている
+→php.iniファイルを編集&lt;/p&gt;
+
+&lt;h3 id=&#34;usr-local-lib-php-20100525-php-mbstring-dllが存在しない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;/usr/local/lib/php/20100525/php_mbstring.dllが存在しない&lt;/h3&gt;
+
+&lt;p&gt;pkgの場合は別途mbstringのpkgをインストールしないといけない．
+php5-mbstring-5.4.36
+をインストール&lt;/p&gt;
+
+&lt;p&gt;/usr/local/lib/php/20100525/mbstring.so
+ができたけど，php_mbstring.dllはできない．
+dll:windowds
+so:LINUX
+php.iniのphp_mbstring.dllをmbstring.soにする．
+→Module &amp;lsquo;mbstring&amp;rsquo; already loaded in Unknown on line 0
+コメントアウトをもとに戻す
+pkgでインストールすると自動的に読み込む設定になっているらしい．&lt;/p&gt;
+
+&lt;h3 id=&#34;session-start-が見つからない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;session_start()が見つからない&lt;/h3&gt;
+
+&lt;p&gt;pkg install php5-session-5.4.36
+でphp-fpm再起動でかいけつ&lt;/p&gt;
+
+&lt;h3 id=&#34;mdb2がない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;MDB2がない&lt;/h3&gt;
+
+&lt;p&gt;MDB2:データベースの違いに関係なくSQLを扱うためのAPI．PEARで管理されている
+PEAR:PHPのライブラリ・パッケージ管理システム&lt;/p&gt;
+
+&lt;p&gt;PEARはPHPインストール時に一緒にインストールされている．&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pear install MDB2
+pkg install php5-pgsql-5.4.36
+pear install pear/MDB2#pgsql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;データベースに接続できない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;データベースに接続できない&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.phpbook.jp/pear/pear_db/index2.html&#34;&gt;http://www.phpbook.jp/pear/pear_db/index2.html&lt;/a&gt;
+PHPのDSNの書式
+phptype(dbsyntax)://username:password@protocol+hostspec/database?option=value&lt;/p&gt;
+
+&lt;p&gt;tampen_testじゃなくてtampen_devを作ってしまっていた．
+tampen_test作成&lt;/p&gt;
+
+&lt;p&gt;postgresにログインオプションをつけていなかった
+ALTER ROLE postgres WITH LOGIN&lt;/p&gt;
+
+&lt;p&gt;Call to undefined function gzcompress()
+&lt;a href=&#34;http://lists.horde.org/archives/horde/Week-of-Mon-20080225/034810.html&#34;&gt;http://lists.horde.org/archives/horde/Week-of-Mon-20080225/034810.html&lt;/a&gt;
+pkg install php5-zlib-5.4.36&lt;/p&gt;
+
+&lt;h2 id=&#34;nginxでのindexの設定:ed16e1026ac5fe953f50944b382b246f&#34;&gt;nginxでのindexの設定&lt;/h2&gt;
+
+&lt;p&gt;indexにindex.phpが含まれていなかったのが原因．
+→追加したらOK&lt;/p&gt;
+
+&lt;h2 id=&#34;新しいvagrantでpingが通らない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;新しいvagrantでpingが通らない&lt;/h2&gt;
+
+&lt;p&gt;参考：&lt;a href=&#34;http://labs.septeni.co.jp/?p=966&#34;&gt;http://labs.septeni.co.jp/?p=966&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;プライベートネットワークを設定する必要がある．
+具体的には，ゲストOSでifconfigコマンドでネットワーク環境の確認をする．
+ここに192.168.33.10などが入っているのかどうかをまず確認する．&lt;/p&gt;
+
+&lt;p&gt;ないなら，Vagrantfileが何らかの理由で反映されていないことが分かる．
+Vagrantfileが反映されていない理由は？&lt;/p&gt;
+
+&lt;h2 id=&#34;vagrant-haltでシャットダウンできない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;vagrant haltでシャットダウンできない&lt;/h2&gt;
+
+&lt;p&gt;Vagrantfileに&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;config.ssh.shell = &#39;sh&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追加すればOK
+&lt;a href=&#34;https://github.com/opscode/vagrant-omnibus/issues/69&#34;&gt;https://github.com/opscode/vagrant-omnibus/issues/69&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;FreeBSDはデフォルトのシェルがsh
+Vagrantが操作する際に使うシェルはbash -l
+自分でpkg install bashをした後なら問題なく動くけど，まだ入れていないと，
+vagrantによってFreeBSDを操作することができない．&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.vagrantup.com/v2/vagrantfile/ssh_settings.html&#34;&gt;https://docs.vagrantup.com/v2/vagrantfile/ssh_settings.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>20151014ソースコードが違う</title>
+      <link>http://karadaharu.github.io/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</guid>
+      <description>&lt;p&gt;結局コミットしわすれていた&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;最初にソースコードの違い、人のミスを疑うべき&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;流れ&lt;/p&gt;
+
+&lt;p&gt;string json_encode();&lt;/p&gt;
+
+&lt;p&gt;エスケープする可能性があるもの&lt;/p&gt;
+
+&lt;p&gt;Apache
+PHP
+CMS
+PHPTAL&lt;/p&gt;
+
+&lt;p&gt;開発と本番で差があるのは何か？&lt;/p&gt;
+
+&lt;p&gt;開発
+nginx 1.8.0
+php 5.6.12
+gulp 3.9.0&lt;/p&gt;
+
+&lt;p&gt;本番
+php 5.6.12&lt;/p&gt;
+
+&lt;p&gt;confファイル
+APP_MODE
+CACHE_LIFETIME&lt;/p&gt;
+
+&lt;p&gt;トップページは直書きでOKになってる&lt;/p&gt;
+
+&lt;p&gt;magic quotes
+htmlspecialchars() 特殊文字をHTMLエンティティに変換する　htmlentities()も同じ&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>:usr:binと:usr:local:bin</title>
+      <link>http://karadaharu.github.io/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</guid>
+      <description>
+
+&lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
+
+&lt;p&gt;/bin:もっとも基本的なコマンドmakeやwhoなど
+/usr/bin:システム標準
+/usr/local/bin:そうでないもの(OSが勝手に書き換えることはない)
+/opt:アプリケーションごとにサブディレクトリを分けることを想定。大きいもの用。
+/sbin:起動に必要なファイル
+/etc:設定ファイル&lt;/p&gt;
+
+&lt;p&gt;例えば、評価版は/usr/local/binにインストールして、コマンドパスを/usr/local/binを先にすれば、そっちが実行される。問題があればコマンドパスを戻せば良い&lt;/p&gt;
+
+&lt;p&gt;コマンドのフルパスが知りたいときはwhereis&lt;/p&gt;
+
+&lt;p&gt;launchd:PID 1で最初に起動して初期化、シェルの起動などを行う&lt;/p&gt;
+
+&lt;h2 id=&#34;homebrewが指定しているサービス:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;homebrewが指定しているサービス&lt;/h2&gt;
+
+&lt;p&gt;~/Library/LaunchAgents/
+にhombrewがサービスに指定しているファイルがある。
+勝手に起動するように指定するかしないか。
+&lt;a href=&#34;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&#34;&gt;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;その他:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;その他&lt;/h2&gt;
+
+&lt;p&gt;/opt
+/include
+/Library&lt;/p&gt;
+
+&lt;h2 id=&#34;exportコマンド:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;exportコマンド&lt;/h2&gt;
+
+&lt;p&gt;例&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ export PATH=$PATH:/Applications/android-sdk/tools
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;環境変数を設定するために使用．ターミナルからログアウトしたらリセットされる
+→毎回ターミナル起動時に実行した→~/.bash_profileに記述しておく．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Alamofire</title>
+      <link>http://karadaharu.github.io/memo/coding/ios/Alamofire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/ios/Alamofire/</guid>
+      <description>
+
+&lt;h1 id=&#34;alamofire:c28cfccd79c298d1ddb8eeb2c3879b03&#34;&gt;Alamofire&lt;/h1&gt;
+
+&lt;p&gt;URLRequestConvertible型を返すrouterを作って&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Android開発</title>
+      <link>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/Android%E9%96%8B%E7%99%BA/</guid>
+      <description>
+
+&lt;h1 id=&#34;android開発:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Android開発&lt;/h1&gt;
+
+&lt;h2 id=&#34;ファイル構成:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;ファイル構成&lt;/h2&gt;
+
+&lt;p&gt;manifests
+ AndroidManifest.xml
+java
+ com.example.kazumasa.test22
+  MainActivity
+ com.example.kazumasa.test22
+  ApplicationTest
+res
+ drawable
+  ic_lancher.png
+ layout
+  activity_main.xml
+ menu
+  menu_main.xml
+ values
+  dmens.xml
+  strings.xml
+  styles.xml&lt;/p&gt;
+
+&lt;h2 id=&#34;javaのキホン:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Javaのキホン&lt;/h2&gt;
+
+&lt;p&gt;クラス名を一意に決めるために、パッケージというという仕組みでクラスを
+フォルダにまとめたものを一意に決めることができる。&lt;/p&gt;
+
+&lt;p&gt;JAR:コンパイルされたjavaをひとつにzipでまとめたもの。&lt;/p&gt;
+
+&lt;p&gt;Javadoc:クラスやメソッドのコメントから自動でドキュメントを作成してくれるツール&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;でCの関数を使う</title>
+      <link>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99C%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99C%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86/</guid>
+      <description>
+
+&lt;h1 id=&#34;c-でcの関数を使う:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;C++でCの関数を使う&lt;/h1&gt;
+
+&lt;h2 id=&#34;リンケージ:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;リンケージ&lt;/h2&gt;
+
+&lt;p&gt;ファイルを超えて利用できるかどうかをリンケージと呼ぶ
+変数宣言にexternをつけると別ファイルの外部リンケージのグローバル変数が扱える&lt;/p&gt;
+
+&lt;h2 id=&#34;cライブラリを使う:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;Cライブラリを使う&lt;/h2&gt;
+
+&lt;h3 id=&#34;標準ライブラリを使う:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;標準ライブラリを使う&lt;/h3&gt;
+
+&lt;p&gt;.hをとって、cを使う&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;cmath&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;その他のヘッダーファイルを読み込む:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;その他のヘッダーファイルを読み込む&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;extern &amp;quot;C&amp;quot;{
+    #include &amp;quot;hoge.h&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;でマルチスレッドプログラミング</title>
+      <link>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C&#43;&#43;%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99/</guid>
+      <description>
+
+&lt;h1 id=&#34;c-でマルチスレッドプログラミング:869277688e41e83be3b25b5024342b21&#34;&gt;C++でマルチスレッドプログラミング&lt;/h1&gt;
+
+&lt;h2 id=&#34;そもそもマルチスレッドプログラミング:869277688e41e83be3b25b5024342b21&#34;&gt;そもそもマルチスレッドプログラミング&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C言語</title>
+      <link>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C%E8%A8%80%E8%AA%9E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/c&#43;&#43;/C%E8%A8%80%E8%AA%9E/</guid>
+      <description>
+
+&lt;h1 id=&#34;c言語:528e7ba55f25836d53bc1e90abc6a643&#34;&gt;C言語&lt;/h1&gt;
+
+&lt;p&gt;C99以降では、変数を配列の大きさとして使える。&lt;/p&gt;
+
+&lt;h2 id=&#34;文字列:528e7ba55f25836d53bc1e90abc6a643&#34;&gt;文字列&lt;/h2&gt;
+
+&lt;p&gt;&amp;lsquo;A&amp;rsquo;はchar型、&amp;rdquo;ABC&amp;rdquo;は&amp;rsquo;A&amp;rsquo;のアドレス&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;string.h&amp;gt;
+int strcmp(const char *s1, const char *s2);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;s1&amp;gt;s2のとき正、s2&amp;gt;s1のとき負。
+大小関係は文字コードによる。&lt;/p&gt;
+
+&lt;p&gt;アスキーコードの場合、大文字のほうが先なので、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int result = strcmp(&amp;quot;BBB&amp;quot;,&amp;quot;aaa&amp;quot;) // result &amp;lt; 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;複数ファイルの扱い:528e7ba55f25836d53bc1e90abc6a643&#34;&gt;複数ファイルの扱い&lt;/h2&gt;
+
+&lt;p&gt;ヘッダーファイルを重複して読み込むとエラーになる。以下のように書くことで二回目以降の読み込みをしないようにできる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ifndef _SAMPLE
+#define _SAMPLE
+
+// 中身
+
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;古い書き方:528e7ba55f25836d53bc1e90abc6a643&#34;&gt;古い書き方&lt;/h2&gt;
+
+&lt;p&gt;仮引数宣言を用いた関数の宣言&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int max(var1, var2)
+int var1, var2;
+{
+  if(var1 &amp;gt; var2){
+    return var1;
+  }else{
+    return var2;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;引数をかかない関数宣言&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;double add(); // 古い
+double add(double a, double b); // 普通
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;古い&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FreeBSDでのパッケージ管理</title>
+      <link>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</guid>
+      <description>
+
+&lt;h1 id=&#34;freebsdでのパッケージ管理:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;FreeBSDでのパッケージ管理&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports.html&#34;&gt;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;package:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;package&lt;/h3&gt;
+
+&lt;p&gt;ソフトウェアのインストール方法
+* コンパイル済みのパッケージ→pkg_*からpkgngになった
+* ソースからコンパイルするports:こっちのほうがfreeBSDでは人気らしい。オプションとかが色々設定できる&lt;/p&gt;
+
+&lt;p&gt;Pythonマニュアルにかかれているこれはだめ
+pkg_add -r python
+&lt;a href=&#34;http://docs.python.jp/2/using/unix.html&#34;&gt;http://docs.python.jp/2/using/unix.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;pkgng:新しい管理ツール
+pkgngにしたら、pkg_* は使うべきではない
+portmasterなどを置き換えるものではない。&lt;/p&gt;
+
+&lt;p&gt;packageでインストールしたソフトウェアの関連ソフトウェアは
+/usr/local/etc/内に入る&lt;/p&gt;
+
+&lt;p&gt;サービスを実行するためのファイルは/etc/rc.d/下に入るが，
+実際にサービスを実行するためには/etc/rc.confに書かないといけない．&lt;/p&gt;
+
+&lt;h3 id=&#34;portsの使い方:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;portsの使い方&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports-using.html&#34;&gt;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports-using.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ports Collectionの利用
+Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パッチ、 説明文などの一連のファイルのことです。&lt;/p&gt;
+
+&lt;h4 id=&#34;初期設定:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;初期設定&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;# portsnap fetch
+# portsnap extract
+# portsnap fetch
+# portsnap update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;勝手にportsツリーが変わっちゃうと困るときはsubversionで管理する&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FreeBSDでのユーザーのしくみ</title>
+      <link>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</guid>
+      <description>
+
+&lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
+
+&lt;h2 id=&#34;基本:a83760d81f5fb2874b12c55209763bac&#34;&gt;基本&lt;/h2&gt;
+
+&lt;p&gt;グループ:wheel&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GCC、LLVM、Clang</title>
+      <link>http://karadaharu.github.io/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</guid>
+      <description>
+
+&lt;h2 id=&#34;brew-install-gccできない:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;brew install gccできない&lt;/h2&gt;
+
+&lt;p&gt;brew link gcc
+Linking /usr/local/Cellar/gcc/4.8.3_1&amp;hellip;
+Error: Could not symlink lib/gcc/x86_64-apple-darwin13.2.0
+/usr/local/lib/gcc is not writable.
+MBPkazu-2:site-packages kazumasa$ which gcc
+/usr/bin/gcc&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/14527521/brew-doctor-says-warning-usr-local-include-isnt-writable&#34;&gt;sudo chown -R $USER /usr/local/include
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gccとは:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;gccとは&lt;/h2&gt;
+
+&lt;p&gt;GNU Compiler Collection.様々な言語のコンパイラ&lt;/p&gt;
+
+&lt;p&gt;LLVMはGCCとは別のコンパイラ。low level virtual compiler
+ClangはLLVMの一部(?)C,C++,Objective-Cのコンパイラ。”LLVMはClangのバックエンド”という表現のしかたをする。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://easyramble.com/install-gcc-with-homebrew.html&#34;&gt;使い終わったら標準LLVMに戻したほうがいい？&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;clang-llvmとgccの違い:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;Clang&amp;amp;LLVMとGCCの違い&lt;/h2&gt;
+
+&lt;p&gt;ClangはLLVMが読み込める形のバイナリコードを吐き出す
+LLVMはClangが吐き出したバイナリコードを読み込んで、それぞれのマシンのアーキテクチャ？にあわせた機械語を出力する
+これによって、LLVMが読み込める形に出力できる各言語のClangに対応するものを作れば、どんな言語で書いたプログラムも動くことになる。
+また、同じ言語で書いたプログラムで、OS XでもiOSでも動くようにできる。
+openFrameworksでつくるiOSとかAndroidのアプリというのはそういうことらしい。&lt;/p&gt;
+
+&lt;p&gt;一方、GCCは分離されていない。
+ここを分離してしまうと、GCCの政治的な力が弱くなるため、らしい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GLSCのインストール</title>
+      <link>http://karadaharu.github.io/memo/coding/c&#43;&#43;/GLSC%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/c&#43;&#43;/GLSC%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <description>
+
+&lt;h1 id=&#34;glscのインストール:d3ea56eb0790991763f19fa2006b86c4&#34;&gt;GLSCのインストール&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://home.mims.meiji.ac.jp/~wiki/index.php?MacOSX%A4%C7%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3&#34;&gt;http://home.mims.meiji.ac.jp/~wiki/index.php?MacOSX%A4%C7%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3&lt;/a&gt;
+を参考にした。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cp lib*.a /usr/local/lib
+cp src/glsc.h /usr/local/include/
+cp g_out/g_out /usr/local/bin/
+mv cglsc /usr/local/bin/
+mv cglscs /usr/local/bin/
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GPGPU</title>
+      <link>http://karadaharu.github.io/memo/coding/c&#43;&#43;/GPGPU/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/c&#43;&#43;/GPGPU/</guid>
+      <description>
+
+&lt;h1 id=&#34;gpgpu:de577840d2ef360f2acf586115b3d292&#34;&gt;GPGPU&lt;/h1&gt;
+
+&lt;h2 id=&#34;opencl:de577840d2ef360f2acf586115b3d292&#34;&gt;OpenCL&lt;/h2&gt;
+
+&lt;p&gt;Appleが提案して、標準化団体クロノスグループによって標準化。&lt;/p&gt;
+
+&lt;h2 id=&#34;cuda:de577840d2ef360f2acf586115b3d292&#34;&gt;CUDA&lt;/h2&gt;
+
+&lt;p&gt;NVIDIA社のGPU用開発環境&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HTTP</title>
+      <link>http://karadaharu.github.io/memo/coding/web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/HTTP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.github.io/memo/coding/web%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/HTTP/</guid>
+      <description>
+
+&lt;h1 id=&#34;http:3eb4e02fc4fac5fa3f219403c70fc4d5&#34;&gt;HTTP&lt;/h1&gt;
+
+&lt;h2 id=&#34;postでのデータ送信:3eb4e02fc4fac5fa3f219403c70fc4d5&#34;&gt;POSTでのデータ送信&lt;/h2&gt;
 </description>
     </item>
     

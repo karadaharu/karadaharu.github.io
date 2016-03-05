@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>機械学習</title>
+  <meta name="description" content="機械学習">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.github.io/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.github.io/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.github.io/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.github.io/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>機械学習</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="rで機械学習:8253f065552b9a2b58191357615270e6">Rで機械学習</h1>
+
+<h2 id="ニューラルネット:8253f065552b9a2b58191357615270e6">ニューラルネット</h2>
+
+<pre><code>&gt; require(nnet)
+&gt; d.nnet&lt;-nnet(label~.,d,size=5,decay=0.1)
+</code></pre>
+
+<p>設定するパラメータ
+size:隠れ層のユニットの数
+decay:荷重減衰。過学習を避けるために誤差関数に追加した正則化項のこと
+linout:出力を線形にするかどうか。デフォルトではロジスティク
+maxit:
+rock.nn &lt;- nnet(log(perm) ~ area + peri + shape, rock1,size=3, decay=1e-3, linout=T, skip=T, maxit=1000, Hess=T)</p>
+
+<p>predict(ja.nn,newdata)で二乗和誤差を出したけど、これが大きいのか小さいのか分からねー
+0.520565</p>
+
+<h2 id="どのようなモデルができたらokとするのか問題:8253f065552b9a2b58191357615270e6">どのようなモデルができたらOKとするのか問題</h2>
+
+<p>回帰における主な評価指標として、平均二乗誤差、決定係数がある</p>
+
+<p>決定係数はいくつだったらいいのか
+気にしなくていい？
+<a href="http://labs.xica-inc.com/2014/07/the-criterion-of-the-r-squared/">重回帰分析における決定係数の目安は？</a>
+（1）適切な説明変数が選択されているか？
+（2）その説明変数は有意か？
+（3）説明変数の係数は？
+（4）それら全てを含めて、意義のある解釈のできるモデルか？
+が重要だ総だが、、、、</p>
+
+<h2 id="caret-classification-and-regression-training:8253f065552b9a2b58191357615270e6">caret:Classification and Regression Training</h2>
+
+<p>varImpで変数の重要度を計算できるらしい。
+どうやって計算しているんだ？？</p>
+
+<p>trainが一番使う。
+method:予測方法の指定
+trControl:トレーニングデータをどうえらぶか
+tuneLength:methodで指定した方法ごとの設定パラメータ</p>
+
+<p><a href="http://d.hatena.ne.jp/isseing333/20101022/1287735709">参考:iAnalysis ～おとうさんの解析日記～</a></p>
+
+<p>モデル、パラメータ、データ、検定法を指定して、
+最適なパラメータにして返してくれる。
+例:ニューラルネットをクロスバリデーションしたい！</p>
+
+<p>評価は回帰の場合デフォルトでは、 平均二乗誤差、決定係数（root mean squared error and R2 are computed）</p>
+
+<p>R2は適切ではないらしい。このへん読むべし。
+<a href="http://stats.stackexchange.com/questions/83948/is-r-squared-value-appropriate-for-comparing-models">http://stats.stackexchange.com/questions/83948/is-r-squared-value-appropriate-for-comparing-models</a></p>
+
+<h3 id="train:8253f065552b9a2b58191357615270e6">train</h3>
+
+<p>train()</p>
+
+<p>train(アミロース~田植え+総窒素合計+収穫期,datamatrix,&ldquo;nnet&rdquo;,linout=T)</p>
+
+<p>trainでnnet学習させても毎回値がちがうので正直微妙。それは当たり前か。
+だってどう分割するかで評価は変わるじゃん。というかtrainってクロスバリデーションでやってるんだっけ？
+そのオプションも変えられる気がするぞ、、、、、、、、、、、、、
+なんかめっちゃ考えることあって、時間かかる。
+ふつうに交差検定やるには？
+ネットみても分からん、、、、、、、むちゃくちゃ時間くってしまった。
+とりあえずちょっと寝る。
+そもそも交差検定自体を分かっていないから実装もできない。
+分けて、それぞれでやって、パラメータ調整して、その平均をとるの？いいやつを選ぶの？
+何にも分かっていない。</p>
+
+<p>パラメータ調整についてtuneRF
+<a href="http://tjo.hatenablog.com/entry/2013/09/02/190449">http://tjo.hatenablog.com/entry/2013/09/02/190449</a></p>
+
+<h2 id="主成分分析:8253f065552b9a2b58191357615270e6">主成分分析</h2>
+
+<p>いくつか実装の違う関数がある
+princomp:不偏分散
+prcomp:標本分散</p>
+
+<p>prcomp(data, center = TRUE, scale=FALSE)</p>
+
+<p>center:
+scale:</p>
+
+<p>見方・解釈
+累積寄与率</p>
+
+<p>100も変数あったら、全然全部はみられない。
+どうやってさがしていく？</p>
+
+<h2 id="1-class-svm:8253f065552b9a2b58191357615270e6">1-class SVM</h2>
+
+<p>x &lt;- rnorm(100)
+y &lt;- rnorm(100)
+data &lt;- data.frame(type=1, x, y)
+library(kernlab)
+data.ksvm&lt;-ksvm(type~.,data=data,type=&ldquo;one-svc&rdquo;,kernel=&ldquo;rbfdot&rdquo;,kpar=list(sigma=0.1),nu=0.01,cross=10)</p>
+
+<p>data.ksvm.predict &lt;- predict(data.ksvm)
+data.ksvm.predict &lt;- ifelse(data.ksvm.predict==TRUE, 1, 2)
+data.result &lt;- cbind(data,data.ksvm.predict)
+plot(data.result[,2:3], pch=21,bg=c(&ldquo;red&rdquo;,&ldquo;blue&rdquo;)[data.result$data.ksvm.predict])</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.github.io/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.github.io/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+
