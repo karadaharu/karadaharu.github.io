@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kazumasa KANEKO</title>
-    <link>http://karadaharu.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Kazumasa KANEKO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 05 Mar 2016 13:52:33 +0900</lastBuildDate>
-    <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>hilty and bosch</title>
-      <link>http://karadaharu.org/works/hilty-and-bosch/</link>
+      <link>http://localhost:1313/works/hilty-and-bosch/</link>
       <pubDate>Sat, 05 Mar 2016 13:52:33 +0900</pubDate>
       
-      <guid>http://karadaharu.org/works/hilty-and-bosch/</guid>
+      <guid>http://localhost:1313/works/hilty-and-bosch/</guid>
       <description>
 
 &lt;h2 id=&#34;hilty-bosch-dance-live:eb30ec25b6ac5289172c5c2903da3d94&#34;&gt;Hilty&amp;amp;Bosch Dance live&lt;/h2&gt;
@@ -23,10 +23,10 @@
     
     <item>
       <title></title>
-      <link>http://karadaharu.org/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
       
-      <guid>http://karadaharu.org/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>
 
 &lt;h2 id=&#34;profile:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;PROFILE&lt;/h2&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title>PUBLICATIONS</title>
-      <link>http://karadaharu.org/publications/</link>
+      <link>http://localhost:1313/publications/</link>
       <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
       
-      <guid>http://karadaharu.org/publications/</guid>
+      <guid>http://localhost:1313/publications/</guid>
       <description>
 
 &lt;h2 id=&#34;jounal-papers:480c4de99851329b51acecc000e2e84f&#34;&gt;JOUNAL PAPERS&lt;/h2&gt;
@@ -63,10 +63,10 @@
     
     <item>
       <title>20151014ソースコードが違う</title>
-      <link>http://karadaharu.org/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</link>
+      <link>http://localhost:1313/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</guid>
+      <guid>http://localhost:1313/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</guid>
       <description>&lt;p&gt;結局コミットしわすれていた&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;最初にソースコードの違い、人のミスを疑うべき&lt;/em&gt;&lt;/p&gt;
@@ -105,10 +105,10 @@ htmlspecialchars() 特殊文字をHTMLエンティティに変換する　htmlen
     
     <item>
       <title>Android開発</title>
-      <link>http://karadaharu.org/memo/coding/Android%E9%96%8B%E7%99%BA/</link>
+      <link>http://localhost:1313/memo/coding/Android%E9%96%8B%E7%99%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/Android%E9%96%8B%E7%99%BA/</guid>
+      <guid>http://localhost:1313/memo/coding/Android%E9%96%8B%E7%99%BA/</guid>
       <description>
 
 &lt;h1 id=&#34;android開発:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Android開発&lt;/h1&gt;
@@ -147,10 +147,10 @@ res
     
     <item>
       <title>FreeBSDでのパッケージ管理</title>
-      <link>http://karadaharu.org/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</link>
+      <link>http://localhost:1313/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</guid>
+      <guid>http://localhost:1313/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</guid>
       <description>
 
 &lt;h1 id=&#34;freebsdでのパッケージ管理:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;FreeBSDでのパッケージ管理&lt;/h1&gt;
@@ -198,10 +198,10 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     
     <item>
       <title>:usr:binと:usr:local:bin</title>
-      <link>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</link>
+      <link>http://localhost:1313/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</guid>
+      <guid>http://localhost:1313/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</guid>
       <description>
 
 &lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
@@ -246,10 +246,10 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     
     <item>
       <title>FreeBSDでのユーザーのしくみ</title>
-      <link>http://karadaharu.org/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</link>
+      <link>http://localhost:1313/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</guid>
+      <guid>http://localhost:1313/memo/coding/FreeBSD/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</guid>
       <description>
 
 &lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
@@ -261,53 +261,11 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     </item>
     
     <item>
-      <title>GCC、LLVM、Clang</title>
-      <link>http://karadaharu.org/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</guid>
-      <description>
-
-&lt;h2 id=&#34;brew-install-gccできない:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;brew install gccできない&lt;/h2&gt;
-
-&lt;p&gt;brew link gcc
-Linking /usr/local/Cellar/gcc/4.8.3_1&amp;hellip;
-Error: Could not symlink lib/gcc/x86_64-apple-darwin13.2.0
-/usr/local/lib/gcc is not writable.
-MBPkazu-2:site-packages kazumasa$ which gcc
-/usr/bin/gcc&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/14527521/brew-doctor-says-warning-usr-local-include-isnt-writable&#34;&gt;sudo chown -R $USER /usr/local/include
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;gccとは:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;gccとは&lt;/h2&gt;
-
-&lt;p&gt;GNU Compiler Collection.様々な言語のコンパイラ&lt;/p&gt;
-
-&lt;p&gt;LLVMはGCCとは別のコンパイラ。low level virtual compiler
-ClangはLLVMの一部(?)C,C++,Objective-Cのコンパイラ。”LLVMはClangのバックエンド”という表現のしかたをする。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://easyramble.com/install-gcc-with-homebrew.html&#34;&gt;使い終わったら標準LLVMに戻したほうがいい？&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;clang-llvmとgccの違い:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;Clang&amp;amp;LLVMとGCCの違い&lt;/h2&gt;
-
-&lt;p&gt;ClangはLLVMが読み込める形のバイナリコードを吐き出す
-LLVMはClangが吐き出したバイナリコードを読み込んで、それぞれのマシンのアーキテクチャ？にあわせた機械語を出力する
-これによって、LLVMが読み込める形に出力できる各言語のClangに対応するものを作れば、どんな言語で書いたプログラムも動くことになる。
-また、同じ言語で書いたプログラムで、OS XでもiOSでも動くようにできる。
-openFrameworksでつくるiOSとかAndroidのアプリというのはそういうことらしい。&lt;/p&gt;
-
-&lt;p&gt;一方、GCCは分離されていない。
-ここを分離してしまうと、GCCの政治的な力が弱くなるため、らしい。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>ターミナルの日本語環境</title>
-      <link>http://karadaharu.org/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</link>
+      <link>http://localhost:1313/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</guid>
+      <guid>http://localhost:1313/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</guid>
       <description>
 
 &lt;h1 id=&#34;ターミナルの日本語環境:9668eb065dc46476bb95069698b89707&#34;&gt;ターミナルの日本語環境&lt;/h1&gt;
@@ -345,29 +303,11 @@ export LANG
     </item>
     
     <item>
-      <title>NFS</title>
-      <link>http://karadaharu.org/memo/coding/Linux/NFS/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/coding/Linux/NFS/</guid>
-      <description>
-
-&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
-
-&lt;p&gt;NFS:network file system
-別のPCのディレクトリを共有する仕組み&lt;/p&gt;
-
-&lt;p&gt;設定
-/etc/exportsに書く&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>bashを理解する</title>
-      <link>http://karadaharu.org/memo/coding/Linux/bash%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/</link>
+      <link>http://localhost:1313/memo/coding/Linux/bash%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/Linux/bash%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/</guid>
+      <guid>http://localhost:1313/memo/coding/Linux/bash%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/</guid>
       <description>&lt;p&gt;#bashを理解する
 .bash_profileと.bashrcの違い
 .bash_profileはログイン時のみ実行される
@@ -406,11 +346,71 @@ interact
     </item>
     
     <item>
-      <title>sshで接続できない</title>
-      <link>http://karadaharu.org/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</link>
+      <title>NFS</title>
+      <link>http://localhost:1313/memo/coding/Linux/NFS/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</guid>
+      <guid>http://localhost:1313/memo/coding/Linux/NFS/</guid>
+      <description>
+
+&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
+
+&lt;p&gt;NFS:network file system
+別のPCのディレクトリを共有する仕組み&lt;/p&gt;
+
+&lt;p&gt;設定
+/etc/exportsに書く&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GCC、LLVM、Clang</title>
+      <link>http://localhost:1313/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/memo/coding/GCC%E3%80%81LLVM%E3%80%81Clang/</guid>
+      <description>
+
+&lt;h2 id=&#34;brew-install-gccできない:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;brew install gccできない&lt;/h2&gt;
+
+&lt;p&gt;brew link gcc
+Linking /usr/local/Cellar/gcc/4.8.3_1&amp;hellip;
+Error: Could not symlink lib/gcc/x86_64-apple-darwin13.2.0
+/usr/local/lib/gcc is not writable.
+MBPkazu-2:site-packages kazumasa$ which gcc
+/usr/bin/gcc&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/14527521/brew-doctor-says-warning-usr-local-include-isnt-writable&#34;&gt;sudo chown -R $USER /usr/local/include
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gccとは:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;gccとは&lt;/h2&gt;
+
+&lt;p&gt;GNU Compiler Collection.様々な言語のコンパイラ&lt;/p&gt;
+
+&lt;p&gt;LLVMはGCCとは別のコンパイラ。low level virtual compiler
+ClangはLLVMの一部(?)C,C++,Objective-Cのコンパイラ。”LLVMはClangのバックエンド”という表現のしかたをする。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://easyramble.com/install-gcc-with-homebrew.html&#34;&gt;使い終わったら標準LLVMに戻したほうがいい？&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;clang-llvmとgccの違い:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;Clang&amp;amp;LLVMとGCCの違い&lt;/h2&gt;
+
+&lt;p&gt;ClangはLLVMが読み込める形のバイナリコードを吐き出す
+LLVMはClangが吐き出したバイナリコードを読み込んで、それぞれのマシンのアーキテクチャ？にあわせた機械語を出力する
+これによって、LLVMが読み込める形に出力できる各言語のClangに対応するものを作れば、どんな言語で書いたプログラムも動くことになる。
+また、同じ言語で書いたプログラムで、OS XでもiOSでも動くようにできる。
+openFrameworksでつくるiOSとかAndroidのアプリというのはそういうことらしい。&lt;/p&gt;
+
+&lt;p&gt;一方、GCCは分離されていない。
+ここを分離してしまうと、GCCの政治的な力が弱くなるため、らしい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sshで接続できない</title>
+      <link>http://localhost:1313/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</guid>
       <description>
 
 &lt;h1 id=&#34;sshで接続できない:c7c10a772b1970026ca58fea43d1194b&#34;&gt;sshで接続できない&lt;/h1&gt;
@@ -434,10 +434,10 @@ interact
     
     <item>
       <title>unixコマンド覚書</title>
-      <link>http://karadaharu.org/memo/coding/Linux/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E3%82%99%E8%A6%9A%E6%9B%B8/</link>
+      <link>http://localhost:1313/memo/coding/Linux/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E3%82%99%E8%A6%9A%E6%9B%B8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/Linux/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E3%82%99%E8%A6%9A%E6%9B%B8/</guid>
+      <guid>http://localhost:1313/memo/coding/Linux/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E3%82%99%E8%A6%9A%E6%9B%B8/</guid>
       <description>
 
 &lt;h1 id=&#34;unixコマンド覚書:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;UNIXコマンド覚書&lt;/h1&gt;
@@ -585,10 +585,10 @@ scp -P 10022 RemoteUser@remote.domein.co.jp:/tmp/remotefile.txt /home/LocalUser/
     
     <item>
       <title>シェルスクリプトの書き方</title>
-      <link>http://karadaharu.org/memo/coding/Linux/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%95%E3%82%9A%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9/</link>
+      <link>http://localhost:1313/memo/coding/Linux/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%95%E3%82%9A%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/Linux/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%95%E3%82%9A%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9/</guid>
+      <guid>http://localhost:1313/memo/coding/Linux/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%95%E3%82%9A%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9/</guid>
       <description>
 
 &lt;h1 id=&#34;シェルスクリプトの書き方:c8ba59ae72b26216e67c2481b7b0c178&#34;&gt;シェルスクリプトの書き方&lt;/h1&gt;
