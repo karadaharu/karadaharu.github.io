@@ -1,0 +1,361 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>git</title>
+  <meta name="description" content="git">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>git</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="git:1c1ef82aae62aeea8eedcb5f455b129b">Git</h1>
+
+<h2 id="基本サイクル:1c1ef82aae62aeea8eedcb5f455b129b">基本サイクル</h2>
+
+<h3 id="リポジトリの作成:1c1ef82aae62aeea8eedcb5f455b129b">リポジトリの作成</h3>
+
+<p>新たに作る場合</p>
+
+<pre><code>git init
+
+
+</code></pre>
+
+<p>リモートからとってくる場合</p>
+
+<pre><code>git clone git://github.com/schacon/grit.git
+</code></pre>
+
+<h3 id="変更をすべてステージする-使わない:1c1ef82aae62aeea8eedcb5f455b129b">変更をすべてステージする（※使わない）</h3>
+
+<p>git add &ndash;all file.</p>
+
+<h3 id="ステージの確認-空焚き:1c1ef82aae62aeea8eedcb5f455b129b">ステージの確認（空焚き）</h3>
+
+<p>git add -n -A
+-A:新しく作成したファイルも含まれる</p>
+
+<h3 id="ファイルを指定してステージする:1c1ef82aae62aeea8eedcb5f455b129b">ファイルを指定してステージする</h3>
+
+<pre><code>git add *.js
+</code></pre>
+
+<h3 id="コミットする:1c1ef82aae62aeea8eedcb5f455b129b">コミットする</h3>
+
+<p>git commit -m &ldquo;comment&rdquo;</p>
+
+<h3 id="プッシュする:1c1ef82aae62aeea8eedcb5f455b129b">プッシュする</h3>
+
+<p>git push</p>
+
+<p>git checkout experimental</p>
+
+<h2 id="状態を見る:1c1ef82aae62aeea8eedcb5f455b129b">状態を見る</h2>
+
+<p>git status</p>
+
+<h2 id="リモートリポジトリの確認:1c1ef82aae62aeea8eedcb5f455b129b">リモートリポジトリの確認</h2>
+
+<p>git remote -v</p>
+
+<h2 id="ステージを取り消す:1c1ef82aae62aeea8eedcb5f455b129b">ステージを取り消す</h2>
+
+<p>git rest HEAD</p>
+
+<h2 id="変更したファイルをもとに戻す:1c1ef82aae62aeea8eedcb5f455b129b">変更したファイルをもとに戻す</h2>
+
+<p>git checkout .</p>
+
+<p>あるcommit時点にあるファイルだけ戻す
+git checkout abcde file/to/restore</p>
+
+<h2 id="fetch:1c1ef82aae62aeea8eedcb5f455b129b">fetch</h2>
+
+<p>pull = fetch + merge</p>
+
+<h2 id="pushでidを省略する:1c1ef82aae62aeea8eedcb5f455b129b">pushでIDを省略する</h2>
+
+<p>~/.netrc
+に</p>
+
+<pre><code>machine github.com
+login username
+password mypass
+</code></pre>
+
+<p>と書いておく。
+（安全ではない）</p>
+
+<h2 id="ローカルリポジトリの作成から-リモートへの接続まで:1c1ef82aae62aeea8eedcb5f455b129b">ローカルリポジトリの作成から、リモートへの接続まで</h2>
+
+<p>初期化</p>
+
+<pre><code>$ git init
+$ git add .
+$ git commit -m &quot;hoge&quot;
+</code></pre>
+
+<p>リモートリポジトリの追加、確認</p>
+
+<pre><code>$ git remote add origin https://karadaharu@bitbucket.org/karadaharu/kawanishi.git # &lt;name&gt; &lt;url&gt;
+$ git remote
+</code></pre>
+
+<p>リモートからpullするには、リモートのどのブランチをこちらのどのブランチにpullするのか指定しないといけない。
+デフォルトで決めるには、</p>
+
+<pre><code>$ git branch --set-upstream-to=origin/master master
+</code></pre>
+
+<p>確認するには</p>
+
+<pre><code>$ git branch -vv
+</code></pre>
+
+<p>ローカルのプッシュ</p>
+
+<pre><code>$ git push origin master
+</code></pre>
+
+<h2 id="ブランチ:1c1ef82aae62aeea8eedcb5f455b129b">ブランチ</h2>
+
+<p>ブランチの作成</p>
+
+<pre><code>git branch hoge
+</code></pre>
+
+<p>ブランチの確認</p>
+
+<pre><code>git branch -a
+</code></pre>
+
+<p>リモートのブランチに切り替え</p>
+
+<pre><code>git checkout -b development origin/development
+</code></pre>
+
+<p>リモートにプッシュ</p>
+
+<pre><code>git checkout hoge
+git push origin hoge
+</code></pre>
+
+<p>リモートブランチの削除</p>
+
+<pre><code>git push --delete origin foo
+</code></pre>
+
+<p>ローカルブランチの削除</p>
+
+<pre><code>git branch -d hoge
+</code></pre>
+
+<h2 id="checktout:1c1ef82aae62aeea8eedcb5f455b129b">checktout</h2>
+
+<p><a href="http://stackoverflow.com/questions/6335521/git-how-to-revert-2-files-that-are-stubbornly-stuck-at-changed-but-not-committ">http://stackoverflow.com/questions/6335521/git-how-to-revert-2-files-that-are-stubbornly-stuck-at-changed-but-not-committ</a>
+改行コードとかの問題でcheckoutしてもmodifiedのままの場合がある。</p>
+
+<p>ブランチの切り替え</p>
+
+<pre><code>git checkout hoge
+</code></pre>
+
+<h2 id="untracked-fileを削除する-あくまで新しいファイルだけ:1c1ef82aae62aeea8eedcb5f455b129b">untracked fileを削除する（あくまで新しいファイルだけ）</h2>
+
+<pre><code>git clean --dry-run -d # -dはディレクトリも ドライラン
+git clean -f -d
+</code></pre>
+
+<h2 id="競合解決:1c1ef82aae62aeea8eedcb5f455b129b">競合解決</h2>
+
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:templates/myapp/res_list.html
+&lt;dt id=&quot;textbody&quot;&gt;{{ object.textbody|linebreaks }}&lt;/dt&gt; // これが比較前
+=======
+&lt;dt id=&quot;textbody&quot;&gt;{{ object.textbody|linebreaksbr }}&lt;/dt&gt; //リモート側（2行）
+&lt;div id=&quot;tagblock&quot;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 656256af16ad5e4da14490a70d25eb4e415fca60:templates/myapp/res_list.html
+</code></pre>
+
+<p>一次退避
+git stash</p>
+
+<h2 id="push:1c1ef82aae62aeea8eedcb5f455b129b">push</h2>
+
+<p>名前が別々のときは、リモートもローカルもブランチを指定しないといけない。</p>
+
+<h2 id="merge:1c1ef82aae62aeea8eedcb5f455b129b">merge</h2>
+
+<p>現在のブランチで他のブランチをマージ
+git checkout develop
+git merge feature
+git push origin develop
+git checkout feature</p>
+
+<h2 id="githubの一部のフォルダだけダウンロードする:1c1ef82aae62aeea8eedcb5f455b129b">githubの一部のフォルダだけダウンロードする</h2>
+
+<p><a href="https://github.com/XXX/YYY/tree/master/ZZZ">https://github.com/XXX/YYY/tree/master/ZZZ</a>
+ZZZフォルダをダウンロードしたいとき，/tree/master/を/trunk/に変えて</p>
+
+<pre><code>$ svn checkout https://github.com/XXX/YYY/trunk/ZZZ
+</code></pre>
+
+<h2 id="githubの一部のファイルだけダウンロードする:1c1ef82aae62aeea8eedcb5f455b129b">githubの一部のファイルだけダウンロードする</h2>
+
+<p>ファイル上部のrawでファイルにアクセスできるのでそこで右クリック</p>
+
+<h2 id="プライベートトークン:1c1ef82aae62aeea8eedcb5f455b129b">プライベートトークン</h2>
+
+<h2 id="ミラ-リポジトリ:1c1ef82aae62aeea8eedcb5f455b129b">ミラ-リポジトリ</h2>
+
+<p>リモートとまったく同じリポジトリ。バックアップやアクセスの分散など。</p>
+
+<p>リモートとローカルの違い→ローカルはワーキングツリーというのが存在する</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>gitで管理する</title>
+  <meta name="description" content="gitで管理する">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>gitで管理する</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="gitlabで管理する:fed1fbe3166ec920c49dbadfcd2f4a6f">gitlabで管理する</h1>
+
+<p>Gitosisが管理</p>
+
+<p>gitユーザー</p>
+
+<p>なんのためのパスワードを求められているのか，が分からない
+sshで接続するときのユーザー認証で
+公開鍵認証ができないために
+パスワード認証をするためのパスワード</p>
+
+<p>サーバー認証はできてる．本当は公開鍵認証したい．</p>
+
+<p>token</p>
+
+<h2 id="gitlab-apiを使う:fed1fbe3166ec920c49dbadfcd2f4a6f">gitlab APIを使う</h2>
+
+<p>GET <a href="http://example.com/api/v3/projects?private_token=QVy1PB7sTxfy4pqfZM1U">http://example.com/api/v3/projects?private_token=QVy1PB7sTxfy4pqfZM1U</a>
+と
+curl &ndash;header &ldquo;PRIVATE-TOKEN: QVy1PB7sTxfy4pqfZM1U&rdquo; &ldquo;<a href="http://example.com/api/v3/projects&quot;">http://example.com/api/v3/projects&quot;</a>
+が同じ</p>
+
+<p>curlって具体的になに？
+HTTPやFTPを使ってファイルの送受信を行う</p>
+
+<p>GET /projects/:id/repository/branches
+は
+curl &ndash;header &ldquo;PRIVATE-TOKEN: QVy1PB7sTxfy4pqfZM1U&rdquo; &ldquo;<a href="http://example.com/api/v3/projects/:id/repository/branches&quot;">http://example.com/api/v3/projects/:id/repository/branches&quot;</a></p>
+
+<p>:idのみパラメータで，
+/projectsですべてのプロジェクトの情報を表示したときにidが書いてある．
+tampenなら9</p>
+
+<h3 id="cloneする:fed1fbe3166ec920c49dbadfcd2f4a6f">cloneする</h3>
+
+<p>cloneはふつうにgitコマンド叩けばいいっぽい．clone，pushとかのAPIって別にない．
+<a href="http://yuumi3.hatenablog.com/entry/20140529/1401330812">http://yuumi3.hatenablog.com/entry/20140529/1401330812</a>
+APIの意味？</p>
+
+<p>公開鍵を登録する必要がある．
+鍵を保存する場所をユーザーローカルではない場所にすればkanekoユーザーでやっても問題なさそう．
+いや違う．gitlabアカウントごとに公開鍵を登録する．
+gitlabのプロジェクトメンバーの公開鍵を全部現在tampenサーバーにログインしているユーザーが使える秘密鍵に
+照合する，みたいなことをやっていそう．
+gitlabのアカウントにはいくつも公開鍵を割り当てられるのか？？</p>
+
+<p>APIは何に使っている？</p>
+
+<h3 id="vagrantで:fed1fbe3166ec920c49dbadfcd2f4a6f">vagrantで</h3>
+
+<p>同様に公開鍵を登録</p>
+
+<h3 id="データベース:fed1fbe3166ec920c49dbadfcd2f4a6f">データベース</h3>
+
+<p>ダンプ</p>
+
+<pre><code>pg_dump -s tampen_test &gt; tampen_schema.sql
+</code></pre>
+
+<h3 id="vagrant環境整備:fed1fbe3166ec920c49dbadfcd2f4a6f">vagrant環境整備</h3>
+
+<p>initdbのあと，データベースは起動しない？？</p>
+
+<p>php_fpmを入れる</p>
+
+<h3 id="vagrantでpostgres-nginxをサービスに登録:fed1fbe3166ec920c49dbadfcd2f4a6f">vagrantでpostgres, nginxをサービスに登録</h3>
+
+<p>/etc/rc.confに
+php_fpm_enable=&ldquo;YES&rdquo;
+nginx_enable=&ldquo;YES&rdquo;
+postgresql_enable=&ldquo;YES&rdquo;</p>
+
+<p>起動
+service php_fpm start</p>
+
+<p>rootユーザーでsshするときは，ほかのユーザーで作った公開鍵は使われない．
+sudo sshでも同じ．</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

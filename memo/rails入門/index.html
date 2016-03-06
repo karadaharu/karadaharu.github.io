@@ -1,0 +1,296 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Rails入門</title>
+  <meta name="description" content="Rails入門">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>Rails入門</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="rails入門:48964c7d2b3c208d4ff7c8bab1b89f83">Rails入門</h1>
+
+<h2 id="概要:48964c7d2b3c208d4ff7c8bab1b89f83">概要</h2>
+
+<p>バージョン
+4.xを入れる</p>
+
+<h2 id="チュートリアル:48964c7d2b3c208d4ff7c8bab1b89f83">チュートリアル</h2>
+
+<p>小学生でもわかるRuby on Rails入門
+で学ぶ。</p>
+
+<p>ビューとコントローラーをつくる</p>
+
+<pre><code>rails g controller users index show
+</code></pre>
+
+<p>g:generate
+usersがコントローラー名
+index, showがビュー名（いくつもつくれる？どうやってたす？）</p>
+
+<p>scaffold:model view contriller 全部簡単にできる</p>
+
+<h2 id="restful:48964c7d2b3c208d4ff7c8bab1b89f83">RESTful</h2>
+
+<p>REST：対象となるリソースをURLを使って表し、
+httpのGET、　POST、DELETE、PUTで処理を分ける</p>
+
+<h2 id="コントローラー:48964c7d2b3c208d4ff7c8bab1b89f83">コントローラー</h2>
+
+<p>respond_to
+リクエストフォーマットに応じた処理をする</p>
+
+<h2 id="テンプレートエンジン:48964c7d2b3c208d4ff7c8bab1b89f83">テンプレートエンジン</h2>
+
+<p>ERB:eRuby(テキストファイルにRubyスクリプトを埋め込む書式の仕様)のrubyによる実装
+Haml:</p>
+
+<p>eRuby
+&lt;% &hellip; %&gt; Rubyスクリプトをそのまま実行
+&lt;%= &hellip; %&gt;　式を評価した結果を挿入</p>
+
+<h3 id="haml:48964c7d2b3c208d4ff7c8bab1b89f83">Haml</h3>
+
+<p>Gemfileに</p>
+
+<pre><code>gem 'haml-rails'
+gem 'erb2haml'
+</code></pre>
+
+<p>で</p>
+
+<pre><code>bundle install
+rake haml:replace_erbs
+</code></pre>
+
+<p>で全部Hamlになる。
+railsの簡易サーバーを使っているときは一度再起動すればOK</p>
+
+<h2 id="class:48964c7d2b3c208d4ff7c8bab1b89f83">Class</h2>
+
+<pre><code>$ rails console
+&gt; Classname
+</code></pre>
+
+<h2 id="フォームから入力した値を保存する:48964c7d2b3c208d4ff7c8bab1b89f83">フォームから入力した値を保存する</h2>
+
+<p>form_forでモデルを指定してフォームをつくる。
+params[:modelname]でPOSTの値を取得できる。</p>
+
+<h2 id="データベースとしてmysqlを使う:48964c7d2b3c208d4ff7c8bab1b89f83">データベースとしてMySQLを使う</h2>
+
+<p>CentOSに新しいMySQLをインストール
+<a href="http://d.hatena.ne.jp/sakaik/20140630/mysql_install_repository">http://d.hatena.ne.jp/sakaik/20140630/mysql_install_repository</a></p>
+
+<p>RailsにMySQL
+<a href="http://qiita.com/itkrt2y/items/4ea5bfe90ca65e4a9ebd">http://qiita.com/itkrt2y/items/4ea5bfe90ca65e4a9ebd</a></p>
+
+<p>rails new appname -d mysql</p>
+
+<p>MySQLでdevelopment,test,production用のユーザーを合計3つ作成する</p>
+
+<pre><code>&gt; create user uname1 idnetified by 'pass';
+&gt; grant all privileges on *.* to 'railsdev'@'localhost' identified by 'railspass';
+</code></pre>
+
+<p>MySQLはデフォルトでは謎のエンコーディングなので、設定を変えてからデータベースをつくること。
+<a href="http://babiy3104.hateblo.jp/entry/2014/02/13/000219">http://babiy3104.hateblo.jp/entry/2014/02/13/000219</a></p>
+
+<pre><code>rake db:create db:migrate
+</code></pre>
+
+<p>でとりあえずOK</p>
+
+<h2 id="centosでrails:48964c7d2b3c208d4ff7c8bab1b89f83">CentOSでrails</h2>
+
+<p>簡易サーバーが立ち上がらない
+<a href="http://mymemo.weby117.com/develop/ruby-geminstall-error_3.html">http://mymemo.weby117.com/develop/ruby-geminstall-error_3.html</a>
+Javascripsエンジンが必要。
+対処法としては,Gemfileに以下を追記する。
+どうせ本当にサービス動かすときはnginxなど使うので、とりあえず。</p>
+
+<pre><code>gem 'therubyracer'
+</code></pre>
+
+<p>外から見えるようにIPアドレスを指定
+rails server -b 192.168.33.13</p>
+
+<p>MySQLの起動
+sudo /etc/init.d/mysqld start</p>
+
+<p>gemのインストール
+sudo gem mysql2</p>
+
+<p>mysql.h is missing.  please check your installation of mysql and try again.
+インクルードヘッダーが見つからない</p>
+
+<pre><code>yum install mysql-devel
+</code></pre>
+
+<p>-develは開発に必要なヘッダファイル等が含まれている。（ベータ版ではない！）
+そのアプリケーションを使って開発するときに必要。</p>
+
+<p>sublime SFTPからは普通にアクセスOK</p>
+
+<p>bootstrap系でエラー
+<a href="http://stackoverflow.com/questions/25540575/file-to-import-not-found-or-unreadable-bootstrap-bootstrap-rails-sass-error">http://stackoverflow.com/questions/25540575/file-to-import-not-found-or-unreadable-bootstrap-bootstrap-rails-sass-error</a></p>
+
+<p>ウェブサーバーを起動したままだとキャッシュとかでうまくいかない
+<a href="http://stackoverflow.com/questions/15784769/rails-twitter-bootstrap-file-to-import-not-found-or-unreadable-twitter-boots">http://stackoverflow.com/questions/15784769/rails-twitter-bootstrap-file-to-import-not-found-or-unreadable-twitter-boots</a></p>
+
+<p><a href="https://github.com/twbs/bootstrap-sass/issues/692">https://github.com/twbs/bootstrap-sass/issues/692</a></p>
+
+<h2 id="css:48964c7d2b3c208d4ff7c8bab1b89f83">CSS</h2>
+
+<p><a href="http://qa.atmarkit.co.jp/q/2269">http://qa.atmarkit.co.jp/q/2269</a>
+<a href="http://tech.nitoyon.com/ja/blog/2013/02/15/viewport/">http://tech.nitoyon.com/ja/blog/2013/02/15/viewport/</a></p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

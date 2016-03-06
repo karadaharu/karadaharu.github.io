@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>画面遷移</title>
+  <meta name="description" content="画面遷移">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>画面遷移</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="画面遷移:a293311248556c809124013747ab0cc6">画面遷移</h1>
+
+<h2 id="画面に関わるクラス:a293311248556c809124013747ab0cc6">画面に関わるクラス</h2>
+
+<ul>
+<li>UIStorybord</li>
+<li>UIViewController</li>
+<li>UINavigationController</li>
+<li>UITabBarController</li>
+</ul>
+
+<h2 id="基本:a293311248556c809124013747ab0cc6">基本</h2>
+
+<ul>
+<li>ストーリーボード上の画面1枚とController1つが対応している</li>
+<li>Segue:シーン（ストーリーボード上の1画面）とシーンをくっつけるもの</li>
+</ul>
+
+<h3 id="segue:a293311248556c809124013747ab0cc6">Segue</h3>
+
+<p>Segueには4種類ある</p>
+
+<ol>
+<li>Show:現在のViewControllerの1階層奥に押し出す。アニメーション：右から左へスライド</li>
+<li>Show Detail:現在のViewControllerを置き換える。iPadの画面分割の右半分など。</li>
+<li>Present Modally:現在のViewControllerの上に重ねる。</li>
+<li>Present As Popover:新しいViewControllerをポップオーバー。iPad用</li>
+</ol>
+
+<h2 id="ストーリーボード上で画面遷移を設定する:a293311248556c809124013747ab0cc6">ストーリーボード上で画面遷移を設定する</h2>
+
+<p>Segueを使う。使い方：シーンの上左のアイコンを右クリック、manualから次のシーンにつなぐ。modalを選択。Segue(とぎれなく続く)ができる</p>
+
+<h2 id="同一ストーリーボード上の別のシーンへ遷移する:a293311248556c809124013747ab0cc6">同一ストーリーボード上の別のシーンへ遷移する</h2>
+
+<p><a href="http://zutto-megane.com/app/post-825/">http://zutto-megane.com/app/post-825/</a></p>
+
+<pre><code>performSegueWithIdentifier(&quot;scrollview_segue&quot;, sender: nil)
+</code></pre>
+
+<h2 id="タブを移動する:a293311248556c809124013747ab0cc6">タブを移動する</h2>
+
+<p><a href="http://montan.hateblo.jp/entry/2012/10/02/121636">http://montan.hateblo.jp/entry/2012/10/02/121636</a></p>
+
+<pre><code>self.tabBarController.selectedIndex = 0;
+</code></pre>
+
+<h2 id="別のストーリーボードのシーンへ移動する:a293311248556c809124013747ab0cc6">別のストーリーボードのシーンへ移動する</h2>
+
+<h3 id="タブを使っていないときでストーリーボードのイニシャルシーンへ移動:a293311248556c809124013747ab0cc6">タブを使っていないときでストーリーボードのイニシャルシーンへ移動</h3>
+
+<pre><code>let storyboard: UIStoryboard = UIStoryboard(name: &quot;HomeViewController&quot;, bundle: nil)
+let next: HomeViewController = storyboard.instantiateInitialViewController() as HomeViewController
+presentViewController(next, animated: true, completion: nil)
+</code></pre>
+
+<h2 id="コントローラー内で完結したシーンへ移動:a293311248556c809124013747ab0cc6">コントローラー内で完結したシーンへ移動</h2>
+
+<pre><code>self.presentViewController(mySecondViewController, animated: true, completion: {println(&quot;遷移!&quot;)})
+</code></pre>
+
+<p>self.view.addSubview(var1)
+でvar1を画面に追加できるが、ストーリーボードを使うときは別。</p>
+
+<p>ストーリーボードに要素を追加するとき
+View&gt;Utilities&gt;Show Utilities</p>
+
+<p>ストーリーボードとソースコードを両方表示するとき
+右上のタキシードボタン</p>
+
+<p>@IBOutlet var button1: UIButton?
+IB:interface builder(マウスで直感的にパーツを配置するソフト)
+IBOutlet:パーツ自体をプログラムで定義した変数にひもづけるもの
+?:swiftではnilで初期化はできない。?(optional value)をつけるとOK</p>
+
+<p>@IBAction func actionButton(sender: AnyObject) {
+    label1.text = &ldquo;Changed&rdquo;
+}
+sender:アクションの値が入っているオブジェクト</p>
+
+<h2 id="複数のstoryboardを使って画面遷移を作成する:a293311248556c809124013747ab0cc6">複数のStoryboardを使って画面遷移を作成する</h2>
+
+<p><a href="http://dev.classmethod.jp/smartphone/iphone/use-multiple-storyboards/">http://dev.classmethod.jp/smartphone/iphone/use-multiple-storyboards/</a>
+TabBarControllerをInitial ViewControllerにして、そのChildViewControllerとしてNavigationControllerと通常のViewControllerを追加しています。NavigationControllerは２つViewControllerの遷移を管理しています。</p>
+
+<p>Top Layout Guide
+iOS7だと上部のステータスバーが画面に半透明に重なるが、iOS6だと重ならない。</p>
+
+<p>Top Layout Guideは「上側にある最も近いコンポーネント」の定義を変更するオプション</p>
+
+<h2 id="初回起動の判定:a293311248556c809124013747ab0cc6">初回起動の判定</h2>
+
+<p>NSUserDefaults:アプリの設定などアプリを停止させても保持していたい
+情報を保存するクラス
+シミュレーターの場合、シミュレーターのホーム画面でアプリを削除すれば
+NSUserDefaultsの値はキエル</p>
+
+<h2 id="storyboard内での画面遷移:a293311248556c809124013747ab0cc6">Storyboard内での画面遷移</h2>
+
+<h2 id="linkumの場合:a293311248556c809124013747ab0cc6">Linkumの場合</h2>
+
+<p>UITabBarControllerにUINavigationController（rootViewが各ストーリーボードの最初のシーン）が入っている。</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,388 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>ansibleチャレンジ</title>
+  <meta name="description" content="ansibleチャレンジ">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>ansibleチャレンジ</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>なぜ
+known_hosts
+がないのかが分からない</p>
+
+<p>どのようなときにつくられるのか？
+cent osから freebsdにsshしたら、自動的にknown_hostできた</p>
+
+<p>freebsd側で
+libintl.so.9
+がないのでbashが使えないと言われる</p>
+
+<p>ldd:共有ライブラリの依存関係を表示する</p>
+
+<p>一度destroyしてやり直し中</p>
+
+<p>最初の
+sudo pkg install wget
+をした時点で
+libintl.so.9がなくsudoできないと言われる。</p>
+
+<p>wgetの依存しているパッケージ
+get: 1.16
+indexinfo: 0.2
+libidn: 1.29
+gettext-runtime: 0.19.3</p>
+
+<p>gettext: 0.18.3 -&gt; 0.19.3へアップグレードするのに
+indexinfo: 0.2
+gettext-runtime: 0.19.3
+libidn: 1.29
+wget: 1.16
+gettext-tools: 0.19.3</p>
+
+<p>をインストールしようとする</p>
+
+<p>同じ問題にあってる人(昨日）
+<a href="https://forums.freebsd.org/threads/shared-object-libintl-so-9-not-found.49320/">https://forums.freebsd.org/threads/shared-object-libintl-so-9-not-found.49320/</a></p>
+
+<p>sudoはできないけどsuはできる。
+そもそもの違いは？</p>
+
+<blockquote>
+<p>gettextをアップグレードするときlibintlまわりでエラーが多くなる。その場合は，対象となるアプリケーションやライブラリを一度削除してからもう一度インストールしてみてください。
+<a href="http://gihyo.jp/admin/clip/01/fdt/201006/03">http://gihyo.jp/admin/clip/01/fdt/201006/03</a></p>
+</blockquote>
+
+<p>sudoとかまで入れ直せない、、、</p>
+
+<p>そもそもgettext
+<a href="http://ja.wikipedia.org/wiki/Gettext">http://ja.wikipedia.org/wiki/Gettext</a>
+様々な言語に対応したソフトウエアを開発するときに用いられるライブラリ構成要素のひとつ。GNUプロジェクト。</p>
+
+<p>ln -s /usr/local/lib/libintl.so.8 /usr/local/lib/libintl.so.9
+ln -s /usr/local/lib/libiconv.so.3 /usr/local/lib/libiconv.so.2
+でとりあえずかいけつ。</p>
+
+<p>pkgでインストールしたpgsqlは
+コマンド類がすべて
+/usr/local/bin/下</p>
+
+<p>libxml2.so.2がないと言われる
+ln -s /usr/lobal/lib/libxml2.so.5 /usr/local/lib/libxml2.so.2
+だめ。</p>
+
+<p>soファイル
+共有ライブラリのファイル形式。単体で実行することはできない。</p>
+
+<p>ln -s /usr/lobal/lib/libxml2.so.5 /lib/libxml2.so.2</p>
+
+<p>できた</p>
+
+<p>postgres-severのあとにpsycopgいれるとserverが消される
+psycopgのあとに-serverいれるとpsysopgが消される</p>
+
+<p>portsでpsycopg2をインストールしてみた。</p>
+
+<p>postgresの起動をサービスに追加したい
+/etc/rc.confに
+postgresql_enable=&ldquo;YES&rdquo;
+できた。
+でもpostmaster.pidがパーミッションdeniedでダメ。</p>
+
+<p>sudo -u postgres pg_ctl -D /usr/local/pgsql/data/ start
+ではしる.</p>
+
+<p>pingが通らない問題
+とりあえず再起動するとOK</p>
+
+<h2 id="つづき-2015-01-09:f3a1f0bdfe08796a11a8ab8a592ecd63">つづき　2015/01/09</h2>
+
+<p>postgresをansibleから起動したい
+データベースを作成，テーブル作成まで自動化したいので．</p>
+
+<h3 id="initdbをshellでコマンド書いて直接やると-二回目以降エラーになってしまう:f3a1f0bdfe08796a11a8ab8a592ecd63">initdbをshellでコマンド書いて直接やると，二回目以降エラーになってしまう</h3>
+
+<p>参考　<a href="https://github.com/tobyhede/ansible-centos-rails-nginx-passenger/blob/master/postgres.yml">https://github.com/tobyhede/ansible-centos-rails-nginx-passenger/blob/master/postgres.yml</a></p>
+
+<pre><code>- name: initdb
+action: shell creates=/var/lib/pgsql/9.1/data/ service postgresql-9.1 initdb
+</code></pre>
+
+<p>action:?
+shell:?
+<em>creates:すでにそのファイルが存在していればスキップ</em>
+これで解決</p>
+
+<h3 id="postgres起動する:f3a1f0bdfe08796a11a8ab8a592ecd63">postgres起動する</h3>
+
+<p>pg_ctl -w startだと
+PGDATAが指定されていないと怒られる
+とりあえず
+pg_ctl -w start -D /usr/bin/psql/data
+で一回目はOK．二回目はダメ</p>
+
+<p>やはりサービスとして起動できるように．</p>
+
+<p>/etc/rc.d/下に移動させないといけない．
+どこから？
+pkgngでインストールしたpostgresはどこにインストールされる？</p>
+
+<p>/etc/rc.d/postgres
+がすでに存在しているが
+service postgresql start
+はpostgresユーザーだとパスワードが分からない
+vagrantユーザーだと
+pg_ctl: could not open PID file &ldquo;/usr/local/pgsql/data/postmaster.pid&rdquo;: Permission denied
+で見られない</p>
+
+<p>リモート→リモートの冪等性を保ったコピー
+<a href="http://yume-build.com/blog/archives/338">http://yume-build.com/blog/archives/338</a></p>
+
+<p>参考1 <a href="http://yteraoka.github.io/ansible-tutorial/">http://yteraoka.github.io/ansible-tutorial/</a></p>
+
+<pre><code>- name: be sure mysqld is running and enabled
+service: name=mysqld state=running enabled=yes
+</code></pre>
+
+<p>参考2 <a href="http://bitarts.jp/blog/2014/08/21/ansible.html">http://bitarts.jp/blog/2014/08/21/ansible.html</a></p>
+
+<pre><code>- name: Initialize PostgreSQL database #serviceコマンド
+shell: service postgresql-9.3 initdb
+creates=/var/lib/pgsql/9.3/data/postgresql.conf
+
+- name: Install PostgreSQL config file
+template: src=postgresql.conf.j2
+dest=/var/lib/pgsql/9.3/data/postgresql.conf
+owner=postgres group=postgres mode=0600
+
+- name: Install PostgreSQL auth config file
+template: src=pg_hba.conf.j2
+dest=/var/lib/pgsql/9.3/data/pg_hba.conf
+owner=postgres group=postgres mode=0600
+
+- name: Start PostgreSQL
+service: name=postgresql-9.3 state=started enabled=yes
+</code></pre>
+
+<p>そもそもinitdbってなに？
+initdb:データベースクラスタ（複数のデータベースを格納する領域）を初期化
+そのあと，サーバープロセスの起動がpg_ctl start</p>
+
+<h2 id="php-インストール:f3a1f0bdfe08796a11a8ab8a592ecd63">php インストール</h2>
+
+<p>ふつうにplaybookに足したらOK</p>
+
+<h2 id="nginxのドキュメントルート変更:f3a1f0bdfe08796a11a8ab8a592ecd63">nginxのドキュメントルート変更</h2>
+
+<p>error logの場所は,nginx.confを変えてもエラーになるだけ．
+もともとの/var/log/下になる．
+変えたかったらインストールするときに指定する．</p>
+
+<p>/usr/local/etc/nginx/nginx.conf
+location{}内を変更
+まだダメ
+403 forbidden</p>
+
+<p>php-fpmを使えるようにする
+<a href="http://dotnsf.blog.jp/archives/3316271.html">http://dotnsf.blog.jp/archives/3316271.html</a></p>
+
+<p>確認すること
+ルートディレクトリのユーザーとグループが指定されたものであること</p>
+
+<p>denyチェックではない</p>
+
+<p>php-fpmのuser,groupをnginxに変更
+→cannot get uid for &lsquo;nginx&rsquo;→wwwにもどす</p>
+
+<p><a href="http://symfoware.blog68.fc2.com/blog-entry-1415.html">http://symfoware.blog68.fc2.com/blog-entry-1415.html</a>
+cp /usr/local/etc/php.ini-production /usr/local/etc/php.ini</p>
+
+<p>info.php
+にアクセスしたらいつのまにか見れた．</p>
+
+<p>ルートにアクセスしたときに，index.phpに回してくれていない，ということ</p>
+
+<h2 id="phptalのインストール:f3a1f0bdfe08796a11a8ab8a592ecd63">PHPTALのインストール</h2>
+
+<p>pear-PHPTAL-1.2.2をansibleで追加</p>
+
+<h2 id="dooframeworkのフレームワーク部分追加:f3a1f0bdfe08796a11a8ab8a592ecd63">dooframeworkのフレームワーク部分追加</h2>
+
+<p>1.4をダウンロードしてdooframeworkのところだけ設置
+ダウンロードURL</p>
+
+<p>/usr/local/etc/nginx/html//dooframework/Doo.phpがおかしい．
+$config[&lsquo;BASE_PATH&rsquo;]の中がおかしい</p>
+
+<pre><code>$_SERVER['DOCUMENT_ROOT']:/usr/local/etc/nginx/htmlがおかしい
+$config['SITE_PATH'] = $_SERVER['DOCUMENT_ROOT'] . '/';
+$config['SITE_PATH']:/usr/local/etc/nginx/html/
+$config['BASE_PATH'] = $config['SITE_PATH'] . '/dooframework/';
+</code></pre>
+
+<p>バーチャルホストでは$_SERVER[&lsquo;DOCUMENT_ROOT&rsquo;]は使えない
+バーチャルホスト：複数のドメインを扱う的な</p>
+
+<p><a href="http://serverfault.com/questions/324420/nginx-doesnt-send-serverdocument-root-to-php-fpm">http://serverfault.com/questions/324420/nginx-doesnt-send-serverdocument-root-to-php-fpm</a></p>
+
+<p>nginx.confで
+server{
+  root hoge
+}</p>
+
+<p>にする→変わらない
+<a href="https://forums.freebsd.org/threads/nginx-document-root.35681/">https://forums.freebsd.org/threads/nginx-document-root.35681/</a>
+<a href="https://forums.freebsd.org/threads/nginx-php-fpm-file-not-found.33603/">https://forums.freebsd.org/threads/nginx-php-fpm-file-not-found.33603/</a></p>
+
+<p>これが一番近そう．
+<a href="http://forum.slicehost.com/index.php?p=/discussion/2243/nginx-virtual-hosts-php-wrong-document_root/p1">http://forum.slicehost.com/index.php?p=/discussion/2243/nginx-virtual-hosts-php-wrong-document_root/p1</a></p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

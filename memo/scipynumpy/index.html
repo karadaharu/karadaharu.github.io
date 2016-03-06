@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>scipy,numpy</title>
+  <meta name="description" content="scipy,numpy">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>scipy,numpy</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="データ解析パッケージ:4070d92c7111948171cf28199a299f77">データ解析パッケージ</h1>
+
+<p>scipy,numpy,matplotlib,scikits learn,statmodel,pandas, anaconda,,,,</p>
+
+<h2 id="概要:4070d92c7111948171cf28199a299f77">概要</h2>
+
+<p>scipy:数値計算 numpyを包括
+numpy:数値型　基本はnumpy
+基本:<a href="http://turbare.net/transl/scipy-lecture-notes/index.html">http://turbare.net/transl/scipy-lecture-notes/index.html</a></p>
+
+<p>matplotlib:グラフ描画
+基本:<a href="http://www.geocities.jp/showa_yojyo/note/python-matplotlib.html#id20">http://www.geocities.jp/showa_yojyo/note/python-matplotlib.html#id20</a></p>
+
+<p>pandas:Rライクなデータ構造で集計などが簡単にできる</p>
+
+<p>scikit learn:どちらかというと機械学習
+statmodel:どちらかというと統計</p>
+
+<p>anaconda:上記の様々なパッケージをまとめたディストリビューション。たとえばnumpyはCで書かれているので、自分でいれるならコンパイルとかしないといけないので大変。そういうのをまるっとやってくれる。</p>
+
+<h2 id="numpy:4070d92c7111948171cf28199a299f77">numpy</h2>
+
+<p><a href="http://ibisforest.org/index.php?python%2Fnumpy">http://ibisforest.org/index.php?python%2Fnumpy</a>
+n1からn2まで等間隔にn3個の数字の配列を生成</p>
+
+<pre><code>np.linspace(n1,n2,n3)
+</code></pre>
+
+<p>配列を列・行むきに結合</p>
+
+<pre><code>a = np.array([[1,2,3], [4,5,6]])
+b = np.array([[7, 8, 9], [10, 11, 12]])
+np.c_[a, b]
+array([[ 1,  2,  3,  7,  8,  9],
+       [ 4,  5,  6, 10, 11, 12]])
+np.r_[a,b]
+array([[ 1, 2, 3],
+       [ 4, 5, 6],
+       [7, 8, 9],
+       [10, 11, 12]
+       ])
+</code></pre>
+
+<p>1の配列をn個</p>
+
+<pre><code>np.ones(5)
+array([ 1.,  1.,  1.,  1.,  1.])
+</code></pre>
+
+<p>行列の内積を計算</p>
+
+<pre><code>a = np.array([2, 3, 4])
+b = np.array([1, 2, 3])
+np.dot(a,b)
+20
+</code></pre>
+
+<h2 id="matplotlib:4070d92c7111948171cf28199a299f77">matplotlib</h2>
+
+<p>current figure と current axes:figureが1つの画面、axesがひとつのグラフ</p>
+
+<p>plt.subplot(n0n1n2)でaxesを指定する。n0:縦方向の区画数、n1:横方向の区画数、n2:現在の区画(n0*i+n1なのかn1*i+n0なのか？)</p>
+
+<h2 id="pandas:4070d92c7111948171cf28199a299f77">pandas</h2>
+
+<pre><code># xの先頭からn行のrowを返す
+x.head(n)
+</code></pre>
+
+<h2 id="scikits-learn:4070d92c7111948171cf28199a299f77">scikits learn</h2>
+
+<h3 id="linear-regression:4070d92c7111948171cf28199a299f77">linear regression</h3>
+
+<p>最小二乗法で求める。</p>
+
+<h2 id="statsmodels:4070d92c7111948171cf28199a299f77">statsmodels</h2>
+
+<p>endog:y
+exdog:x
+のこと。
+<a href="http://breakbee.hatenablog.jp/entry/2014/05/13/114341">http://breakbee.hatenablog.jp/entry/2014/05/13/114341</a>
+<a href="http://www.datarobot.com/blog/multiple-regression-using-statsmodels/">http://www.datarobot.com/blog/multiple-regression-using-statsmodels/</a></p>
+
+<p>ふつうの最小二乗法。
+<a href="http://statsmodels.sourceforge.net/devel/examples/notebooks/generated/ols.html">http://statsmodels.sourceforge.net/devel/examples/notebooks/generated/ols.html</a></p>
+
+<h3 id="formula:4070d92c7111948171cf28199a299f77">formula</h3>
+
+<p><a href="http://statsmodels.sourceforge.net/devel/example_formulas.html?highlight=formula">http://statsmodels.sourceforge.net/devel/example_formulas.html?highlight=formula</a>
+Rライクに数式をpython内で表現して回帰などに使える
+そのためには、渡すデータはpandasでRライクなデータ構造（行と列、colには名前が着いている）ようにしてあげないといけない。</p>
+
+<p>I():patsy(pythonの数式パースライブラリ)の中で、ふつうの計算処理をする</p>
+
+<pre><code>
+</code></pre>
+
+<p>AICの値が公式どおりじゃなくて、正の値二桁〜三桁問題
+小さいほうがあてはまりが良さそう。どうなっているのか？</p>
+
+<h2 id="それ以前の基本:4070d92c7111948171cf28199a299f77">それ以前の基本</h2>
+
+<p>累乗</p>
+
+<pre><code>5 ** 2
+25
+</code></pre>
+
+<p>エラー
+すでにanacondaに入っているscikits learnを新しく入れなおしてしまったとき:
+<a href="http://stackoverflow.com/questions/22750247/importerror-cannot-import-name-inplace-column-scale">http://stackoverflow.com/questions/22750247/importerror-cannot-import-name-inplace-column-scale</a></p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+
