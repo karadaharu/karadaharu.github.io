@@ -1,0 +1,299 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>unixコマンド覚書</title>
+  <meta name="description" content="unixコマンド覚書">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>unixコマンド覚書</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="unixコマンド覚書:5f87f8a09885bfb6f19fef259a5c96ff">UNIXコマンド覚書</h1>
+
+<h2 id="mkdir:5f87f8a09885bfb6f19fef259a5c96ff">mkdir</h2>
+
+<p>再帰的?にフォルダを作成する</p>
+
+<pre><code>$ mkdir -p /dir1/dir2
+</code></pre>
+
+<p>連番でフォルダ名を作成する</p>
+
+<pre><code>$ mkdir {2007..2010}
+</code></pre>
+
+<p>シンボリックリンクを作成する</p>
+
+<pre><code>$ ln -s source atesaki
+</code></pre>
+
+<p>ハードリンクとシンボリックリンク
+ハードリンク:ファイルに対してのみ
+直接ファイル本体へリンク．ファイルが2つあるように扱われる．
+シンボリックリンク:フォルダもOK
+ファイルの位置情報が記録される．本体のほうのファイルを削除するとシンボリックリンク先はエラーになる．</p>
+
+<p>プロセスを強制終了させる</p>
+
+<pre><code>$ kill -9 PID
+</code></pre>
+
+<ul>
+<li>touch:新規に空ファイルをつくる(本来はタイムスタンプを作成)</li>
+<li>gpasswd:ユーザーグループを管理．アクセス権限など</li>
+
+<li><p>ln:ファイルやディレクトリにリンクをはる</p></li>
+
+<li><p>symlink:</p></li>
+
+<li><p>rsync -nav /from /to:コピーする</p></li>
+
+<li><p>ln:リンクをはる</p></li>
+
+<li><p>passwd:パスワードを変える</p></li>
+</ul>
+
+<p><strong>cpコマンドは使わない</strong>
+フォルダをコピーするときなど，間違って上書きする可能性がある</p>
+
+<h2 id="find:5f87f8a09885bfb6f19fef259a5c96ff">find</h2>
+
+<pre><code>$ find ./ -name &quot;hoge&quot; -ls
+</code></pre>
+
+<p>ディレクトリ以下のすべてのファイルを検索</p>
+
+<pre><code>find ./ -type f -print | xargs grep 'hoge'
+</code></pre>
+
+<h2 id="curl:5f87f8a09885bfb6f19fef259a5c96ff">curl</h2>
+
+<p>-O:ファイルに出力する
+-L:リダイレクトに対応する
+-o filename:ファイル名を指定するときは小文字
+URLに&amp;や?が入ってるときは&rdquo;でURLをくくってひとまとまりにする</p>
+
+<pre><code>$ out &gt; in # 上書き
+$ out &gt;&gt; in # 追加
+</code></pre>
+
+<p>.bashrcのパスの追加
+PATH=&ldquo;$PATH&rdquo;:/usr/local/postfix
+&ldquo;$PATH&rdquo;は現状のパス設定を保持したままで:に続くパスを追加する</p>
+
+<p>OSの確認</p>
+
+<pre><code>$ uname -a
+</code></pre>
+
+<h2 id="tar:5f87f8a09885bfb6f19fef259a5c96ff">tar</h2>
+
+<p>txz:xz形式で圧縮したもの</p>
+
+<p>tar jxvf file.tar.bz2</p>
+
+<p>v:ファイルの詳細を表示</p>
+
+<h3 id="アーカイブ操作:5f87f8a09885bfb6f19fef259a5c96ff">アーカイブ操作</h3>
+
+<p>x:取り出す</p>
+
+<h3 id="圧縮方式:5f87f8a09885bfb6f19fef259a5c96ff">圧縮方式</h3>
+
+<p>j:bzip2用
+z:gzip用</p>
+
+<h2 id="ソースコードからインストール:5f87f8a09885bfb6f19fef259a5c96ff">ソースコードからインストール</h2>
+
+<p>基本的気に、INSTALLファイルを読めばできるようになってる。
+<a href="http://www.atmarkit.co.jp/ait/articles/1106/24/news112.html">http://www.atmarkit.co.jp/ait/articles/1106/24/news112.html</a>
+このへんあとでちゃんと読みたい。
+./configure &ndash;prefix=$HOME
+で$HOMEにインストールされる。</p>
+
+<h2 id="ユーザー操作:5f87f8a09885bfb6f19fef259a5c96ff">ユーザー操作</h2>
+
+<p>ユーザー一覧
+/etc/passwd</p>
+
+<p>現在ログインしているユーザー
+who
+whoをしてもvagrantだけど
+実際はpostgresってどうなってるの？？</p>
+
+<p>パスワードの変更
+passwd</p>
+
+<p>kaneko is not in the sudoers file.  This incident will be reported.</p>
+
+<p>ユーザーの削除
+rmuser kaneko</p>
+
+<p>ファイルなどのグループの変更
+chgrp GROUP FILE</p>
+
+<p>ファイルなどのユーザーの変更
+chown</p>
+
+<h2 id="scp:5f87f8a09885bfb6f19fef259a5c96ff">scp</h2>
+
+<p>送信　送信ファイル　送信先ディレクトリ
+scp -P 10022 /tmp/localfile.txt RemoteUser@remote.domein.co.jp:/tmp/
+受信　受信ファイル　受信先ディレクトリ
+scp -P 10022 RemoteUser@remote.domein.co.jp:/tmp/remotefile.txt /home/LocalUser/tmp/</p>
+
+<p>コマンドプロンプトの表示設定を見る　echo $PS1
+ホスト名を表示 hostname</p>
+
+<h2 id="rsync:5f87f8a09885bfb6f19fef259a5c96ff">rsync</h2>
+
+<p>rsync -nav &ndash;exclude-from .rsyncignore ./dev.jfdb.jp/ ./jfdb.jp/</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

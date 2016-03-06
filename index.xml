@@ -62,54 +62,6 @@
     </item>
     
     <item>
-      <title>:usr:binと:usr:local:bin</title>
-      <link>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</guid>
-      <description>
-
-&lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
-
-&lt;p&gt;/bin:もっとも基本的なコマンドmakeやwhoなど
-/usr/bin:システム標準
-/usr/local/bin:そうでないもの(OSが勝手に書き換えることはない)
-/opt:アプリケーションごとにサブディレクトリを分けることを想定。大きいもの用。
-/sbin:起動に必要なファイル
-/etc:設定ファイル&lt;/p&gt;
-
-&lt;p&gt;例えば、評価版は/usr/local/binにインストールして、コマンドパスを/usr/local/binを先にすれば、そっちが実行される。問題があればコマンドパスを戻せば良い&lt;/p&gt;
-
-&lt;p&gt;コマンドのフルパスが知りたいときはwhereis&lt;/p&gt;
-
-&lt;p&gt;launchd:PID 1で最初に起動して初期化、シェルの起動などを行う&lt;/p&gt;
-
-&lt;h2 id=&#34;homebrewが指定しているサービス:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;homebrewが指定しているサービス&lt;/h2&gt;
-
-&lt;p&gt;~/Library/LaunchAgents/
-にhombrewがサービスに指定しているファイルがある。
-勝手に起動するように指定するかしないか。
-&lt;a href=&#34;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&#34;&gt;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;その他:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;その他&lt;/h2&gt;
-
-&lt;p&gt;/opt
-/include
-/Library&lt;/p&gt;
-
-&lt;h2 id=&#34;exportコマンド:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;exportコマンド&lt;/h2&gt;
-
-&lt;p&gt;例&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ export PATH=$PATH:/Applications/android-sdk/tools
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;環境変数を設定するために使用．ターミナルからログアウトしたらリセットされる
-→毎回ターミナル起動時に実行した→~/.bash_profileに記述しておく．&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>20151014ソースコードが違う</title>
       <link>http://karadaharu.org/memo/coding/00%E4%B8%80%E8%88%AC/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99%E3%81%8B%E3%82%99%E9%81%95%E3%81%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -245,44 +197,50 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     </item>
     
     <item>
-      <title>ターミナルの日本語環境</title>
-      <link>http://karadaharu.org/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</link>
+      <title>:usr:binと:usr:local:bin</title>
+      <link>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</guid>
+      <guid>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</guid>
       <description>
 
-&lt;h1 id=&#34;ターミナルの日本語環境:9668eb065dc46476bb95069698b89707&#34;&gt;ターミナルの日本語環境&lt;/h1&gt;
+&lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
 
-&lt;ol&gt;
-&lt;li&gt;ユーザーの言語設定&lt;/li&gt;
-&lt;li&gt;シェルの言語設定&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;/bin:もっとも基本的なコマンドmakeやwhoなど
+/usr/bin:システム標準
+/usr/local/bin:そうでないもの(OSが勝手に書き換えることはない)
+/opt:アプリケーションごとにサブディレクトリを分けることを想定。大きいもの用。
+/sbin:起動に必要なファイル
+/etc:設定ファイル&lt;/p&gt;
 
-&lt;p&gt;の2つを設定する&lt;/p&gt;
+&lt;p&gt;例えば、評価版は/usr/local/binにインストールして、コマンドパスを/usr/local/binを先にすれば、そっちが実行される。問題があればコマンドパスを戻せば良い&lt;/p&gt;
 
-&lt;h2 id=&#34;ユーザーの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;ユーザーの言語設定&lt;/h2&gt;
+&lt;p&gt;コマンドのフルパスが知りたいときはwhereis&lt;/p&gt;
 
-&lt;p&gt;.login_conf
-に&lt;/p&gt;
+&lt;p&gt;launchd:PID 1で最初に起動して初期化、シェルの起動などを行う&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;me:\
-   :charset=UTF-8:\
-   :lang=ja_JP.UTF-8:
+&lt;h2 id=&#34;homebrewが指定しているサービス:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;homebrewが指定しているサービス&lt;/h2&gt;
+
+&lt;p&gt;~/Library/LaunchAgents/
+にhombrewがサービスに指定しているファイルがある。
+勝手に起動するように指定するかしないか。
+&lt;a href=&#34;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&#34;&gt;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;その他:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;その他&lt;/h2&gt;
+
+&lt;p&gt;/opt
+/include
+/Library&lt;/p&gt;
+
+&lt;h2 id=&#34;exportコマンド:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;exportコマンド&lt;/h2&gt;
+
+&lt;p&gt;例&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ export PATH=$PATH:/Applications/android-sdk/tools
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;を追記&lt;/p&gt;
-
-&lt;h2 id=&#34;シェルの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;シェルの言語設定&lt;/h2&gt;
-
-&lt;p&gt;.bashrc
-に&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export LANG=ja_JP.UTF-8
-export LANG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追記&lt;/p&gt;
+&lt;p&gt;環境変数を設定するために使用．ターミナルからログアウトしたらリセットされる
+→毎回ターミナル起動時に実行した→~/.bash_profileに記述しておく．&lt;/p&gt;
 </description>
     </item>
     
@@ -299,24 +257,6 @@ export LANG
 &lt;h2 id=&#34;基本:a83760d81f5fb2874b12c55209763bac&#34;&gt;基本&lt;/h2&gt;
 
 &lt;p&gt;グループ:wheel&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NFS</title>
-      <link>http://karadaharu.org/memo/coding/Linux/NFS/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/coding/Linux/NFS/</guid>
-      <description>
-
-&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
-
-&lt;p&gt;NFS:network file system
-別のPCのディレクトリを共有する仕組み&lt;/p&gt;
-
-&lt;p&gt;設定
-/etc/exportsに書く&lt;/p&gt;
 </description>
     </item>
     
@@ -363,6 +303,109 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     </item>
     
     <item>
+      <title>ターミナルの日本語環境</title>
+      <link>http://karadaharu.org/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/coding/FreeBSD/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83/</guid>
+      <description>
+
+&lt;h1 id=&#34;ターミナルの日本語環境:9668eb065dc46476bb95069698b89707&#34;&gt;ターミナルの日本語環境&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ユーザーの言語設定&lt;/li&gt;
+&lt;li&gt;シェルの言語設定&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;の2つを設定する&lt;/p&gt;
+
+&lt;h2 id=&#34;ユーザーの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;ユーザーの言語設定&lt;/h2&gt;
+
+&lt;p&gt;.login_conf
+に&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;me:\
+   :charset=UTF-8:\
+   :lang=ja_JP.UTF-8:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追記&lt;/p&gt;
+
+&lt;h2 id=&#34;シェルの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;シェルの言語設定&lt;/h2&gt;
+
+&lt;p&gt;.bashrc
+に&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export LANG=ja_JP.UTF-8
+export LANG
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追記&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NFS</title>
+      <link>http://karadaharu.org/memo/coding/Linux/NFS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/coding/Linux/NFS/</guid>
+      <description>
+
+&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
+
+&lt;p&gt;NFS:network file system
+別のPCのディレクトリを共有する仕組み&lt;/p&gt;
+
+&lt;p&gt;設定
+/etc/exportsに書く&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>bashを理解する</title>
+      <link>http://karadaharu.org/memo/coding/Linux/bash%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/coding/Linux/bash%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/</guid>
+      <description>&lt;p&gt;#bashを理解する
+.bash_profileと.bashrcの違い
+.bash_profileはログイン時のみ実行される
+.bashrcは新しくシェルが起動される度に実行される。.bash_profileから呼ばれる形でも実行される。&lt;/p&gt;
+
+&lt;p&gt;環境設定ファイルbash_profileの反映&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;パスを通す　~/.bashrcに下記をかいて，反映&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export PATH=通したいディレクトリのパス:$PATH
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;$PATHはすでに通っているパス変数
+先に書いてあるパスが優先されるので，
+$PATH:通したいディレクトリのパス，の順番だと同じコマンドの場合だめ&lt;/p&gt;
+
+&lt;p&gt;コマンドのエイリアスを作成（例：sublime textを起動するsublコマンド）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo ln -s &amp;quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&amp;quot; /usr/local/bin/subl
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;シェルスクリプトで対話的作業を行う。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/expect
+spawn ssh ebi@tempura.jp
+expect &amp;quot;PASSWORD?&amp;quot;
+send &amp;quot;password\n&amp;quot;
+interact
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ftpは定形フォーマットをftpコマンドに食わせてやればOK&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>sshで接続できない</title>
       <link>http://karadaharu.org/memo/coding/Linux/ssh%E3%81%A6%E3%82%99%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%82%99%E3%81%8D%E3%81%AA%E3%81%84/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -390,58 +433,224 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     </item>
     
     <item>
-      <title>文字コード</title>
-      <link>http://karadaharu.org/memo/coding/Linux/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</link>
+      <title>unixコマンド覚書</title>
+      <link>http://karadaharu.org/memo/coding/Linux/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E3%82%99%E8%A6%9A%E6%9B%B8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/Linux/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</guid>
+      <guid>http://karadaharu.org/memo/coding/Linux/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E3%82%99%E8%A6%9A%E6%9B%B8/</guid>
       <description>
 
-&lt;h1 id=&#34;文字コード:9c80cf1b51178ae7ae158bb4bf0a62c0&#34;&gt;文字コード&lt;/h1&gt;
+&lt;h1 id=&#34;unixコマンド覚書:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;UNIXコマンド覚書&lt;/h1&gt;
 
-&lt;h2 id=&#34;確認:9c80cf1b51178ae7ae158bb4bf0a62c0&#34;&gt;確認&lt;/h2&gt;
+&lt;h2 id=&#34;mkdir:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;mkdir&lt;/h2&gt;
 
-&lt;p&gt;file text.txt&lt;/p&gt;
+&lt;p&gt;再帰的?にフォルダを作成する&lt;/p&gt;
 
-&lt;h2 id=&#34;変更:9c80cf1b51178ae7ae158bb4bf0a62c0&#34;&gt;変更&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ mkdir -p /dir1/dir2
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;なんでもvimでやろう&lt;/p&gt;
+&lt;p&gt;連番でフォルダ名を作成する&lt;/p&gt;
 
-&lt;p&gt;なぜカタカナのファイル名はbashで補完されないのか？&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mkdir {2007..2010}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;シンボリックリンクを作成する&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ln -s source atesaki
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ハードリンクとシンボリックリンク
+ハードリンク:ファイルに対してのみ
+直接ファイル本体へリンク．ファイルが2つあるように扱われる．
+シンボリックリンク:フォルダもOK
+ファイルの位置情報が記録される．本体のほうのファイルを削除するとシンボリックリンク先はエラーになる．&lt;/p&gt;
+
+&lt;p&gt;プロセスを強制終了させる&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ kill -9 PID
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;touch:新規に空ファイルをつくる(本来はタイムスタンプを作成)&lt;/li&gt;
+&lt;li&gt;gpasswd:ユーザーグループを管理．アクセス権限など&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ln:ファイルやディレクトリにリンクをはる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;symlink:&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;rsync -nav /from /to:コピーする&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ln:リンクをはる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;passwd:パスワードを変える&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;cpコマンドは使わない&lt;/strong&gt;
+フォルダをコピーするときなど，間違って上書きする可能性がある&lt;/p&gt;
+
+&lt;h2 id=&#34;find:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;find&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ find ./ -name &amp;quot;hoge&amp;quot; -ls
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ディレクトリ以下のすべてのファイルを検索&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;find ./ -type f -print | xargs grep &#39;hoge&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;curl:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;curl&lt;/h2&gt;
+
+&lt;p&gt;-O:ファイルに出力する
+-L:リダイレクトに対応する
+-o filename:ファイル名を指定するときは小文字
+URLに&amp;amp;や?が入ってるときは&amp;rdquo;でURLをくくってひとまとまりにする&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ out &amp;gt; in # 上書き
+$ out &amp;gt;&amp;gt; in # 追加
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.bashrcのパスの追加
+PATH=&amp;ldquo;$PATH&amp;rdquo;:/usr/local/postfix
+&amp;ldquo;$PATH&amp;rdquo;は現状のパス設定を保持したままで:に続くパスを追加する&lt;/p&gt;
+
+&lt;p&gt;OSの確認&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ uname -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;tar:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;tar&lt;/h2&gt;
+
+&lt;p&gt;txz:xz形式で圧縮したもの&lt;/p&gt;
+
+&lt;p&gt;tar jxvf file.tar.bz2&lt;/p&gt;
+
+&lt;p&gt;v:ファイルの詳細を表示&lt;/p&gt;
+
+&lt;h3 id=&#34;アーカイブ操作:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;アーカイブ操作&lt;/h3&gt;
+
+&lt;p&gt;x:取り出す&lt;/p&gt;
+
+&lt;h3 id=&#34;圧縮方式:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;圧縮方式&lt;/h3&gt;
+
+&lt;p&gt;j:bzip2用
+z:gzip用&lt;/p&gt;
+
+&lt;h2 id=&#34;ソースコードからインストール:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;ソースコードからインストール&lt;/h2&gt;
+
+&lt;p&gt;基本的気に、INSTALLファイルを読めばできるようになってる。
+&lt;a href=&#34;http://www.atmarkit.co.jp/ait/articles/1106/24/news112.html&#34;&gt;http://www.atmarkit.co.jp/ait/articles/1106/24/news112.html&lt;/a&gt;
+このへんあとでちゃんと読みたい。
+./configure &amp;ndash;prefix=$HOME
+で$HOMEにインストールされる。&lt;/p&gt;
+
+&lt;h2 id=&#34;ユーザー操作:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;ユーザー操作&lt;/h2&gt;
+
+&lt;p&gt;ユーザー一覧
+/etc/passwd&lt;/p&gt;
+
+&lt;p&gt;現在ログインしているユーザー
+who
+whoをしてもvagrantだけど
+実際はpostgresってどうなってるの？？&lt;/p&gt;
+
+&lt;p&gt;パスワードの変更
+passwd&lt;/p&gt;
+
+&lt;p&gt;kaneko is not in the sudoers file.  This incident will be reported.&lt;/p&gt;
+
+&lt;p&gt;ユーザーの削除
+rmuser kaneko&lt;/p&gt;
+
+&lt;p&gt;ファイルなどのグループの変更
+chgrp GROUP FILE&lt;/p&gt;
+
+&lt;p&gt;ファイルなどのユーザーの変更
+chown&lt;/p&gt;
+
+&lt;h2 id=&#34;scp:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;scp&lt;/h2&gt;
+
+&lt;p&gt;送信　送信ファイル　送信先ディレクトリ
+scp -P 10022 /tmp/localfile.txt RemoteUser@remote.domein.co.jp:/tmp/
+受信　受信ファイル　受信先ディレクトリ
+scp -P 10022 RemoteUser@remote.domein.co.jp:/tmp/remotefile.txt /home/LocalUser/tmp/&lt;/p&gt;
+
+&lt;p&gt;コマンドプロンプトの表示設定を見る　echo $PS1
+ホスト名を表示 hostname&lt;/p&gt;
+
+&lt;h2 id=&#34;rsync:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;rsync&lt;/h2&gt;
+
+&lt;p&gt;rsync -nav &amp;ndash;exclude-from .rsyncignore ./dev.jfdb.jp/ ./jfdb.jp/&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>OAuth認証の仕組み</title>
-      <link>http://karadaharu.org/memo/coding/OAuth%E8%AA%8D%E8%A8%BC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</link>
+      <title>シェルスクリプトの書き方</title>
+      <link>http://karadaharu.org/memo/coding/Linux/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%95%E3%82%9A%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/coding/OAuth%E8%AA%8D%E8%A8%BC%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF/</guid>
+      <guid>http://karadaharu.org/memo/coding/Linux/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%95%E3%82%9A%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9/</guid>
       <description>
 
-&lt;h1 id=&#34;oauth認証の仕組み:545adab97b59e1ac6faa0e5796154321&#34;&gt;OAuth認証の仕組み&lt;/h1&gt;
+&lt;h1 id=&#34;シェルスクリプトの書き方:c8ba59ae72b26216e67c2481b7b0c178&#34;&gt;シェルスクリプトの書き方&lt;/h1&gt;
 
-&lt;p&gt;登場人物
-* サービスプロバイダー
-* コンシューマー
-* ユーザー&lt;/p&gt;
+&lt;p&gt;変数の宣言&lt;/p&gt;
 
-&lt;p&gt;手順
-1.  コンシューマーはサービスプロバイダーに事前にOAuth利用許可を得る
-2.  ユーザーはコンシューマーにアクセス権を取得するよう指示
-3.  コンシューマーはサービスプロバイダーに対して&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>X11</title>
-      <link>http://karadaharu.org/memo/coding/OS/X11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/coding/OS/X11/</guid>
-      <description>
+&lt;pre&gt;&lt;code&gt;string=&amp;quot;aaaa&amp;quot;
+echo ${string}
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;x11:f190c42441d892576de3fd0265fa6387&#34;&gt;X11&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;変数の=の両側にはスペースを入れてはいけない。入れると、変数名がコマンドとして受け取られる&lt;/em&gt;
+&lt;em&gt;変数の中身を使いたいときは,${}で囲む。そうしないとコマンドや、文字列として受け取られる&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;forループ&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;files=*txt
+for f in files
+do
+	echo ${f}
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;if文&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if test hoge
+else
+fi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;対話的なコマンドの実行&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/sh
+expect -c &amp;quot;
+set timeout 400
+spawn ftp ladsweb.nascom.nasa.gov
+expect \&amp;quot;Name (ladsweb.nascom.nasa.gov:kazumasa):\&amp;quot;
+send \&amp;quot;anonymous\n\&amp;quot;
+expect \&amp;quot;Password:\&amp;quot;
+send \&amp;quot;catter121@gmail.com\n\&amp;quot;
+expect \&amp;quot;ftp&amp;gt;\&amp;quot;
+send \&amp;quot;cd /orders/\n\&amp;quot;
+expect \&amp;quot;ftp&amp;gt;\&amp;quot;
+send \&amp;quot;binary\&amp;quot;
+expect \&amp;quot;ftp&amp;gt;\&amp;quot;
+&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;respawnだとシェルのコマンドが打てる&lt;/li&gt;
+&lt;li&gt;最後は\n入れないとエンターにならない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ecpect はTclの文法をわかっていないと戸惑うらしい。
+&lt;a href=&#34;http://root-mode2.blogspot.jp/2010/10/expect-spawn.html&#34;&gt;http://root-mode2.blogspot.jp/2010/10/expect-spawn.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;テキストファイルを一行ずつ読み込む&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;while read line
+do
+	echo $line
+done &amp;lt; test.txt
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
