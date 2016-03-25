@@ -62,54 +62,6 @@
     </item>
     
     <item>
-      <title>:usr:binと:usr:local:bin</title>
-      <link>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</guid>
-      <description>
-
-&lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
-
-&lt;p&gt;/bin:もっとも基本的なコマンドmakeやwhoなど
-/usr/bin:システム標準
-/usr/local/bin:そうでないもの(OSが勝手に書き換えることはない)
-/opt:アプリケーションごとにサブディレクトリを分けることを想定。大きいもの用。
-/sbin:起動に必要なファイル
-/etc:設定ファイル&lt;/p&gt;
-
-&lt;p&gt;例えば、評価版は/usr/local/binにインストールして、コマンドパスを/usr/local/binを先にすれば、そっちが実行される。問題があればコマンドパスを戻せば良い&lt;/p&gt;
-
-&lt;p&gt;コマンドのフルパスが知りたいときはwhereis&lt;/p&gt;
-
-&lt;p&gt;launchd:PID 1で最初に起動して初期化、シェルの起動などを行う&lt;/p&gt;
-
-&lt;h2 id=&#34;homebrewが指定しているサービス:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;homebrewが指定しているサービス&lt;/h2&gt;
-
-&lt;p&gt;~/Library/LaunchAgents/
-にhombrewがサービスに指定しているファイルがある。
-勝手に起動するように指定するかしないか。
-&lt;a href=&#34;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&#34;&gt;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;その他:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;その他&lt;/h2&gt;
-
-&lt;p&gt;/opt
-/include
-/Library&lt;/p&gt;
-
-&lt;h2 id=&#34;exportコマンド:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;exportコマンド&lt;/h2&gt;
-
-&lt;p&gt;例&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ export PATH=$PATH:/Applications/android-sdk/tools
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;環境変数を設定するために使用．ターミナルからログアウトしたらリセットされる
-→毎回ターミナル起動時に実行した→~/.bash_profileに記述しておく．&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>2016/03/20-2016/03/26</title>
       <link>http://karadaharu.org/log/2016:03:20-2016:03:26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -157,6 +109,54 @@
 &lt;/ul&gt;
 
 &lt;p&gt;とりあえずフランスに行けるように頑張る。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>:usr:binと:usr:local:bin</title>
+      <link>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</guid>
+      <description>
+
+&lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
+
+&lt;p&gt;/bin:もっとも基本的なコマンドmakeやwhoなど
+/usr/bin:システム標準
+/usr/local/bin:そうでないもの(OSが勝手に書き換えることはない)
+/opt:アプリケーションごとにサブディレクトリを分けることを想定。大きいもの用。
+/sbin:起動に必要なファイル
+/etc:設定ファイル&lt;/p&gt;
+
+&lt;p&gt;例えば、評価版は/usr/local/binにインストールして、コマンドパスを/usr/local/binを先にすれば、そっちが実行される。問題があればコマンドパスを戻せば良い&lt;/p&gt;
+
+&lt;p&gt;コマンドのフルパスが知りたいときはwhereis&lt;/p&gt;
+
+&lt;p&gt;launchd:PID 1で最初に起動して初期化、シェルの起動などを行う&lt;/p&gt;
+
+&lt;h2 id=&#34;homebrewが指定しているサービス:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;homebrewが指定しているサービス&lt;/h2&gt;
+
+&lt;p&gt;~/Library/LaunchAgents/
+にhombrewがサービスに指定しているファイルがある。
+勝手に起動するように指定するかしないか。
+&lt;a href=&#34;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&#34;&gt;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;その他:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;その他&lt;/h2&gt;
+
+&lt;p&gt;/opt
+/include
+/Library&lt;/p&gt;
+
+&lt;h2 id=&#34;exportコマンド:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;exportコマンド&lt;/h2&gt;
+
+&lt;p&gt;例&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ export PATH=$PATH:/Applications/android-sdk/tools
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;環境変数を設定するために使用．ターミナルからログアウトしたらリセットされる
+→毎回ターミナル起動時に実行した→~/.bash_profileに記述しておく．&lt;/p&gt;
 </description>
     </item>
     
@@ -319,48 +319,6 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     </item>
     
     <item>
-      <title>ターミナルの日本語環境</title>
-      <link>http://karadaharu.org/memo/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83</guid>
-      <description>
-
-&lt;h1 id=&#34;ターミナルの日本語環境:9668eb065dc46476bb95069698b89707&#34;&gt;ターミナルの日本語環境&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;ユーザーの言語設定&lt;/li&gt;
-&lt;li&gt;シェルの言語設定&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;の2つを設定する&lt;/p&gt;
-
-&lt;h2 id=&#34;ユーザーの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;ユーザーの言語設定&lt;/h2&gt;
-
-&lt;p&gt;.login_conf
-に&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;me:\
-   :charset=UTF-8:\
-   :lang=ja_JP.UTF-8:
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追記&lt;/p&gt;
-
-&lt;h2 id=&#34;シェルの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;シェルの言語設定&lt;/h2&gt;
-
-&lt;p&gt;.bashrc
-に&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export LANG=ja_JP.UTF-8
-export LANG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追記&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>GCC、LLVM、Clang</title>
       <link>http://karadaharu.org/memo/gccllvmclang</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -403,29 +361,62 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     </item>
     
     <item>
-      <title>sshで接続できない</title>
-      <link>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</link>
+      <title>ターミナルの日本語環境</title>
+      <link>http://karadaharu.org/memo/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</guid>
+      <guid>http://karadaharu.org/memo/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83</guid>
       <description>
 
-&lt;h1 id=&#34;sshで接続できない:c7c10a772b1970026ca58fea43d1194b&#34;&gt;sshで接続できない&lt;/h1&gt;
+&lt;h1 id=&#34;ターミナルの日本語環境:9668eb065dc46476bb95069698b89707&#34;&gt;ターミナルの日本語環境&lt;/h1&gt;
 
-&lt;p&gt;いつも使っているサーバーにSSH接続しようとしたところ、下記エラーで接続できませんでした。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ユーザーの言語設定&lt;/li&gt;
+&lt;li&gt;シェルの言語設定&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;ssh_exchange_identification: Connection closed by remote host&lt;/p&gt;
+&lt;p&gt;の2つを設定する&lt;/p&gt;
 
-&lt;h2 id=&#34;sshとは:c7c10a772b1970026ca58fea43d1194b&#34;&gt;SSHとは&lt;/h2&gt;
+&lt;h2 id=&#34;ユーザーの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;ユーザーの言語設定&lt;/h2&gt;
 
-&lt;p&gt;SSH:secure shellの略
-ネットワークを介して別のコンピュータにログインして操作するためのソフトウェアのひとつ。&lt;/p&gt;
+&lt;p&gt;.login_conf
+に&lt;/p&gt;
 
-&lt;h2 id=&#34;サーバー側でアクセス元ipを制限している:c7c10a772b1970026ca58fea43d1194b&#34;&gt;サーバー側でアクセス元IPを制限している&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;me:\
+   :charset=UTF-8:\
+   :lang=ja_JP.UTF-8:
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;/etc/hosts.deny
-/etc/hosts.allow
-で設定できます。これが変わっているのかどうかはサーバーに接続することができないので、管理者に問い合わせるしかなさそうです。&lt;/p&gt;
+&lt;p&gt;を追記&lt;/p&gt;
+
+&lt;h2 id=&#34;シェルの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;シェルの言語設定&lt;/h2&gt;
+
+&lt;p&gt;.bashrc
+に&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export LANG=ja_JP.UTF-8
+export LANG
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追記&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NFS</title>
+      <link>http://karadaharu.org/memo/nfs</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/nfs</guid>
+      <description>
+
+&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
+
+&lt;p&gt;NFS:network file system
+別のPCのディレクトリを共有する仕組み&lt;/p&gt;
+
+&lt;p&gt;設定
+/etc/exportsに書く&lt;/p&gt;
 </description>
     </item>
     
@@ -473,6 +464,33 @@ interact
     </item>
     
     <item>
+      <title>sshで接続できない</title>
+      <link>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</guid>
+      <description>
+
+&lt;h1 id=&#34;sshで接続できない:c7c10a772b1970026ca58fea43d1194b&#34;&gt;sshで接続できない&lt;/h1&gt;
+
+&lt;p&gt;いつも使っているサーバーにSSH接続しようとしたところ、下記エラーで接続できませんでした。&lt;/p&gt;
+
+&lt;p&gt;ssh_exchange_identification: Connection closed by remote host&lt;/p&gt;
+
+&lt;h2 id=&#34;sshとは:c7c10a772b1970026ca58fea43d1194b&#34;&gt;SSHとは&lt;/h2&gt;
+
+&lt;p&gt;SSH:secure shellの略
+ネットワークを介して別のコンピュータにログインして操作するためのソフトウェアのひとつ。&lt;/p&gt;
+
+&lt;h2 id=&#34;サーバー側でアクセス元ipを制限している:c7c10a772b1970026ca58fea43d1194b&#34;&gt;サーバー側でアクセス元IPを制限している&lt;/h2&gt;
+
+&lt;p&gt;/etc/hosts.deny
+/etc/hosts.allow
+で設定できます。これが変わっているのかどうかはサーバーに接続することができないので、管理者に問い合わせるしかなさそうです。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>tarなどについて</title>
       <link>http://karadaharu.org/memo/tar%E3%81%AA%E3%81%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -497,24 +515,6 @@ interact
 &lt;h2 id=&#34;gzip:da92c43d20a7471e37fb5715f43a38e6&#34;&gt;gzip&lt;/h2&gt;
 
 &lt;p&gt;Lempel-Zivアルゴリズムを用いてファイルを圧縮する。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NFS</title>
-      <link>http://karadaharu.org/memo/nfs</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/nfs</guid>
-      <description>
-
-&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
-
-&lt;p&gt;NFS:network file system
-別のPCのディレクトリを共有する仕組み&lt;/p&gt;
-
-&lt;p&gt;設定
-/etc/exportsに書く&lt;/p&gt;
 </description>
     </item>
     
