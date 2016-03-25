@@ -38,14 +38,11 @@
     <div class="pure-u-11-12 pure-u-md-5-8">
         <div class="desktop pure-menu pure-menu-horizontal nav-menu">
             
-            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
             <ul class="pure-menu-list">
                 
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
-                </li>
-                <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
@@ -53,10 +50,13 @@
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
                 </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="mobile pure-menu nav-menu">
-            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
             <a href="#" id="toggle-btn">&#9776;</a>
             <ul class="pure-menu-list" id="toggle-content" style="display:none;">
                 
@@ -65,13 +65,13 @@
                     <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
                 </li>
                 <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
-                </li>
-                <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -101,18 +101,35 @@
             <div class="post-content">
                 
 
-<p>#openGl</p>
+<h1 id="opengl:f85dd882db06f45d22bba1d8f6cfda63">openGL</h1>
 
-<p>// delete const from argv declaration
-int main(int argc, const char * argv[]) // from this,
-int main(int argc, char * argv[])       // to this.</p>
+<p>openGLでは乱反射を実現できない。（計算量が多すぎるため）
+→自然な光を合成して処理する
+自然な光：OpenGL：パラメータ
+鏡面反射：鏡面光：GL_SPECULAR
+一次的な乱反射：拡散光：GL_DIFFUSE
+二次的な乱反射：環境光：GL_AMBIENT</p>
 
-<h2 id="作るもの:f85dd882db06f45d22bba1d8f6cfda63">作るもの</h2>
+<p>glLight:光のプロパティを決める
+f/i,v/
+f:float型
+i:int型
+v:ポインタを渡す
+ :値を渡す</p>
 
-<ul>
-<li>江頭</li>
-<li>何かに反応して、とかそういうのがないと評価高くない</li>
-</ul>
+<p>GL_POSITION:同次座標系
+x,y,z,w
+通常の座標を求めたい場合は、(x/w, y/w, z/w)で得られる。
+w=0のときは無限遠</p>
+
+<p>法線ベクトルの設定は glNormal() 関数</p>
+
+<h2 id="光学:f85dd882db06f45d22bba1d8f6cfda63">光学</h2>
+
+<p>乱反射＝拡散反射</p>
+
+<p>二次的な乱反射：
+人の肌は、表面、ちょっと奥、もっと奥など各層で拡散反射をするために、肌っぽい質感が生まれる→サブサーフェイススキャタリング</p>
 
             </div>
         </div>

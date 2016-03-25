@@ -38,14 +38,11 @@
     <div class="pure-u-11-12 pure-u-md-5-8">
         <div class="desktop pure-menu pure-menu-horizontal nav-menu">
             
-            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
             <ul class="pure-menu-list">
                 
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
-                </li>
-                <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
@@ -53,10 +50,13 @@
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
                 </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="mobile pure-menu nav-menu">
-            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
             <a href="#" id="toggle-btn">&#9776;</a>
             <ul class="pure-menu-list" id="toggle-content" style="display:none;">
                 
@@ -65,13 +65,13 @@
                     <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
                 </li>
                 <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
-                </li>
-                <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -101,11 +101,11 @@
             <div class="post-content">
                 
 
-<h1 id="c言語:528e7ba55f25836d53bc1e90abc6a643">C言語</h1>
+<h1 id="c言語:764b7448d9f48713d096f1fadb72b9a9">C言語</h1>
 
 <p>C99以降では、変数を配列の大きさとして使える。</p>
 
-<h2 id="文字列:528e7ba55f25836d53bc1e90abc6a643">文字列</h2>
+<h2 id="文字列:764b7448d9f48713d096f1fadb72b9a9">文字列</h2>
 
 <p>&lsquo;A&rsquo;はchar型、&rdquo;ABC&rdquo;は&rsquo;A&rsquo;のアドレス</p>
 
@@ -121,7 +121,7 @@ int strcmp(const char *s1, const char *s2);
 <pre><code>int result = strcmp(&quot;BBB&quot;,&quot;aaa&quot;) // result &lt; 0
 </code></pre>
 
-<h2 id="複数ファイルの扱い:528e7ba55f25836d53bc1e90abc6a643">複数ファイルの扱い</h2>
+<h2 id="複数ファイルの扱い:764b7448d9f48713d096f1fadb72b9a9">複数ファイルの扱い</h2>
 
 <p>ヘッダーファイルを重複して読み込むとエラーになる。以下のように書くことで二回目以降の読み込みをしないようにできる。</p>
 
@@ -133,7 +133,7 @@ int strcmp(const char *s1, const char *s2);
 #endif
 </code></pre>
 
-<h2 id="古い書き方:528e7ba55f25836d53bc1e90abc6a643">古い書き方</h2>
+<h2 id="古い書き方:764b7448d9f48713d096f1fadb72b9a9">古い書き方</h2>
 
 <p>仮引数宣言を用いた関数の宣言</p>
 

@@ -38,14 +38,11 @@
     <div class="pure-u-11-12 pure-u-md-5-8">
         <div class="desktop pure-menu pure-menu-horizontal nav-menu">
             
-            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
             <ul class="pure-menu-list">
                 
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
-                </li>
-                <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
@@ -53,10 +50,13 @@
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
                 </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="mobile pure-menu nav-menu">
-            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
             <a href="#" id="toggle-btn">&#9776;</a>
             <ul class="pure-menu-list" id="toggle-content" style="display:none;">
                 
@@ -65,13 +65,13 @@
                     <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
                 </li>
                 <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
-                </li>
-                <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -101,145 +101,72 @@
             <div class="post-content">
                 
 
-<h1 id="javascript:193a16fbbc467581f0cd8e061c629262">javascript</h1>
+<p>#javascript</p>
 
-<p>Safariの開発コンソールはサーバー側のエラーが見える</p>
+<h2 id="初期設定:193a16fbbc467581f0cd8e061c629262">初期設定</h2>
 
-<p>javasciptのすべて（変数、関数、配列、、、）Object。</p>
+<script type="text/javascript">
+$(function(){
+  //ここに動作・実行させる為のコードを書く
+})
+</script>
 
-<p>配列はkey value方式になってる。</p>
+<p>$(function()は$(document).ready(function()の省略</p>
 
-<p>Stringオブジェクトのreplaceメソッドは、連想配列のreplaceプロパティの値に指定された関数が呼ばれているだけ</p>
+<p>セレクタ:$()の中
+動作を決める:セレクタの次にメソッドみたいに関数を呼ぶ
+$(“div.example”).hide();</p>
 
-<p>関数内のローカル変数は、関数全体で有効になる。（宣言の順番は関係がない！！）
-なので、関数の最初に全部宣言しておくのが重要。</p>
-
-<p>関数内でvarを使わずに宣言すると、グローバル変数で同じ名前の変数があると、上書きしてしまう危険性がある。varがあればローカル変数として扱ってくれる。</p>
-
-<p>varで宣言した変数をsafariのコンソールで打ってもでてこないのは、jqueryのonload関数の中のローカル変数だから。</p>
-
-<p>デバッグ的にはとりあえずvarなしで宣言して中身を確認、動きそうならvarをつける？</p>
+<p>なぜかhtml内に書くと動かないことがありそう
+なぜかjsファイルのスクリプトが実行されない→bodyの最後に書くとかかるようになることがある</p>
 
 <h2 id="デバッグ:193a16fbbc467581f0cd8e061c629262">デバッグ</h2>
 
-<p>javascriptにconsole.log()を書く</p>
+<p>console.log(hoge);
+をプログラム内に書くと、hogeがブラウザのコンソールに出力される</p>
 
-<h2 id="if-while-for:193a16fbbc467581f0cd8e061c629262">if,while,for</h2>
+<h2 id="文法:193a16fbbc467581f0cd8e061c629262">文法</h2>
 
-<p>条件式&hellip;ふつう</p>
+<h3 id="三項演算子:193a16fbbc467581f0cd8e061c629262">三項演算子</h3>
 
-<pre><code>if(hoge){
+<p>if(a&gt;b)
+    a=b;
+else
+    a=c;
+    ↓↓↓
+(a&gt;b)? a=b : a=c;</p>
 
-}else if(huga){
+<h3 id="引数:193a16fbbc467581f0cd8e061c629262">引数</h3>
 
-}else{
-
+<p>javascriptは引数をチェックしない→
+function disp(msg){
+    alert(msg);
 }
-</code></pre>
+display();//undefined
+display(&lsquo;yamada&rsquo;);
+display(&lsquo;yamada&rsquo;,&lsquo;aida&rsquo;);//「yamada」と表示
+なぜなら、jsには変数型がないから</p>
 
-<h2 id="日付:193a16fbbc467581f0cd8e061c629262">日付</h2>
+<p>グローバルオブジェクト</p>
 
-<p>現在時間</p>
+<h3 id="無名関数:193a16fbbc467581f0cd8e061c629262">無名関数</h3>
 
-<pre><code>var time = new Date();
-</code></pre>
+<p>function(){}のこと</p>
 
-<p>○日後を取得</p>
+<h3 id="論理演算子:193a16fbbc467581f0cd8e061c629262">論理演算子</h3>
 
-<pre><code>var time = new Date();
-var sec = time.getTime();
-sec = sec + days * 86400000;
-time.setTime(sec);
-</code></pre>
+<p>var x, y;<br />
+var h1, h2;</p>
 
-<h2 id="文字列:193a16fbbc467581f0cd8e061c629262">文字列</h2>
+<p>h1 = x || 10;<br />
+h2 = y &amp;&amp; 20;
+&gt; この例では、「x || 10」の「x」の値がfalseと判定されない値（空では無い文字列, 0ではない数値, オブジェクト等）の場合、 その値が「h1」に代入されます。この場合、論理演算子の右側の「10」は判定されないことになります。また、「x」の値がfalseと判定された場合は「10」が「h1」に代入されます。</p>
 
-<p>連結</p>
+<h2 id="d3-js:193a16fbbc467581f0cd8e061c629262">d3.js</h2>
 
-<pre><code>var a = &quot;aaa&quot;;
-var b = &quot;bbb&quot;;
-var c = a + b;
-</code></pre>
-
-<p>比較</p>
-
-<h2 id="配列:193a16fbbc467581f0cd8e061c629262">配列</h2>
-
-<p>配列の長さ</p>
-
-<pre><code>ary.length;
-</code></pre>
-
-<p>連想配列のkey valueを取り出す。valueを取り出すには、array[key]として取り出す。
-forでとれるのはあくまでkeyの値。</p>
-
-<pre><code>var customers = { &quot;田中太郎&quot;:&quot;03-53xx-xxxx&quot;, &quot;田中二郎&quot;:&quot;03-54xx-xxxx&quot;, &quot;田中花子&quot;:&quot;03-55xx-xxxx&quot; };
-for(key in customers){
-  alert(key + &quot;さんの番号は、&quot; + customers[key] + &quot;です。&quot;) ;
-}
-</code></pre>
-
-<h3 id="配列の初期化と追加:193a16fbbc467581f0cd8e061c629262">配列の初期化と追加</h3>
-
-<pre><code>var a = [];
-a[10] = 1.0;
-a.push(&quot;aa&quot;);
-</code></pre>
-
-<h2 id="jqueryとajax:193a16fbbc467581f0cd8e061c629262">jqueryとajax</h2>
-
-<p>Deferred:非同期処理(ajaxなど)をうまく扱うための標準モジュール
-DeferredはPromiseを内包している。</p>
-
-<p>resolvedとrejectedのふたつの状態をもつ。それぞれのときに呼ばれるコールバックがdoneとfail。</p>
-
-<p>例：自前のAPI,グーグルアナリティクス、mixpanel、の3つのAPIをつかってトラッキングするとき、
-入れ子にすると順序だって処理するので遅くなる。並列に処理させたい。</p>
-
-<p>d.promise();</p>
-
-<h2 id="文字列-1:193a16fbbc467581f0cd8e061c629262">文字列</h2>
-
-<h3 id="文字列-数値:193a16fbbc467581f0cd8e061c629262">文字列→数値</h3>
-
-<p>+value
-が一番一般的らしい。
-Number(value)でもOK</p>
-
-<p>数字以外のものが含まれていたりすると、挙動が違うので注意。</p>
-
-<h3 id="連結:193a16fbbc467581f0cd8e061c629262">連結</h3>
-
-<p>str3 = str1 + str2;</p>
-
-<h2 id="jquery:193a16fbbc467581f0cd8e061c629262">jquery</h2>
-
-<h3 id="cssスタイルの指定:193a16fbbc467581f0cd8e061c629262">cssスタイルの指定</h3>
-
-<p>$(&ldquo;#hoge&rdquo;).css(&ldquo;property&rdquo;,&ldquo;value&rdquo;);</p>
-
-<h3 id="クラスの追加-削除-切り替え:193a16fbbc467581f0cd8e061c629262">クラスの追加・削除・切り替え</h3>
-
-<pre><code>$(&quot;#hoge&quot;).addClass(&quot;red&quot;);
-$(&quot;#hoge&quot;).removeClass(&quot;red&quot;);
-$(&quot;#hoge&quot;).toggleClass(&quot;red&quot;);
-</code></pre>
-
-<h3 id="素のjsとの対応:193a16fbbc467581f0cd8e061c629262">素のjsとの対応</h3>
-
-<p>getElementById(&ldquo;hoge&rdquo;);
-$(&ldquo;#hoge&rdquo;).get(0);</p>
-
-<h2 id="一定時間ごとの処理:193a16fbbc467581f0cd8e061c629262">一定時間ごとの処理</h2>
-
-<p>setInterval(function1,1000);</p>
-
-<p><em>function1()ではなく,function1と書く！！！</em></p>
-
-<p>引数を渡したいときは、無名関数の中で
-setInterval(function(){
-  funciton1(data1);
-},1000);</p>
+<p>attr()
+アトリビュートを設定する（アトリビュート:　id,src,altなどのHTMLの属性）
+append(content)指定したcontentを追加する</p>
 
             </div>
         </div>

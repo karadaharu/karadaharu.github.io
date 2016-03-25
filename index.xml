@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kazumasa KANEKO</title>
+    <title>Kazumasa Kaneko</title>
     <link>http://karadaharu.org/</link>
-    <description>Recent content on Kazumasa KANEKO</description>
+    <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 05 Mar 2016 13:52:33 +0900</lastBuildDate>
@@ -110,44 +110,53 @@
     </item>
     
     <item>
-      <title>20151014ソースコードが違う</title>
-      <link>http://karadaharu.org/memo/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%81%8B%E9%81%95%E3%81%86</link>
+      <title>2016/03/20-2016/03/26</title>
+      <link>http://karadaharu.org/log/2016:03:20-2016:03:26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%81%8B%E9%81%95%E3%81%86</guid>
-      <description>&lt;p&gt;結局コミットしわすれていた&lt;/p&gt;
+      <guid>http://karadaharu.org/log/2016:03:20-2016:03:26/</guid>
+      <description>
 
-&lt;p&gt;&lt;em&gt;最初にソースコードの違い、人のミスを疑うべき&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2016-03-20:52e9b529d211bad701f54f09a58f0a99&#34;&gt;2016/03/20&lt;/h2&gt;
 
-&lt;p&gt;流れ&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;円山町スクランブルエッグス「円山町再開発」&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;string json_encode();&lt;/p&gt;
+&lt;p&gt;田舎のホモとか、メンヘラおじさんとか、全然笑えないエグいネタがあって面白かった。ギリギリセーフはどこにあるのか、とか、面白さというのは残酷なことなのかとか、色々興味深い。&lt;/p&gt;
 
-&lt;p&gt;エスケープする可能性があるもの&lt;/p&gt;
+&lt;h2 id=&#34;2016-03-21:52e9b529d211bad701f54f09a58f0a99&#34;&gt;2016/03/21&lt;/h2&gt;
 
-&lt;p&gt;Apache
-PHP
-CMS
-PHPTAL&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;研究：データのモデル化&lt;/li&gt;
+&lt;li&gt;漢「ヒップホップドリーム」読了&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;開発と本番で差があるのは何か？&lt;/p&gt;
+&lt;p&gt;漢は&amp;rdquo;ストリートビジネス&amp;rdquo;をしながらラップしてた。音楽は本当にやりたいからやるものなんだ。レーベルとのいざこざとか全然知らなかったし、裏事情を知れてめちゃくちゃおもしろかった。&lt;/p&gt;
 
-&lt;p&gt;開発
-nginx 1.8.0
-php 5.6.12
-gulp 3.9.0&lt;/p&gt;
+&lt;p&gt;研究は、うまくいく・いかないに一喜一憂してると全然進まない。もっと淡々と進めよう。&lt;/p&gt;
 
-&lt;p&gt;本番
-php 5.6.12&lt;/p&gt;
+&lt;h2 id=&#34;2016-03-22:52e9b529d211bad701f54f09a58f0a99&#34;&gt;2016/03/22&lt;/h2&gt;
 
-&lt;p&gt;confファイル
-APP_MODE
-CACHE_LIFETIME&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;研究：データのモデル化&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;トップページは直書きでOKになってる&lt;/p&gt;
+&lt;p&gt;ストレスを感じ始めると、ラーメンを食べたくなったり、タバコを吸いたくなったり、SNSを見たくなったりする。&lt;/p&gt;
 
-&lt;p&gt;magic quotes
-htmlspecialchars() 特殊文字をHTMLエンティティに変換する　htmlentities()も同じ&lt;/p&gt;
+&lt;h2 id=&#34;2016-03-23:52e9b529d211bad701f54f09a58f0a99&#34;&gt;2016/03/23&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;研究：データのモデル化&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2016-03-24:52e9b529d211bad701f54f09a58f0a99&#34;&gt;2016/03/24&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アルバイト：リファクタリング&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;とりあえずフランスに行けるように頑張る。&lt;/p&gt;
 </description>
     </item>
     
@@ -203,44 +212,93 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     </item>
     
     <item>
-      <title>Android開発</title>
-      <link>http://karadaharu.org/memo/android%E9%96%8B%E7%99%BA</link>
+      <title>2016/03/07−2016/03/13</title>
+      <link>http://karadaharu.org/log/2016:03:07%E2%88%922016:03:13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/android%E9%96%8B%E7%99%BA</guid>
+      <guid>http://karadaharu.org/log/2016:03:07%E2%88%922016:03:13/</guid>
       <description>
 
-&lt;h1 id=&#34;android開発:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Android開発&lt;/h1&gt;
+&lt;h2 id=&#34;2016-03-07:1be7f45fd1bb802656ee521ff8649fc5&#34;&gt;2016/03/07&lt;/h2&gt;
 
-&lt;h2 id=&#34;ファイル構成:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;ファイル構成&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;実験レポートの作成&lt;/li&gt;
+&lt;li&gt;友人のポートフォリオサイトの制作&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;manifests
- AndroidManifest.xml
-java
- com.example.kazumasa.test22
-  MainActivity
- com.example.kazumasa.test22
-  ApplicationTest
-res
- drawable
-  ic_lancher.png
- layout
-  activity_main.xml
- menu
-  menu_main.xml
- values
-  dmens.xml
-  strings.xml
-  styles.xml&lt;/p&gt;
+&lt;p&gt;夜あと1,2時間で作業のキリが良さそうでもちゃんと中断して寝るようにする。&lt;/p&gt;
 
-&lt;h2 id=&#34;javaのキホン:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Javaのキホン&lt;/h2&gt;
+&lt;p&gt;かれこれ3週間近くまともに研究してない。意識的に時間をとる。&lt;/p&gt;
 
-&lt;p&gt;クラス名を一意に決めるために、パッケージというという仕組みでクラスを
-フォルダにまとめたものを一意に決めることができる。&lt;/p&gt;
+&lt;h2 id=&#34;2016-03-08:1be7f45fd1bb802656ee521ff8649fc5&#34;&gt;2016/03/08&lt;/h2&gt;
 
-&lt;p&gt;JAR:コンパイルされたjavaをひとつにzipでまとめたもの。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;留学生の事務手続き手伝い&lt;/li&gt;
+&lt;li&gt;研究をデータ解析に方向転換&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Javadoc:クラスやメソッドのコメントから自動でドキュメントを作成してくれるツール&lt;/p&gt;
+&lt;p&gt;お腹がすきすぎて動けなくなる問題が深刻。冷凍ご飯タッパーを増やしたしシリアルもあるので大丈夫なはず。&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-03-09:1be7f45fd1bb802656ee521ff8649fc5&#34;&gt;2016/03/09&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;データ解析：先行研究の確認&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;月曜の睡眠時間が短かったので12時間くらい寝た。睡眠時間短くするのは何の意味もない。&lt;/p&gt;
+
+&lt;p&gt;公私ともに不安があるのとても良くない。とりあえず両方頑張るしかない。&lt;/p&gt;
+
+&lt;p&gt;飲み会に行くと4時間くらいは奪われると思うと、本当に行きたいやつ以外全部断りたくなる。&lt;/p&gt;
+
+&lt;p&gt;英語の勉強がおろそかになっている。明日の夜やる。&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-03-10:1be7f45fd1bb802656ee521ff8649fc5&#34;&gt;2016/03/10&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;データ解析：先行研究の確認&lt;/li&gt;
+&lt;li&gt;OB訪問&lt;/li&gt;
+&lt;li&gt;報告資料作成&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;何かをやってから報告資料を作るのはだるいので、報告資料を作りながら何かをやるスタイルにしたい。&lt;/p&gt;
+
+&lt;p&gt;研究の区切りが悪く、英語の勉強ができなかった。土曜日にやる。&lt;/p&gt;
+
+&lt;p&gt;企業の研究所で働くほうが自分には向いている気がしてきた。やりたい分野があればの話ではあるけど。&lt;/p&gt;
+
+&lt;p&gt;やる気がなくなったときはタスクをなるべく小さい単位にすることが大事。長距離走と一緒。&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-03-11:1be7f45fd1bb802656ee521ff8649fc5&#34;&gt;2016/03/11&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アルバイト：管理画面開発&lt;/li&gt;
+&lt;li&gt;蓮沼執太公開録音&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;蓮沼執太を初めて生で見た。自分の好きなことに自然と向き合っていて、落ち着き払っていてかつユーモアもあり、素敵だった。あの雰囲気になりたい。&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-03-12:1be7f45fd1bb802656ee521ff8649fc5&#34;&gt;2016/03/12&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;掃除&lt;/li&gt;
+&lt;li&gt;本屋&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;買う本の量が読む量を完全に上回ってしまっている。もっとたくさん読みたい。&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-03-13:1be7f45fd1bb802656ee521ff8649fc5&#34;&gt;2016/03/13&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フロム・ニューヨーク「「コーヒーカップを持つ演技」&lt;/li&gt;
+&lt;li&gt;TOEFLの準備&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;金曜から日曜にかけて思ったより全然研究が進められなかった。人と遊ぶことに時間と注意を割かないといけない状況を早く脱したい。&lt;/p&gt;
+
+&lt;p&gt;フロム・ニューヨークのコント、前半は常識との不一致を使ったネタで良かったものの、後半は下ネタに走ってしまい、いまいちだった。ただあの下ネタを40を過ぎて、あれがいいと思って年に1回小劇場でやれるということがいいなぁと思う。&lt;/p&gt;
+
+&lt;p&gt;覚悟を決めて、かつ冷静にいかないと、攻めの一手を打てない。完全にフラグを折りまくっていて次がラストチャンスだと思う。&lt;/p&gt;
 </description>
     </item>
     
@@ -257,48 +315,6 @@ res
 &lt;h2 id=&#34;基本:a83760d81f5fb2874b12c55209763bac&#34;&gt;基本&lt;/h2&gt;
 
 &lt;p&gt;グループ:wheel&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>GCC、LLVM、Clang</title>
-      <link>http://karadaharu.org/memo/gccllvmclang</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/gccllvmclang</guid>
-      <description>
-
-&lt;h2 id=&#34;brew-install-gccできない:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;brew install gccできない&lt;/h2&gt;
-
-&lt;p&gt;brew link gcc
-Linking /usr/local/Cellar/gcc/4.8.3_1&amp;hellip;
-Error: Could not symlink lib/gcc/x86_64-apple-darwin13.2.0
-/usr/local/lib/gcc is not writable.
-MBPkazu-2:site-packages kazumasa$ which gcc
-/usr/bin/gcc&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/14527521/brew-doctor-says-warning-usr-local-include-isnt-writable&#34;&gt;sudo chown -R $USER /usr/local/include
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;gccとは:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;gccとは&lt;/h2&gt;
-
-&lt;p&gt;GNU Compiler Collection.様々な言語のコンパイラ&lt;/p&gt;
-
-&lt;p&gt;LLVMはGCCとは別のコンパイラ。low level virtual compiler
-ClangはLLVMの一部(?)C,C++,Objective-Cのコンパイラ。”LLVMはClangのバックエンド”という表現のしかたをする。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://easyramble.com/install-gcc-with-homebrew.html&#34;&gt;使い終わったら標準LLVMに戻したほうがいい？&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;clang-llvmとgccの違い:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;Clang&amp;amp;LLVMとGCCの違い&lt;/h2&gt;
-
-&lt;p&gt;ClangはLLVMが読み込める形のバイナリコードを吐き出す
-LLVMはClangが吐き出したバイナリコードを読み込んで、それぞれのマシンのアーキテクチャ？にあわせた機械語を出力する
-これによって、LLVMが読み込める形に出力できる各言語のClangに対応するものを作れば、どんな言語で書いたプログラムも動くことになる。
-また、同じ言語で書いたプログラムで、OS XでもiOSでも動くようにできる。
-openFrameworksでつくるiOSとかAndroidのアプリというのはそういうことらしい。&lt;/p&gt;
-
-&lt;p&gt;一方、GCCは分離されていない。
-ここを分離してしまうと、GCCの政治的な力が弱くなるため、らしい。&lt;/p&gt;
 </description>
     </item>
     
@@ -345,20 +361,71 @@ export LANG
     </item>
     
     <item>
-      <title>NFS</title>
-      <link>http://karadaharu.org/memo/nfs</link>
+      <title>GCC、LLVM、Clang</title>
+      <link>http://karadaharu.org/memo/gccllvmclang</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/nfs</guid>
+      <guid>http://karadaharu.org/memo/gccllvmclang</guid>
       <description>
 
-&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
+&lt;h2 id=&#34;brew-install-gccできない:3c4a5e60a26d4da826625950857283d2&#34;&gt;brew install gccできない&lt;/h2&gt;
 
-&lt;p&gt;NFS:network file system
-別のPCのディレクトリを共有する仕組み&lt;/p&gt;
+&lt;p&gt;brew link gcc
+Linking /usr/local/Cellar/gcc/4.8.3_1&amp;hellip;
+Error: Could not symlink lib/gcc/x86_64-apple-darwin13.2.0
+/usr/local/lib/gcc is not writable.
+MBPkazu-2:site-packages kazumasa$ which gcc
+/usr/bin/gcc&lt;/p&gt;
 
-&lt;p&gt;設定
-/etc/exportsに書く&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/14527521/brew-doctor-says-warning-usr-local-include-isnt-writable&#34;&gt;sudo chown -R $USER /usr/local/include
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gccとは:3c4a5e60a26d4da826625950857283d2&#34;&gt;gccとは&lt;/h2&gt;
+
+&lt;p&gt;GNU Compiler Collection.様々な言語のコンパイラ&lt;/p&gt;
+
+&lt;p&gt;LLVMはGCCとは別のコンパイラ。low level virtual compiler
+ClangはLLVMの一部(?)C,C++,Objective-Cのコンパイラ。”LLVMはClangのバックエンド”という表現のしかたをする。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://easyramble.com/install-gcc-with-homebrew.html&#34;&gt;使い終わったら標準LLVMに戻したほうがいい？&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;clang-llvmとgccの違い:3c4a5e60a26d4da826625950857283d2&#34;&gt;Clang&amp;amp;LLVMとGCCの違い&lt;/h2&gt;
+
+&lt;p&gt;ClangはLLVMが読み込める形のバイナリコードを吐き出す
+LLVMはClangが吐き出したバイナリコードを読み込んで、それぞれのマシンのアーキテクチャ？にあわせた機械語を出力する
+これによって、LLVMが読み込める形に出力できる各言語のClangに対応するものを作れば、どんな言語で書いたプログラムも動くことになる。
+また、同じ言語で書いたプログラムで、OS XでもiOSでも動くようにできる。
+openFrameworksでつくるiOSとかAndroidのアプリというのはそういうことらしい。&lt;/p&gt;
+
+&lt;p&gt;一方、GCCは分離されていない。
+ここを分離してしまうと、GCCの政治的な力が弱くなるため、らしい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sshで接続できない</title>
+      <link>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</guid>
+      <description>
+
+&lt;h1 id=&#34;sshで接続できない:c7c10a772b1970026ca58fea43d1194b&#34;&gt;sshで接続できない&lt;/h1&gt;
+
+&lt;p&gt;いつも使っているサーバーにSSH接続しようとしたところ、下記エラーで接続できませんでした。&lt;/p&gt;
+
+&lt;p&gt;ssh_exchange_identification: Connection closed by remote host&lt;/p&gt;
+
+&lt;h2 id=&#34;sshとは:c7c10a772b1970026ca58fea43d1194b&#34;&gt;SSHとは&lt;/h2&gt;
+
+&lt;p&gt;SSH:secure shellの略
+ネットワークを介して別のコンピュータにログインして操作するためのソフトウェアのひとつ。&lt;/p&gt;
+
+&lt;h2 id=&#34;サーバー側でアクセス元ipを制限している:c7c10a772b1970026ca58fea43d1194b&#34;&gt;サーバー側でアクセス元IPを制限している&lt;/h2&gt;
+
+&lt;p&gt;/etc/hosts.deny
+/etc/hosts.allow
+で設定できます。これが変わっているのかどうかはサーバーに接続することができないので、管理者に問い合わせるしかなさそうです。&lt;/p&gt;
 </description>
     </item>
     
@@ -406,122 +473,199 @@ interact
     </item>
     
     <item>
-      <title>sshで接続できない</title>
-      <link>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</link>
+      <title>tarなどについて</title>
+      <link>http://karadaharu.org/memo/tar%E3%81%AA%E3%81%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</guid>
+      <guid>http://karadaharu.org/memo/tar%E3%81%AA%E3%81%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6</guid>
       <description>
 
-&lt;h1 id=&#34;sshで接続できない:c7c10a772b1970026ca58fea43d1194b&#34;&gt;sshで接続できない&lt;/h1&gt;
+&lt;h1 id=&#34;tarなどについて:da92c43d20a7471e37fb5715f43a38e6&#34;&gt;tarなどについて&lt;/h1&gt;
 
-&lt;p&gt;いつも使っているサーバーにSSH接続しようとしたところ、下記エラーで接続できませんでした。&lt;/p&gt;
+&lt;h2 id=&#34;tarとは:da92c43d20a7471e37fb5715f43a38e6&#34;&gt;tarとは&lt;/h2&gt;
 
-&lt;p&gt;ssh_exchange_identification: Connection closed by remote host&lt;/p&gt;
+&lt;p&gt;複数のファイルをひとつのファイルにまとめて管理するための書庫管理コマンド。
+圧縮は行われない。
+すでにある書庫に追加、展開、削除などが行える。&lt;/p&gt;
 
-&lt;h2 id=&#34;sshとは:c7c10a772b1970026ca58fea43d1194b&#34;&gt;SSHとは&lt;/h2&gt;
+&lt;p&gt;実行ファイルもtarで包んであげると、ちゃんと送れる。&lt;/p&gt;
 
-&lt;p&gt;SSH:secure shellの略
-ネットワークを介して別のコンピュータにログインして操作するためのソフトウェアのひとつ。&lt;/p&gt;
+&lt;h3 id=&#34;基本コマンド:da92c43d20a7471e37fb5715f43a38e6&#34;&gt;基本コマンド&lt;/h3&gt;
 
-&lt;h2 id=&#34;サーバー側でアクセス元ipを制限している:c7c10a772b1970026ca58fea43d1194b&#34;&gt;サーバー側でアクセス元IPを制限している&lt;/h2&gt;
+&lt;p&gt;tar zcvf anpam.tar.gz ./anpam&lt;/p&gt;
 
-&lt;p&gt;/etc/hosts.deny
-/etc/hosts.allow
-で設定できます。これが変わっているのかどうかはサーバーに接続することができないので、管理者に問い合わせるしかなさそうです。&lt;/p&gt;
+&lt;h2 id=&#34;gzip:da92c43d20a7471e37fb5715f43a38e6&#34;&gt;gzip&lt;/h2&gt;
+
+&lt;p&gt;Lempel-Zivアルゴリズムを用いてファイルを圧縮する。&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>文字コード</title>
-      <link>http://karadaharu.org/memo/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88</link>
+      <title>NFS</title>
+      <link>http://karadaharu.org/memo/nfs</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88</guid>
+      <guid>http://karadaharu.org/memo/nfs</guid>
       <description>
 
-&lt;h1 id=&#34;文字コード:9c80cf1b51178ae7ae158bb4bf0a62c0&#34;&gt;文字コード&lt;/h1&gt;
+&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
 
-&lt;h2 id=&#34;確認:9c80cf1b51178ae7ae158bb4bf0a62c0&#34;&gt;確認&lt;/h2&gt;
+&lt;p&gt;NFS:network file system
+別のPCのディレクトリを共有する仕組み&lt;/p&gt;
 
-&lt;p&gt;file text.txt&lt;/p&gt;
-
-&lt;h2 id=&#34;変更:9c80cf1b51178ae7ae158bb4bf0a62c0&#34;&gt;変更&lt;/h2&gt;
-
-&lt;p&gt;なんでもvimでやろう&lt;/p&gt;
-
-&lt;p&gt;なぜカタカナのファイル名はbashで補完されないのか？&lt;/p&gt;
+&lt;p&gt;設定
+/etc/exportsに書く&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>シェルスクリプトの書き方</title>
-      <link>http://karadaharu.org/memo/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%95%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9</link>
+      <title>unixコマンド覚書</title>
+      <link>http://karadaharu.org/memo/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E8%A6%9A%E6%9B%B8</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%95%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9</guid>
+      <guid>http://karadaharu.org/memo/unix%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E8%A6%9A%E6%9B%B8</guid>
       <description>
 
-&lt;h1 id=&#34;シェルスクリプトの書き方:c8ba59ae72b26216e67c2481b7b0c178&#34;&gt;シェルスクリプトの書き方&lt;/h1&gt;
+&lt;h1 id=&#34;unixコマンド覚書:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;UNIXコマンド覚書&lt;/h1&gt;
 
-&lt;p&gt;変数の宣言&lt;/p&gt;
+&lt;h2 id=&#34;mkdir:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;mkdir&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;string=&amp;quot;aaaa&amp;quot;
-echo ${string}
+&lt;p&gt;再帰的?にフォルダを作成する&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mkdir -p /dir1/dir2
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;em&gt;変数の=の両側にはスペースを入れてはいけない。入れると、変数名がコマンドとして受け取られる&lt;/em&gt;
-&lt;em&gt;変数の中身を使いたいときは,${}で囲む。そうしないとコマンドや、文字列として受け取られる&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;連番でフォルダ名を作成する&lt;/p&gt;
 
-&lt;p&gt;forループ&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;files=*txt
-for f in files
-do
-	echo ${f}
-done
+&lt;pre&gt;&lt;code&gt;$ mkdir {2007..2010}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;if文&lt;/p&gt;
+&lt;p&gt;シンボリックリンクを作成する&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;if test hoge
-else
-fi
+&lt;pre&gt;&lt;code&gt;$ ln -s source atesaki
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;対話的なコマンドの実行&lt;/p&gt;
+&lt;p&gt;ハードリンクとシンボリックリンク
+ハードリンク:ファイルに対してのみ
+直接ファイル本体へリンク．ファイルが2つあるように扱われる．
+シンボリックリンク:フォルダもOK
+ファイルの位置情報が記録される．本体のほうのファイルを削除するとシンボリックリンク先はエラーになる．&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;#!/bin/sh
-expect -c &amp;quot;
-set timeout 400
-spawn ftp ladsweb.nascom.nasa.gov
-expect \&amp;quot;Name (ladsweb.nascom.nasa.gov:kazumasa):\&amp;quot;
-send \&amp;quot;anonymous\n\&amp;quot;
-expect \&amp;quot;Password:\&amp;quot;
-send \&amp;quot;catter121@gmail.com\n\&amp;quot;
-expect \&amp;quot;ftp&amp;gt;\&amp;quot;
-send \&amp;quot;cd /orders/\n\&amp;quot;
-expect \&amp;quot;ftp&amp;gt;\&amp;quot;
-send \&amp;quot;binary\&amp;quot;
-expect \&amp;quot;ftp&amp;gt;\&amp;quot;
-&amp;quot;
+&lt;p&gt;プロセスを強制終了させる&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ kill -9 PID
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;respawnだとシェルのコマンドが打てる&lt;/li&gt;
-&lt;li&gt;最後は\n入れないとエンターにならない&lt;/li&gt;
+&lt;li&gt;touch:新規に空ファイルをつくる(本来はタイムスタンプを作成)&lt;/li&gt;
+&lt;li&gt;gpasswd:ユーザーグループを管理．アクセス権限など&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ln:ファイルやディレクトリにリンクをはる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;symlink:&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;rsync -nav /from /to:コピーする&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;ln:リンクをはる&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;passwd:パスワードを変える&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;ecpect はTclの文法をわかっていないと戸惑うらしい。
-&lt;a href=&#34;http://root-mode2.blogspot.jp/2010/10/expect-spawn.html&#34;&gt;http://root-mode2.blogspot.jp/2010/10/expect-spawn.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;cpコマンドは使わない&lt;/strong&gt;
+フォルダをコピーするときなど，間違って上書きする可能性がある&lt;/p&gt;
 
-&lt;p&gt;テキストファイルを一行ずつ読み込む&lt;/p&gt;
+&lt;h2 id=&#34;find:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;find&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;while read line
-do
-	echo $line
-done &amp;lt; test.txt
+&lt;pre&gt;&lt;code&gt;$ find ./ -name &amp;quot;hoge&amp;quot; -ls
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ディレクトリ以下のすべてのファイルを検索&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;find ./ -type f -print | xargs grep &#39;hoge&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;curl:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;curl&lt;/h2&gt;
+
+&lt;p&gt;-O:ファイルに出力する
+-L:リダイレクトに対応する
+-o filename:ファイル名を指定するときは小文字
+URLに&amp;amp;や?が入ってるときは&amp;rdquo;でURLをくくってひとまとまりにする&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ out &amp;gt; in # 上書き
+$ out &amp;gt;&amp;gt; in # 追加
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.bashrcのパスの追加
+PATH=&amp;ldquo;$PATH&amp;rdquo;:/usr/local/postfix
+&amp;ldquo;$PATH&amp;rdquo;は現状のパス設定を保持したままで:に続くパスを追加する&lt;/p&gt;
+
+&lt;p&gt;OSの確認&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ uname -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;tar:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;tar&lt;/h2&gt;
+
+&lt;p&gt;txz:xz形式で圧縮したもの&lt;/p&gt;
+
+&lt;p&gt;tar jxvf file.tar.bz2&lt;/p&gt;
+
+&lt;p&gt;v:ファイルの詳細を表示&lt;/p&gt;
+
+&lt;h3 id=&#34;アーカイブ操作:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;アーカイブ操作&lt;/h3&gt;
+
+&lt;p&gt;x:取り出す&lt;/p&gt;
+
+&lt;h3 id=&#34;圧縮方式:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;圧縮方式&lt;/h3&gt;
+
+&lt;p&gt;j:bzip2用
+z:gzip用&lt;/p&gt;
+
+&lt;h2 id=&#34;ソースコードからインストール:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;ソースコードからインストール&lt;/h2&gt;
+
+&lt;p&gt;基本的気に、INSTALLファイルを読めばできるようになってる。
+&lt;a href=&#34;http://www.atmarkit.co.jp/ait/articles/1106/24/news112.html&#34;&gt;http://www.atmarkit.co.jp/ait/articles/1106/24/news112.html&lt;/a&gt;
+このへんあとでちゃんと読みたい。
+./configure &amp;ndash;prefix=$HOME
+で$HOMEにインストールされる。&lt;/p&gt;
+
+&lt;h2 id=&#34;ユーザー操作:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;ユーザー操作&lt;/h2&gt;
+
+&lt;p&gt;ユーザー一覧
+/etc/passwd&lt;/p&gt;
+
+&lt;p&gt;現在ログインしているユーザー
+who
+whoをしてもvagrantだけど
+実際はpostgresってどうなってるの？？&lt;/p&gt;
+
+&lt;p&gt;パスワードの変更
+passwd&lt;/p&gt;
+
+&lt;p&gt;kaneko is not in the sudoers file.  This incident will be reported.&lt;/p&gt;
+
+&lt;p&gt;ユーザーの削除
+rmuser kaneko&lt;/p&gt;
+
+&lt;p&gt;ファイルなどのグループの変更
+chgrp GROUP FILE&lt;/p&gt;
+
+&lt;p&gt;ファイルなどのユーザーの変更
+chown&lt;/p&gt;
+
+&lt;h2 id=&#34;scp:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;scp&lt;/h2&gt;
+
+&lt;p&gt;送信　送信ファイル　送信先ディレクトリ
+scp -P 10022 /tmp/localfile.txt RemoteUser@remote.domein.co.jp:/tmp/
+受信　受信ファイル　受信先ディレクトリ
+scp -P 10022 RemoteUser@remote.domein.co.jp:/tmp/remotefile.txt /home/LocalUser/tmp/&lt;/p&gt;
+
+&lt;p&gt;コマンドプロンプトの表示設定を見る　echo $PS1
+ホスト名を表示 hostname&lt;/p&gt;
+
+&lt;h2 id=&#34;rsync:5f87f8a09885bfb6f19fef259a5c96ff&#34;&gt;rsync&lt;/h2&gt;
+
+&lt;p&gt;rsync -nav &amp;ndash;exclude-from .rsyncignore ./dev.jfdb.jp/ ./jfdb.jp/&lt;/p&gt;
 </description>
     </item>
     

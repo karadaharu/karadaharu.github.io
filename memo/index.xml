@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Memos on Kazumasa KANEKO</title>
+    <title>Memos on Kazumasa Kaneko</title>
     <link>http://karadaharu.org/memo/</link>
-    <description>Recent content in Memos on Kazumasa KANEKO</description>
+    <description>Recent content in Memos on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <atom:link href="http://karadaharu.org/memo/index.xml" rel="self" type="application/rss+xml" />
@@ -16,16 +16,16 @@
       <guid>http://karadaharu.org/memo/c%E3%81%A6%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D</guid>
       <description>
 
-&lt;h1 id=&#34;c-で多次元配列の動的確保:0e0dcc3084c07dff107c8e3d88346111&#34;&gt;C++で多次元配列の動的確保&lt;/h1&gt;
+&lt;h1 id=&#34;c-で多次元配列の動的確保:3f2af4128f1c4ba145ed83c42554a4de&#34;&gt;C++で多次元配列の動的確保&lt;/h1&gt;
 
-&lt;h2 id=&#34;1次元:0e0dcc3084c07dff107c8e3d88346111&#34;&gt;1次元&lt;/h2&gt;
+&lt;h2 id=&#34;1次元:3f2af4128f1c4ba145ed83c42554a4de&#34;&gt;1次元&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;int n;
 double * a = new double[n];
 delete [] a;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;2次元:0e0dcc3084c07dff107c8e3d88346111&#34;&gt;2次元&lt;/h2&gt;
+&lt;h2 id=&#34;2次元:3f2af4128f1c4ba145ed83c42554a4de&#34;&gt;2次元&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;int n,m;
 double ** a = new double*[n];
@@ -222,48 +222,6 @@ vagrantによってFreeBSDを操作することができない．&lt;/p&gt;
     </item>
     
     <item>
-      <title>20151014ソースコードが違う</title>
-      <link>http://karadaharu.org/memo/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%81%8B%E9%81%95%E3%81%86</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/20151014%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%88%E3%81%8B%E9%81%95%E3%81%86</guid>
-      <description>&lt;p&gt;結局コミットしわすれていた&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;最初にソースコードの違い、人のミスを疑うべき&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;流れ&lt;/p&gt;
-
-&lt;p&gt;string json_encode();&lt;/p&gt;
-
-&lt;p&gt;エスケープする可能性があるもの&lt;/p&gt;
-
-&lt;p&gt;Apache
-PHP
-CMS
-PHPTAL&lt;/p&gt;
-
-&lt;p&gt;開発と本番で差があるのは何か？&lt;/p&gt;
-
-&lt;p&gt;開発
-nginx 1.8.0
-php 5.6.12
-gulp 3.9.0&lt;/p&gt;
-
-&lt;p&gt;本番
-php 5.6.12&lt;/p&gt;
-
-&lt;p&gt;confファイル
-APP_MODE
-CACHE_LIFETIME&lt;/p&gt;
-
-&lt;p&gt;トップページは直書きでOKになってる&lt;/p&gt;
-
-&lt;p&gt;magic quotes
-htmlspecialchars() 特殊文字をHTMLエンティティに変換する　htmlentities()も同じ&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>:usr:binと:usr:local:bin</title>
       <link>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -375,23 +333,23 @@ res
       <guid>http://karadaharu.org/memo/c%E3%81%A6c%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86</guid>
       <description>
 
-&lt;h1 id=&#34;c-でcの関数を使う:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;C++でCの関数を使う&lt;/h1&gt;
+&lt;h1 id=&#34;c-でcの関数を使う:6e594ce2820a7801bbe35316e3d80077&#34;&gt;C++でCの関数を使う&lt;/h1&gt;
 
-&lt;h2 id=&#34;リンケージ:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;リンケージ&lt;/h2&gt;
+&lt;h2 id=&#34;リンケージ:6e594ce2820a7801bbe35316e3d80077&#34;&gt;リンケージ&lt;/h2&gt;
 
 &lt;p&gt;ファイルを超えて利用できるかどうかをリンケージと呼ぶ
 変数宣言にexternをつけると別ファイルの外部リンケージのグローバル変数が扱える&lt;/p&gt;
 
-&lt;h2 id=&#34;cライブラリを使う:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;Cライブラリを使う&lt;/h2&gt;
+&lt;h2 id=&#34;cライブラリを使う:6e594ce2820a7801bbe35316e3d80077&#34;&gt;Cライブラリを使う&lt;/h2&gt;
 
-&lt;h3 id=&#34;標準ライブラリを使う:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;標準ライブラリを使う&lt;/h3&gt;
+&lt;h3 id=&#34;標準ライブラリを使う:6e594ce2820a7801bbe35316e3d80077&#34;&gt;標準ライブラリを使う&lt;/h3&gt;
 
 &lt;p&gt;.hをとって、cを使う&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#include &amp;lt;cmath&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;その他のヘッダーファイルを読み込む:92262a3c0fe52bdffe2bd3e1ec8ca2ea&#34;&gt;その他のヘッダーファイルを読み込む&lt;/h3&gt;
+&lt;h3 id=&#34;その他のヘッダーファイルを読み込む:6e594ce2820a7801bbe35316e3d80077&#34;&gt;その他のヘッダーファイルを読み込む&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;extern &amp;quot;C&amp;quot;{
     #include &amp;quot;hoge.h&amp;quot;
@@ -408,9 +366,9 @@ res
       <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF</guid>
       <description>
 
-&lt;h1 id=&#34;c-でマルチスレッドプログラミング:869277688e41e83be3b25b5024342b21&#34;&gt;C++でマルチスレッドプログラミング&lt;/h1&gt;
+&lt;h1 id=&#34;c-でマルチスレッドプログラミング:119a4da662008978f8aa860f9f949d99&#34;&gt;C++でマルチスレッドプログラミング&lt;/h1&gt;
 
-&lt;h2 id=&#34;そもそもマルチスレッドプログラミング:869277688e41e83be3b25b5024342b21&#34;&gt;そもそもマルチスレッドプログラミング&lt;/h2&gt;
+&lt;h2 id=&#34;そもそもマルチスレッドプログラミング:119a4da662008978f8aa860f9f949d99&#34;&gt;そもそもマルチスレッドプログラミング&lt;/h2&gt;
 </description>
     </item>
     
@@ -422,11 +380,11 @@ res
       <guid>http://karadaharu.org/memo/c%E8%A8%80%E8%AA%9E</guid>
       <description>
 
-&lt;h1 id=&#34;c言語:528e7ba55f25836d53bc1e90abc6a643&#34;&gt;C言語&lt;/h1&gt;
+&lt;h1 id=&#34;c言語:764b7448d9f48713d096f1fadb72b9a9&#34;&gt;C言語&lt;/h1&gt;
 
 &lt;p&gt;C99以降では、変数を配列の大きさとして使える。&lt;/p&gt;
 
-&lt;h2 id=&#34;文字列:528e7ba55f25836d53bc1e90abc6a643&#34;&gt;文字列&lt;/h2&gt;
+&lt;h2 id=&#34;文字列:764b7448d9f48713d096f1fadb72b9a9&#34;&gt;文字列&lt;/h2&gt;
 
 &lt;p&gt;&amp;lsquo;A&amp;rsquo;はchar型、&amp;rdquo;ABC&amp;rdquo;は&amp;rsquo;A&amp;rsquo;のアドレス&lt;/p&gt;
 
@@ -442,7 +400,7 @@ int strcmp(const char *s1, const char *s2);
 &lt;pre&gt;&lt;code&gt;int result = strcmp(&amp;quot;BBB&amp;quot;,&amp;quot;aaa&amp;quot;) // result &amp;lt; 0
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;複数ファイルの扱い:528e7ba55f25836d53bc1e90abc6a643&#34;&gt;複数ファイルの扱い&lt;/h2&gt;
+&lt;h2 id=&#34;複数ファイルの扱い:764b7448d9f48713d096f1fadb72b9a9&#34;&gt;複数ファイルの扱い&lt;/h2&gt;
 
 &lt;p&gt;ヘッダーファイルを重複して読み込むとエラーになる。以下のように書くことで二回目以降の読み込みをしないようにできる。&lt;/p&gt;
 
@@ -454,7 +412,7 @@ int strcmp(const char *s1, const char *s2);
 #endif
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;古い書き方:528e7ba55f25836d53bc1e90abc6a643&#34;&gt;古い書き方&lt;/h2&gt;
+&lt;h2 id=&#34;古い書き方:764b7448d9f48713d096f1fadb72b9a9&#34;&gt;古い書き方&lt;/h2&gt;
 
 &lt;p&gt;仮引数宣言を用いた関数の宣言&lt;/p&gt;
 
@@ -554,7 +512,7 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
       <guid>http://karadaharu.org/memo/gccllvmclang</guid>
       <description>
 
-&lt;h2 id=&#34;brew-install-gccできない:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;brew install gccできない&lt;/h2&gt;
+&lt;h2 id=&#34;brew-install-gccできない:3c4a5e60a26d4da826625950857283d2&#34;&gt;brew install gccできない&lt;/h2&gt;
 
 &lt;p&gt;brew link gcc
 Linking /usr/local/Cellar/gcc/4.8.3_1&amp;hellip;
@@ -566,7 +524,7 @@ MBPkazu-2:site-packages kazumasa$ which gcc
 &lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/14527521/brew-doctor-says-warning-usr-local-include-isnt-writable&#34;&gt;sudo chown -R $USER /usr/local/include
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;gccとは:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;gccとは&lt;/h2&gt;
+&lt;h2 id=&#34;gccとは:3c4a5e60a26d4da826625950857283d2&#34;&gt;gccとは&lt;/h2&gt;
 
 &lt;p&gt;GNU Compiler Collection.様々な言語のコンパイラ&lt;/p&gt;
 
@@ -575,7 +533,7 @@ ClangはLLVMの一部(?)C,C++,Objective-Cのコンパイラ。”LLVMはClangの
 
 &lt;p&gt;&lt;a href=&#34;http://easyramble.com/install-gcc-with-homebrew.html&#34;&gt;使い終わったら標準LLVMに戻したほうがいい？&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;clang-llvmとgccの違い:4b6fdba91aaa0d5bf6f9cce1142e1d7f&#34;&gt;Clang&amp;amp;LLVMとGCCの違い&lt;/h2&gt;
+&lt;h2 id=&#34;clang-llvmとgccの違い:3c4a5e60a26d4da826625950857283d2&#34;&gt;Clang&amp;amp;LLVMとGCCの違い&lt;/h2&gt;
 
 &lt;p&gt;ClangはLLVMが読み込める形のバイナリコードを吐き出す
 LLVMはClangが吐き出したバイナリコードを読み込んで、それぞれのマシンのアーキテクチャ？にあわせた機械語を出力する
@@ -596,7 +554,7 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
       <guid>http://karadaharu.org/memo/glsc%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB</guid>
       <description>
 
-&lt;h1 id=&#34;glscのインストール:d3ea56eb0790991763f19fa2006b86c4&#34;&gt;GLSCのインストール&lt;/h1&gt;
+&lt;h1 id=&#34;glscのインストール:014900a4b4844ef7d2f99600413b9680&#34;&gt;GLSCのインストール&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://home.mims.meiji.ac.jp/~wiki/index.php?MacOSX%A4%C7%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3&#34;&gt;http://home.mims.meiji.ac.jp/~wiki/index.php?MacOSX%A4%C7%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%B7%A5%E7%A5%F3&lt;/a&gt;
 を参考にした。&lt;/p&gt;
@@ -641,6 +599,35 @@ mv cglscs /usr/local/bin/
 &lt;h1 id=&#34;http:3eb4e02fc4fac5fa3f219403c70fc4d5&#34;&gt;HTTP&lt;/h1&gt;
 
 &lt;h2 id=&#34;postでのデータ送信:3eb4e02fc4fac5fa3f219403c70fc4d5&#34;&gt;POSTでのデータ送信&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JSでファイル操作</title>
+      <link>http://karadaharu.org/memo/js%E3%81%A6%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%93%8D%E4%BD%9C</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/js%E3%81%A6%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%93%8D%E4%BD%9C</guid>
+      <description>
+
+&lt;h1 id=&#34;jsでファイル操作:b4c364b2b8f5f354fa4ddec2f849e393&#34;&gt;JSでファイル操作&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jsdo.it/t_kuro/nMgJ&#34;&gt;http://jsdo.it/t_kuro/nMgJ&lt;/a&gt;
+&lt;a href=&#34;http://d.hatena.ne.jp/do_aki/20130225/1361763613&#34;&gt;http://d.hatena.ne.jp/do_aki/20130225/1361763613&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;fileクラス:b4c364b2b8f5f354fa4ddec2f849e393&#34;&gt;Fileクラス&lt;/h2&gt;
+
+&lt;p&gt;Fileオブジェクトは１つのファイルと紐付いている&lt;/p&gt;
+
+&lt;h2 id=&#34;blobクラス:b4c364b2b8f5f354fa4ddec2f849e393&#34;&gt;Blobクラス&lt;/h2&gt;
+
+&lt;p&gt;Fileクラスの親クラス(?)
+コンテンツタイプ情報とバッファ情報をもつ&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var b = new Blob(data, {type:&amp;quot;text/plain&amp;quot;});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Blob:&lt;/p&gt;
 </description>
     </item>
     

@@ -38,14 +38,11 @@
     <div class="pure-u-11-12 pure-u-md-5-8">
         <div class="desktop pure-menu pure-menu-horizontal nav-menu">
             
-            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
             <ul class="pure-menu-list">
                 
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
-                </li>
-                <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
@@ -53,10 +50,13 @@
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
                 </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="mobile pure-menu nav-menu">
-            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
             <a href="#" id="toggle-btn">&#9776;</a>
             <ul class="pure-menu-list" id="toggle-content" style="display:none;">
                 
@@ -65,13 +65,13 @@
                     <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
                 </li>
                 <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
-                </li>
-                <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -101,23 +101,23 @@
             <div class="post-content">
                 
 
-<h1 id="c-でcの関数を使う:92262a3c0fe52bdffe2bd3e1ec8ca2ea">C++でCの関数を使う</h1>
+<h1 id="c-でcの関数を使う:6e594ce2820a7801bbe35316e3d80077">C++でCの関数を使う</h1>
 
-<h2 id="リンケージ:92262a3c0fe52bdffe2bd3e1ec8ca2ea">リンケージ</h2>
+<h2 id="リンケージ:6e594ce2820a7801bbe35316e3d80077">リンケージ</h2>
 
 <p>ファイルを超えて利用できるかどうかをリンケージと呼ぶ
 変数宣言にexternをつけると別ファイルの外部リンケージのグローバル変数が扱える</p>
 
-<h2 id="cライブラリを使う:92262a3c0fe52bdffe2bd3e1ec8ca2ea">Cライブラリを使う</h2>
+<h2 id="cライブラリを使う:6e594ce2820a7801bbe35316e3d80077">Cライブラリを使う</h2>
 
-<h3 id="標準ライブラリを使う:92262a3c0fe52bdffe2bd3e1ec8ca2ea">標準ライブラリを使う</h3>
+<h3 id="標準ライブラリを使う:6e594ce2820a7801bbe35316e3d80077">標準ライブラリを使う</h3>
 
 <p>.hをとって、cを使う</p>
 
 <pre><code>#include &lt;cmath&gt;
 </code></pre>
 
-<h3 id="その他のヘッダーファイルを読み込む:92262a3c0fe52bdffe2bd3e1ec8ca2ea">その他のヘッダーファイルを読み込む</h3>
+<h3 id="その他のヘッダーファイルを読み込む:6e594ce2820a7801bbe35316e3d80077">その他のヘッダーファイルを読み込む</h3>
 
 <pre><code>extern &quot;C&quot;{
     #include &quot;hoge.h&quot;

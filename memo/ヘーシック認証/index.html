@@ -38,14 +38,11 @@
     <div class="pure-u-11-12 pure-u-md-5-8">
         <div class="desktop pure-menu pure-menu-horizontal nav-menu">
             
-            <a href="/" class="site-title pure-menu-heading">Kazumasa KANEKO</a>
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
             <ul class="pure-menu-list">
                 
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
-                </li>
-                <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications/" class="pure-menu-link">Publications</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
@@ -53,10 +50,13 @@
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
                 </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="mobile pure-menu nav-menu">
-            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa KANEKO</a>
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
             <a href="#" id="toggle-btn">&#9776;</a>
             <ul class="pure-menu-list" id="toggle-content" style="display:none;">
                 
@@ -65,13 +65,13 @@
                     <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
                 </li>
                 <li class="pure-menu-item">
-                    <a href="http://karadaharu.org/publications" class="pure-menu-link">Publications</a>
-                </li>
-                <li class="pure-menu-item">
                     <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
                 </li>
                 <li class="pure-menu-item">
                     <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -103,10 +103,21 @@
 
 <h1 id="ベーシック認証:63a248e73aef75604111f01d52a907bb">ベーシック認証</h1>
 
-<p>パスワードの暗号化
-暗号化方式
-crypt
-MD5</p>
+<p>HTTPで定義される認証方式のひとつ
+ユーザー名とパスワードを:でつないでBase64でエンコードして送信する
+Base64:64種類の英数字のみを用いて、マルチバイト文字やバイナリデータを扱うためのエンコーディング</p>
+
+<p>クライアントはリクエストに認証ヘッダを追加して送信する。</p>
+
+<p>Base64は一意に変換されないの？</p>
+
+<h2 id="htaccess:63a248e73aef75604111f01d52a907bb">.htaccess</h2>
+
+<p>apacheにおいて、ディレクトリ単位でおける設定ファイル</p>
+
+<p>リダイレクトを使ってwwwありとなしのURLの統一などもできる</p>
+
+<p>httpd.confが.htaccessの上位ファイル</p>
 
             </div>
         </div>

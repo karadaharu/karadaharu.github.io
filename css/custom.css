@@ -8,9 +8,16 @@ html {
 	width:100%;
 	position:relative;
 }
+@font-face {
+  font-family: 'Aaaargh';
+  src: url('/font/Aaargh.ttf');
+}
 
+@font-face {
+  font-family: 'QuicksandLight';
+  src: url('/font/Quicksand-Light.otf');
+}
 body {
-	background-color: rgb(249,249,249);
 	color: #484848;
 }
 
@@ -34,15 +41,14 @@ body {
 }
 
 .header ul li a {
-	font-weight: bold;
 	color: #484848;
-	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "QuicksandLight","HelveticaNeue", "Helvetica Neue","Raleway", Helvetica, Arial, sans-serif;
 }
 
 .header .site-title {
-	font-weight: bold;
+	text-transform: none;
 	color: #484848;
-	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "QuicksandLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .pull-right {
@@ -51,10 +57,9 @@ body {
 
 .posts-name {
 	text-transform: capitalize;
-	font-weight: bold;
 	padding-left: 1em;
 	margin-top: 1em;
-	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "QuicksandLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .posts {
@@ -132,7 +137,7 @@ body {
 }
 
 .post {
-	font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+	font-family: "QuicksandLight","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 	color:#484848;
 	letter-spacing:normal;
 	padding-left: .5em;
