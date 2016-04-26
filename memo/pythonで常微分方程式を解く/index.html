@@ -99,7 +99,9 @@
             </div>
 
             <div class="post-content">
-                <pre><code>import numpy as np
+                
+
+<pre><code>import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -121,6 +123,25 @@ ax = fig.gca(projection='3d')
 ax.plot(v[:, 0], v[:, 1], v[:, 2])
 plt.show()
 </code></pre>
+
+<p>ここで、tの刻みが小さければ小さいほど正確な値が求められる。</p>
+
+<p><a href="http://mathoverflow.net/questions/178192/how-to-fit-the-parameters-of-differential-equations-with-known-data">http://mathoverflow.net/questions/178192/how-to-fit-the-parameters-of-differential-equations-with-known-data</a></p>
+
+<h2 id="パラメータのフィッティング:26648aa50043865c38393f13efd6c44c">パラメータのフィッティング</h2>
+
+<p>scipyの</p>
+
+<ul>
+<li>leastsq</li>
+<li>curve_fit</li>
+</ul>
+
+<p>をつかう。</p>
+
+<p>連立微分方程式の場合</p>
+
+<p>curve_fitは出力はスカラーじゃないとダメ</p>
 
             </div>
         </div>

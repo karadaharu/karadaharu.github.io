@@ -147,8 +147,8 @@ int main(){
 <h2 id="ifndefとendif:7c4c182d751fc2e04b05feaeb26136e9">ifndefとendif</h2>
 
 <p>擬似命令:#ifndef,#endif. プリプロセッサ(コンパイル前に実行される)によって処理される命令．条件コンパイルができる．
-    #ifndef INCLUDED<em>Sample_h</em>
-    #define INCLUDED<em>Sample_h</em>
+    #ifndef INCLUDED_Sample<em>h</em>
+    #define INCLUDED_Sample<em>h</em>
     #endif
 INCLUDED_Sample_h_を記号定数と呼ぶ．#defineで一度記号定数が定義されていたら，#ifndefから#endifまではコンパイルされない．これによって，ひとつのプログラムが何度もインクルードされなくなる．
     #pragma once

@@ -62,6 +62,253 @@
     </item>
     
     <item>
+      <title></title>
+      <link>http://karadaharu.org/memo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/</guid>
+      <description>
+
+&lt;h1 id=&#34;matlab-system-identification:d262b82fff6236051edaf1f47a962b12&#34;&gt;matlab system identification&lt;/h1&gt;
+
+&lt;h2 id=&#34;捕食系:d262b82fff6236051edaf1f47a962b12&#34;&gt;捕食系&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jp.mathworks.com/help/ident/examples/three-ecological-population-systems-matlab-and-c-mex-file-modeling-of-time-series.html&#34;&gt;http://jp.mathworks.com/help/ident/examples/three-ecological-population-systems-matlab-and-c-mex-file-modeling-of-time-series.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;NLGREYEST:non-linear grey estimation　とは？&lt;/p&gt;
+
+&lt;p&gt;iddataは時系列データなので一定間隔でのサンプリングじゃないとダメ&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jp.mathworks.com/help/ident/ref/iddata.html&#34;&gt;Time domain data set&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ランダムなサンプリングで同時刻に違う値がいくつかある場合は？&lt;/p&gt;
+
+&lt;p&gt;時系列データ複数ある場合の&lt;a href=&#34;http://jp.mathworks.com/help/ident/examples/dry-friction-between-two-bodies-parameter-estimation-using-multiple-experiment-data.html&#34;&gt;やりかた&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;サンプリングがnonuniformな場合&lt;code&gt;Ts&lt;/code&gt;を&lt;code&gt;[]&lt;/code&gt;に設定してoptional argumentとして&lt;code&gt;TimeVecotr&lt;/code&gt;を与える&lt;/p&gt;
+
+&lt;p&gt;identification toolboxの関数にresample関数があって、間引く・補間ができる。&lt;/p&gt;
+
+&lt;p&gt;→とりあえず平均で時系列データをつくる&lt;/p&gt;
+
+&lt;p&gt;matlabはindexが0からはじまる&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title> C&#43;&#43;で多次元配列の動的確保</title>
+      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D</guid>
+      <description>
+
+&lt;h1 id=&#34;c-で多次元配列の動的確保:3f2af4128f1c4ba145ed83c42554a4de&#34;&gt;C++で多次元配列の動的確保&lt;/h1&gt;
+
+&lt;h2 id=&#34;1次元:3f2af4128f1c4ba145ed83c42554a4de&#34;&gt;1次元&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;int n;
+double * a = new double[n];
+delete [] a;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;2次元:3f2af4128f1c4ba145ed83c42554a4de&#34;&gt;2次元&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;int n,m;
+double ** a = new double*[n];
+for (int i = 0; i &amp;lt; n; i++){
+  a[i] = new double[m];
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>20150115vagrant開発環境構築</title>
+      <link>http://karadaharu.org/memo/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89</guid>
+      <description>
+
+&lt;h1 id=&#34;20150115-vagrant開発環境構築:ed16e1026ac5fe953f50944b382b246f&#34;&gt;20150115 vagrant開発環境構築&lt;/h1&gt;
+
+&lt;h2 id=&#34;現状:ed16e1026ac5fe953f50944b382b246f&#34;&gt;現状&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;php-fpm,nginxはサービスに登録してある&lt;/li&gt;
+&lt;li&gt;postgresはサービスに登録されていない（/etc/rc.confにはpostgresql_enable=&amp;ldquo;YES&amp;rdquo;は書いてある）&lt;/li&gt;
+&lt;li&gt;192.168.33.10にアクセスすると403
+directory index of &amp;ldquo;/www/docs/d00.tampen.jp/&amp;rdquo; is forbidden&lt;/li&gt;
+&lt;li&gt;192.168.33.10/info.phpは見られる&lt;/li&gt;
+&lt;li&gt;192.168.33.10/index.phpは
+PHP message: PHP Fatal error:  Call to undefined function mb_language() in
+/www/docs/d00.tampen.jp/protected/controller/CoreController.php on line 28&amp;rdquo;
+でエラー&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;解決するべきこと:ed16e1026ac5fe953f50944b382b246f&#34;&gt;解決するべきこと&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;postgresの起動 done&lt;/li&gt;
+&lt;li&gt;nginxでのindexの設定 done&lt;/li&gt;
+&lt;li&gt;phpファイルでのパス関係の設定 done&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;postgresの起動:ed16e1026ac5fe953f50944b382b246f&#34;&gt;Postgresの起動&lt;/h3&gt;
+
+&lt;p&gt;参考：&lt;a href=&#34;http://symfoware.blog68.fc2.com/blog-entry-1219.html&#34;&gt;http://symfoware.blog68.fc2.com/blog-entry-1219.html&lt;/a&gt;
+初期化
+/usr/local/etc/rc.d/postgresql initdb
+エラー：/usr/local/pgsql/のユーザー，グループともにpgsqlであるため．
+/usr/local/pgsql/dataはpostgresユーザーになっている．
+一旦/usr/local/pgsql/dataを削除，再度&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/usr/local/etc/rc.d/postgresql initdb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;初期化OK
+pgsqlユーザーで初期化された&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/usr/local/etc/rc.d/postgresql start
+sudo su - pgsql
+psql postgres # 管理データベース&amp;quot;postgres&amp;quot;を指定して接続
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;データベースの作成・テーブルのリストア&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;createdb -E UTF8 tampen_dev
+psql tampen_dev &amp;lt; tampen_schema.sql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;エラー．
+下記を解決する必要がある．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;role:postgresの作成&lt;/li&gt;
+&lt;li&gt;pg_bigmのインストール&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;pg-bigmのインストール:ed16e1026ac5fe953f50944b382b246f&#34;&gt;pg_bigmのインストール&lt;/h4&gt;
+
+&lt;p&gt;curl,またはwgetでソースコードのダウンロード
+注意点：URLに?や&amp;amp;が入る場合は&amp;rdquo;でURLをかこって区切らないようにしてあげる必要がある&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ curl -L -o curl.tar.gz &#39;http://sourceforge.jp/frs/redir.php?m=osdn&amp;amp;f=%2Fpgbigm%2F59914%2Fpg_bigm-1.1-20131122.tar.gz&#39;
+$ wget -O tat.tar.gz &#39;http://sourceforge.jp/frs/redir.php?m=osdn&amp;amp;f=%2Fpgbigm%2F59914%2Fpg_bigm-1.1-20131122.tar.gz&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;インストール&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gmake USE_PGXS=1 PG_CONFIG=/usr/local/bin/pg_config
+$ sudo gmake USE_PGXS=1 PG_CONFIG=/usr/local/bin/pg_config install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再度postgresの初期化&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# /usr/local/etc/rc.d/postgresql initdb
+# /usr/local/etc/rc.d/postgresql start
+# sudo su - pgsql
+$ createdb -E UTF8 tampen_test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;role-postgresの作成:ed16e1026ac5fe953f50944b382b246f&#34;&gt;role:postgresの作成&lt;/h3&gt;
+
+&lt;p&gt;CREATE ROLE postgres WITH SUPERUSER;&lt;/p&gt;
+
+&lt;p&gt;リストア&lt;/p&gt;
+
+&lt;h2 id=&#34;phpファイルでのパス関係の設定:ed16e1026ac5fe953f50944b382b246f&#34;&gt;phpファイルでのパス関係の設定&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://php1st.com/419/&#34;&gt;http://php1st.com/419/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;デフォルトでは，mb_ではじまるマルチバイト関数が無効になっている
+→php.iniファイルを編集&lt;/p&gt;
+
+&lt;h3 id=&#34;usr-local-lib-php-20100525-php-mbstring-dllが存在しない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;/usr/local/lib/php/20100525/php_mbstring.dllが存在しない&lt;/h3&gt;
+
+&lt;p&gt;pkgの場合は別途mbstringのpkgをインストールしないといけない．
+php5-mbstring-5.4.36
+をインストール&lt;/p&gt;
+
+&lt;p&gt;/usr/local/lib/php/20100525/mbstring.so
+ができたけど，php_mbstring.dllはできない．
+dll:windowds
+so:LINUX
+php.iniのphp_mbstring.dllをmbstring.soにする．
+→Module &amp;lsquo;mbstring&amp;rsquo; already loaded in Unknown on line 0
+コメントアウトをもとに戻す
+pkgでインストールすると自動的に読み込む設定になっているらしい．&lt;/p&gt;
+
+&lt;h3 id=&#34;session-start-が見つからない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;session_start()が見つからない&lt;/h3&gt;
+
+&lt;p&gt;pkg install php5-session-5.4.36
+でphp-fpm再起動でかいけつ&lt;/p&gt;
+
+&lt;h3 id=&#34;mdb2がない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;MDB2がない&lt;/h3&gt;
+
+&lt;p&gt;MDB2:データベースの違いに関係なくSQLを扱うためのAPI．PEARで管理されている
+PEAR:PHPのライブラリ・パッケージ管理システム&lt;/p&gt;
+
+&lt;p&gt;PEARはPHPインストール時に一緒にインストールされている．&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pear install MDB2
+pkg install php5-pgsql-5.4.36
+pear install pear/MDB2#pgsql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;データベースに接続できない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;データベースに接続できない&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.phpbook.jp/pear/pear_db/index2.html&#34;&gt;http://www.phpbook.jp/pear/pear_db/index2.html&lt;/a&gt;
+PHPのDSNの書式
+phptype(dbsyntax)://username:password@protocol+hostspec/database?option=value&lt;/p&gt;
+
+&lt;p&gt;tampen_testじゃなくてtampen_devを作ってしまっていた．
+tampen_test作成&lt;/p&gt;
+
+&lt;p&gt;postgresにログインオプションをつけていなかった
+ALTER ROLE postgres WITH LOGIN&lt;/p&gt;
+
+&lt;p&gt;Call to undefined function gzcompress()
+&lt;a href=&#34;http://lists.horde.org/archives/horde/Week-of-Mon-20080225/034810.html&#34;&gt;http://lists.horde.org/archives/horde/Week-of-Mon-20080225/034810.html&lt;/a&gt;
+pkg install php5-zlib-5.4.36&lt;/p&gt;
+
+&lt;h2 id=&#34;nginxでのindexの設定:ed16e1026ac5fe953f50944b382b246f&#34;&gt;nginxでのindexの設定&lt;/h2&gt;
+
+&lt;p&gt;indexにindex.phpが含まれていなかったのが原因．
+→追加したらOK&lt;/p&gt;
+
+&lt;h2 id=&#34;新しいvagrantでpingが通らない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;新しいvagrantでpingが通らない&lt;/h2&gt;
+
+&lt;p&gt;参考：&lt;a href=&#34;http://labs.septeni.co.jp/?p=966&#34;&gt;http://labs.septeni.co.jp/?p=966&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;プライベートネットワークを設定する必要がある．
+具体的には，ゲストOSでifconfigコマンドでネットワーク環境の確認をする．
+ここに192.168.33.10などが入っているのかどうかをまず確認する．&lt;/p&gt;
+
+&lt;p&gt;ないなら，Vagrantfileが何らかの理由で反映されていないことが分かる．
+Vagrantfileが反映されていない理由は？&lt;/p&gt;
+
+&lt;h2 id=&#34;vagrant-haltでシャットダウンできない:ed16e1026ac5fe953f50944b382b246f&#34;&gt;vagrant haltでシャットダウンできない&lt;/h2&gt;
+
+&lt;p&gt;Vagrantfileに&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;config.ssh.shell = &#39;sh&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;を追加すればOK
+&lt;a href=&#34;https://github.com/opscode/vagrant-omnibus/issues/69&#34;&gt;https://github.com/opscode/vagrant-omnibus/issues/69&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;FreeBSDはデフォルトのシェルがsh
+Vagrantが操作する際に使うシェルはbash -l
+自分でpkg install bashをした後なら問題なく動くけど，まだ入れていないと，
+vagrantによってFreeBSDを操作することができない．&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://docs.vagrantup.com/v2/vagrantfile/ssh_settings.html&#34;&gt;https://docs.vagrantup.com/v2/vagrantfile/ssh_settings.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>2016/03/07−2016/03/13</title>
       <link>http://karadaharu.org/log/2016:03:07%E2%88%922016:03:13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -153,54 +400,6 @@
     </item>
     
     <item>
-      <title>:usr:binと:usr:local:bin</title>
-      <link>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</guid>
-      <description>
-
-&lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
-
-&lt;p&gt;/bin:もっとも基本的なコマンドmakeやwhoなど
-/usr/bin:システム標準
-/usr/local/bin:そうでないもの(OSが勝手に書き換えることはない)
-/opt:アプリケーションごとにサブディレクトリを分けることを想定。大きいもの用。
-/sbin:起動に必要なファイル
-/etc:設定ファイル&lt;/p&gt;
-
-&lt;p&gt;例えば、評価版は/usr/local/binにインストールして、コマンドパスを/usr/local/binを先にすれば、そっちが実行される。問題があればコマンドパスを戻せば良い&lt;/p&gt;
-
-&lt;p&gt;コマンドのフルパスが知りたいときはwhereis&lt;/p&gt;
-
-&lt;p&gt;launchd:PID 1で最初に起動して初期化、シェルの起動などを行う&lt;/p&gt;
-
-&lt;h2 id=&#34;homebrewが指定しているサービス:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;homebrewが指定しているサービス&lt;/h2&gt;
-
-&lt;p&gt;~/Library/LaunchAgents/
-にhombrewがサービスに指定しているファイルがある。
-勝手に起動するように指定するかしないか。
-&lt;a href=&#34;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&#34;&gt;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;その他:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;その他&lt;/h2&gt;
-
-&lt;p&gt;/opt
-/include
-/Library&lt;/p&gt;
-
-&lt;h2 id=&#34;exportコマンド:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;exportコマンド&lt;/h2&gt;
-
-&lt;p&gt;例&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ export PATH=$PATH:/Applications/android-sdk/tools
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;環境変数を設定するために使用．ターミナルからログアウトしたらリセットされる
-→毎回ターミナル起動時に実行した→~/.bash_profileに記述しておく．&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>2016/03/20-2016/03/26</title>
       <link>http://karadaharu.org/log/2016:03:20-2016:03:26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -252,325 +451,264 @@
     </item>
     
     <item>
-      <title>FreeBSDでのパッケージ管理</title>
-      <link>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E7%AE%A1%E7%90%86</link>
+      <title>:usr:binと:usr:local:bin</title>
+      <link>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E7%AE%A1%E7%90%86</guid>
+      <guid>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</guid>
       <description>
 
-&lt;h1 id=&#34;freebsdでのパッケージ管理:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;FreeBSDでのパッケージ管理&lt;/h1&gt;
+&lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports.html&#34;&gt;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;/bin:もっとも基本的なコマンドmakeやwhoなど
+/usr/bin:システム標準
+/usr/local/bin:そうでないもの(OSが勝手に書き換えることはない)
+/opt:アプリケーションごとにサブディレクトリを分けることを想定。大きいもの用。
+/sbin:起動に必要なファイル
+/etc:設定ファイル&lt;/p&gt;
 
-&lt;h3 id=&#34;package:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;package&lt;/h3&gt;
+&lt;p&gt;例えば、評価版は/usr/local/binにインストールして、コマンドパスを/usr/local/binを先にすれば、そっちが実行される。問題があればコマンドパスを戻せば良い&lt;/p&gt;
 
-&lt;p&gt;ソフトウェアのインストール方法
-* コンパイル済みのパッケージ→pkg_*からpkgngになった
-* ソースからコンパイルするports:こっちのほうがfreeBSDでは人気らしい。オプションとかが色々設定できる&lt;/p&gt;
+&lt;p&gt;コマンドのフルパスが知りたいときはwhereis&lt;/p&gt;
 
-&lt;p&gt;Pythonマニュアルにかかれているこれはだめ
-pkg_add -r python
-&lt;a href=&#34;http://docs.python.jp/2/using/unix.html&#34;&gt;http://docs.python.jp/2/using/unix.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;launchd:PID 1で最初に起動して初期化、シェルの起動などを行う&lt;/p&gt;
 
-&lt;p&gt;pkgng:新しい管理ツール
-pkgngにしたら、pkg_* は使うべきではない
-portmasterなどを置き換えるものではない。&lt;/p&gt;
+&lt;h2 id=&#34;homebrewが指定しているサービス:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;homebrewが指定しているサービス&lt;/h2&gt;
 
-&lt;p&gt;packageでインストールしたソフトウェアの関連ソフトウェアは
-/usr/local/etc/内に入る&lt;/p&gt;
+&lt;p&gt;~/Library/LaunchAgents/
+にhombrewがサービスに指定しているファイルがある。
+勝手に起動するように指定するかしないか。
+&lt;a href=&#34;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&#34;&gt;http://cockscomb.hatenablog.com/entry/2014/04/05/153451&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;サービスを実行するためのファイルは/etc/rc.d/下に入るが，
-実際にサービスを実行するためには/etc/rc.confに書かないといけない．&lt;/p&gt;
+&lt;h2 id=&#34;その他:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;その他&lt;/h2&gt;
 
-&lt;h3 id=&#34;portsの使い方:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;portsの使い方&lt;/h3&gt;
+&lt;p&gt;/opt
+/include
+/Library&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports-using.html&#34;&gt;https://www.freebsd.org/doc/ja_JP.eucJP/books/handbook/ports-using.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;exportコマンド:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;exportコマンド&lt;/h2&gt;
 
-&lt;p&gt;Ports Collectionの利用
-Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パッチ、 説明文などの一連のファイルのことです。&lt;/p&gt;
+&lt;p&gt;例&lt;/p&gt;
 
-&lt;h4 id=&#34;初期設定:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;初期設定&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;# portsnap fetch
-# portsnap extract
-# portsnap fetch
-# portsnap update
+&lt;pre&gt;&lt;code&gt;$ export PATH=$PATH:/Applications/android-sdk/tools
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;勝手にportsツリーが変わっちゃうと困るときはsubversionで管理する&lt;/p&gt;
+&lt;p&gt;環境変数を設定するために使用．ターミナルからログアウトしたらリセットされる
+→毎回ターミナル起動時に実行した→~/.bash_profileに記述しておく．&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>FreeBSDでのユーザーのしくみ</title>
-      <link>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF</link>
+      <title>Alamofire</title>
+      <link>http://karadaharu.org/memo/alamofire</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF</guid>
+      <guid>http://karadaharu.org/memo/alamofire</guid>
       <description>
 
-&lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
+&lt;h1 id=&#34;alamofire:c28cfccd79c298d1ddb8eeb2c3879b03&#34;&gt;Alamofire&lt;/h1&gt;
 
-&lt;h2 id=&#34;基本:a83760d81f5fb2874b12c55209763bac&#34;&gt;基本&lt;/h2&gt;
-
-&lt;p&gt;グループ:wheel&lt;/p&gt;
+&lt;p&gt;URLRequestConvertible型を返すrouterを作って&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>ターミナルの日本語環境</title>
-      <link>http://karadaharu.org/memo/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83</link>
+      <title>Android開発</title>
+      <link>http://karadaharu.org/memo/android%E9%96%8B%E7%99%BA</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%92%B0%E5%A2%83</guid>
+      <guid>http://karadaharu.org/memo/android%E9%96%8B%E7%99%BA</guid>
       <description>
 
-&lt;h1 id=&#34;ターミナルの日本語環境:9668eb065dc46476bb95069698b89707&#34;&gt;ターミナルの日本語環境&lt;/h1&gt;
+&lt;h1 id=&#34;android開発:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Android開発&lt;/h1&gt;
 
-&lt;ol&gt;
-&lt;li&gt;ユーザーの言語設定&lt;/li&gt;
-&lt;li&gt;シェルの言語設定&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2 id=&#34;ファイル構成:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;ファイル構成&lt;/h2&gt;
 
-&lt;p&gt;の2つを設定する&lt;/p&gt;
+&lt;p&gt;manifests
+ AndroidManifest.xml
+java
+ com.example.kazumasa.test22
+  MainActivity
+ com.example.kazumasa.test22
+  ApplicationTest
+res
+ drawable
+  ic_lancher.png
+ layout
+  activity_main.xml
+ menu
+  menu_main.xml
+ values
+  dmens.xml
+  strings.xml
+  styles.xml&lt;/p&gt;
 
-&lt;h2 id=&#34;ユーザーの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;ユーザーの言語設定&lt;/h2&gt;
+&lt;h2 id=&#34;javaのキホン:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Javaのキホン&lt;/h2&gt;
 
-&lt;p&gt;.login_conf
-に&lt;/p&gt;
+&lt;p&gt;クラス名を一意に決めるために、パッケージというという仕組みでクラスを
+フォルダにまとめたものを一意に決めることができる。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;me:\
-   :charset=UTF-8:\
-   :lang=ja_JP.UTF-8:
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;JAR:コンパイルされたjavaをひとつにzipでまとめたもの。&lt;/p&gt;
 
-&lt;p&gt;を追記&lt;/p&gt;
-
-&lt;h2 id=&#34;シェルの言語設定:9668eb065dc46476bb95069698b89707&#34;&gt;シェルの言語設定&lt;/h2&gt;
-
-&lt;p&gt;.bashrc
-に&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export LANG=ja_JP.UTF-8
-export LANG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;を追記&lt;/p&gt;
+&lt;p&gt;Javadoc:クラスやメソッドのコメントから自動でドキュメントを作成してくれるツール&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>GCC、LLVM、Clang</title>
-      <link>http://karadaharu.org/memo/gccllvmclang</link>
+      <title>Boost</title>
+      <link>http://karadaharu.org/memo/boost</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/gccllvmclang</guid>
+      <guid>http://karadaharu.org/memo/boost</guid>
       <description>
 
-&lt;h2 id=&#34;brew-install-gccできない:3c4a5e60a26d4da826625950857283d2&#34;&gt;brew install gccできない&lt;/h2&gt;
+&lt;h2 id=&#34;boostとは:d58d730f83006a718b1240ae95d23553&#34;&gt;Boostとは&lt;/h2&gt;
 
-&lt;p&gt;brew link gcc
-Linking /usr/local/Cellar/gcc/4.8.3_1&amp;hellip;
-Error: Could not symlink lib/gcc/x86_64-apple-darwin13.2.0
-/usr/local/lib/gcc is not writable.
-MBPkazu-2:site-packages kazumasa$ which gcc
-/usr/bin/gcc&lt;/p&gt;
+&lt;p&gt;C++の機能を拡張する準標準的ライブラリ。ここから次のC++の標準ライブラリに機能が取り込まれたりする。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/14527521/brew-doctor-says-warning-usr-local-include-isnt-writable&#34;&gt;sudo chown -R $USER /usr/local/include
-&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;インストール-使い方:d58d730f83006a718b1240ae95d23553&#34;&gt;インストール&amp;amp;使い方&lt;/h2&gt;
 
-&lt;h2 id=&#34;gccとは:3c4a5e60a26d4da826625950857283d2&#34;&gt;gccとは&lt;/h2&gt;
+&lt;h2 id=&#34;関連して起きた問題:d58d730f83006a718b1240ae95d23553&#34;&gt;関連して起きた問題&lt;/h2&gt;
 
-&lt;p&gt;GNU Compiler Collection.様々な言語のコンパイラ&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;unordered_set&amp;gt; // file not found
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;LLVMはGCCとは別のコンパイラ。low level virtual compiler
-ClangはLLVMの一部(?)C,C++,Objective-Cのコンパイラ。”LLVMはClangのバックエンド”という表現のしかたをする。&lt;/p&gt;
+&lt;p&gt;古いMacでは&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://easyramble.com/install-gcc-with-homebrew.html&#34;&gt;使い終わったら標準LLVMに戻したほうがいい？&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;tr1/unordered_set&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;clang-llvmとgccの違い:3c4a5e60a26d4da826625950857283d2&#34;&gt;Clang&amp;amp;LLVMとGCCの違い&lt;/h2&gt;
+&lt;p&gt;と書かないといけない。または、Boostを入れて、&lt;code&gt;boost/tr1/&lt;/code&gt;以下をサーチパスに含める。&lt;/p&gt;
 
-&lt;p&gt;ClangはLLVMが読み込める形のバイナリコードを吐き出す
-LLVMはClangが吐き出したバイナリコードを読み込んで、それぞれのマシンのアーキテクチャ？にあわせた機械語を出力する
-これによって、LLVMが読み込める形に出力できる各言語のClangに対応するものを作れば、どんな言語で書いたプログラムも動くことになる。
-また、同じ言語で書いたプログラムで、OS XでもiOSでも動くようにできる。
-openFrameworksでつくるiOSとかAndroidのアプリというのはそういうことらしい。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1228402/how-does-one-include-tr1&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;一方、GCCは分離されていない。
-ここを分離してしまうと、GCCの政治的な力が弱くなるため、らしい。&lt;/p&gt;
+&lt;p&gt;またはC++11でコンパイルする。&lt;/p&gt;
+
+&lt;p&gt;C++11からは&lt;code&gt;unorderd_set&lt;/code&gt;は&lt;code&gt;std::tr1&lt;/code&gt;から&lt;code&gt;std::&lt;/code&gt;に変更になった。&lt;/p&gt;
+
+&lt;p&gt;いまいち問題の原因が分からない&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;tr1:d58d730f83006a718b1240ae95d23553&#34;&gt;TR1&lt;/h2&gt;
+
+&lt;p&gt;標準C++ライブラリの拡張についての標準規格&lt;/p&gt;
+
+&lt;p&gt;C++11以前は名前空間&lt;code&gt;std::tr1&lt;/code&gt;に入っていた。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/9046723/how-to-get-headers-for-unordered-set-in-gcc-v4-1-2&#34;&gt;http://stackoverflow.com/questions/9046723/how-to-get-headers-for-unordered-set-in-gcc-v4-1-2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;unordered_set not found&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>NFS</title>
-      <link>http://karadaharu.org/memo/nfs</link>
+      <title>C&#43;&#43;でCの関数を使う</title>
+      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99c%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/nfs</guid>
+      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99c%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86</guid>
       <description>
 
-&lt;h1 id=&#34;nfs:09a0c2b06d675908fb18000132649dc4&#34;&gt;NFS&lt;/h1&gt;
+&lt;h1 id=&#34;c-でcの関数を使う:6e594ce2820a7801bbe35316e3d80077&#34;&gt;C++でCの関数を使う&lt;/h1&gt;
 
-&lt;p&gt;NFS:network file system
-別のPCのディレクトリを共有する仕組み&lt;/p&gt;
+&lt;h2 id=&#34;リンケージ:6e594ce2820a7801bbe35316e3d80077&#34;&gt;リンケージ&lt;/h2&gt;
 
-&lt;p&gt;設定
-/etc/exportsに書く&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>bashを理解する</title>
-      <link>http://karadaharu.org/memo/bash%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/bash%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B</guid>
-      <description>&lt;p&gt;#bashを理解する
-.bash_profileと.bashrcの違い
-.bash_profileはログイン時のみ実行される
-.bashrcは新しくシェルが起動される度に実行される。.bash_profileから呼ばれる形でも実行される。&lt;/p&gt;
+&lt;p&gt;ファイルを超えて利用できるかどうかをリンケージと呼ぶ
+変数宣言にexternをつけると別ファイルの外部リンケージのグローバル変数が扱える&lt;/p&gt;
 
-&lt;p&gt;環境設定ファイルbash_profileの反映&lt;/p&gt;
+&lt;h2 id=&#34;cライブラリを使う:6e594ce2820a7801bbe35316e3d80077&#34;&gt;Cライブラリを使う&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;$ source ~/.bashrc
+&lt;h3 id=&#34;標準ライブラリを使う:6e594ce2820a7801bbe35316e3d80077&#34;&gt;標準ライブラリを使う&lt;/h3&gt;
+
+&lt;p&gt;.hをとって、cを使う&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;cmath&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;パスを通す　~/.bashrcに下記をかいて，反映&lt;/p&gt;
+&lt;h3 id=&#34;その他のヘッダーファイルを読み込む:6e594ce2820a7801bbe35316e3d80077&#34;&gt;その他のヘッダーファイルを読み込む&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;export PATH=通したいディレクトリのパス:$PATH
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;$PATHはすでに通っているパス変数
-先に書いてあるパスが優先されるので，
-$PATH:通したいディレクトリのパス，の順番だと同じコマンドの場合だめ&lt;/p&gt;
-
-&lt;p&gt;コマンドのエイリアスを作成（例：sublime textを起動するsublコマンド）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo ln -s &amp;quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&amp;quot; /usr/local/bin/subl
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;シェルスクリプトで対話的作業を行う。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/usr/bin/expect
-spawn ssh ebi@tempura.jp
-expect &amp;quot;PASSWORD?&amp;quot;
-send &amp;quot;password\n&amp;quot;
-interact
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ftpは定形フォーマットをftpコマンドに食わせてやればOK&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>sshで接続できない</title>
-      <link>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/ssh%E3%81%A6%E6%8E%A5%E7%B6%9A%E3%81%A6%E3%81%8D%E3%81%AA%E3%81%84</guid>
-      <description>
-
-&lt;h1 id=&#34;sshで接続できない:c7c10a772b1970026ca58fea43d1194b&#34;&gt;sshで接続できない&lt;/h1&gt;
-
-&lt;p&gt;いつも使っているサーバーにSSH接続しようとしたところ、下記エラーで接続できませんでした。&lt;/p&gt;
-
-&lt;p&gt;ssh_exchange_identification: Connection closed by remote host&lt;/p&gt;
-
-&lt;h2 id=&#34;sshとは:c7c10a772b1970026ca58fea43d1194b&#34;&gt;SSHとは&lt;/h2&gt;
-
-&lt;p&gt;SSH:secure shellの略
-ネットワークを介して別のコンピュータにログインして操作するためのソフトウェアのひとつ。&lt;/p&gt;
-
-&lt;h2 id=&#34;サーバー側でアクセス元ipを制限している:c7c10a772b1970026ca58fea43d1194b&#34;&gt;サーバー側でアクセス元IPを制限している&lt;/h2&gt;
-
-&lt;p&gt;/etc/hosts.deny
-/etc/hosts.allow
-で設定できます。これが変わっているのかどうかはサーバーに接続することができないので、管理者に問い合わせるしかなさそうです。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>アクセス権の問題</title>
-      <link>http://karadaharu.org/memo/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%A8%A9%E3%81%AE%E5%95%8F%E9%A1%8C</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%A8%A9%E3%81%AE%E5%95%8F%E9%A1%8C</guid>
-      <description>
-
-&lt;h1 id=&#34;アクセス権の問題:b1ad97c5fa027ad1111b4e240df984f9&#34;&gt;アクセス権の問題&lt;/h1&gt;
-
-&lt;p&gt;リモートでは664なのが、マウントしたローカルでは600に見える。ローカルでchmodしても変えられない。&lt;/p&gt;
-
-&lt;p&gt;ローカル&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ls -al
--rw-------  1 kazumasa  staff  1522  9  2 16:41 feed-smartnews.php
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;リモート&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ls -al
--rw-rw-r-- 1 d-kurita webwork 1522  9月  2 16:41 2015 feed-smartnews.php
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でも編集できる。編集したあとはローカルリモートも600。リモートの所有者は自分になっている。&lt;/p&gt;
-
-&lt;p&gt;ローカル&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ls -al
--rw-------  1 kazumasa  staff  1522  9  2 16:41 feed-smartnews.php
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;リモート&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ls -al
--rw------- 1 d-kaneko webwork 1523  9月  2 16:50 2015 feed-smartnews.php
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;それをローカルでchmodするとローカルもリモートも変えられる。&lt;/p&gt;
-
-&lt;p&gt;ローカル&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ chmod 664 feed-smartnews.php
-$ ls -al
-$ ls -al
--rw-rw-r--  1 kazumasa  staff  1522  9  2 16:41 feed-smartnews.php
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;リモート&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ls -al
--rw-rw-r-- 1 d-kaneko webwork 1523  9月  2 16:50 2015 feed-smartnews.php
+&lt;pre&gt;&lt;code&gt;extern &amp;quot;C&amp;quot;{
+    #include &amp;quot;hoge.h&amp;quot;
+}
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
     <item>
-      <title>tarなどについて</title>
-      <link>http://karadaharu.org/memo/tar%E3%81%AA%E3%81%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6</link>
+      <title>C&#43;&#43;でマルチスレッドプログラミング</title>
+      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/tar%E3%81%AA%E3%81%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6</guid>
+      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99</guid>
       <description>
 
-&lt;h1 id=&#34;tarなどについて:da92c43d20a7471e37fb5715f43a38e6&#34;&gt;tarなどについて&lt;/h1&gt;
+&lt;h1 id=&#34;c-でマルチスレッドプログラミング:119a4da662008978f8aa860f9f949d99&#34;&gt;C++でマルチスレッドプログラミング&lt;/h1&gt;
 
-&lt;h2 id=&#34;tarとは:da92c43d20a7471e37fb5715f43a38e6&#34;&gt;tarとは&lt;/h2&gt;
+&lt;h2 id=&#34;そもそもマルチスレッドプログラミング:119a4da662008978f8aa860f9f949d99&#34;&gt;そもそもマルチスレッドプログラミング&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C言語</title>
+      <link>http://karadaharu.org/memo/c%E8%A8%80%E8%AA%9E</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/c%E8%A8%80%E8%AA%9E</guid>
+      <description>
 
-&lt;p&gt;複数のファイルをひとつのファイルにまとめて管理するための書庫管理コマンド。
-圧縮は行われない。
-すでにある書庫に追加、展開、削除などが行える。&lt;/p&gt;
+&lt;h1 id=&#34;c言語:764b7448d9f48713d096f1fadb72b9a9&#34;&gt;C言語&lt;/h1&gt;
 
-&lt;p&gt;実行ファイルもtarで包んであげると、ちゃんと送れる。&lt;/p&gt;
+&lt;p&gt;C99以降では、変数を配列の大きさとして使える。&lt;/p&gt;
 
-&lt;h3 id=&#34;基本コマンド:da92c43d20a7471e37fb5715f43a38e6&#34;&gt;基本コマンド&lt;/h3&gt;
+&lt;h2 id=&#34;文字列:764b7448d9f48713d096f1fadb72b9a9&#34;&gt;文字列&lt;/h2&gt;
 
-&lt;p&gt;tar zcvf anpam.tar.gz ./anpam&lt;/p&gt;
+&lt;p&gt;&amp;lsquo;A&amp;rsquo;はchar型、&amp;rdquo;ABC&amp;rdquo;は&amp;rsquo;A&amp;rsquo;のアドレス&lt;/p&gt;
 
-&lt;h2 id=&#34;gzip:da92c43d20a7471e37fb5715f43a38e6&#34;&gt;gzip&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;string.h&amp;gt;
+int strcmp(const char *s1, const char *s2);
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Lempel-Zivアルゴリズムを用いてファイルを圧縮する。&lt;/p&gt;
+&lt;p&gt;s1&amp;gt;s2のとき正、s2&amp;gt;s1のとき負。
+大小関係は文字コードによる。&lt;/p&gt;
+
+&lt;p&gt;アスキーコードの場合、大文字のほうが先なので、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int result = strcmp(&amp;quot;BBB&amp;quot;,&amp;quot;aaa&amp;quot;) // result &amp;lt; 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;複数ファイルの扱い:764b7448d9f48713d096f1fadb72b9a9&#34;&gt;複数ファイルの扱い&lt;/h2&gt;
+
+&lt;p&gt;ヘッダーファイルを重複して読み込むとエラーになる。以下のように書くことで二回目以降の読み込みをしないようにできる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ifndef _SAMPLE
+#define _SAMPLE
+
+// 中身
+
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;古い書き方:764b7448d9f48713d096f1fadb72b9a9&#34;&gt;古い書き方&lt;/h2&gt;
+
+&lt;p&gt;仮引数宣言を用いた関数の宣言&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int max(var1, var2)
+int var1, var2;
+{
+  if(var1 &amp;gt; var2){
+    return var1;
+  }else{
+    return var2;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;引数をかかない関数宣言&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;double add(); // 古い
+double add(double a, double b); // 普通
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;古い&lt;/p&gt;
 </description>
     </item>
     

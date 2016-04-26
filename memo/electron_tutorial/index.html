@@ -152,6 +152,64 @@ const remote = require(&lsquo;electron&rsquo;).remote;</p>
 <p>requestでpostで飛ばしちゃうと画面自体がリロードされちゃう？
 ajaxでとる？</p>
 
+<h2 id="閉じるボタンのクリックを取得するには:5550bc3b2a175d6adf315923b955cf1b">閉じるボタンのクリックを取得するには</h2>
+
+<p>閉じさせない</p>
+
+<p>main.js</p>
+
+<pre><code>app.on('ready', function () {
+	mainWindow.on('close', function(e){
+		e.preventDefault();
+	});
+});
+</code></pre>
+
+<p>mainプロセスから無理やり表面のjsを実行する</p>
+
+<pre><code>app.on('ready', function() {
+	mainWindow.webContents.executeJavaScript(&quot;alert('Hello There!');&quot;);
+});
+</code></pre>
+
+<p>表のjsで閉じるのを検知する(ふつうのブラウザ)</p>
+
+<pre><code>//jQuery
+$(document).ready(function(){
+  $(window).on(&quot;beforeunload&quot;,function(e){
+    return &quot;本当に離れますか？&quot;;
+  });
+});
+
+//javascriptで普通に書く場合
+window.onbeforeunload = function(){
+  return &quot;本当に離れますか？&quot;;
+}
+</code></pre>
+
+<p>表のjsで閉じるのを検知する(Electron)</p>
+
+<pre><code>window.onbeforeunload = function(e) {
+    var remote = require('remote');
+    var dialog = remote.require('dialog');
+    var choice = dialog.showMessageBox(
+            remote.getCurrentWindow(),
+            {
+                type: 'question',
+                buttons: ['Yes', 'No'],
+                title: 'Confirm',
+                message: 'Are you sure you want to quit?'
+            });
+    return choice === 0;
+};
+</code></pre>
+
+<p><a href="https://github.com/atom/electron/issues/2301">https://github.com/atom/electron/issues/2301</a></p>
+
+<p><a href="https://github.com/atom/electron/issues/2481">https://github.com/atom/electron/issues/2481</a></p>
+
+<p><a href="http://stackoverflow.com/questions/28920621/how-to-call-a-javascript-function-on-a-web-page-rendered-by-electron">http://stackoverflow.com/questions/28920621/how-to-call-a-javascript-function-on-a-web-page-rendered-by-electron</a></p>
+
             </div>
         </div>
 	</div>

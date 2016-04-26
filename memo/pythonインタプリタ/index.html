@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>pythonインタプリタ</title>
+  <meta name="description" content="pythonインタプリタ">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>pythonインタプリタ</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="pythonインタプリタ:8b840874e026cd9ba3fb7c1d1ed6f4c4">pythonインタプリタ</h1>
+
+<p><a href="http://d.hatena.ne.jp/aremokoremo/20111124/1322151606">Pythonは環境がぐちゃぐちゃになりがち</a></p>
+
+<h2 id="インタプリタとは:8b840874e026cd9ba3fb7c1d1ed6f4c4">インタプリタとは</h2>
+
+<p>コードを実行するとき，方法は大きく２つ．
+* インタプリタ方式
+* コンパイラ方式</p>
+
+<h3 id="インタプリタ方式:8b840874e026cd9ba3fb7c1d1ed6f4c4">インタプリタ方式</h3>
+
+<p>コードを読み込んで，ただちに実行する．</p>
+
+<h3 id="コンパイラ方式:8b840874e026cd9ba3fb7c1d1ed6f4c4">コンパイラ方式</h3>
+
+<p>コンパイラはプログラムを実行しない．機械語に変換するだけ</p>
+
+<h2 id="pythonのインタプリタ:8b840874e026cd9ba3fb7c1d1ed6f4c4">Pythonのインタプリタ</h2>
+
+<p><a href="http://yono.hatenablog.jp/entry/20100923/1285235346">OSXではPythonインタプリタはいくつかある．</a>
+それぞれ，インストール先が違う．
+* デフォルト:/usr/bin/python
+* Pythonの公式サイトからインストーラをつかったもの:/usr/local/bin/python
+* pyenv:/Users/kazumasa/.pyenv/shims/python</p>
+
+<p>→それぞれのインタプリタと同じところのpipを使ってあげないといけない
+→シンボリックリンク</p>
+
+<h2 id="今回の問題と対処方法:8b840874e026cd9ba3fb7c1d1ed6f4c4">今回の問題と対処方法</h2>
+
+<ul>
+<li>問題:pyenv環境にpipでライブラリをインストールしたいのに，/usr/local/bin/pipが実行されてしまって，別のところにインストールされてしまう．</li>
+<li>対処:/usr/local/bin/pipを削除→which pipでpyenv内のpipが呼ばれていることを確認</li>
+</ul>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

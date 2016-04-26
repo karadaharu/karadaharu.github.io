@@ -9,11 +9,45 @@
     <atom:link href="http://karadaharu.org/memo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title> C&#43;&#43;で多次元配列の動的確保</title>
-      <link>http://karadaharu.org/memo/c%E3%81%A6%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D</link>
+      <title></title>
+      <link>http://karadaharu.org/memo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/c%E3%81%A6%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D</guid>
+      <guid>http://karadaharu.org/memo/</guid>
+      <description>
+
+&lt;h1 id=&#34;matlab-system-identification:d262b82fff6236051edaf1f47a962b12&#34;&gt;matlab system identification&lt;/h1&gt;
+
+&lt;h2 id=&#34;捕食系:d262b82fff6236051edaf1f47a962b12&#34;&gt;捕食系&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jp.mathworks.com/help/ident/examples/three-ecological-population-systems-matlab-and-c-mex-file-modeling-of-time-series.html&#34;&gt;http://jp.mathworks.com/help/ident/examples/three-ecological-population-systems-matlab-and-c-mex-file-modeling-of-time-series.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;NLGREYEST:non-linear grey estimation　とは？&lt;/p&gt;
+
+&lt;p&gt;iddataは時系列データなので一定間隔でのサンプリングじゃないとダメ&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jp.mathworks.com/help/ident/ref/iddata.html&#34;&gt;Time domain data set&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ランダムなサンプリングで同時刻に違う値がいくつかある場合は？&lt;/p&gt;
+
+&lt;p&gt;時系列データ複数ある場合の&lt;a href=&#34;http://jp.mathworks.com/help/ident/examples/dry-friction-between-two-bodies-parameter-estimation-using-multiple-experiment-data.html&#34;&gt;やりかた&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;サンプリングがnonuniformな場合&lt;code&gt;Ts&lt;/code&gt;を&lt;code&gt;[]&lt;/code&gt;に設定してoptional argumentとして&lt;code&gt;TimeVecotr&lt;/code&gt;を与える&lt;/p&gt;
+
+&lt;p&gt;identification toolboxの関数にresample関数があって、間引く・補間ができる。&lt;/p&gt;
+
+&lt;p&gt;→とりあえず平均で時系列データをつくる&lt;/p&gt;
+
+&lt;p&gt;matlabはindexが0からはじまる&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title> C&#43;&#43;で多次元配列の動的確保</title>
+      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D</guid>
       <description>
 
 &lt;h1 id=&#34;c-で多次元配列の動的確保:3f2af4128f1c4ba145ed83c42554a4de&#34;&gt;C++で多次元配列の動的確保&lt;/h1&gt;
@@ -326,11 +360,57 @@ res
     </item>
     
     <item>
-      <title>C&#43;&#43;でCの関数を使う</title>
-      <link>http://karadaharu.org/memo/c%E3%81%A6c%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86</link>
+      <title>Boost</title>
+      <link>http://karadaharu.org/memo/boost</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/c%E3%81%A6c%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86</guid>
+      <guid>http://karadaharu.org/memo/boost</guid>
+      <description>
+
+&lt;h2 id=&#34;boostとは:d58d730f83006a718b1240ae95d23553&#34;&gt;Boostとは&lt;/h2&gt;
+
+&lt;p&gt;C++の機能を拡張する準標準的ライブラリ。ここから次のC++の標準ライブラリに機能が取り込まれたりする。&lt;/p&gt;
+
+&lt;h2 id=&#34;インストール-使い方:d58d730f83006a718b1240ae95d23553&#34;&gt;インストール&amp;amp;使い方&lt;/h2&gt;
+
+&lt;h2 id=&#34;関連して起きた問題:d58d730f83006a718b1240ae95d23553&#34;&gt;関連して起きた問題&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;unordered_set&amp;gt; // file not found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;古いMacでは&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;tr1/unordered_set&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と書かないといけない。または、Boostを入れて、&lt;code&gt;boost/tr1/&lt;/code&gt;以下をサーチパスに含める。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1228402/how-does-one-include-tr1&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;またはC++11でコンパイルする。&lt;/p&gt;
+
+&lt;p&gt;C++11からは&lt;code&gt;unorderd_set&lt;/code&gt;は&lt;code&gt;std::tr1&lt;/code&gt;から&lt;code&gt;std::&lt;/code&gt;に変更になった。&lt;/p&gt;
+
+&lt;p&gt;いまいち問題の原因が分からない&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;tr1:d58d730f83006a718b1240ae95d23553&#34;&gt;TR1&lt;/h2&gt;
+
+&lt;p&gt;標準C++ライブラリの拡張についての標準規格&lt;/p&gt;
+
+&lt;p&gt;C++11以前は名前空間&lt;code&gt;std::tr1&lt;/code&gt;に入っていた。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/9046723/how-to-get-headers-for-unordered-set-in-gcc-v4-1-2&#34;&gt;http://stackoverflow.com/questions/9046723/how-to-get-headers-for-unordered-set-in-gcc-v4-1-2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;unordered_set not found&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;でCの関数を使う</title>
+      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99c%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99c%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86</guid>
       <description>
 
 &lt;h1 id=&#34;c-でcの関数を使う:6e594ce2820a7801bbe35316e3d80077&#34;&gt;C++でCの関数を使う&lt;/h1&gt;
@@ -360,10 +440,10 @@ res
     
     <item>
       <title>C&#43;&#43;でマルチスレッドプログラミング</title>
-      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF</link>
+      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF</guid>
+      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99</guid>
       <description>
 
 &lt;h1 id=&#34;c-でマルチスレッドプログラミング:119a4da662008978f8aa860f9f949d99&#34;&gt;C++でマルチスレッドプログラミング&lt;/h1&gt;
@@ -438,11 +518,25 @@ double add(double a, double b); // 普通
     </item>
     
     <item>
-      <title>FreeBSDでのパッケージ管理</title>
-      <link>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E7%AE%A1%E7%90%86</link>
+      <title>Facebookキャッシュクリア</title>
+      <link>http://karadaharu.org/memo/facebook%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%AF%E3%83%AA%E3%82%A2</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%81%AE%E3%83%8F%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E7%AE%A1%E7%90%86</guid>
+      <guid>http://karadaharu.org/memo/facebook%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%AF%E3%83%AA%E3%82%A2</guid>
+      <description>&lt;p&gt;フェイスブックのOGPはフェイスブックが勝手にクロールしてそのキャッシュをもってる&lt;/p&gt;
+
+&lt;p&gt;プレビュー機能があると、先に記事のURLは発行されるけど外からは404&lt;/p&gt;
+
+&lt;p&gt;公開したときに一度キャッシュをクリアしないといけない&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FreeBSDでのパッケージ管理</title>
+      <link>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86</guid>
       <description>
 
 &lt;h1 id=&#34;freebsdでのパッケージ管理:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;FreeBSDでのパッケージ管理&lt;/h1&gt;
@@ -490,10 +584,10 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     
     <item>
       <title>FreeBSDでのユーザーのしくみ</title>
-      <link>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF</link>
+      <link>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF</guid>
+      <guid>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF</guid>
       <description>
 
 &lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
@@ -565,69 +659,6 @@ cp g_out/g_out /usr/local/bin/
 mv cglsc /usr/local/bin/
 mv cglscs /usr/local/bin/
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>GPGPU</title>
-      <link>http://karadaharu.org/memo/gpgpu</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/gpgpu</guid>
-      <description>
-
-&lt;h1 id=&#34;gpgpu:de577840d2ef360f2acf586115b3d292&#34;&gt;GPGPU&lt;/h1&gt;
-
-&lt;h2 id=&#34;opencl:de577840d2ef360f2acf586115b3d292&#34;&gt;OpenCL&lt;/h2&gt;
-
-&lt;p&gt;Appleが提案して、標準化団体クロノスグループによって標準化。&lt;/p&gt;
-
-&lt;h2 id=&#34;cuda:de577840d2ef360f2acf586115b3d292&#34;&gt;CUDA&lt;/h2&gt;
-
-&lt;p&gt;NVIDIA社のGPU用開発環境&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>HTTP</title>
-      <link>http://karadaharu.org/memo/http</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/http</guid>
-      <description>
-
-&lt;h1 id=&#34;http:3eb4e02fc4fac5fa3f219403c70fc4d5&#34;&gt;HTTP&lt;/h1&gt;
-
-&lt;h2 id=&#34;postでのデータ送信:3eb4e02fc4fac5fa3f219403c70fc4d5&#34;&gt;POSTでのデータ送信&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JSでファイル操作</title>
-      <link>http://karadaharu.org/memo/js%E3%81%A6%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%93%8D%E4%BD%9C</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/memo/js%E3%81%A6%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%93%8D%E4%BD%9C</guid>
-      <description>
-
-&lt;h1 id=&#34;jsでファイル操作:b4c364b2b8f5f354fa4ddec2f849e393&#34;&gt;JSでファイル操作&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://jsdo.it/t_kuro/nMgJ&#34;&gt;http://jsdo.it/t_kuro/nMgJ&lt;/a&gt;
-&lt;a href=&#34;http://d.hatena.ne.jp/do_aki/20130225/1361763613&#34;&gt;http://d.hatena.ne.jp/do_aki/20130225/1361763613&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;fileクラス:b4c364b2b8f5f354fa4ddec2f849e393&#34;&gt;Fileクラス&lt;/h2&gt;
-
-&lt;p&gt;Fileオブジェクトは１つのファイルと紐付いている&lt;/p&gt;
-
-&lt;h2 id=&#34;blobクラス:b4c364b2b8f5f354fa4ddec2f849e393&#34;&gt;Blobクラス&lt;/h2&gt;
-
-&lt;p&gt;Fileクラスの親クラス(?)
-コンテンツタイプ情報とバッファ情報をもつ&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var b = new Blob(data, {type:&amp;quot;text/plain&amp;quot;});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Blob:&lt;/p&gt;
 </description>
     </item>
     

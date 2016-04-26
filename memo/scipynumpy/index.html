@@ -158,11 +158,10 @@ np.dot(a,b)
 20
 </code></pre>
 
-<h2 id="matplotlib:701da245b80f480c7d8ddc93fab08f8a">matplotlib</h2>
+<p>y座標の点、x座標の点それぞれのグリッド状のtupleを返す</p>
 
-<p>current figure と current axes:figureが1つの画面、axesがひとつのグラフ</p>
-
-<p>plt.subplot(n0n1n2)でaxesを指定する。n0:縦方向の区画数、n1:横方向の区画数、n2:現在の区画(n0*i+n1なのかn1*i+n0なのか？)</p>
+<pre><code>y, x = np.mgrid[10:-10:100j, 10:-10:100j]
+</code></pre>
 
 <h2 id="pandas:701da245b80f480c7d8ddc93fab08f8a">pandas</h2>
 

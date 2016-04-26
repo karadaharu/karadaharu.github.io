@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>SQLインジェクション</title>
+  <meta name="description" content="SQLインジェクション">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>SQLインジェクション</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="sqlインジェクション:fe38dd45e30c13f4879ee293a1f631d3">SQLインジェクション</h1>
+
+<pre><code>$pdo = new PDO('sqlite:/path/db/users.db');
+$pdo-&gt;query(&quot;SELECT name FROM users WHERE id = &quot; . $_GET['id']); // &lt;-- ダメ、ゼッタイ！
+</code></pre>
+
+<p>もしも、<code>http://domain.com/?id=1%3BDELETE+FROM+users</code>みたいなURLをたたくと、SQL文は<code>SELECT name FROM users WHERE id = 1; DELETE FROM users</code>が実行されてしまう。こう書く。</p>
+
+<pre><code>&lt;?php
+$pdo = new PDO('sqlite:/path/db/users.db');
+$stmt = $pdo-&gt;prepare('SELECT name FROM users WHERE id = :id');
+$stmt-&gt;bindParam(':id', $_GET['id'], PDO::PARAM_INT); // &lt;-- PDOが自動的にエスケープ処理をする
+$stmt-&gt;execute();
+</code></pre>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+
