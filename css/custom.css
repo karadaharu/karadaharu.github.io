@@ -8,15 +8,6 @@ html {
 	width:100%;
 	position:relative;
 }
-@font-face {
-  font-family: 'Aaaargh';
-  src: url('/font/Aaargh.ttf');
-}
-
-@font-face {
-  font-family: 'QuicksandLight';
-  src: url('/font/Quicksand-Light.otf');
-}
 body {
 	color: #484848;
 }
@@ -42,13 +33,13 @@ body {
 
 .header ul li a {
 	color: #484848;
-	font-family: "QuicksandLight","HelveticaNeue", "Helvetica Neue","Raleway", Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .header .site-title {
 	text-transform: none;
 	color: #484848;
-	font-family: "QuicksandLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .pull-right {
@@ -59,11 +50,11 @@ body {
 	text-transform: capitalize;
 	padding-left: 1em;
 	margin-top: 1em;
-	font-family: "QuicksandLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .posts {
-	font-family: verdana,arial,helvetica,sans-serif;
+	font-family: helvetica,verdana,arial,sans-serif;
 	list-style-type:none;
 	padding-left: 1em;
 }
@@ -83,7 +74,7 @@ body {
 
 
 .footnote {
-	font-family: verdana,arial,helvetica,sans-serif;
+	font-family: helvetica,verdana,arial,sans-serif;
 	color:#888;
 	font-size:x-small;
 	margin-bottom:0;
@@ -137,7 +128,7 @@ body {
 }
 
 .post {
-	font-family: "QuicksandLight","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color:#484848;
 	letter-spacing:normal;
 	padding-left: .5em;

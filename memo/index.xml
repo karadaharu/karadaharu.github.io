@@ -10,10 +10,10 @@
     
     <item>
       <title></title>
-      <link>http://karadaharu.org/memo/</link>
+      <link>http://karadaharu.org/memo/coding/matlab/matlab_system_identification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/</guid>
+      <guid>http://karadaharu.org/memo/coding/matlab/matlab_system_identification/</guid>
       <description>
 
 &lt;h1 id=&#34;matlab-system-identification:d262b82fff6236051edaf1f47a962b12&#34;&gt;matlab system identification&lt;/h1&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title> C&#43;&#43;で多次元配列の動的確保</title>
-      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D</link>
+      <link>http://karadaharu.org/memo/coding/c/dynamic_allcoation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E5%A4%9A%E6%AC%A1%E5%85%83%E9%85%8D%E5%88%97%E3%81%AE%E5%8B%95%E7%9A%84%E7%A2%BA%E4%BF%9D</guid>
+      <guid>http://karadaharu.org/memo/coding/c/dynamic_allcoation/</guid>
       <description>
 
 &lt;h1 id=&#34;c-で多次元配列の動的確保:3f2af4128f1c4ba145ed83c42554a4de&#34;&gt;C++で多次元配列の動的確保&lt;/h1&gt;
@@ -72,10 +72,10 @@ for (int i = 0; i &amp;lt; n; i++){
     
     <item>
       <title>20150115vagrant開発環境構築</title>
-      <link>http://karadaharu.org/memo/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89</link>
+      <link>http://karadaharu.org/memo/coding/infra/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89</guid>
+      <guid>http://karadaharu.org/memo/coding/infra/20150115vagrant%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</guid>
       <description>
 
 &lt;h1 id=&#34;20150115-vagrant開発環境構築:ed16e1026ac5fe953f50944b382b246f&#34;&gt;20150115 vagrant開発環境構築&lt;/h1&gt;
@@ -257,10 +257,10 @@ vagrantによってFreeBSDを操作することができない．&lt;/p&gt;
     
     <item>
       <title>:usr:binと:usr:local:bin</title>
-      <link>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</link>
+      <link>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/usrbin%E3%81%A8usrlocalbin</guid>
+      <guid>http://karadaharu.org/memo/coding/:usr:bin%E3%81%A8:usr:local:bin/</guid>
       <description>
 
 &lt;h1 id=&#34;usr-binと-usr-local-bin:7c034d05bb6e0d94e8e9b63b6f695740&#34;&gt;/usr/binと/usr/local/bin&lt;/h1&gt;
@@ -305,10 +305,10 @@ vagrantによってFreeBSDを操作することができない．&lt;/p&gt;
     
     <item>
       <title>Alamofire</title>
-      <link>http://karadaharu.org/memo/alamofire</link>
+      <link>http://karadaharu.org/memo/coding/ios/Alamofire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/alamofire</guid>
+      <guid>http://karadaharu.org/memo/coding/ios/Alamofire/</guid>
       <description>
 
 &lt;h1 id=&#34;alamofire:c28cfccd79c298d1ddb8eeb2c3879b03&#34;&gt;Alamofire&lt;/h1&gt;
@@ -319,10 +319,10 @@ vagrantによってFreeBSDを操作することができない．&lt;/p&gt;
     
     <item>
       <title>Android開発</title>
-      <link>http://karadaharu.org/memo/android%E9%96%8B%E7%99%BA</link>
+      <link>http://karadaharu.org/memo/coding/java/Android%E9%96%8B%E7%99%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/android%E9%96%8B%E7%99%BA</guid>
+      <guid>http://karadaharu.org/memo/coding/java/Android%E9%96%8B%E7%99%BA/</guid>
       <description>
 
 &lt;h1 id=&#34;android開発:b20f521c6af2e7eb7d4c73515d62220d&#34;&gt;Android開発&lt;/h1&gt;
@@ -361,10 +361,10 @@ res
     
     <item>
       <title>Boost</title>
-      <link>http://karadaharu.org/memo/boost</link>
+      <link>http://karadaharu.org/memo/coding/c/boost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/boost</guid>
+      <guid>http://karadaharu.org/memo/coding/c/boost/</guid>
       <description>
 
 &lt;h2 id=&#34;boostとは:d58d730f83006a718b1240ae95d23553&#34;&gt;Boostとは&lt;/h2&gt;
@@ -407,10 +407,10 @@ res
     
     <item>
       <title>C&#43;&#43;でCの関数を使う</title>
-      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99c%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86</link>
+      <link>http://karadaharu.org/memo/coding/c/use_c_function_in_c&#43;&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99c%E3%81%AE%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86</guid>
+      <guid>http://karadaharu.org/memo/coding/c/use_c_function_in_c&#43;&#43;/</guid>
       <description>
 
 &lt;h1 id=&#34;c-でcの関数を使う:6e594ce2820a7801bbe35316e3d80077&#34;&gt;C++でCの関数を使う&lt;/h1&gt;
@@ -440,10 +440,10 @@ res
     
     <item>
       <title>C&#43;&#43;でマルチスレッドプログラミング</title>
-      <link>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99</link>
+      <link>http://karadaharu.org/memo/coding/c/multi_thread_programming_in_c&#43;&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/c%E3%81%A6%E3%82%99%E3%83%9E%E3%83%AB%E3%83%81%E3%82%B9%E3%83%AC%E3%83%83%E3%83%88%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99</guid>
+      <guid>http://karadaharu.org/memo/coding/c/multi_thread_programming_in_c&#43;&#43;/</guid>
       <description>
 
 &lt;h1 id=&#34;c-でマルチスレッドプログラミング:119a4da662008978f8aa860f9f949d99&#34;&gt;C++でマルチスレッドプログラミング&lt;/h1&gt;
@@ -454,10 +454,10 @@ res
     
     <item>
       <title>C言語</title>
-      <link>http://karadaharu.org/memo/c%E8%A8%80%E8%AA%9E</link>
+      <link>http://karadaharu.org/memo/coding/c/c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/c%E8%A8%80%E8%AA%9E</guid>
+      <guid>http://karadaharu.org/memo/coding/c/c/</guid>
       <description>
 
 &lt;h1 id=&#34;c言語:764b7448d9f48713d096f1fadb72b9a9&#34;&gt;C言語&lt;/h1&gt;
@@ -519,10 +519,10 @@ double add(double a, double b); // 普通
     
     <item>
       <title>Facebookキャッシュクリア</title>
-      <link>http://karadaharu.org/memo/facebook%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%AF%E3%83%AA%E3%82%A2</link>
+      <link>http://karadaharu.org/memo/coding/web_app/fb_cache_clear/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/facebook%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%AF%E3%83%AA%E3%82%A2</guid>
+      <guid>http://karadaharu.org/memo/coding/web_app/fb_cache_clear/</guid>
       <description>&lt;p&gt;フェイスブックのOGPはフェイスブックが勝手にクロールしてそのキャッシュをもってる&lt;/p&gt;
 
 &lt;p&gt;プレビュー機能があると、先に記事のURLは発行されるけど外からは404&lt;/p&gt;
@@ -533,10 +533,10 @@ double add(double a, double b); // 普通
     
     <item>
       <title>FreeBSDでのパッケージ管理</title>
-      <link>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86</link>
+      <link>http://karadaharu.org/memo/coding/freebsd/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86</guid>
+      <guid>http://karadaharu.org/memo/coding/freebsd/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E7%AE%A1%E7%90%86/</guid>
       <description>
 
 &lt;h1 id=&#34;freebsdでのパッケージ管理:6be24f3c3d8297947e6ac94ed926aac6&#34;&gt;FreeBSDでのパッケージ管理&lt;/h1&gt;
@@ -584,10 +584,10 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     
     <item>
       <title>FreeBSDでのユーザーのしくみ</title>
-      <link>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF</link>
+      <link>http://karadaharu.org/memo/coding/freebsd/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/freebsd%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF</guid>
+      <guid>http://karadaharu.org/memo/coding/freebsd/FreeBSD%E3%81%A6%E3%82%99%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF/</guid>
       <description>
 
 &lt;h1 id=&#34;freebsdでのユーザーのしくみ:a83760d81f5fb2874b12c55209763bac&#34;&gt;FreeBSDでのユーザーのしくみ&lt;/h1&gt;
@@ -600,10 +600,10 @@ Ports Collection とは、/usr/ports 以下に置かれる Makefile, 修正パ�
     
     <item>
       <title>GCC、LLVM、Clang</title>
-      <link>http://karadaharu.org/memo/gccllvmclang</link>
+      <link>http://karadaharu.org/memo/coding/GCC-LLVM-Clang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/gccllvmclang</guid>
+      <guid>http://karadaharu.org/memo/coding/GCC-LLVM-Clang/</guid>
       <description>
 
 &lt;h2 id=&#34;brew-install-gccできない:3c4a5e60a26d4da826625950857283d2&#34;&gt;brew install gccできない&lt;/h2&gt;
@@ -642,10 +642,10 @@ openFrameworksでつくるiOSとかAndroidのアプリというのはそうい�
     
     <item>
       <title>GLSCのインストール</title>
-      <link>http://karadaharu.org/memo/glsc%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB</link>
+      <link>http://karadaharu.org/memo/coding/c/install_GLSC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/memo/glsc%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB</guid>
+      <guid>http://karadaharu.org/memo/coding/c/install_GLSC/</guid>
       <description>
 
 &lt;h1 id=&#34;glscのインストール:014900a4b4844ef7d2f99600413b9680&#34;&gt;GLSCのインストール&lt;/h1&gt;

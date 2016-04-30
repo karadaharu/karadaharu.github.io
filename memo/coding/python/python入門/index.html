@@ -1,0 +1,237 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>python入門</title>
+  <meta name="description" content="python入門">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>python入門</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="入門:54edb7989efe833f130f1c20e58f6a46">入門</h1>
+
+<p>1行目にはshebangを書く
+    #!/usr/bin/env python
+これを書くと
+    /usr/bin/env python main.py
+としてファイルが実行される</p>
+
+<p>文字コードの指定
+    # -<em>- coding: utf-8 -</em>-</p>
+
+<p>urllib2:ウェブサイトにアクセスする標準モジュール
+beautifulsoup:HTMLパーサー
+つまり&hellip;
+urllib2でHTMLファイルを取得→beautifulsoupで画像だけ取得
+みたいな流れ</p>
+
+<h2 id="変数型:54edb7989efe833f130f1c20e58f6a46">変数型</h2>
+
+<h3 id="tuple:54edb7989efe833f130f1c20e58f6a46">tuple</h3>
+
+<p>値の変更できないリスト型</p>
+
+<p>list = [1,2,3]
+tuple = (1,2,3)</p>
+
+<h3 id="辞書:54edb7989efe833f130f1c20e58f6a46">辞書</h3>
+
+<pre><code>dict = {&quot;a&quot;:1, &quot;b&quot;:2}
+# 初期化
+dict2 = {}
+# 要素の追加
+dict2[&quot;a&quot;] = 1
+</code></pre>
+
+<h3 id="リスト:54edb7989efe833f130f1c20e58f6a46">リスト</h3>
+
+<p>li = [1,2,3]</p>
+
+<h2 id="boolean:54edb7989efe833f130f1c20e58f6a46">boolean</h2>
+
+<p>True
+False
+大文字！！</p>
+
+<h2 id="date-time等:54edb7989efe833f130f1c20e58f6a46">date,time等</h2>
+
+<h2 id="基本関数:54edb7989efe833f130f1c20e58f6a46">基本関数</h2>
+
+<ul>
+<li>type(obj):変数の型を調べる</li>
+</ul>
+
+<h2 id="テクニック:54edb7989efe833f130f1c20e58f6a46">テクニック</h2>
+
+<h3 id="長い文字列を複数行に渡って書く:54edb7989efe833f130f1c20e58f6a46">長い文字列を複数行に渡って書く</h3>
+
+<p>x = &lsquo;aaaaaaaaaaaafffffffffffffffeeeeeeeeeeee&rsquo;</p>
+
+<p>これを複数行にするには</p>
+
+<p>x = &ldquo;&rdquo;&ldquo;aaaaaaaaaaaa</p>
+
+<p>fffffffffffffff</p>
+
+<p>eeeeeeeeeeee&rdquo;&ldquo;&rdquo;</p>
+
+<h3 id="lambda式:54edb7989efe833f130f1c20e58f6a46">lambda式</h3>
+
+<p>def関数のように式で関数を作るもの
+無名関数
+lamdba x,y,z : x + y + z
+みたいな</p>
+
+<h2 id="演算子:54edb7989efe833f130f1c20e58f6a46">演算子</h2>
+
+<pre><code>a ** b # aのb乗
+</code></pre>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

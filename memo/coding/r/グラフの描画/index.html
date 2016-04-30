@@ -1,0 +1,335 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>グラフの描画</title>
+  <meta name="description" content="グラフの描画">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>グラフの描画</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="グラフの描画:3bb54eba01512fe4b984402d95f9355c">グラフの描画</h1>
+
+<h2 id="グラフのきほん:3bb54eba01512fe4b984402d95f9355c">グラフのきほん</h2>
+
+<p>積み上げヒストグラムはミスリードをおこすので使わない．密度関数とかを使うべき．</p>
+
+<h2 id="グラフにタイトルをつける:3bb54eba01512fe4b984402d95f9355c">グラフにタイトルをつける</h2>
+
+<p>plot(data, main=&ldquo;タイトル&rdquo;)</p>
+
+<h2 id="グラフに日本語を使う:3bb54eba01512fe4b984402d95f9355c">グラフに日本語を使う</h2>
+
+<p>par(family=&ldquo;HiraMaruProN-W4&rdquo;)</p>
+
+<p>par:グラフのパラメータを決める
+x,y軸名に文字列を指定する
+xlab = &ldquo;&rdquo;, ylab =&ldquo;&rdquo;</p>
+
+<p>傾きa、切片bの直線を描く
+abline(a,b),abline(c(a,b))</p>
+
+<p>関数の曲線を描く
+plot(関数名, xの下限, xの上限)</p>
+
+<p>軸の区切りの数字がどこを指しているの要注意だわ、、</p>
+
+<h2 id="ヒストグラム:3bb54eba01512fe4b984402d95f9355c">ヒストグラム</h2>
+
+<p>hist()</p>
+
+<h2 id="棒グラフ:3bb54eba01512fe4b984402d95f9355c">棒グラフ</h2>
+
+<pre><code>&gt; v &lt;- c(10,3,4)
+&gt; n &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)
+&gt; names(v) &lt;- n
+&gt; barplot(v)
+</code></pre>
+
+<h2 id="凡例をつける:3bb54eba01512fe4b984402d95f9355c">凡例をつける</h2>
+
+<p>legend(&ldquo;topleft&rdquo;, legend = labels, col = cols, pch = pchs, lty = ltys)
+legend:凡例の名前をベクトルで
+col:色をベクトルで
+pch:点の形をベクトルで
+lty:線の形をベクトルで
+<em>pch,ltyのどちらかを指定しないと何も描かれない</em></p>
+
+<p>xメモリを縦に表示
+barplot(ta, las = 3)</p>
+
+<h2 id="棒グラフ-1:3bb54eba01512fe4b984402d95f9355c">棒グラフ</h2>
+
+<p>barplot()</p>
+
+<h3 id="ふたつのものを積み重ねて表示したい:3bb54eba01512fe4b984402d95f9355c">ふたつのものを積み重ねて表示したい</h3>
+
+<p>a &lt;- c(1,4,49,3,44)
+b &lt;- c(23,44,3,3,2)
+ab &lt;- t(cbind(a,b))
+barplot(ab)</p>
+
+<h2 id="ヒストグラム-1:3bb54eba01512fe4b984402d95f9355c">ヒストグラム</h2>
+
+<h3 id="日付データ:3bb54eba01512fe4b984402d95f9355c">日付データ</h3>
+
+<pre><code>rdates &lt;- as.Date(&quot;2010/1/1&quot;) + floor(365*runif(100))
+hist(rdates, &quot;months&quot;, format = &quot;%d %b&quot;)
+</code></pre>
+
+<p>日付の目盛りを整える</p>
+
+<h2 id="ベン図:3bb54eba01512fe4b984402d95f9355c">ベン図</h2>
+
+<p>library(VennDiagram)
+集合となるラベルをリストとして用意。
+その集合に入るレコードをいれる。（つまり複数の集合に属するレコードは複数のリスト要素に入っている）</p>
+
+<h2 id="latticeパッケージ:3bb54eba01512fe4b984402d95f9355c">latticeパッケージ</h2>
+
+<p>ファイルに描画関数を書いても描画されない.
+latticeの描画関数は描くための情報を貯めたオブジェクトを作る関数．
+以下のようにして描画する</p>
+
+<pre><code>pl &lt;- densityplot(hogehoge)
+print(pl)
+</code></pre>
+
+<p>画像として保存するときも同じ</p>
+
+<pre><code>png(filename, width = 600, height = 600)
+pl&lt;-densityplot(hogehoge)
+print(pl)
+dev.off()
+</code></pre>
+
+<h2 id="日本語をどのパッケージでも正しく表示する:3bb54eba01512fe4b984402d95f9355c">日本語をどのパッケージでも正しく表示する</h2>
+
+<p><a href="http://kohske.wordpress.com/2011/02/26/using-cjk-fonts-in-r-and-ggplot2/">http://kohske.wordpress.com/2011/02/26/using-cjk-fonts-in-r-and-ggplot2/</a>
+<a href="http://d.hatena.ne.jp/kiwamu_i/20100808">http://d.hatena.ne.jp/kiwamu_i/20100808</a>
+###　デフォルトのplot
+setHook(packageEvent(&ldquo;grDevices&rdquo;, &ldquo;onLoad&rdquo;),
+function(&hellip;){
+  grDevices::quartzFonts(sans=grDevices::quartzFont(
+    c(&ldquo;Hiragino Kaku Gothic Pro W3&rdquo;,
+    &ldquo;Hiragino Kaku Gothic Pro W6&rdquo;,
+    &ldquo;Hiragino Kaku Gothic Pro W3&rdquo;,
+    &ldquo;Hiragino Kaku Gothic Pro W6&rdquo;)))
+    })
+    attach(NULL, name = &ldquo;MacJapanEnv&rdquo;)
+    assign(&ldquo;familyset_hook&rdquo;,
+    function() { if(names(dev.cur())==&ldquo;quartz&rdquo;) par(family=&ldquo;sans&rdquo;)},
+    pos=&ldquo;MacJapanEnv&rdquo;)</p>
+
+<h3 id="lattice:3bb54eba01512fe4b984402d95f9355c">lattice</h3>
+
+<pre><code># setHook:◯◯が実行されたら，的な
+setHook(packageEvent(&quot;lattice&quot;, &quot;attach&quot;),
+function(...) {
+  lattice.options(default.args = list(as.table=TRUE))
+  my.pdf.theme &lt;- standard.theme(&quot;pdf&quot;, color=TRUE)
+  my.pdf.theme$grid.pars &lt;- list(fontfamily = &quot;sans&quot;)
+  my.pdf.theme$axis.text$fontfamily &lt;- &quot;Helvetica&quot;
+  my.pdf.theme$axis.text$cex &lt;- 1
+
+  my.quartz.theme &lt;- standard.theme(&quot;quartz&quot;, color=FALSE)
+  my.quartz.theme$grid.pars &lt;- list(fontfamily = &quot;sans&quot;)
+  my.quartz.theme$axis.text$fontfamily &lt;- &quot;Helvetica&quot;
+  my.quartz.theme$axis.text$cex &lt;- 1
+
+  lattice.options(default.theme =
+    function() {
+      switch(EXPR = .Device,　pdf = my.pdf.theme,my.quartz.theme)
+    })
+  }
+)
+</code></pre>
+
+<p>色がなくなってしまったり，イマイチうまくいかない．</p>
+
+<h2 id="カーネル密度関数:3bb54eba01512fe4b984402d95f9355c">カーネル密度関数</h2>
+
+<p>ヒストグラムは区切り方によって結果が大きく異なってしまう．
+ある値をとったときにの周辺にブロックを積む，というアイデア．
+連続関数の場合はカーネル関数をつかう．
+グラフをプロットする人が決めないといけないのは，そのブロックの幅．（デフォルト値もあるけど）
+その高さは，どんなカーネル関数を使うか,バンド幅をどうするか，による．</p>
+
+<p>分布が同一であるかどうかはKolmogorov-Smirnov検定を使う</p>
+
+<p>標本数nで割るので，標本数が違うグループを同じグラフにプロットしても
+高さでは比較できない．
+確率密度分布でもおなじ．</p>
+
+<p>縦軸が何なら分布を比較できるのか</p>
+
+<h3 id="latticeのdensityplotを使う場合:3bb54eba01512fe4b984402d95f9355c">latticeのdensityplotを使う場合</h3>
+
+<h2 id="ヒートマップ:3bb54eba01512fe4b984402d95f9355c">ヒートマップ</h2>
+
+<p><a href="http://stackoverflow.com/questions/17820143/how-to-change-heatmap-2-color-range-in-r">http://stackoverflow.com/questions/17820143/how-to-change-heatmap-2-color-range-in-r</a></p>
+
+<p>値による色の分布の変更
+colorRampPalette関数で自分で色の範囲をつくる</p>
+
+<p>いまいちきれいにできないので後回し</p>
+
+<h2 id="日付をｘ軸の目盛りに表示する:3bb54eba01512fe4b984402d95f9355c">日付をｘ軸の目盛りに表示する</h2>
+
+<p>xaxt=&ldquo;n&rdquo;,yaxt=&ldquo;n&rdquo;:目盛りを表示しない．
+cex=1:標準の大きさを1
+plot(dq_list[,1],dq_list[,2], xaxt=&ldquo;n&rdquo;)
+axis(1,dq_list[,1], format(dq_list[,1], &ldquo;%b %d&rdquo;), cex.axis = .7)</p>
+
+<h2 id="横軸の長いラベルをきれいにいれる:3bb54eba01512fe4b984402d95f9355c">横軸の長いラベルをきれいにいれる</h2>
+
+<p>par(mar=c(3,3,3,6))</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

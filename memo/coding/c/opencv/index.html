@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>opencv</title>
+  <meta name="description" content="opencv">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>opencv</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="opencv:076ba53c4006ee24c3397f7e0e59373b">OpenCV</h1>
+
+<h2 id="基本:076ba53c4006ee24c3397f7e0e59373b">基本</h2>
+
+<h3 id="画像を保持するクラス-構造体:076ba53c4006ee24c3397f7e0e59373b">画像を保持するクラス・構造体</h3>
+
+<ul>
+<li>CvMat:行列を保持する構造体（古い）</li>
+<li>CvArr:実体はvoid。関数の引数はこれになっていて、CvMatとIplImageを同列に扱うためにvoidポインタになっていて、内部で判断してくれる。InputArrayもたぶん同じ感じ。</li>
+<li>cv::Mat:C++版で画像も行列も一様に扱うクラス。メインはこれ。クラスなので色々な処理をするメソッドがついてる。</li>
+</ul>
+
+<h4 id="mat型変数には画素の型がたくさんある:076ba53c4006ee24c3397f7e0e59373b">Mat型変数には画素の型がたくさんある。</h4>
+
+<h2 id="二値化:076ba53c4006ee24c3397f7e0e59373b">二値化</h2>
+
+<p>cvThreshold(const CvArr *src, CvArr *dst, double threshold, double max_value, int threshhold_type);</p>
+
+<h2 id="ofxcv:076ba53c4006ee24c3397f7e0e59373b">ofxCV</h2>
+
+<h3 id="ofとopencvのやりとり:076ba53c4006ee24c3397f7e0e59373b">oFとopenCVのやりとり</h3>
+
+<pre><code class="language-toCv()```でopenCV用の変数に変換してくれる。">
+</code></pre>
+
+<p>Mat imgMat = toCV(img);
+```</p>
+
+<h3 id="動くサンプル:076ba53c4006ee24c3397f7e0e59373b">動くサンプル</h3>
+
+<p>edge</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

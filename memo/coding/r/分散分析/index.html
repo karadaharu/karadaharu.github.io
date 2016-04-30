@@ -1,0 +1,258 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>分散分析</title>
+  <meta name="description" content="分散分析">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>分散分析</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="分散分析:50c40793c87adf40bac0901f98f538f4">分散分析</h1>
+
+<h2 id="全体像:50c40793c87adf40bac0901f98f538f4">全体像</h2>
+
+<p>実験計画法の一部</p>
+
+<p>一、二元配置法の発展として、</p>
+
+<ul>
+<li>多元配置法</li>
+<li>分割法</li>
+<li>直交法による方法(ラテン方格法、グレコ-ラテン方格法)</li>
+</ul>
+
+<p>などがある。</p>
+
+<p>多重比較法</p>
+
+<h2 id="概要:50c40793c87adf40bac0901f98f538f4">概要</h2>
+
+<p>分散分析とは&hellip;<em>3つ以上の平均値を比較する方法</em>
+<em>2つの平均値の比較はt検定</em></p>
+
+<p>anova:analysis of variance=分散分析
+分散分析 = 線形回帰モデル
+一元配置法でできるのは、帰無仮説「要因の水準間に差はない」ことを棄却することだけ。
+その差の大きさは多重比較検定で。
+<a href="http://www.agri.tohoku.ac.jp/iden/toukei7.html">http://www.agri.tohoku.ac.jp/iden/toukei7.html</a></p>
+
+<h2 id="一元配置分散分析:50c40793c87adf40bac0901f98f538f4">一元配置分散分析</h2>
+
+<h3 id="r標準関数:50c40793c87adf40bac0901f98f538f4">R標準関数</h3>
+
+<p>oneway.test(x ~ y, data, var.equal = FALSE)
+var.equal:等分散性を仮定するかどうか</p>
+
+<p>以下の2つは同じ結果を返す</p>
+
+<pre><code>oneway.test(extra ~ group, data = sleep, var.equal = TRUE)
+anova(lm(extra ~ group, data = sleep))
+</code></pre>
+
+<h3 id="結果の見方:50c40793c87adf40bac0901f98f538f4">結果の見方</h3>
+
+<p>One-way analysis of means</p>
+
+<p>data:  data[, 1] and data[, 2]
+F = 182.0276, num df = 6, denom df = 3699, p-value &lt; 2.2e-16</p>
+
+<p>F:統計検定量F
+num df:群間変動の自由度(l-1)
+denom df:郡内変動の自由度(n-l)
+p-value:p値（p値の意味は仮説検定の基本.mdを参照）</p>
+
+<h2 id="二元配置分散分析:50c40793c87adf40bac0901f98f538f4">二元配置分散分析</h2>
+
+<h3 id="概要-1:50c40793c87adf40bac0901f98f538f4">概要</h3>
+
+<p>主効果、交互作用効果についての検定が必要。</p>
+
+<p>主効果:要因Aによって結果の平均が異なる
+交互作用効果:</p>
+
+<h3 id="r標準関数-1:50c40793c87adf40bac0901f98f538f4">R標準関数</h3>
+
+<p>aov(taste_points~temp*bottle_name)
+interaction.plot(taste_points,temp,bottle_name)</p>
+
+<h3 id="結果の見方-1:50c40793c87adf40bac0901f98f538f4">結果の見方</h3>
+
+<p>aov(hoge)
+Call:
+aov(formula = data[, 1] ~ taue_label * hohi_label)</p>
+
+<p>Terms:
+taue_label hohi_label taue_label:hohi_label Residuals
+Sum of Squares     0.46688    0.00025               0.04402  80.66770
+Deg. of Freedom          1          1                     1       381</p>
+
+<p>Residual standard error: 0.4601372
+Estimated effects may be unbalanced</p>
+
+<p>summary(aov(hoge))
+                        Df Sum Sq Mean Sq F value Pr(&gt;F)
+taue_label              1   0.47  0.4669   2.205  0.138
+hohi_label              2   0.04  0.0189   0.089  0.914
+taue_label:hohi_label   2   0.42  0.2114   0.998  0.369
+Residuals             379  80.25  0.2117</p>
+
+<h2 id="多元配置法:50c40793c87adf40bac0901f98f538f4">多元配置法</h2>
+
+<p>そのまま要因数を増やして同じことをする。
+問題は、必要な実験回数がどんどん増えてしまうこと。</p>
+
+<h2 id="多重比較法:50c40793c87adf40bac0901f98f538f4">多重比較法</h2>
+
+<p>n元配置法では、差がある、ということは分かるが、どの水準とどの水準に差があるのか、は分からない。
+平均値のうちいくつかを取り出して、その組合せに有意差があるか、の検定を何度もする。
+その際の有意水準の決め方に注意した方法が、多重比較法。</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

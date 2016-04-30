@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>pythonインストール</title>
+  <meta name="description" content="pythonインストール">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>pythonインストール</h1>
+            </div>
+
+            <div class="post-content">
+                <p>#ぱいそにすたになる
+##環境を整える
+##pip
+pip:pythonのパッケージ管理システム
+easy_installを置き換える
+<a href="http://tdoc.info/blog/2014/01/15/pip.html">http://tdoc.info/blog/2014/01/15/pip.html</a></p>
+
+<p>py-pip py32-pipってどう違うの？
+py-pipをいれれば、今のバージョン用に入るってこと？
+32がactiveな状態で、py-pipをしたらpy27-pipがはいった
+pipにもバージョンがあって、pythonのバージョン切り替えと同様に切り替えられる
+    pip list
+でインストールしているパッケージを表示</p>
+
+<p>pythonのインタープリタが32bitか64bitか確認
+<a href="http://stmind.hatenablog.com/entry/20120407/1333815923">http://stmind.hatenablog.com/entry/20120407/1333815923</a>
+→64bitだったが、2.7とか出てたので微妙</p>
+
+<p><a href="http://blog.k-sakabe.com/?p=4128">http://blog.k-sakabe.com/?p=4128</a>
+file /opt/local/bin/python3.2
+とかで確認できた
+python3.2: Mach-O 64-bit executable x86_64</p>
+
+<p>virtualenvは、OSの環境と切り離された仮想的な環境を作ることができます。virtualenv環境にpipを使ってパッケージをインストールする事で、OS環境を破壊することなく環境が構築できます。
+macportsでのバージョンの切り替え
+    port select &ndash;list python
+    sudo port select &ndash;set python python31
+など</p>
+
+<p>pythonのバージョンとパッケージはそれぞれ別にインストールしなきゃいけないの？
+あるバージョンでインストールしたら、他のバージョンでも使えるの？？</p>
+
+<p>Appstoredでアプリをアップデートするとき、spotlightをとめているとできない→ゴミ箱にアプリをいれて再インストール</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

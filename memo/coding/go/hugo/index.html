@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>hugo</title>
+  <meta name="description" content="hugo">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>hugo</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="hugo:32ab7241d48fcc174c877413a917f8cf">hugo</h1>
+
+<h2 id="インストール:32ab7241d48fcc174c877413a917f8cf">インストール</h2>
+
+<pre><code>$ brew install hugo
+$ hugo new site my_site
+</code></pre>
+
+<h3 id="テーマのインストール:32ab7241d48fcc174c877413a917f8cf">テーマのインストール</h3>
+
+<pre><code>$ mkdir themes
+$ cd themes
+$ git clone url_of_theme
+</code></pre>
+
+<h2 id="記事を書く:32ab7241d48fcc174c877413a917f8cf">記事を書く</h2>
+
+<pre><code>$ hugo new about.md
+</code></pre>
+
+<h2 id="ローカルサーバーでチェック:32ab7241d48fcc174c877413a917f8cf">ローカルサーバーでチェック</h2>
+
+<pre><code>$hugo server -t 使用したいテーマ名 --watch
+</code></pre>
+
+<p>UTF8-Mac問題</p>
+
+<pre><code>[permalinks]
+  memo= &quot;/:section/:filename&quot;
+</code></pre>
+
+<h2 id="github-pagesに公開:32ab7241d48fcc174c877413a917f8cf">github pagesに公開</h2>
+
+<p>publicフォルダをgit管理、remoteをgithub pagesにするだけ</p>
+
+<h2 id="更新手順:32ab7241d48fcc174c877413a917f8cf">更新手順</h2>
+
+<p>手動で更新</p>
+
+<pre><code>$ ./deploy.sh
+</code></pre>
+
+<h3 id="メモを自動更新:32ab7241d48fcc174c877413a917f8cf">メモを自動更新</h3>
+
+<p>memo/coding/
+    coding:codingのフォルダ下</p>
+
+<p>I installed Hugo and created a new site, but it doesn&rsquo;t build html contents.</p>
+
+<p>I don&rsquo;t know what to do. Any help?</p>
+
+<p>Below is what I did;</p>
+
+<p>First, I installed Hugo and created a new site.</p>
+
+<pre><code>$ brew install hugo
+$ hugo version
+Hugo Static Site Generator v0.14 BuildDate: 2015-06-17T05:41:12+09:00
+$ hugo new site my_site
+$ cd my_site
+$ git clone --recursive https://github.com/spf13/hugoThemes.git themes
+</code></pre>
+
+<p>Then, create new post</p>
+
+<pre><code>$ hugo new about.md
+$ vi about.md
++++
+date = &quot;2015-12-31T16:38:10+09:00&quot;
+draft = false
+title = &quot;about&quot;
+
++++
+
+
+## about
+
+This is about page
+
+$ hugo --theme=hugo-zen
+0 draft content
+0 future content
+1 pages created
+0 paginator pages created
+0 tags created
+0 categories created
+in 23 ms
+$ vi 
+</code></pre>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

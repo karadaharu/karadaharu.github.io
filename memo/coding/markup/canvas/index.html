@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>canvas</title>
+  <meta name="description" content="canvas">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>canvas</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<p>###jsでcanvas要素にお絵かきする
+<a href="http://ascii.jp/elem/000/000/513/513377/index-5.html">http://ascii.jp/elem/000/000/513/513377/index-5.html</a></p>
+
+<p>###canvas要素を画像として取り出す
+<a href="http://qiita.com/0829/items/a8c98c8f53b2e821ac94">http://qiita.com/0829/items/a8c98c8f53b2e821ac94</a></p>
+
+<p>###サーバーに保存する
+<a href="http://d.hatena.ne.jp/favril/20100316/1268725431">http://d.hatena.ne.jp/favril/20100316/1268725431</a></p>
+
+<p>###jsで、html要素を操作する
+<a href="https://sites.google.com/a/cse.kyoto-su.ac.jp/cac-wiki/reference/javascript/create-element-img">https://sites.google.com/a/cse.kyoto-su.ac.jp/cac-wiki/reference/javascript/create-element-img</a></p>
+
+<p>###html Tips
+inputのnameの意味:nameがidになる。サーバーで処理するときの鍵
+formにはtypeは指定しない</p>
+
+<p>###jsの実行タイミング
+####formのsubmitを押したときに、jsを実行する
+<form onsubmit="makesound(this);return false;">
+でmakesound関数が実行される
+makesound関数の引数をFormTestとしたとき、最後に
+FormTest.submit()
+を実行することで、sumit時のactionが実行される</p>
+
+<h4 id="画像が読み込まれるまで待つ:a21b89a7b1b29bc697cebe370f754dd3">画像が読み込まれるまで待つ</h4>
+
+<ul>
+<li><a href="http://javascriptist.net/ref/image.onload.html">http://javascriptist.net/ref/image.onload.html</a></li>
+<li>
+#base64
+画像などのバイナリデータを英数字のみで表すエンコード方式</li>
+<li><a href="http://ja.pymotw.com/2/base64/">http://ja.pymotw.com/2/base64/</a></li>
+<li><a href="http://stackoverflow.com/questions/2941995/python-ignore-incorrect-padding-error-when-base64-decoding">http://stackoverflow.com/questions/2941995/python-ignore-incorrect-padding-error-when-base64-decoding</a></li>
+</ul>
+
+<p>#javascriptのデバッグ
+* <a href="http://www.slideshare.net/yuka2py/chromejavascript">http://www.slideshare.net/yuka2py/chromejavascript</a>
+    * console.log(backgroundImg.src);</p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+

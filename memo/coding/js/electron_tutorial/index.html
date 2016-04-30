@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>electron_tutorial</title>
+  <meta name="description" content="electron_tutorial">
+  <meta name="author" content="">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://karadaharu.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://karadaharu.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://karadaharu.org/highlight/styles/default.css">
+  
+  <script src="http://karadaharu.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Kazumasa Kaneko</a>
+            <ul class="pure-menu-list">
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about/" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works/" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo/" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact/" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Kazumasa Kaneko</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/about" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/works" class="pure-menu-link">Works</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/memo" class="pure-menu-link">Memo</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://karadaharu.org/contact" class="pure-menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+		            
+                    
+                    
+
+                    
+
+                    
+                </p>
+                <h1>electron_tutorial</h1>
+            </div>
+
+            <div class="post-content">
+                
+
+<h1 id="electron-tutorial:5550bc3b2a175d6adf315923b955cf1b">electron tutorial</h1>
+
+<p>package.jsonの&rdquo;main&rdquo;に指定しているjavascriptを&rdquo;メインプロセス&rdquo;と呼ぶ</p>
+
+<p>画面に対応するのがレンダープロセス
+BrowserWindowインスタンスをつくることでレンダープロセスがつくられる。</p>
+
+<p>windowオブジェクト：ブラウザのウィンドウをさす。グローバルオブジェクトなので、window.documentはdocumentと書ける。←electronでも同じ</p>
+
+<p>documentオブジェクト：ウェブページの部分。htmlのdomツリーとその他のプロパティ。document.headで<head></head>がとれる。←electronでも同じ
+document.cookieはとれない。</p>
+
+<p>クッキーにはhttponlyフラグがあって、これがたってると、jsからアクセスできない（セキュリティ）</p>
+
+<p><a href="https://github.com/atom/electron/issues/1142">https://github.com/atom/electron/issues/1142</a>
+クッキーというのはHTTP/HTTPSのコンテキストでしか意味をなさない。atom shellはファイルを読み込むので、クッキーは存在しない</p>
+
+<p>対応</p>
+
+<ol>
+<li>localstrageとかに保存　これで</li>
+<li><a href="https://github.com/hstove/electron-cookiesでdocument.cookieを偽装">https://github.com/hstove/electron-cookiesでdocument.cookieを偽装</a></li>
+<li>electronのsession.cookieを使う</li>
+<li>app.getPathのappDataのところにjsonとかで保存</li>
+</ol>
+
+<p>localstrageの保存先も、appDataの下にある</p>
+
+<pre><code>var win = require('remote').getCurrentWindow();
+win.webContents.session.cookies.set(cookie, function(error) {
+  if (error)
+    console.error(error);
+});
+win.webContents.session.cookies.get({}, function(error, cookies) {
+// win.webContents.session.defaultSession.cookies.get({}, function(error, cookies) {
+  console.log(cookies[0].value);
+});
+
+</code></pre>
+
+<p><a href="https://github.com/atom/electron/issues/1142">https://github.com/atom/electron/issues/1142</a></p>
+
+<p>サンプル集を探すの大事
+<a href="https://github.com/hokein/electron-sample-apps">https://github.com/hokein/electron-sample-apps</a></p>
+
+<p>レンダープロセスからメインプロセスの色々を操作する
+const remote = require(&lsquo;electron&rsquo;).remote;</p>
+
+<p>requestでpostで飛ばしちゃうと画面自体がリロードされちゃう？
+ajaxでとる？</p>
+
+<h2 id="閉じるボタンのクリックを取得するには:5550bc3b2a175d6adf315923b955cf1b">閉じるボタンのクリックを取得するには</h2>
+
+<p>閉じさせない</p>
+
+<p>main.js</p>
+
+<pre><code>app.on('ready', function () {
+	mainWindow.on('close', function(e){
+		e.preventDefault();
+	});
+});
+</code></pre>
+
+<p>mainプロセスから無理やり表面のjsを実行する</p>
+
+<pre><code>app.on('ready', function() {
+	mainWindow.webContents.executeJavaScript(&quot;alert('Hello There!');&quot;);
+});
+</code></pre>
+
+<p>表のjsで閉じるのを検知する(ふつうのブラウザ)</p>
+
+<pre><code>//jQuery
+$(document).ready(function(){
+  $(window).on(&quot;beforeunload&quot;,function(e){
+    return &quot;本当に離れますか？&quot;;
+  });
+});
+
+//javascriptで普通に書く場合
+window.onbeforeunload = function(){
+  return &quot;本当に離れますか？&quot;;
+}
+</code></pre>
+
+<p>表のjsで閉じるのを検知する(Electron)</p>
+
+<pre><code>window.onbeforeunload = function(e) {
+    var remote = require('remote');
+    var dialog = remote.require('dialog');
+    var choice = dialog.showMessageBox(
+            remote.getCurrentWindow(),
+            {
+                type: 'question',
+                buttons: ['Yes', 'No'],
+                title: 'Confirm',
+                message: 'Are you sure you want to quit?'
+            });
+    return choice === 0;
+};
+</code></pre>
+
+<p><a href="https://github.com/atom/electron/issues/2301">https://github.com/atom/electron/issues/2301</a></p>
+
+<p><a href="https://github.com/atom/electron/issues/2481">https://github.com/atom/electron/issues/2481</a></p>
+
+<p><a href="http://stackoverflow.com/questions/28920621/how-to-call-a-javascript-function-on-a-web-page-rendered-by-electron">http://stackoverflow.com/questions/28920621/how-to-call-a-javascript-function-on-a-web-page-rendered-by-electron</a></p>
+
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">:</li>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://karadaharu.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://karadaharu.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+
