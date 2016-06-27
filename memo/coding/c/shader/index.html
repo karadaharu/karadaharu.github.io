@@ -128,7 +128,7 @@ int main(){
 <p>fragmentシェーダーでgl_FragColorに入れるのは120</p>
 
 <p>150はOpenGL3.2以降でサポート。
-シェーダー入出力の宣言はin,outを使う。attribute,varyingは使わない。</p>
+150ではシェーダー入出力の宣言はin,outを使う。attribute,varyingは使わない。</p>
 
 <p>バージョンは.frag,.vertファイルの最初に</p>
 
@@ -162,6 +162,16 @@ webGL2.0はGLSLES3.0相当になると発表されている。</p>
 
 <p>OpenCL:GPGPUを含む並列コンピューティング用API</p>
 
+<h2 id="変数:37bfa38d0db66c5933eedd9886e04d07">変数</h2>
+
+<h3 id="qualifier:37bfa38d0db66c5933eedd9886e04d07">qualifier</h3>
+
+<ul>
+<li>uniform : openGL側から渡す。どこでも同じ値</li>
+<li>attribute : openGL側から渡す。各頂点ごとに違う値</li>
+<li>varying</li>
+</ul>
+
 <h2 id="基本的な文法:37bfa38d0db66c5933eedd9886e04d07">基本的な文法</h2>
 
 <p>vec4:4次元ベクトル
@@ -170,6 +180,60 @@ sampler2D</p>
 <p>vec4 texture2D (sampler2D sampler, vec2 coord  )
 2次元のテクスチャと2次元のテクスチャ座標から
 カラー値を求める</p>
+
+<p>gl_FragColor:色
+gl_FragCoord:いまの座標</p>
+
+<p>positionのzを変えても形は変わらない？
+gl_Positionは何次元？</p>
+
+<p>自分の位置にあわせてノイズの強さを変えれば変形させられる</p>
+
+<h3 id="頂点シェーダー:37bfa38d0db66c5933eedd9886e04d07">頂点シェーダー</h3>
+
+<p>頂点シェーダーは描画に利用される頂点の数だけ実行されます。例えば三角形1つを描画する場合は頂点が3つなので3回実行されます。</p>
+
+<h4 id="頂点座標:37bfa38d0db66c5933eedd9886e04d07">頂点座標</h4>
+
+<p>入力：
+ftransform():この関数は OpenGL の固定機能による座標変換を忠実に再現するものです．
+「固定機能パイプライン」と同様に入力頂点を変換してくれる</p>
+
+<p>出力：vec4 gl_Position その頂点の位置　ここをいじれば位置が変わる。xyzで３次元はいいとして、4次元目？
+&gt; The w in vec4(x, y, z, w) is used for clipping, and plays its part while linear algebra transformations are applied to the position.</p>
+
+<p>四元数みたいなもの？分かってない</p>
+
+<p>頂点テクスチャフェッチ：頂点シェーダ内でテクスチャを参照すること</p>
+
+<p>zをかえても厚さは変わらず変なふうになるのはなぜ？</p>
+
+<h3 id="テクスチャ:37bfa38d0db66c5933eedd9886e04d07">テクスチャ</h3>
+
+<p>oFからテクスチャをシェーダーに渡す</p>
+
+<pre><code>shader.setUniformTexture(&quot;texture&quot;, img, 0);
+</code></pre>
+
+<p>フラグメントシェーダからアクセス</p>
+
+<pre><code>uniform sampler2DRect texture;　// 型に注意。sampler2Dではダメ。
+varying vec2 vTexCoord;
+void main() {
+// texture2DRect()関数で色情報にアクセス
+// vTexCoordは、描画する四角形のテクスチャのuv座標がわたれば良い。
+// 頂点シェーダ側で、vTexCoord =  gl_Vertex.xy; とするのが無難。
+// （フラグメントシェーダ側ではvarying変数として線形補間された値が入る）
+vec4 samplerColor = texture2DRect(texture, vTexCoord);
+gl_FragColor = samplerColor
+}
+</code></pre>
+
+<p>ofBaseHasTextureを継承しているクラスならそのまま渡せる</p>
+
+<h3 id="基本的な関数:37bfa38d0db66c5933eedd9886e04d07">基本的な関数</h3>
+
+<p>fract</p>
 
             </div>
         </div>

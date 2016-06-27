@@ -135,6 +135,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/memo/coding/php/coding_rule_php/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/memo/coding/php/php_const/</loc>
   </url>
   
@@ -151,15 +155,19 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.org/memo/coding/php/PHP%E6%96%87%E5%AD%97%E5%88%97%E5%87%A6%E7%90%86/</loc>
+    <loc>http://karadaharu.org/memo/coding/php/string_PHP/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.org/memo/coding/php/PHP%E6%96%87%E6%B3%95/</loc>
+    <loc>http://karadaharu.org/memo/coding/php/grammar_php/</loc>
   </url>
   
   <url>
-    <loc>http://karadaharu.org/memo/coding/php/PHP%E9%85%8D%E5%88%97/</loc>
+    <loc>http://karadaharu.org/memo/coding/php/array_PHP/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/sql/matching/</loc>
   </url>
   
   <url>
@@ -200,6 +208,10 @@
   
   <url>
     <loc>http://karadaharu.org/memo/coding/ios/Swift%E5%9E%8B/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/python/sympy/</loc>
   </url>
   
   <url>
@@ -351,6 +363,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/memo/coding/python/fuzzy_matching/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/memo/coding/r/ggolot2/</loc>
   </url>
   
@@ -491,7 +507,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.org/memo/coding/js/js%E5%9F%BA%E7%A4%8E/</loc>
+    <loc>http://karadaharu.org/memo/coding/js/coding_rule_js/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/js/basic_js/</loc>
   </url>
   
   <url>
@@ -524,6 +544,10 @@
   
   <url>
     <loc>http://karadaharu.org/memo/coding/c/translation_oFshader/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/c/imag_in_of/</loc>
   </url>
   
   <url>
@@ -635,7 +659,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.org/memo/coding/python/python%E3%81%A8%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</loc>
+    <loc>http://karadaharu.org/memo/coding/python/string_encode/</loc>
   </url>
   
   <url>
@@ -696,6 +720,10 @@
   
   <url>
     <loc>http://karadaharu.org/memo/coding/r/r%E3%81%A6%E3%82%99%E3%82%88%E3%81%8F%E4%BD%BF%E3%81%86Tips/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/python/scikit-learn/</loc>
   </url>
   
   <url>
@@ -823,6 +851,14 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/memo/coding/vim/vimrc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/vim/file_search_vim/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/memo/coding/vim/vim%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%88%E3%82%99/</loc>
   </url>
   
@@ -899,6 +935,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/memo/coding/php/error_handling/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/memo/coding/web_app/%E3%82%AA%E3%83%95%E3%82%99%E3%82%B7%E3%82%99%E3%82%A7%E3%82%AF%E3%83%88%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5/</loc>
   </url>
   
@@ -920,6 +960,10 @@
   
   <url>
     <loc>http://karadaharu.org/memo/coding/r/%E3%82%AF%E3%82%99%E3%83%A9%E3%83%95%E3%81%AE%E6%8F%8F%E7%94%BB/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/c/quaternion/</loc>
   </url>
   
   <url>
@@ -987,6 +1031,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/memo/coding/python/test/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/memo/coding/php/wp/%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9/</loc>
   </url>
   
@@ -1004,6 +1052,10 @@
   
   <url>
     <loc>http://karadaharu.org/memo/coding/adobe/crop_mark/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/c/noise/</loc>
   </url>
   
   <url>
@@ -1028,6 +1080,10 @@
   
   <url>
     <loc>http://karadaharu.org/memo/coding/c/heap_and_stack/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/other/business/</loc>
   </url>
   
   <url>
@@ -1063,7 +1119,15 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/memo/coding/python/file_manipulation/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/memo/coding/ios/%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/essay/favorite_language/</loc>
   </url>
   
   <url>
@@ -1075,7 +1139,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.org/memo/coding/server/%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AF%E3%83%BC%E3%83%88%E3%82%99/</loc>
+    <loc>http://karadaharu.org/memo/coding/server/port_forwarding/</loc>
   </url>
   
   <url>
@@ -1095,7 +1159,11 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.org/memo/coding/php/%E3%83%A2%E3%82%B7%E3%82%99%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%A8%E3%83%8F%E3%82%9A%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B7%E3%82%99%E3%81%A8/</loc>
+    <loc>http://karadaharu.org/memo/coding/php/composer_module_package/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/python/module/</loc>
   </url>
   
   <url>
@@ -1108,6 +1176,10 @@
   
   <url>
     <loc>http://karadaharu.org/memo/coding/python/%E3%83%AA%E3%82%B9%E3%83%88%E5%86%85%E5%8C%85%E8%A1%A8%E8%A8%98%E3%81%AF%E9%80%9F%E3%81%84/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/memo/coding/c/ray_tracing/</loc>
   </url>
   
   <url>
@@ -1167,6 +1239,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/memo/coding/vim/extension_dependent_setting/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/memo/coding/simulation/%E6%95%B0%E5%80%A4%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/</loc>
   </url>
   
@@ -1179,7 +1255,7 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.org/memo/coding/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%88%E3%82%99/</loc>
+    <loc>http://karadaharu.org/memo/coding/encoding/</loc>
   </url>
   
   <url>

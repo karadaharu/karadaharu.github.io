@@ -99,7 +99,9 @@
             </div>
 
             <div class="post-content">
-                <p>初期化</p>
+                
+
+<p>初期化</p>
 
 <pre><code>df = pd.DataFrame()
 </code></pre>
@@ -107,6 +109,66 @@
 <p>カラムの追加</p>
 
 <pre><code>df['new'] = pd.Series(np.random.randn(sLength
+</code></pre>
+
+<p>row name</p>
+
+<p>get size</p>
+
+<pre><code>df.shape
+len(df.index) # 行数
+len(df.columns) # 列数
+</code></pre>
+
+<p>access</p>
+
+<pre><code>df[df['day']==0]['n1']
+</code></pre>
+
+<p>カラム名の変更
+A→a</p>
+
+<pre><code>df.rename(columns={'A':'a'})
+</code></pre>
+
+<h3 id="アクセス:a862fb2510c92e0eebaabffa6e9adfd1">アクセス</h3>
+
+<p>あるカラムのユニークな値</p>
+
+<pre><code>df['col1'].unique()
+</code></pre>
+
+<p>カラム名&rsquo;col1&rsquo;の10番め</p>
+
+<pre><code>df['col1'][10]=100
+</code></pre>
+
+<h3 id="代入:a862fb2510c92e0eebaabffa6e9adfd1">代入</h3>
+
+<p>データフレームのどこかに値を入れるときは、そのアクセスの仕方が、コピーを返すのか、ビューを返すのかをちゃんと区別しないといけない。基本的にチェーンアクセスをすると、複数回メソッドが呼ばれて、その最初のメソッドはget系でコピーになるので<a href="http://pandas.pydata.org/pandas-docs/stable/indexing.html#returning-a-view-versus-a-copy">ダメ</a></p>
+
+<p>代入できる例</p>
+
+<pre><code>dfmi.loc[:,('one','second')] = value
+# becomes
+dfmi.loc.__setitem__((slice(None), ('one', 'second')), value)
+</code></pre>
+
+<p>代入できない例(できるけどwarningが出る場合もある)</p>
+
+<pre><code>dfmi['one']['second'] = value
+# becomes
+dfmi.__getitem__('one').__setitem__('second', value)
+</code></pre>
+
+<p>1つのセルに入れるときの最も良いやり方</p>
+
+<pre><code>dfmi.set_value(ind, col, val)
+</code></pre>
+
+<h3 id="保存:a862fb2510c92e0eebaabffa6e9adfd1">保存</h3>
+
+<pre><code>df.
 </code></pre>
 
             </div>

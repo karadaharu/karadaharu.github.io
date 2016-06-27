@@ -99,7 +99,11 @@
             </div>
 
             <div class="post-content">
-                <p>pTeX, pLaTeXなどpがついているのが日本語化されているもの</p>
+                
+
+<h2 id="texについて:424e22e8142ed6d92e48bbd6f1edd01f">TEXについて</h2>
+
+<p>pTeX, pLaTeXなどpがついているのが日本語化されているもの</p>
 
 <p>latexのla:texを使いやすくしたもの。マクロでレイアウトを指定するなど？</p>
 
@@ -116,6 +120,19 @@
 <p>uplatex:ユニコード化されたpLatex</p>
 
 <p>luatex:luaで書ける。lua:早い組み込み用スクリプト言語</p>
+
+<h2 id="輪講資料のコンパイル:424e22e8142ed6d92e48bbd6f1edd01f">輪講資料のコンパイル</h2>
+
+<pre><code>$ platex rinko
+$ pbibtex rinko
+$ platex rinko
+$ platex rinko
+$ dvipdfmx rinko
+</code></pre>
+
+<p>でPDFが出てくる</p>
+
+<h3 id="参考文献:424e22e8142ed6d92e48bbd6f1edd01f">参考文献</h3>
 
             </div>
         </div>
