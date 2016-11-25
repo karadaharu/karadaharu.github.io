@@ -6,15 +6,25 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 25 Nov 2016 01:17:06 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 26 Nov 2016 00:32:01 +0900</lastBuildDate>
     <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>2016 11 25</title>
       <link>http://karadaharu.org/log/2016-11-25/</link>
-      <pubDate>Fri, 25 Nov 2016 01:17:06 +0900</pubDate>
+      <pubDate>Sat, 26 Nov 2016 00:32:01 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-11-25/</guid>
+      <description>&lt;p&gt;生物物理学学会1日目。分子動力学法を使って結局何が知りたいのか分からないようなことをするよりは、畠山さんのようにシンプルで強い法則を見つけるような仕事をしたいと思った。結局その数式にどれくらい意味をのせられるのかという勝負なのだ。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2016 11 24</title>
+      <link>http://karadaharu.org/log/2016-11-24/</link>
+      <pubDate>Fri, 25 Nov 2016 01:17:06 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2016-11-24/</guid>
       <description>&lt;p&gt;精神的に余裕がなくなると、時間の使い方も雑になって、結局あまり効率がよくなくなる。なるべく積極的に休んで、積極的に仕事をしたい。&lt;br /&gt;
 matlabが想像以上に計算も速く、試行錯誤がしやすい。食わず嫌いせずに、適切なツールを使うのが大事だと思った。&lt;br /&gt;
 これからやりたいことが決まりつつある。まずは来年未踏に採択されるように努力しよう。&lt;/p&gt;
