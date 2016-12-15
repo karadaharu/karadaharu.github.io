@@ -6,8 +6,18 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 15 Dec 2016 00:56:40 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 16 Dec 2016 02:13:18 +0900</lastBuildDate>
     <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2016 12 15</title>
+      <link>http://karadaharu.org/log/2016-12-15/</link>
+      <pubDate>Fri, 16 Dec 2016 02:13:18 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2016-12-15/</guid>
+      <description>&lt;p&gt;朝起きてから活動を始めるまでにシャワー含めて1時間以内にしたい。修論を英語で書くのは日本語で書くより当然時間がかかるのでがんばる。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2016 12 14</title>
@@ -197,34 +207,6 @@ VJ/Programmer : Tatsuya Ogusu, &lt;strong&gt;&lt;em&gt;Kazumasa Kaneko&lt;/em&gt
 DOP/Editor : Shinsuke Yasui&lt;br /&gt;
 Motion graphic designer : Tomo Kihara, Yukihiro Takamatsu, Yuta Nakano&lt;br /&gt;
 Assistant director : Seico Okamoto&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>RESEACH</title>
-      <link>http://karadaharu.org/research/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/research/</guid>
-      <description>
-
-&lt;h2 id=&#34;current-project-population-dynamics-on-immune-cell-development&#34;&gt;CURRENT PROJECT -Population dynamics on immune cell development-&lt;/h2&gt;
-
-&lt;p&gt;T cell, one of immune cells, gets matured step by step from immature cells in thymus. In this maturation process, only T cells which recognize antigens such as bacterium and don&amp;rsquo;t recognize cell from self by mistake, can proliferate and get matured through an interaction with thymic epithelial cells(TECs) and thus T cells which only attack enemy are selected. We are developing a mathematical model of the T cell development.&lt;/p&gt;
-
-&lt;h2 id=&#34;publications&#34;&gt;PUBLICATIONS&lt;/h2&gt;
-
-&lt;h3 id=&#34;international-conferences&#34;&gt;INTERNATIONAL CONFERENCES&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Kazumasa Kaneko, Ryo Yokota, Taishin Akiyama, Tetsuya J. Kobayashi : Modeling and inferring dynamics of T cell population in thymus, &lt;a href=&#34;http://bio-math10.biology.kyushu-u.ac.jp/jsmb2016/home.html&#34;&gt;JSMB 2016&lt;/a&gt;, Sep. 2016.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;domestic-conferences-workshops&#34;&gt;DOMESTIC CONFERENCES &amp;amp; WORKSHOPS&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;金子和正, 横田亮, 秋山泰身, 小林徹也 : 免疫細胞の分化プロセスの力学系によるモデリング, &lt;a href=&#34;http://bioinfowakate.org/events/annualmeet2016.html&#34;&gt;生命情報科学若手の会 第8回研究会&lt;/a&gt;, Oct. 2016.&lt;/li&gt;
-&lt;/ol&gt;
 </description>
     </item>
     
