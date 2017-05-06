@@ -6,8 +6,19 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 24 Dec 2016 13:15:24 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 06 May 2017 11:44:50 +0900</lastBuildDate>
     <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2017 05 06</title>
+      <link>http://karadaharu.org/log/2017-05-06/</link>
+      <pubDate>Sat, 06 May 2017 11:44:50 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2017-05-06/</guid>
+      <description>&lt;p&gt;昨日気づいたのだが、集中力をそがれる原因のひとつに、皮膚が乾燥してかゆくなることがある気がする。保湿ローションを塗ってみたところ、落ち着いた。
+どうしたら乾燥しなくなるのか調べて治したい。皮膚の乾燥はストレスとも関係しているらしいし。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2016 12 24</title>
@@ -186,16 +197,6 @@ matlabが想像以上に計算も速く、試行錯誤がしやすい。食わ�
       
       <guid>http://karadaharu.org/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;main.jpg&#34; alt=&#34;main visual&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2016年10月31日</title>
-      <link>http://karadaharu.org/log/2016-10-31/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/log/2016-10-31/</guid>
-      <description>&lt;p&gt;横尾忠則は45年も日記を書き続けているそうで、だらけた一日を過ごしてしまうことを反省して日記をつけることにした。&lt;/p&gt;
 </description>
     </item>
     
