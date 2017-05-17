@@ -6,8 +6,31 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 06 May 2017 11:44:50 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 17 May 2017 17:07:12 +0900</lastBuildDate>
     <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2017 05 17</title>
+      <link>http://karadaharu.org/log/2017-05-17/</link>
+      <pubDate>Wed, 17 May 2017 17:07:12 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2017-05-17/</guid>
+      <description>&lt;p&gt;ある企業から声をかけていただいて、話を聞いてきた。企業の人の話を聞くと、どれも面白そうで、そこで働いてみようかしら、と思ってしまう。
+ただ結局時間は限られていて、何を一番優先すべきなのかを考えないといけない。
+これまで3年ほどパートタイムで仕事をしてきて、研究がおろそかになったり、仕事で価値を生み出せなかったりしてきた。&lt;/p&gt;
+
+&lt;p&gt;今後、博士課程を終えるまでに一見魅力的な機会があった際にどう判断するかの基準を考えてみた。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;お金が魅力的である場合:Googleなどで働くよりもいいか?&lt;/li&gt;
+&lt;li&gt;ビジネス/作るものが魅力的である場合:対等な関係で、プロダクトや環境を自分で改善していけるか?&lt;/li&gt;
+&lt;li&gt;技術が魅力的である場合:それ以外にかかるコスト/デメリットと比べてどうか?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;特に、ビジネスへの憧れが強く、だいたい面白そうだと思ってしまうが、実際そこである程度発言権をもてるレベルで仕事ができないと意味がない。
+スキルxかけられる時間が一定のレベルに達していない状況だと結局誰かの指示どおりに作業をするだけになってしまうので、冷静に判断することが大事。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2017 05 06</title>
@@ -187,16 +210,6 @@ matlabが想像以上に計算も速く、試行錯誤がしやすい。食わ�
 &lt;h2 id=&#34;contact&#34;&gt;CONTACT&lt;/h2&gt;
 
 &lt;p&gt;kkaneko11 [at] gmail.com&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://karadaharu.org/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;main.jpg&#34; alt=&#34;main visual&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
