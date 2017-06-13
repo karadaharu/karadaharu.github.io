@@ -6,8 +6,20 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 17 May 2017 17:07:12 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jun 2017 02:26:42 +0900</lastBuildDate>
     <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2017 06 14</title>
+      <link>http://karadaharu.org/log/2017-06-14/</link>
+      <pubDate>Wed, 14 Jun 2017 02:26:42 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2017-06-14/</guid>
+      <description>&lt;p&gt;MIYAVIをみていて思ったのだけれど、彼には煩悩が感じられない。イチローとか本田圭佑とかもそうだ。
+かっこつけている人というのは、煩悩にまみれていて、かっこわるい。
+みうらじゅんのように、煩悩があることを認めて受け入れている人は、煩悩がない人の対極にいるようで実は、一周回って煩悩がないことと紙一重になっているように思う。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2017 05 17</title>
@@ -171,45 +183,6 @@ matlabが想像以上に計算も速く、試行錯誤がしやすい。食わ�
       <description>&lt;p&gt;1週間ぶり2日目の日記。習慣を作るのは簡単なことではない。&lt;br /&gt;
 今日はずるずると「そんなバカなマン」の動画を見ていたら一日が終わってしまった。よろしくない。&lt;br /&gt;
 よくない時間を減らせるように分報を再開することにした。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://karadaharu.org/about/</link>
-      <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
-      
-      <guid>http://karadaharu.org/about/</guid>
-      <description>
-
-&lt;h2 id=&#34;profile&#34;&gt;PROFILE&lt;/h2&gt;
-
-&lt;p&gt;Kazumasa KANEKO was born in 1992. He is currently a Master&amp;rsquo;s student in theoretical biology at The University of Tokyo Graduate School of Engineering. His main interest is a structure of complex systems; life and society.&lt;/p&gt;
-
-&lt;h2 id=&#34;skills-proficiency&#34;&gt;SKILLS / PROFICIENCY&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;dynamical systems&lt;/li&gt;
-&lt;li&gt;machine learning&lt;/li&gt;
-&lt;li&gt;software development (PHP, openFrameworks, iOS)&lt;/li&gt;
-&lt;li&gt;generative design&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;education&#34;&gt;EDUCATION&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;2015-&lt;/strong&gt; M.Eng., Department of Electrical Engineering and Information Systems, Graduate Shool of Engineering, The University of Tokyo, Japan&lt;br /&gt;
-&lt;strong&gt;2011-2015&lt;/strong&gt; B.Eng., Department of Information and Communication Engineering, Faculty of Engineering, The University of Tokyo, Japan&lt;/p&gt;
-
-&lt;h2 id=&#34;work-volunteer-experience&#34;&gt;WORK/VOLUNTEER EXPERIENCE&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;08 / 2012 - 09 / 2012&lt;/strong&gt; &amp;nbsp;&amp;nbsp; Volunteering at a &lt;a href=&#34;http://buvad.yolasite.com/&#34;&gt;local NGO&lt;/a&gt; in Uganda&lt;br /&gt;
-&lt;strong&gt;12 / 2012 - 06 / 2013&lt;/strong&gt; &amp;nbsp;&amp;nbsp; Organizing a &lt;a href=&#34;http://tedxutokyo.com/&#34;&gt;TEDx event&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;08 / 2013 - 09 / 2013&lt;/strong&gt; &amp;nbsp;&amp;nbsp; Internship on machine learning at &lt;a href=&#34;http://www.kke.co.jp/&#34;&gt;KOZO KEIKAKU ENGINEERING Inc.&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;05 / 2014 - 05/2016&lt;/strong&gt; &amp;nbsp;&amp;nbsp; Web programmer(part-time) at &lt;a href=&#34;http://digitiminimi.com&#34;&gt;digitiminimi Inc.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;contact&#34;&gt;CONTACT&lt;/h2&gt;
-
-&lt;p&gt;kkaneko11 [at] gmail.com&lt;/p&gt;
 </description>
     </item>
     
