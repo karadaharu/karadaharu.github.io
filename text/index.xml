@@ -96,10 +96,10 @@
 
 &lt;p&gt;また、 (E[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)))^2]) をFisher 情報量と呼びます。&lt;/p&gt;
 
-&lt;p&gt;## 参考文献&lt;/p&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=j0Dy55ukoo4&#34;&gt;The online lecture by Prof. Aditya K. Jagannatham in IIT Kanpur&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=j0Dy55ukoo4&#34;&gt;Lec 11 Cramer Rao Bound CRB for Parameter Estimation, by Prof. Aditya K. Jagannatham in IIT Kanpur&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
