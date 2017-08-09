@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Texts on Kazumasa Kaneko</title>
+    <link>http://karadaharu.org/text/</link>
+    <description>Recent content in Texts on Kazumasa Kaneko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <atom:link href="http://karadaharu.org/text/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cramer-Raoの不等式の導出</title>
+      <link>http://karadaharu.org/text/cramer-rao_deriviation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/text/cramer-rao_deriviation/</guid>
+      <description>
+
+&lt;h2 id=&#34;cramer-raoの不等式&#34;&gt;Cramer-Raoの不等式&lt;/h2&gt;
+
+&lt;p&gt;パラメーター (\theta) をもつ確率密度関数 (P(X|\theta)) に従う確率変数 (X) を考えます。&lt;/p&gt;
+
+&lt;p&gt;観測値 (\hat{X}) から求めた (\theta) の不偏推定量 (\hat{\theta}) の分散について、以下の不等式が成り立ちます。&lt;/p&gt;
+
+&lt;p&gt;$$E[(\hat{\theta}-\theta)^2] \geq E^{-1}[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)))^2] \ .$$&lt;/p&gt;
+
+&lt;h2 id=&#34;導出&#34;&gt;導出&lt;/h2&gt;
+
+&lt;p&gt;確率変数 (X\in \mathbb{R}) について、未知パラメーター (\theta\in \mathbb{R}) をもつ確率密度関数 (P(X|\theta)) を考えます。&lt;/p&gt;
+
+&lt;p&gt;いま、確率変数 (X) の標本 (\bar{X} \in \mathbb{R}^N) が得られたとします。(\bar{X}) が得られる確率は、 (P(\bar{X}|\theta)) であり、 (\bar{X}) について積分すると、&lt;/p&gt;
+
+&lt;p&gt;$$\int P(\bar{X}|\theta) d\bar{X} =1 \ ,$$&lt;/p&gt;
+
+&lt;p&gt;となります。上式において、両辺を (\theta) で微分すると、&lt;/p&gt;
+
+&lt;p&gt;$$\frac{\partial}{\partial\theta} \int P(\bar{X}|\theta) d\bar{X} = 0 \ .$$&lt;/p&gt;
+
+&lt;p&gt;微分演算子を積分の中にいれて、 \( P(\bar{X}|\theta)/P(\bar{X}|\theta)=1\) をかけると、&lt;/p&gt;
+
+&lt;p&gt;$$\int \frac{P(\bar{X}|\theta)}{P(\bar{X}|\theta)} \frac{\partial}{\partial\theta} P(\bar{X}|\theta) d\bar{X} = 0 \ . $$&lt;/p&gt;
+
+&lt;p&gt;ここで、&lt;/p&gt;
+
+&lt;p&gt;$$\frac{2}{P(\bar{X}|\theta)} \frac{\partial}{\partial\theta} P(\bar{X}|\theta) = \frac{\partial}{\partial\theta} \log (P(\bar{X}|\theta)) \ , $$&lt;/p&gt;
+
+&lt;p&gt;であるので、&lt;/p&gt;
+
+&lt;p&gt;$$\int P(\bar{X}|\theta) \frac{\partial}{\partial\theta} \log (P(\bar{X}|\theta))  d\bar{X} = 0 \ .$$&lt;/p&gt;
+
+&lt;p&gt;上式は、(\theta) についての対数尤度  (\log(P(\bar{X}|\theta))) の期待値が\(0\)になることを表しています。&lt;/p&gt;
+
+&lt;p&gt;さらに、両辺に (\theta) をかけると、次の式が得られます。&lt;/p&gt;
+
+&lt;p&gt;$$\int P(\bar{X}|\theta) \theta \frac{\partial}{\partial\theta} \log (P(\bar{X}|\theta))  d\bar{X} = 0 \ . \ \  \ \ (1)$$&lt;/p&gt;
+
+&lt;p&gt;次に、(\bar{X}) から (\theta) の不偏推定量 (\hat{\theta}) が得られたとします。不偏推定量の定義から、 (\hat{\theta}) の期待値は真の値 (\theta) となります :&lt;/p&gt;
+
+&lt;p&gt;$$E[\hat{\theta}] = \int \hat{\theta}P(\bar{X}|\theta)d\bar{X}=\theta \ .$$&lt;/p&gt;
+
+&lt;p&gt;上式に対し、さきほどと同様の式変形を行います。&lt;/p&gt;
+
+&lt;p&gt;まず、上式の両辺を (\theta) について微分すると、&lt;/p&gt;
+
+&lt;p&gt;$$\frac{\partial}{\partial \theta} \int  \hat{\theta}P(\bar{X}|\theta)d\bar{X}=1 \ . $$&lt;/p&gt;
+
+&lt;p&gt;さらに、微分演算子を積分の中にいれて、 (P(\bar{X}|\theta)/P(\bar{X}|\theta)=1) をかけ、&lt;/p&gt;
+
+&lt;p&gt;$$\int \frac{P(\bar{X}|\theta)}{P(\bar{X}|\theta)} \hat{\theta} \frac{\partial}{\partial \theta}  P(\bar{X}|\theta)d\bar{X}=1 \ .$$&lt;/p&gt;
+
+&lt;p&gt;式変形すると、&lt;/p&gt;
+
+&lt;p&gt;$$\int P(\bar{X}|\theta) \hat{\theta} \frac{\partial}{\partial \theta} \log ( P(\bar{X}|\theta))d\bar{X}=1\ . \ \  \ \ (2)$$&lt;/p&gt;
+
+&lt;p&gt;ここで、(2)式から(1)式をひくと、&lt;/p&gt;
+
+&lt;p&gt;$$\int P(\bar{X}|\theta) (\hat{\theta}-\theta) \frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta))d\bar{X}=1 \ .$$&lt;/p&gt;
+
+&lt;p&gt;これは、\((\hat{\theta} - \theta) \frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta))d\bar{X}\) の期待値を表しています :&lt;/p&gt;
+
+&lt;p&gt;$$E[(\hat{\theta} - \theta) \frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta))]=1 \ .$$&lt;/p&gt;
+
+&lt;p&gt;ここで、Cauchy-Schwarzの不等式から、確率変数A、Bについて、&lt;/p&gt;
+
+&lt;p&gt;$$E[A^2]E[B^2] \geq (E[AB])^2$$&lt;/p&gt;
+
+&lt;p&gt;が成り立つので、&lt;/p&gt;
+
+&lt;p&gt;$$E[(\hat{\theta}-\theta)^2]E[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)d\bar{X}))^2] \geq (E[(\hat{\theta} - \theta) \frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta))])^2=1 \ .$$&lt;/p&gt;
+
+&lt;p&gt;が成り立ちます。これを式変形すると、&lt;/p&gt;
+
+&lt;p&gt;$$E[(\hat{\theta}-\theta)^2] \geq E^{-1}[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)))^2] \ .$$&lt;/p&gt;
+
+&lt;p&gt;これがCramer-Raoの不等式です。&lt;/p&gt;
+
+&lt;p&gt;また、 (E[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)))^2]) をFisher 情報量と呼びます。&lt;/p&gt;
+
+&lt;p&gt;## 参考文献&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=j0Dy55ukoo4&#34;&gt;The online lecture by Prof. Aditya K. Jagannatham in IIT Kanpur&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2017 05 17 &middot; Kazumasa Kaneko</title>
+    <title>Cramer-Raoの不等式の導出 &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
     <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.16" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="2017 05 17 &middot; Kazumasa Kaneko">
+    <meta name="twitter:title" content="Cramer-Raoの不等式の導出 &middot; Kazumasa Kaneko">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="2017 05 17 &middot; Kazumasa Kaneko">
+    <meta property="og:title" content="Cramer-Raoの不等式の導出 &middot; Kazumasa Kaneko">
     <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
@@ -101,7 +101,7 @@
       <div>
        <header class="content-header">
 
-           <span class="post-title">2017 05 17</span>
+           <span class="post-title">Cramer-Raoの不等式の導出</span>
 
            <p class="post-meta">
                
@@ -115,20 +115,93 @@
                 <section class="post">
 
                     <div class="post-description">
-                        <p>ある企業から声をかけていただいて、話を聞いてきた。企業の人の話を聞くと、どれも面白そうで、そこで働いてみようかしら、と思ってしまう。
-ただ結局時間は限られていて、何を一番優先すべきなのかを考えないといけない。
-これまで3年ほどパートタイムで仕事をしてきて、研究がおろそかになったり、仕事で価値を生み出せなかったりしてきた。</p>
+                        
 
-<p>今後、博士課程を終えるまでに一見魅力的な機会があった際にどう判断するかの基準を考えてみた。</p>
+<h2 id="cramer-raoの不等式">Cramer-Raoの不等式</h2>
+
+<p>パラメーター (\theta) をもつ確率密度関数 (P(X|\theta)) に従う確率変数 (X) を考えます。</p>
+
+<p>観測値 (\hat{X}) から求めた (\theta) の不偏推定量 (\hat{\theta}) の分散について、以下の不等式が成り立ちます。</p>
+
+<p>$$E[(\hat{\theta}-\theta)^2] \geq E^{-1}[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)))^2] \ .$$</p>
+
+<h2 id="導出">導出</h2>
+
+<p>確率変数 (X\in \mathbb{R}) について、未知パラメーター (\theta\in \mathbb{R}) をもつ確率密度関数 (P(X|\theta)) を考えます。</p>
+
+<p>いま、確率変数 (X) の標本 (\bar{X} \in \mathbb{R}^N) が得られたとします。(\bar{X}) が得られる確率は、 (P(\bar{X}|\theta)) であり、 (\bar{X}) について積分すると、</p>
+
+<p>$$\int P(\bar{X}|\theta) d\bar{X} =1 \ ,$$</p>
+
+<p>となります。上式において、両辺を (\theta) で微分すると、</p>
+
+<p>$$\frac{\partial}{\partial\theta} \int P(\bar{X}|\theta) d\bar{X} = 0 \ .$$</p>
+
+<p>微分演算子を積分の中にいれて、 \( P(\bar{X}|\theta)/P(\bar{X}|\theta)=1\) をかけると、</p>
+
+<p>$$\int \frac{P(\bar{X}|\theta)}{P(\bar{X}|\theta)} \frac{\partial}{\partial\theta} P(\bar{X}|\theta) d\bar{X} = 0 \ . $$</p>
+
+<p>ここで、</p>
+
+<p>$$\frac{2}{P(\bar{X}|\theta)} \frac{\partial}{\partial\theta} P(\bar{X}|\theta) = \frac{\partial}{\partial\theta} \log (P(\bar{X}|\theta)) \ , $$</p>
+
+<p>であるので、</p>
+
+<p>$$\int P(\bar{X}|\theta) \frac{\partial}{\partial\theta} \log (P(\bar{X}|\theta))  d\bar{X} = 0 \ .$$</p>
+
+<p>上式は、(\theta) についての対数尤度  (\log(P(\bar{X}|\theta))) の期待値が\(0\)になることを表しています。</p>
+
+<p>さらに、両辺に (\theta) をかけると、次の式が得られます。</p>
+
+<p>$$\int P(\bar{X}|\theta) \theta \frac{\partial}{\partial\theta} \log (P(\bar{X}|\theta))  d\bar{X} = 0 \ . \ \  \ \ (1)$$</p>
+
+<p>次に、(\bar{X}) から (\theta) の不偏推定量 (\hat{\theta}) が得られたとします。不偏推定量の定義から、 (\hat{\theta}) の期待値は真の値 (\theta) となります :</p>
+
+<p>$$E[\hat{\theta}] = \int \hat{\theta}P(\bar{X}|\theta)d\bar{X}=\theta \ .$$</p>
+
+<p>上式に対し、さきほどと同様の式変形を行います。</p>
+
+<p>まず、上式の両辺を (\theta) について微分すると、</p>
+
+<p>$$\frac{\partial}{\partial \theta} \int  \hat{\theta}P(\bar{X}|\theta)d\bar{X}=1 \ . $$</p>
+
+<p>さらに、微分演算子を積分の中にいれて、 (P(\bar{X}|\theta)/P(\bar{X}|\theta)=1) をかけ、</p>
+
+<p>$$\int \frac{P(\bar{X}|\theta)}{P(\bar{X}|\theta)} \hat{\theta} \frac{\partial}{\partial \theta}  P(\bar{X}|\theta)d\bar{X}=1 \ .$$</p>
+
+<p>式変形すると、</p>
+
+<p>$$\int P(\bar{X}|\theta) \hat{\theta} \frac{\partial}{\partial \theta} \log ( P(\bar{X}|\theta))d\bar{X}=1\ . \ \  \ \ (2)$$</p>
+
+<p>ここで、(2)式から(1)式をひくと、</p>
+
+<p>$$\int P(\bar{X}|\theta) (\hat{\theta}-\theta) \frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta))d\bar{X}=1 \ .$$</p>
+
+<p>これは、\((\hat{\theta} - \theta) \frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta))d\bar{X}\) の期待値を表しています :</p>
+
+<p>$$E[(\hat{\theta} - \theta) \frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta))]=1 \ .$$</p>
+
+<p>ここで、Cauchy-Schwarzの不等式から、確率変数A、Bについて、</p>
+
+<p>$$E[A^2]E[B^2] \geq (E[AB])^2$$</p>
+
+<p>が成り立つので、</p>
+
+<p>$$E[(\hat{\theta}-\theta)^2]E[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)d\bar{X}))^2] \geq (E[(\hat{\theta} - \theta) \frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta))])^2=1 \ .$$</p>
+
+<p>が成り立ちます。これを式変形すると、</p>
+
+<p>$$E[(\hat{\theta}-\theta)^2] \geq E^{-1}[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)))^2] \ .$$</p>
+
+<p>これがCramer-Raoの不等式です。</p>
+
+<p>また、 (E[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)))^2]) をFisher 情報量と呼びます。</p>
+
+<p>## 参考文献</p>
 
 <ul>
-<li>お金が魅力的である場合:Googleなどで働くよりもいいか?</li>
-<li>ビジネス/作るものが魅力的である場合:対等な関係で、プロダクトや環境を自分で改善していけるか?</li>
-<li>技術が魅力的である場合:それ以外にかかるコスト/デメリットと比べてどうか?</li>
+<li><a href="https://www.youtube.com/watch?v=j0Dy55ukoo4">The online lecture by Prof. Aditya K. Jagannatham in IIT Kanpur</a></li>
 </ul>
-
-<p>特に、ビジネスへの憧れが強く、だいたい面白そうだと思ってしまうが、実際そこである程度発言権をもてるレベルで仕事ができないと意味がない。
-スキルxかけられる時間が一定のレベルに達していない状況だと結局誰かの指示どおりに作業をするだけになってしまうので、冷静に判断することが大事。</p>
 
                     </div>
                     
