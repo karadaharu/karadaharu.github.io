@@ -104,5 +104,33 @@
 </description>
     </item>
     
+    <item>
+      <title>伝達関数の極と安定性</title>
+      <link>http://karadaharu.org/texts/pole_and_stability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/pole_and_stability/</guid>
+      <description>&lt;p&gt;次のような伝達関数を考えます。&lt;/p&gt;
+
+&lt;p&gt;$$
+G(s) = \frac{n(s)}{d(s)} = \frac{b_0 s^m +b_1s^{m-1}+\cdots+b_m}{s^n+a_1s^{n-1}+\cdots+a_n} \ \ (n \geq m)
+$$&lt;/p&gt;
+
+&lt;p&gt;この伝達関数の分母多項式が重根をもたないときを考え、 (G(s)) の極を (p_i\ (i=1\sim n)) とします。このとき、&lt;/p&gt;
+
+&lt;p&gt;$$
+G(s) = \sum_i \frac{A_i}{s-p_i}
+$$&lt;/p&gt;
+
+&lt;p&gt;と書くことができます。（ (A_i) は定数) よって、インパルス応答は&lt;/p&gt;
+
+&lt;p&gt;$$
+y(t) = \mathcal{L}^{-1}\{G(s)\}= \sum_i A_i e^{p_i t}
+$$&lt;/p&gt;
+
+&lt;p&gt;となります。このことから、もし (p_i \ (i=1 \sim n)) のうち、ひとつでも実部が正の値をとるものがあると、インパルス応答が発散してしまうことが分かります。&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
