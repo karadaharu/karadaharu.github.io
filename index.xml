@@ -6,8 +6,20 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 02 Jul 2017 02:13:53 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 Oct 2017 09:44:17 +0900</lastBuildDate>
     <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2017 10 01</title>
+      <link>http://karadaharu.org/log/2017-10-01/</link>
+      <pubDate>Sun, 01 Oct 2017 09:44:17 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2017-10-01/</guid>
+      <description>&lt;p&gt;研究は家事と似ている。料理をつくるように楽しい部分もあれば、皿を洗うように面倒くさい部分もある。
+それもいつもそういうわけではなくて、料理をつくるのが面倒くさいときもあれば、皿を洗ってきれいにするのが気持ちいいこともある。
+しかし、結局は淡々とこなして生活を前にすすめていかなくてはいけないものなのだ。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2017 07 02</title>
@@ -169,18 +181,6 @@ matlabが想像以上に計算も速く、試行錯誤がしやすい。食わ�
       <description>&lt;p&gt;今日は朝ちゃんと起きてゴミ捨てなどできた。&lt;br /&gt;
 分からないこととか、困っていることは、もっとどんどん人に聞いてみるようにしたい。&lt;br /&gt;
 一度まとまった時間をとって進路について整理して考えたほうが良さそう。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2016 11 09</title>
-      <link>http://karadaharu.org/log/2016-11-09/</link>
-      <pubDate>Wed, 09 Nov 2016 22:55:45 +0900</pubDate>
-      
-      <guid>http://karadaharu.org/log/2016-11-09/</guid>
-      <description>&lt;p&gt;ミーティングを休んだ。&lt;br /&gt;
-これくらいできたらOKというちょうどいいラインを設定してそれを越えるようにしたい。&lt;br /&gt;
-研究ではモデルの無次元化ができたので、次はどう扱うかを勉強する。少しづつ進んでいる。&lt;/p&gt;
 </description>
     </item>
     
