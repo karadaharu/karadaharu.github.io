@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 01 Oct 2017 09:44:17 +0900</lastBuildDate>
-    <atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>2017 10 01</title>
@@ -15,10 +17,7 @@
       <pubDate>Sun, 01 Oct 2017 09:44:17 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2017-10-01/</guid>
-      <description>&lt;p&gt;研究は家事と似ている。料理をつくるように楽しい部分もあれば、皿を洗うように面倒くさい部分もある。
-それもいつもそういうわけではなくて、料理をつくるのが面倒くさいときもあれば、皿を洗ってきれいにするのが気持ちいいこともある。
-しかし、結局は淡々とこなして生活を前にすすめていかなくてはいけないものなのだ。&lt;/p&gt;
-</description>
+      <description>研究は家事と似ている。料理をつくるように楽しい部分もあれば、皿を洗うように面倒くさい部分もある。 それもいつもそういうわけではなくて、料理をつくるのが面倒くさいときもあれば、皿を洗ってきれいにするのが気持ちいいこともある。 しかし、結局は淡々とこなして生活を前にすすめていかなくてはいけないものなのだ。</description>
     </item>
     
     <item>
@@ -27,8 +26,7 @@
       <pubDate>Sun, 02 Jul 2017 02:13:53 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2017-07-02/</guid>
-      <description>&lt;p&gt;ロマンティック数学ナイトというイベントに行ってきた。非常に印象的だったのが、数学ですらまだ証明できていない予想が成り立つと仮定して論理を積み上げることがあるらしいこと(はっきり聞いた話ではないので間違っているかもしれない)。工学だと、自分が使う技術がどうやって動いているのか、を完全に理解していないこともままあると思う。例えば私たちはコンピュータで計算するときに、半導体まで理解する必要はほとんどない。最も論理的な学問であろう数学もそういったことがあるというのは驚きだった。研究や技術というのは、論理的な積み上げによって高いところに行けるものであるが、自分が立つ分野の下の層は広く理解している必要があるが、最下層から理解することはできなくなっているので、自分が研究する層がどこかをちゃんと意識する必要があるなと感じた。建物をたてることで例えれば、広い土地に、深く基礎をうったほうが大きくて頑丈な建物が建てられるが、目的はあくまで建物を建てることだということ。これはオブジェクト指向やカプセル化でも例えられる。&lt;/p&gt;
-</description>
+      <description>ロマンティック数学ナイトというイベントに行ってきた。非常に印象的だったのが、数学ですらまだ証明できていない予想が成り立つと仮定して論理を積み上げることがあるらしいこと(はっきり聞いた話ではないので間違っているかもしれない)。工学だと、自分が使う技術がどうやって動いているのか、を完全に理解していないこともままあると思う。例えば私たちはコンピュータで計算するときに、半導体まで理解する必要はほとんどない。最も論理的な学問であろう数学もそういったことがあるというのは驚きだった。研究や技術というのは、論理的な積み上げによって高いところに行けるものであるが、自分が立つ分野の下の層は広く理解している必要があるが、最下層から理解することはできなくなっているので、自分が研究する層がどこかをちゃんと意識する必要があるなと感じた。建物をたてることで例えれば、広い土地に、深く基礎をうったほうが大きくて頑丈な建物が建てられるが、目的はあくまで建物を建てることだということ。これはオブジェクト指向やカプセル化でも例えられる。</description>
     </item>
     
     <item>
@@ -37,10 +35,7 @@
       <pubDate>Wed, 14 Jun 2017 02:26:42 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2017-06-14/</guid>
-      <description>&lt;p&gt;MIYAVIをみていて思ったのだけれど、彼には煩悩が感じられない。イチローとか本田圭佑とかもそうだ。
-かっこつけている人というのは、煩悩にまみれていて、かっこわるい。
-みうらじゅんのように、煩悩があることを認めて受け入れている人は、煩悩がない人の対極にいるようで実は、一周回って煩悩がないことと紙一重になっているように思う。&lt;/p&gt;
-</description>
+      <description>MIYAVIをみていて思ったのだけれど、彼には煩悩が感じられない。イチローとか本田圭佑とかもそうだ。 かっこつけている人というのは、煩悩にまみれていて、かっこわるい。 みうらじゅんのように、煩悩があることを認めて受け入れている人は、煩悩がない人の対極にいるようで実は、一周回って煩悩がないことと紙一重になっているように思う。</description>
     </item>
     
     <item>
@@ -49,21 +44,9 @@
       <pubDate>Wed, 17 May 2017 17:07:12 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2017-05-17/</guid>
-      <description>&lt;p&gt;ある企業から声をかけていただいて、話を聞いてきた。企業の人の話を聞くと、どれも面白そうで、そこで働いてみようかしら、と思ってしまう。
-ただ結局時間は限られていて、何を一番優先すべきなのかを考えないといけない。
-これまで3年ほどパートタイムで仕事をしてきて、研究がおろそかになったり、仕事で価値を生み出せなかったりしてきた。&lt;/p&gt;
-
-&lt;p&gt;今後、博士課程を終えるまでに一見魅力的な機会があった際にどう判断するかの基準を考えてみた。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;お金が魅力的である場合:Googleなどで働くよりもいいか?&lt;/li&gt;
-&lt;li&gt;ビジネス/作るものが魅力的である場合:対等な関係で、プロダクトや環境を自分で改善していけるか?&lt;/li&gt;
-&lt;li&gt;技術が魅力的である場合:それ以外にかかるコスト/デメリットと比べてどうか?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;特に、ビジネスへの憧れが強く、だいたい面白そうだと思ってしまうが、実際そこである程度発言権をもてるレベルで仕事ができないと意味がない。
-スキルxかけられる時間が一定のレベルに達していない状況だと結局誰かの指示どおりに作業をするだけになってしまうので、冷静に判断することが大事。&lt;/p&gt;
-</description>
+      <description>ある企業から声をかけていただいて、話を聞いてきた。企業の人の話を聞くと、どれも面白そうで、そこで働いてみようかしら、と思ってしまう。 ただ結局時間は限られていて、何を一番優先すべきなのかを考えないといけない。 これまで3年ほどパートタイムで仕事をしてきて、研究がおろそかになったり、仕事で価値を生み出せなかったりしてきた。
+今後、博士課程を終えるまでに一見魅力的な機会があった際にどう判断するかの基準を考えてみた。
+ お金が魅力的である場合:Googleなどで働くよりもいいか? ビジネス/作るものが魅力的である場合:対等な関係で、プロダクトや環境を自分で改善していけるか? 技術が魅力的である場合:それ以外にかかるコスト/デメリットと比べてどうか?  特に、ビジネスへの憧れが強く、だいたい面白そうだと思ってしまうが、実際そこである程度発言権をもてるレベルで仕事ができないと意味がない。 スキルxかけられる時間が一定のレベルに達していない状況だと結局誰かの指示どおりに作業をするだけになってしまうので、冷静に判断することが大事。</description>
     </item>
     
     <item>
@@ -72,9 +55,7 @@
       <pubDate>Sat, 06 May 2017 11:44:50 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2017-05-06/</guid>
-      <description>&lt;p&gt;昨日気づいたのだが、集中力をそがれる原因のひとつに、皮膚が乾燥してかゆくなることがある気がする。保湿ローションを塗ってみたところ、落ち着いた。
-どうしたら乾燥しなくなるのか調べて治したい。皮膚の乾燥はストレスとも関係しているらしいし。&lt;/p&gt;
-</description>
+      <description>昨日気づいたのだが、集中力をそがれる原因のひとつに、皮膚が乾燥してかゆくなることがある気がする。保湿ローションを塗ってみたところ、落ち着いた。 どうしたら乾燥しなくなるのか調べて治したい。皮膚の乾燥はストレスとも関係しているらしいし。</description>
     </item>
     
     <item>
@@ -83,9 +64,8 @@
       <pubDate>Sat, 24 Dec 2016 13:15:24 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-12-24/</guid>
-      <description>&lt;p&gt;漠然とした不安に襲われている。色々なところで不注意が多い。最近、作業を中断すると、再開するまでに時間がかかる。例えば、一度帰宅すると、研究室に戻るまでに12時間近くかかる。もくもくと仕事を進めるしかない 。&lt;br /&gt;
-自分のことについて考えると欝になるので、この数式は何を表しているんだろうとか、友人をどう笑わそうとか、難民はどうしたらなくなるんだろうとか、外のことだけ考えるようにしたい。&lt;/p&gt;
-</description>
+      <description>漠然とした不安に襲われている。色々なところで不注意が多い。最近、作業を中断すると、再開するまでに時間がかかる。例えば、一度帰宅すると、研究室に戻るまでに12時間近くかかる。もくもくと仕事を進めるしかない 。
+自分のことについて考えると欝になるので、この数式は何を表しているんだろうとか、友人をどう笑わそうとか、難民はどうしたらなくなるんだろうとか、外のことだけ考えるようにしたい。</description>
     </item>
     
     <item>
@@ -94,8 +74,7 @@
       <pubDate>Fri, 16 Dec 2016 02:13:18 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-12-15/</guid>
-      <description>&lt;p&gt;朝起きてから活動を始めるまでにシャワー含めて1時間以内にしたい。修論を英語で書くのは日本語で書くより当然時間がかかるのでがんばる。&lt;/p&gt;
-</description>
+      <description>朝起きてから活動を始めるまでにシャワー含めて1時間以内にしたい。修論を英語で書くのは日本語で書くより当然時間がかかるのでがんばる。</description>
     </item>
     
     <item>
@@ -104,8 +83,7 @@
       <pubDate>Thu, 15 Dec 2016 00:56:40 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-12-14/</guid>
-      <description>&lt;p&gt;勉強が足りない。数学・物理・統計を体系的に理解しないと。&lt;/p&gt;
-</description>
+      <description>勉強が足りない。数学・物理・統計を体系的に理解しないと。</description>
     </item>
     
     <item>
@@ -114,8 +92,7 @@
       <pubDate>Tue, 13 Dec 2016 09:20:47 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-12-12/</guid>
-      <description>&lt;p&gt;博士に行って、やりたいことをしっかりやるべきだという結論に至った。1プログラマとしての仕事に時間を使ってお金をもらうやり方はもうやめたほうが良い。自分のやりたいことのためにお金をひっぱってくる力を身につけよう。&lt;/p&gt;
-</description>
+      <description>博士に行って、やりたいことをしっかりやるべきだという結論に至った。1プログラマとしての仕事に時間を使ってお金をもらうやり方はもうやめたほうが良い。自分のやりたいことのためにお金をひっぱってくる力を身につけよう。</description>
     </item>
     
     <item>
@@ -124,8 +101,7 @@
       <pubDate>Fri, 02 Dec 2016 02:06:26 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-12-01/</guid>
-      <description>&lt;p&gt;仕事がノーバリューすぎる。結果を出して、人の役にたてるようにならないといけない。&lt;/p&gt;
-</description>
+      <description>仕事がノーバリューすぎる。結果を出して、人の役にたてるようにならないといけない。</description>
     </item>
     
     <item>
@@ -134,9 +110,7 @@
       <pubDate>Wed, 30 Nov 2016 01:14:55 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-11-29/</guid>
-      <description>&lt;p&gt;昼過ぎまで仕事をして、その後やる気を失って何もできなかった。鬱々としてしまう原因はだいたい分かっているので、本当にそうなのか検証して、そうならないように改善していかないと。
-基本的に朝起きて家を出る前にやっておかないといけないことがある状況というのが良くないので、なるべく余裕をもって諸々を片付けておきたい。&lt;/p&gt;
-</description>
+      <description>昼過ぎまで仕事をして、その後やる気を失って何もできなかった。鬱々としてしまう原因はだいたい分かっているので、本当にそうなのか検証して、そうならないように改善していかないと。 基本的に朝起きて家を出る前にやっておかないといけないことがある状況というのが良くないので、なるべく余裕をもって諸々を片付けておきたい。</description>
     </item>
     
     <item>
@@ -145,9 +119,8 @@
       <pubDate>Sun, 27 Nov 2016 00:30:36 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-11-26/</guid>
-      <description>&lt;p&gt;生物物理学会2日目。なぜDNAとタンパク質という非対称な関係が生まれたのかを説明するモデルやタンパク質とアミノ酸の関係を文章と単語の関係に対応づける研究が面白かった。独創的な視点で問題を見ることが重要だと感じた。&lt;br /&gt;
-pandasの操作に毎回手間取っている気がする。基本的な操作をおさらいしたい。今日は、値がユニークじゃないカラムをインデックスに指定してまった、csvファイルが行の途中で切れてしまっていることに気づかなかった、行ごとのイテレーションを回すときの返り値を把握していなかった、の3点で無駄な時間がかかってしまった。&lt;/p&gt;
-</description>
+      <description>生物物理学会2日目。なぜDNAとタンパク質という非対称な関係が生まれたのかを説明するモデルやタンパク質とアミノ酸の関係を文章と単語の関係に対応づける研究が面白かった。独創的な視点で問題を見ることが重要だと感じた。
+pandasの操作に毎回手間取っている気がする。基本的な操作をおさらいしたい。今日は、値がユニークじゃないカラムをインデックスに指定してまった、csvファイルが行の途中で切れてしまっていることに気づかなかった、行ごとのイテレーションを回すときの返り値を把握していなかった、の3点で無駄な時間がかかってしまった。</description>
     </item>
     
     <item>
@@ -156,8 +129,7 @@ pandasの操作に毎回手間取っている気がする。基本的な操作�
       <pubDate>Sat, 26 Nov 2016 00:32:01 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-11-25/</guid>
-      <description>&lt;p&gt;生物物理学学会1日目。分子動力学法を使って結局何が知りたいのか分からないようなことをするよりは、畠山さんのようにシンプルで強い法則を見つけるような仕事をしたいと思った。結局その数式にどれくらい意味をのせられるのかという勝負なのだ。&lt;/p&gt;
-</description>
+      <description>生物物理学学会1日目。分子動力学法を使って結局何が知りたいのか分からないようなことをするよりは、畠山さんのようにシンプルで強い法則を見つけるような仕事をしたいと思った。結局その数式にどれくらい意味をのせられるのかという勝負なのだ。</description>
     </item>
     
     <item>
@@ -166,10 +138,9 @@ pandasの操作に毎回手間取っている気がする。基本的な操作�
       <pubDate>Fri, 25 Nov 2016 01:17:06 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-11-24/</guid>
-      <description>&lt;p&gt;精神的に余裕がなくなると、時間の使い方も雑になって、結局あまり効率がよくなくなる。なるべく積極的に休んで、積極的に仕事をしたい。&lt;br /&gt;
-matlabが想像以上に計算も速く、試行錯誤がしやすい。食わず嫌いせずに、適切なツールを使うのが大事だと思った。&lt;br /&gt;
-これからやりたいことが決まりつつある。まずは来年未踏に採択されるように努力しよう。&lt;/p&gt;
-</description>
+      <description>精神的に余裕がなくなると、時間の使い方も雑になって、結局あまり効率がよくなくなる。なるべく積極的に休んで、積極的に仕事をしたい。
+matlabが想像以上に計算も速く、試行錯誤がしやすい。食わず嫌いせずに、適切なツールを使うのが大事だと思った。
+これからやりたいことが決まりつつある。まずは来年未踏に採択されるように努力しよう。</description>
     </item>
     
     <item>
@@ -178,10 +149,109 @@ matlabが想像以上に計算も速く、試行錯誤がしやすい。食わ�
       <pubDate>Fri, 11 Nov 2016 00:47:45 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2016-11-10/</guid>
-      <description>&lt;p&gt;今日は朝ちゃんと起きてゴミ捨てなどできた。&lt;br /&gt;
-分からないこととか、困っていることは、もっとどんどん人に聞いてみるようにしたい。&lt;br /&gt;
-一度まとまった時間をとって進路について整理して考えたほうが良さそう。&lt;/p&gt;
-</description>
+      <description>今日は朝ちゃんと起きてゴミ捨てなどできた。
+分からないこととか、困っていることは、もっとどんどん人に聞いてみるようにしたい。
+一度まとまった時間をとって進路について整理して考えたほうが良さそう。</description>
+    </item>
+    
+    <item>
+      <title>2016 11 09</title>
+      <link>http://karadaharu.org/log/2016-11-09/</link>
+      <pubDate>Wed, 09 Nov 2016 22:55:45 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2016-11-09/</guid>
+      <description>ミーティングを休んだ。
+これくらいできたらOKというちょうどいいラインを設定してそれを越えるようにしたい。
+研究ではモデルの無次元化ができたので、次はどう扱うかを勉強する。少しづつ進んでいる。</description>
+    </item>
+    
+    <item>
+      <title>2016 11 08</title>
+      <link>http://karadaharu.org/log/2016-11-08/</link>
+      <pubDate>Tue, 08 Nov 2016 23:26:03 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2016-11-08/</guid>
+      <description>1週間ぶり2日目の日記。習慣を作るのは簡単なことではない。
+今日はずるずると「そんなバカなマン」の動画を見ていたら一日が終わってしまった。よろしくない。
+よくない時間を減らせるように分報を再開することにした。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://karadaharu.org/about/</link>
+      <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/about/</guid>
+      <description>PROFILE Kazumasa KANEKO was born in 1992. He is currently a Master&amp;rsquo;s student in theoretical biology at The University of Tokyo Graduate School of Engineering. His main interest is a structure of complex systems; life and society.
+SKILLS / PROFICIENCY  dynamical systems machine learning software development (PHP, openFrameworks, iOS) generative design  EDUCATION 2015- M.Eng., Department of Electrical Engineering and Information Systems, Graduate Shool of Engineering, The University of Tokyo, Japan</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://karadaharu.org/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2016年10月31日</title>
+      <link>http://karadaharu.org/log/2016-10-31/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/log/2016-10-31/</guid>
+      <description>横尾忠則は45年も日記を書き続けているそうで、だらけた一日を過ごしてしまうことを反省して日記をつけることにした。</description>
+    </item>
+    
+    <item>
+      <title>Hilty&amp;Bosch New Old School Dance live (2014)</title>
+      <link>http://karadaharu.org/works/hilty-and-bosch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/works/hilty-and-bosch/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/104100366&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RESEACH</title>
+      <link>http://karadaharu.org/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/research/</guid>
+      <description>CURRENT PROJECT -Population dynamics on immune cell development- T cell, one of immune cells, gets matured step by step from immature cells in thymus. In this maturation process, only T cells which recognize antigens such as bacterium and don&amp;rsquo;t recognize cell from self by mistake, can proliferate and get matured through an interaction with thymic epithelial cells(TECs) and thus T cells which only attack enemy are selected. We are developing a mathematical model of the T cell development.</description>
+    </item>
+    
+    <item>
+      <title>クラメール-ラオの不等式の導出</title>
+      <link>http://karadaharu.org/texts/cramer_rao_bound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/cramer_rao_bound/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ナイキストの安定判別法</title>
+      <link>http://karadaharu.org/texts/nyquist_stability_criterion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/nyquist_stability_criterion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>伝達関数の極と安定性</title>
+      <link>http://karadaharu.org/texts/pole_and_stability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/pole_and_stability/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

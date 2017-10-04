@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>http://karadaharu.org/</loc>
-    <lastmod>2017-10-01T09:44:17+09:00</lastmod>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://karadaharu.org/log/2017-10-01/</loc>
@@ -105,7 +101,8 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.org/texts/cramer-rao_deriviation/</loc>
+    <loc>http://karadaharu.org/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -113,7 +110,42 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/</loc>
+    <lastmod>2017-10-01T09:44:17+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/log/</loc>
+    <lastmod>2017-10-01T09:44:17+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/research/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/texts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/works/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/texts/cramer_rao_bound/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/texts/nyquist_stability_criterion/</loc>
   </url>
   
   <url>
