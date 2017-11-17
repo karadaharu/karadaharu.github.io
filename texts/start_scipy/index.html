@@ -157,6 +157,8 @@ AttributeError: module 'scipy' has no attribute 'linalg'
 (array([-0.37228132+0.j,  5.37228132+0.j]), array([[-0.82456484, -0.41597356],
        [ 0.56576746, -0.90937671]]))
 </code></pre>
+
+<p>このような設計になっているのは、scipyが多くの機能を含んでいて、毎回すべてをimportするのは無駄だからのようです（<a href="https://groups.google.com/a/continuum.io/forum/#!topic/anaconda/mMiv9QslB4E">参考</a>)。</p>
                     </div>
                     
                 </section>
