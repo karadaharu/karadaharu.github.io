@@ -141,7 +141,7 @@
 
 <p>$$\frac{\partial}{\partial\theta} \int P(\bar{X}|\theta) d\bar{X} = 0 \ .$$</p>
 
-<p>微分演算子を積分の中にいれて、 \$ P(\bar{X}|\theta)/P(\bar{X}|\theta)=1\$ をかけると、</p>
+<p>微分演算子を積分の中にいれて、 $ P(\bar{X}|\theta)/P(\bar{X}|\theta)=1$ をかけると、</p>
 
 <p>$$\int \frac{P(\bar{X}|\theta)}{P(\bar{X}|\theta)} \frac{\partial}{\partial\theta} P(\bar{X}|\theta) d\bar{X} = 0 \ . $$</p>
 
@@ -157,7 +157,7 @@
 
 <p>さらに、両辺に $\theta$ をかけると、次の式が得られます。</p>
 
-<p>$$\int P(\bar{X}|\theta) \theta \frac{\partial}{\partial\theta} \log (P(\bar{X}|\theta))  d\bar{X} = 0 \ . \ \  \ \ (1)$$</p>
+<p>$$\int P(\bar{X}|\theta) \theta \frac{\partial}{\partial\theta} \log (P(\bar{X}|\theta))  d\bar{X} = 0 \ . \tag{1}$$</p>
 
 <p>次に、$\bar{X}$ から $\theta$ の不偏推定量 $\hat{\theta}$ が得られたとします。不偏推定量の定義から、 $\hat{\theta}$ の期待値は真の値 $\theta$ となります :</p>
 
@@ -175,7 +175,7 @@
 
 <p>式変形すると、</p>
 
-<p>$$\int P(\bar{X}|\theta) \hat{\theta} \frac{\partial}{\partial \theta} \log ( P(\bar{X}|\theta))d\bar{X}=1\ . \ \  \ \ (2)$$</p>
+<p>$$\int P(\bar{X}|\theta) \hat{\theta} \frac{\partial}{\partial \theta} \log ( P(\bar{X}|\theta))d\bar{X}=1\ . \tag{2}$$</p>
 
 <p>ここで、(2)式から(1)式をひくと、</p>
 
@@ -212,14 +212,33 @@
             </div>
             <div class="footer">
 </div>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<script type="text/javascript" 
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
-    // inlineMath: [['\(','\)'], ['\\(','\\)']],
     inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [ ['$$','$$'], ['\\[','\\]']]
-}
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+  TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+
+<script type="text/javascript">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    console.log(all.length);
+     for(i = 0; i < all.length; i++) {
+       all[i].SourceElement().parentNode.className += ' has-jax';
+    }
 });
 </script>
 <script src="http://karadaharu.org//js/all.min.js"></script>
