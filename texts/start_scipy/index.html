@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2016 11 10 &middot; Kazumasa Kaneko</title>
+    <title>scipyの使いはじめ方 &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
     <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.30.2" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="2016 11 10 &middot; Kazumasa Kaneko">
+    <meta name="twitter:title" content="scipyの使いはじめ方 &middot; Kazumasa Kaneko">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="2016 11 10 &middot; Kazumasa Kaneko">
+    <meta property="og:title" content="scipyの使いはじめ方 &middot; Kazumasa Kaneko">
     <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
@@ -105,7 +105,7 @@
       <div>
        <header class="content-header">
 
-           <span class="post-title">2016 11 10</span>
+           <span class="post-title">scipyの使いはじめ方</span>
 
            <p class="post-meta">
                
@@ -119,10 +119,44 @@
                 <section class="post">
 
                     <div class="post-description">
-                        <p>今日は朝ちゃんと起きてゴミ捨てなどできた。<br />
-分からないこととか、困っていることは、もっとどんどん人に聞いてみるようにしたい。<br />
-一度まとまった時間をとって進路について整理して考えたほうが良さそう。</p>
+                        <p>
+scipyは他の多くのパッケージと違い、scipyに様々な関数やクラスがモジュールとして含まれているのではなくて、scipyの下に様々なサブパッケージが含まれていて、必要なサブパッケージをimportして使います。</p>
 
+<p>numpyでの線形代数の演算は (下の例は固有値、固有ベクトルの計算）、次のようにnumpyをimportすれば行えますが、</p>
+
+<pre><code>$ python
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; A = np.array([[1, 2], [3, 4]])
+&gt;&gt;&gt; np.linalg.eig(A)
+(array([-0.37228132,  5.37228132]), array([[-0.82456484, -0.41597356],
+       [ 0.56576746, -0.90937671]]))
+</code></pre>
+
+<p>scipyでは、線形代数用のサブパッケージlinalgを個別にimportしなくてはいけません。</p>
+
+<pre><code>&gt;&gt;&gt; from scipy import linalg
+&gt;&gt;&gt; linalg(np.diag((1,2,3)))
+(array([-0.37228132+0.j,  5.37228132+0.j]), array([[-0.82456484, -0.41597356],
+       [ 0.56576746, -0.90937671]]))
+</code></pre>
+
+<p>scipyをimportしてやろうとするとどうなるかというと、以下のようにエラーになります。（一度linalgをimportしてからであればエラーにはなりません。）</p>
+
+<pre><code>$ python
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; import scipy as sp
+&gt;&gt;&gt; A = np.array([[1, 2], [3, 4]])
+&gt;&gt;&gt; sp.linalg.eig(A)
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+AttributeError: module 'scipy' has no attribute 'linalg'
+&gt;&gt;&gt; from scipy import linalg
+&gt;&gt;&gt; sp.linalg.eig(A)
+(array([-0.37228132+0.j,  5.37228132+0.j]), array([[-0.82456484, -0.41597356],
+       [ 0.56576746, -0.90937671]]))
+</code></pre>
                     </div>
                     
                 </section>

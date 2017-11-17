@@ -141,6 +141,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/texts/start_scipy/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/texts/cramer_rao_bound/</loc>
   </url>
   
@@ -150,6 +154,10 @@
   
   <url>
     <loc>http://karadaharu.org/texts/pole_and_stability/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/texts/variation_and_differentiaion/</loc>
   </url>
   
 </urlset>

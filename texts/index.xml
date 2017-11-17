@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>scipyの使いはじめ方</title>
+      <link>http://karadaharu.org/texts/start_scipy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/start_scipy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>クラメール-ラオの不等式の導出</title>
       <link>http://karadaharu.org/texts/cramer_rao_bound/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -35,6 +44,15 @@
       
       <guid>http://karadaharu.org/texts/pole_and_stability/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>変分と微分演算子の交換関係</title>
+      <link>http://karadaharu.org/texts/variation_and_differentiaion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/variation_and_differentiaion/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2016 11 10 &middot; Kazumasa Kaneko</title>
+    <title>変分と微分演算子の交換関係 &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
     <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.30.2" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="2016 11 10 &middot; Kazumasa Kaneko">
+    <meta name="twitter:title" content="変分と微分演算子の交換関係 &middot; Kazumasa Kaneko">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="2016 11 10 &middot; Kazumasa Kaneko">
+    <meta property="og:title" content="変分と微分演算子の交換関係 &middot; Kazumasa Kaneko">
     <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
@@ -105,7 +105,7 @@
       <div>
        <header class="content-header">
 
-           <span class="post-title">2016 11 10</span>
+           <span class="post-title">変分と微分演算子の交換関係</span>
 
            <p class="post-meta">
                
@@ -119,10 +119,24 @@
                 <section class="post">
 
                     <div class="post-description">
-                        <p>今日は朝ちゃんと起きてゴミ捨てなどできた。<br />
-分からないこととか、困っていることは、もっとどんどん人に聞いてみるようにしたい。<br />
-一度まとまった時間をとって進路について整理して考えたほうが良さそう。</p>
+                        <p>
+解析力学などでは、変分という概念を用います。ここでは、変分と微分演算子が交換可能であることを確認します。</p>
 
+<p>ある $x$  の関数 $y(x)$ と、 $y(x)$ に対して微小な変化 $\delta y(x)$ を加えた $Y(x):=y(x)+\delta y(x)$ を考えます。</p>
+
+<p>次に、関数 $Y(x)$ 、 $y(x)$ の各点 $x$ における微分 $dY/dx$ 、 $dy/dx$  の差を $\delta(dy/dx)$ とすると、</p>
+
+<p>$$
+\delta(\frac{dy}{dx})=\frac{dY}{dx}-\frac{dy}{dx}=\frac{d}{dx}(Y-y)=\frac{d}{dx}\delta y
+$$</p>
+
+<p>であるので、変分と微分演算子が交換可能であること</p>
+
+<p>$$
+\delta(\frac{dy}{dx})=\frac{d}{dx}\delta y
+$$</p>
+
+<p>が確認できました。</p>
                     </div>
                     
                 </section>
