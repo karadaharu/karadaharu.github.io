@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scipyの使いはじめ方 &middot; Kazumasa Kaneko</title>
+    <title>線形代数でよく出てくる式変形 &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
     <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.30.2" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="scipyの使いはじめ方 &middot; Kazumasa Kaneko">
+    <meta name="twitter:title" content="線形代数でよく出てくる式変形 &middot; Kazumasa Kaneko">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="scipyの使いはじめ方 &middot; Kazumasa Kaneko">
+    <meta property="og:title" content="線形代数でよく出てくる式変形 &middot; Kazumasa Kaneko">
     <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
@@ -105,7 +105,7 @@
       <div>
        <header class="content-header">
 
-           <span class="post-title">scipyの使いはじめ方</span>
+           <span class="post-title">線形代数でよく出てくる式変形</span>
 
            <p class="post-meta">
                
@@ -120,45 +120,68 @@
 
                     <div class="post-description">
                         <p>
-scipyは他の多くのパッケージと違い、scipyに様々な関数やクラスがモジュールとして含まれているのではなくて、scipyの下に様々なサブパッケージが含まれていて、必要なサブパッケージをimportして使います。</p>
+$I\times K$ 行列 $A$ と $J \times K$ 行列 $B$ を考え、$A, B$ の列ベクトルを $a_i,b_i \ (1\leq i \leq K)$ とします。</p>
 
-<p>numpyでの線形代数の演算は (下の例は固有値、固有ベクトルの計算）、次のようにnumpyをimportすれば行えますが、</p>
+<div>
+$$
+\begin{align}
+A:= \begin{pmatrix}
+  a_{1,1} & \cdots & a_{1,K} \\
+  \vdots & \ddots & \vdots \\
+  a_{I,1} & \cdots & a_{I,K} \\
+  \end{pmatrix}=
+  [a_1  \cdots  a_K]
+  \\
 
-<pre><code>$ python
-&gt;&gt;&gt; import numpy as np
-&gt;&gt;&gt; A = np.array([[1, 2], [3, 4]])
-&gt;&gt;&gt; np.linalg.eig(A)
-(array([-0.37228132,  5.37228132]), array([[-0.82456484, -0.41597356],
-       [ 0.56576746, -0.90937671]]))
-</code></pre>
+B:= \begin{pmatrix}
+  b_{1,1} & \cdots & b_{1,K} \\
+  & & \\
+  \vdots & \ddots & \vdots \\
+  & & \\
+  b_{J,1} & \cdots & b_{J,K} \\
+  \end{pmatrix}=
+[b_1 \cdots  b_K]
+\end{align}
+$$
+</div>
 
-<p>scipyでは、線形代数用のサブパッケージlinalgを個別にimportしなくてはいけません。</p>
+<p>このとき、$A$ と $B$ の転置 $B^T$ の積 $C$ を列ベクトルで表すと次のようになります。</p>
 
-<pre><code>&gt;&gt;&gt; from scipy import linalg
-&gt;&gt;&gt; linalg(A)
-(array([-0.37228132+0.j,  5.37228132+0.j]), array([[-0.82456484, -0.41597356],
-       [ 0.56576746, -0.90937671]]))
-</code></pre>
+<div>
+$$
+\begin{align}
+C :=& A B^T \\
+=&
 
-<p>scipyをimportしてやろうとするとどうなるかというと、以下のようにエラーになります。（一度linalgをimportしてからであればエラーにはなりません。）</p>
-
-<pre><code>$ python
-&gt;&gt;&gt; import numpy as np
-&gt;&gt;&gt; import scipy as sp
-&gt;&gt;&gt; A = np.array([[1, 2], [3, 4]])
-&gt;&gt;&gt; sp.linalg.eig(A)
-Traceback (most recent call last):
-  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
-Traceback (most recent call last):
-  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
-AttributeError: module 'scipy' has no attribute 'linalg'
-&gt;&gt;&gt; from scipy import linalg
-&gt;&gt;&gt; sp.linalg.eig(A)
-(array([-0.37228132+0.j,  5.37228132+0.j]), array([[-0.82456484, -0.41597356],
-       [ 0.56576746, -0.90937671]]))
-</code></pre>
-
-<p>このような設計になっているのは、scipyが多くの機能を含んでいて、毎回すべてをimportするのは無駄だからのようです（<a href="https://groups.google.com/a/continuum.io/forum/#!topic/anaconda/mMiv9QslB4E">参考</a>)。</p>
+\begin{pmatrix}
+a_{1,1} & \cdots & a_{1,K} \\
+\vdots & \ddots & \vdots \\
+a_{I,1} & \cdots & a_{I,K} \\
+\end{pmatrix}
+\begin{pmatrix}
+b_{1,1} & &\cdots && b_{J,1} \\
+\vdots && \ddots && \vdots \\
+b_{1,K} && \cdots && b_{J,K} \\
+\end{pmatrix}\\
+=&
+\begin{pmatrix}
+\sum_{k=1}^{K} a_{1,k}b_{1,k} && \cdots && \sum_{k=1}^{K} a_{1,k}b_{J,k} \\
+\vdots && \ddots && \vdots \\
+\sum_{k=1}^{K} a_{I,k}b_{1,k} && \cdots && \sum_{k=1}^{K} a_{I,k}b_{J,k} \\
+\end{pmatrix}\\
+=&
+\sum_{k=1}^{K}
+\begin{pmatrix}
+a_{1,k}b_{1,k} && \cdots && a_{1,k}b_{J,k} \\
+\vdots && \ddots && \vdots \\
+a_{I,k}b_{1,k} && \cdots &&a_{I,k}b_{J,k} \\
+\end{pmatrix}\\
+=&
+\sum_{k=1}^{K}
+a_k b_k^T
+\end{align}
+$$
+</div>
                     </div>
                     
                 </section>
