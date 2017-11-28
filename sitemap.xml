@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://karadaharu.org/log/2017-11-28/</loc>
+    <lastmod>2017-11-28T23:05:52+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/log/2017-10-01/</loc>
     <lastmod>2017-10-01T09:44:17+09:00</lastmod>
   </url>
@@ -111,13 +116,13 @@
   
   <url>
     <loc>http://karadaharu.org/</loc>
-    <lastmod>2017-10-01T09:44:17+09:00</lastmod>
+    <lastmod>2017-11-28T23:05:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://karadaharu.org/log/</loc>
-    <lastmod>2017-10-01T09:44:17+09:00</lastmod>
+    <lastmod>2017-11-28T23:05:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
