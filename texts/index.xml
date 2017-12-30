@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Wienerプロセスの数値計算</title>
+      <link>http://karadaharu.org/texts/wiener_process_simulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/wiener_process_simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>scipyの使いはじめ方</title>
       <link>http://karadaharu.org/texts/start_scipy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -52,7 +61,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://karadaharu.org/texts/pole_and_stability/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -61,6 +70,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://karadaharu.org/texts/variation_and_differentiaion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>確率微分方程式の数値計算</title>
+      <link>http://karadaharu.org/texts/sde_similation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/sde_similation/</guid>
       <description></description>
     </item>
     

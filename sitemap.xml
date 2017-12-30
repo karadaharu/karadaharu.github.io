@@ -141,6 +141,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/texts/wiener_process_simulation/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/works/</loc>
     <priority>0</priority>
   </url>
@@ -167,6 +171,10 @@
   
   <url>
     <loc>http://karadaharu.org/texts/variation_and_differentiaion/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/texts/sde_similation/</loc>
   </url>
   
   <url>

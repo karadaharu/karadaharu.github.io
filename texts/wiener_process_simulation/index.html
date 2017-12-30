@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logs &middot; Kazumasa Kaneko</title>
+    <title>Wienerプロセスの数値計算 &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
-    <meta name="description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.30.2" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="Logs &middot; Kazumasa Kaneko">
-    <meta name="twitter:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="twitter:title" content="Wienerプロセスの数値計算 &middot; Kazumasa Kaneko">
+    <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Logs &middot; Kazumasa Kaneko">
-    <meta property="og:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta property="og:title" content="Wienerプロセスの数値計算 &middot; Kazumasa Kaneko">
+    <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
@@ -102,156 +102,59 @@
 
 
     <div class="content pure-u-1 pure-u-md-12-24">
-      <div class="">
-        <header class="content-header">
-          Logs
-        </header>
+      <div>
+       <header class="content-header">
+
+           <span class="post-title">Wienerプロセスの数値計算</span>
+
+           <p class="post-meta">
+               
+               
+           </p>
+       </header>
       </div>
         <div>
             
             <div class="posts">
-                
                 <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/log/2016-12-01/" class="post-title">2016 12 01</a>
-                        
-                        
-                        
-                        
-                    </header>
 
-                    
-                    
+                    <div class="post-description">
+                        <p>
+Wiener過程$W(t), \ t\in [0,T]$は次の性質を満たします</p>
+
+<ol>
+<li>$W(0)=0$</li>
+<li>$0\leq s &lt; t \leq T$である$s,t$において、$W(t)-W(s)\sim  N(0, t-s)$である。ただし、$N(\mu,\sigma^2)$は平均$\mu$、 分散$\sigma^2$の正規分布</li>
+<li>$0\leq s &lt; t \leq u &lt; v \leq T$のとき $W(t)-W(s)$と$W(v)-W(u)$は独立</li>
+</ol>
+
+<p>Wiener過程の数値計算は
+正の整数$N$をとり、$\Delta t := T/N$とおき、$t_j := j \Delta t, \ j = 0, \cdots N$、$W_j := W(t_j) $とすると、</p>
+
+<div>$$
+W_j = W_{j-1} + N(0, \Delta t ) \ \ ,
+$$</div>
+
+<p>と表せるので、この差分方程式を計算します。Pythonによるサンプルコードは次の通りです。</p>
+
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+N = 100000
+dt = 1.0 / N
+t = np.arange(0, 1, dt)
+dW = np.sqrt(dt)*np.random.randn(N)
+dW[0] = 0
+W = np.cumsum(dW)
+plt.plot(t, W)
+</code></pre>
+
+<p><img src="/img/wiener.png" style="width:400px;"></p>
+                    </div>
                     
                 </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/log/2016-11-29/" class="post-title">2016 11 29</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/log/2016-11-26/" class="post-title">2016 11 26</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/log/2016-11-25/" class="post-title">2016 11 25</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/log/2016-11-24/" class="post-title">2016 11 24</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/log/2016-11-10/" class="post-title">2016 11 10</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/log/2016-11-09/" class="post-title">2016 11 09</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/log/2016-11-08/" class="post-title">2016 11 08</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/log/2016-10-31/" class="post-title">2016年10月31日</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
             </div>
-            
-<div class="pagination">
-  <nav role="pagination" class="post-list-pagination">
-      
-      <a href="/log/" class="post-list-pagination-item post-list-pagination-item-prev">
-        <i class="fa fa-angle-double-left"></i>&nbsp;Newer
-      </a>
-      
-    <span class="post-list-pagination-item post-list-pagination-item-current">Page 2 of 2</span>
-    
-  </nav>
-</div>
-
-
             <div class="footer">
 </div>
 
@@ -288,6 +191,7 @@ MathJax.Hub.Config({
         </div>
     </div>
 </div>
+
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

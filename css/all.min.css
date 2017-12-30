@@ -93,7 +93,6 @@ code,pre{font-family:Consolas,'Liberation Mono',Courier,monospace;color:#333;bac
 .posts img{
   width:100%
 }
-.post{padding-bottom:30px}
 
 .video-container {
   position: relative;
@@ -101,6 +100,11 @@ code,pre{font-family:Consolas,'Liberation Mono',Courier,monospace;color:#333;bac
   padding-top: 30px;
   height: 0;
   overflow: hidden;
+}
+.post-list-pagination-item{
+  background-color:transparent;
+  padding:5px 10px;
+  font-size:1.5rem;
 }
 
 .video-container iframe {
