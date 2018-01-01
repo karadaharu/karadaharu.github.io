@@ -74,11 +74,11 @@
     </item>
     
     <item>
-      <title>確率微分方程式の数値計算</title>
-      <link>http://karadaharu.org/texts/sde_similation/</link>
+      <title>確率微分方程式のシミュレーション</title>
+      <link>http://karadaharu.org/texts/sde_simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://karadaharu.org/texts/sde_similation/</guid>
+      <guid>http://karadaharu.org/texts/sde_simulation/</guid>
       <description></description>
     </item>
     
@@ -89,6 +89,16 @@
       
       <guid>http://karadaharu.org/texts/common_linear_algebra/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>通信路容量</title>
+      <link>http://karadaharu.org/texts/channel_capacity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/channel_capacity/</guid>
+      <description>通信路容量$C$は相互情報量の上限として定義されます:
+ $$ C:=\mathrm{sup}_{pX} I(X;Y) $$  </description>
     </item>
     
   </channel>

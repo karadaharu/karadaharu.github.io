@@ -174,11 +174,15 @@
   </url>
   
   <url>
-    <loc>http://karadaharu.org/texts/sde_similation/</loc>
+    <loc>http://karadaharu.org/texts/sde_simulation/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.org/texts/common_linear_algebra/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/texts/channel_capacity/</loc>
   </url>
   
 </urlset>
