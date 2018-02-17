@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isingモデル(2) 平均場近似 &middot; Kazumasa Kaneko</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.30.2" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="Isingモデル(2) 平均場近似 &middot; Kazumasa Kaneko">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Isingモデル(2) 平均場近似 &middot; Kazumasa Kaneko">
+    <meta property="og:description" content="">
+
+    <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="http://karadaharu.org//css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="Kazumasa Kaneko" href="http://karadaharu.org//index.xml" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-84210686-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-7-24">
+    <div class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="http://karadaharu.org/">
+                  <h1 class="brand-title">
+                    <span>Kazumasa Kaneko</span>
+                  </h1>
+                  <h2 class="brand-title">
+                    <span>金子和正</span>
+                  </h2>
+                </a>
+              </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/about">about</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/texts">texts</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/works">works</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/research">research</a>
+                </li>
+            </ul>
+            <ul class="nav-list">
+              <li class="nav-item">
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://facebook.com/kanekokazumasa"><i class="fa fa-facebook"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://twitter.com/karadaharu"><i class="fa fa-twitter"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://github.com/karadaharu "><i class="fa fa-github-alt"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                  <a class="sns-button" href="https://karadaharu.tumblr.com "><i class="fa fa-tumblr"></i></a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-12-24">
+      <div>
+       <header class="content-header">
+
+           <span class="post-title">Isingモデル(2) 平均場近似</span>
+
+           <p class="post-meta">
+               
+               
+           </p>
+       </header>
+      </div>
+        <div>
+            
+            <div class="posts">
+                <section class="post">
+
+                    <div class="post-description">
+                        <p>
+磁性体のふるまいを記述する簡単なモデルとしてイジングモデルがあります。イジングモデルでは、格子状に配置したスピンを考えます。スピン<code>$i$</code>が上向きの場合は1、下向きの場合は-1をとるスピン変数<code>$\sigma_i$</code>を導入します。外部磁場がなく、隣り合うスピンの間に方向を揃えようとする相互作用がある場合、系のハミルトニアンは</p>
+
+<div>
+$$
+H:=-J\sum_{\langle i,j\rangle } \sigma_i \sigma_j
+$$
+</div>
+
+<p>となります。ただし、ここで<code>$\sum_{\langle i,j\rangle}$</code>は隣り合うすべてのペアについての和を表します。この系はスピンの数$N$、体積$V$は一定であり、温度$T$も一定である状態を考えれば、カノニカル集団であるから、分配関数<code>$Z$</code>は以下のように書けます。</p>
+
+<div>
+$$
+\begin{eqnarray}
+Z :=& \sum_{\sigma_1=\pm 1, \cdots, \sigma_N =\pm 1} \exp[-\beta H(\sigma_1,\cdots, \sigma_N)]\\
+&=\sum_{\{\sigma_i\}} \exp[\beta J\sum_{\langle i,j\rangle} \sigma_i \sigma_j] \tag{1}
+\end{eqnarray}
+$$
+</div>
+
+<p>この系の性質を調べるために平均場近似を導入します。平均場近似ではスピン間の相関を無視して、各格子点の状態は確率<code>$N_A/N$</code>で状態A:<code>$\sigma=1$</code>、<code>$N_B/N$</code>で状態B:<code>$\sigma=-1$</code>であるとします。平均場近似のもとでは、系の中にある最近接対のA-A、B-B、A-Bの状態の組の数を以下のように求めることができます:</p>
+
+<p>A-A対の数 <code>$=N_{AA}\sim \frac{1}{2}zN (\frac{N_A}{N})^2$</code><br />
+B-B対の数 <code>$=N_{BB}\sim \frac{1}{2}zN (\frac{N_B}{N})^2$</code><br />
+A-B対の数 <code>$=N_{AB}\sim \frac{1}{2}zN 2(\frac{N_A}{N})(\frac{N_B}{N})$</code></p>
+
+<p>ここで、 <code>$z$</code> は各格子点の最近接の格子点の数です。系全体の最近接格子点対の数は <code>$zN/2$</code> になります。この平均場近似の結果を用いれば、分配関数の指数関数の引数は</p>
+
+<div>$$
+\beta J\sum_{\langle i,j\rangle} \sigma_i \sigma_j \sim \frac{1}{2}\beta J z N [(\frac{N_A}{N})^2 -2 (\frac{N_A}{N})(\frac{N_B}{N}) +(\frac{N_B}{N})^2 ]
+ \tag{2}
+$$</div>
+
+<p>となります。ここで <code>$N=N_A+N_B$</code> という拘束条件があるので、以下で定義される秩序パラメタ <code>$\phi$</code> を導入します。</p>
+
+<div>$$
+\frac{N_A}{N} = \frac{1}{2}(1+\phi), \ \frac{N_B}{N} = \frac{1}{2}(1-\phi)
+$$</div>
+
+<p><code>$\phi=0$</code> のとき無秩序相、 <code>$\phi=\pm 1$</code> のとき秩序相となります。分配関数を$\phi$で表すと</p>
+
+<div>$$
+\begin{aligned}
+Z &=\sum_{\{\sigma_i\}} \exp [\frac{1}{2}\beta J z N \phi^2] \\
+&=
+\end{aligned}
+$$</div>
+
+<p>P.46
+接触した2つの系全体の分布関数は、等重率の原理により次のように書ける。</p>
+
+<div>$$
+\begin{equation}
+P_{\rm{total}}(\Gamma,\Gamma')=C\delta[E_t - H(\Gamma)-H'(\Gamma')]
+\label{aa}
+\end{equation}
+$$</div>
+
+<p>等重率の原理
+位相空間上で同じ全力学的エネルギーEをもつすべての微視的状態は等確率で実現する</p>
+
+<p>、各スピンの磁気モーメントを<code>$\mu$</code>とすれば、系全体の磁気モーメント<code>$M$</code>は次の式で与えられます。
+<div>
+$$
+M:=\mu \sum_i \sigma_i
+$$
+</div>
+以下$M$を磁化と呼びます。
+隣り合うスピン$i,j$が同じ方向を向いていれば$\sigma_i\sigma_j=1$で、逆向きの方向を向いていれば$\sigma_i\sigma_j=-1$なので、ふたつの状態のエネルギー差を$2J$とすれば、相互作用エネルギーは次のように書くことができます。</p>
+
+<p>系に外部磁場$B$が加えられているとすると、系のエネルギーには、相互作用エネルギーの他にゼーマンエネルギーが加わります。したがって系の全エネルギー$H$は次のように書けます。</p>
+
+<div>$$
+H:=
+-J\sum_{\langle i,j\rangle } \sigma_i \sigma_j
+-\mu B \sum_i \sigma_i \tag{1}
+$$</div>
+
+<p>式(1)がイジングモデルのハミルトニアンです。分配関数$Z$は次の式で計算できます。なんで？分配関数の定義はなに？</p>
+
+<h1 id="田崎">田崎</h1>
+
+<p><code>$L=1,2,\cdots$</code> について一辺の長さが <code>$L$</code> の <code>$d$</code> 次元超立方格子を</p>
+
+<div>$$
+\Lambda_L  := \{x\}
+$$</div>
+
+<p>ヘルムホルツの自由エネルギーは</p>
+
+<div>$$
+F := - k_B T \log Z
+$$</div>
+
+<p>ハミルトニアンがパラメーター <code>$\alpha \in \mathbb{R}$</code> を含み、</p>
+
+<div>$$
+H_\alpha (s) = H_0 (s) - \alpha g(s)
+$$</div>
+
+<p>と書けるとします。ミクロな状態 <code>$s\in \mathcal{S}$</code></p>
+
+<p>分配関数の定義より</p>
+
+<div>$$
+\begin{aligned}
+\frac{\partial Z(\beta, \alpha)}{\partial \alpha} = \frac{\partial }{\partial \alpha} \sum_{s\in \mathcal{S}} \exp [-\beta H_0(s)+\beta \alpha g(s)] \\
+= \beta  \sum_{s\in \mathcal{S}} g(s) \exp [-\beta H_0(s)+\beta \alpha g(s)] \\
+\end{aligned}
+$$</div>
+
+<p>となるので、自由エネルギーの定義より、</p>
+
+<div>$$
+\frac{\partial F(\beta, \alpha)}{\partial \alpha} =
+$$</div>
+
+<p>自由エネルギーの微分</p>
+
+<h2 id="相互作用のないモデル">相互作用のないモデル</h2>
+
+<p>スピンひとつ。</p>
+
+<p>分配関数は</p>
+
+<div>$$
+Z^F_1(\beta,h)=\sum_{\sigma_o=\pm 1}e^{-\beta(-h\sigma_o)} = e^{\beta h } +e^{-\beta h }  = 2 \cosh \beta h
+$$</div>
+
+<p>自由エネルギーは</p>
+
+<div>$$
+f^F_1(\beta, h) = - \frac{1}{\beta} \log Z = - \frac{1}{\beta} \log (2\cosh \beta h)
+$$</div>
+
+<h2 id="平均場近似近似">平均場近似近似</h2>
+
+<p>ハミルトニアンから原点のスピンを含む項のみを取り出し、</p>
+
+<div>$$
+H_0 = - \sum_{x\in \Lambda_L (|x|=1)} \sigma_o \sigma_x - h\sigma_o = - (\sum_{x\in \Lambda_L (|x|=1)}\sigma_x + h) \sigma_o
+$$</div>
+
+<p><code>$\sum_{x\in \Lambda_L (|x|=1)}\sigma_x$</code> は確率変数であり、そのふるまいは <code>$\sigma_o$</code> とも相関している。この量のゆらぎを無視し、</p>
+
+<div>$$
+\sum_{x\in \Lambda_L (|x|=1)}\sigma_x \rightarrow \langle\sum_{x\in \Lambda_L (|x|=1)}\sigma_x \rangle = \sum_{x\in \Lambda_L (|x|=1)}\langle \sigma_x\rangle = 2dm
+$$</div>
+
+<p>とする。$m:=\langle x\rangle$はスピンの期待値であり、その値はまだ分からない。</p>
+
+<p>ハミルトニアンは</p>
+
+<div>$$
+H_0 = -(2dm + h ) \sigma_o
+$$</div>
+
+<p>$2dm$はまわりのスピンの平均がつくる磁場、平均場</p>
+
+<p>磁化は、</p>
+
+<div>$$
+\langle \sigma_o \rangle = \tanh (2d\beta m + \beta h)
+$$</div>
+
+<p>磁化が川勝では <code>$\phi$</code> 、田崎では <code>$m$</code></p>
+
+<p>ハミルトニアンが与えられたときの磁化の計算方法が相互作用のないモデルでやってる</p>
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="footer">
+</div>
+
+
+<script type="text/javascript" 
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+  TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+
+<script type="text/javascript">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    console.log(all.length);
+     for(i = 0; i < all.length; i++) {
+       all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<script src="http://karadaharu.org//js/all.min.js"></script>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

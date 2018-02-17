@@ -11,6 +11,24 @@
     
     
     <item>
+      <title>Isingモデル(1) 磁化と自由エネルギーの関係</title>
+      <link>http://karadaharu.org/texts/ising_magnetization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/ising_magnetization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Isingモデル(2) 平均場近似</title>
+      <link>http://karadaharu.org/texts/ising_mean_field_approx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/ising_mean_field_approx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Wienerプロセスの数値計算</title>
       <link>http://karadaharu.org/texts/wiener_process_simulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
