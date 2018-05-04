@@ -6,10 +6,19 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Nov 2017 23:05:52 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 18 Feb 2018 23:05:52 +0900</lastBuildDate>
     
 	<atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018 02 18</title>
+      <link>http://karadaharu.org/log/2018-02-18/</link>
+      <pubDate>Sun, 18 Feb 2018 23:05:52 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2018-02-18/</guid>
+      <description>博士課程にいるというとたいてい勉強頑張ってね、と言われ、一応研究をしているつもりなんだけどなぁと思いつつ、一本も論文出せていないので何も言えない。</description>
+    </item>
     
     <item>
       <title>2017 11 28</title>
@@ -252,15 +261,6 @@ SKILLS / PROFICIENCY  dynamical systems machine learning software development (P
       
       <guid>http://karadaharu.org/research/</guid>
       <description>CURRENT PROJECT -Population dynamics on immune cell development- T cell, one of immune cells, gets matured step by step from immature cells in thymus. In this maturation process, only T cells which recognize antigens such as bacterium and don&amp;rsquo;t recognize cell from self by mistake, can proliferate and get matured through an interaction with thymic epithelial cells(TECs) and thus T cells which only attack enemy are selected. We are developing a mathematical model of the T cell development.</description>
-    </item>
-    
-    <item>
-      <title>Wienerプロセスの数値計算</title>
-      <link>http://karadaharu.org/texts/wiener_process_simulation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/texts/wiener_process_simulation/</guid>
-      <description></description>
     </item>
     
     <item>

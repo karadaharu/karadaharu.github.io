@@ -29,15 +29,6 @@
     </item>
     
     <item>
-      <title>Wienerプロセスの数値計算</title>
-      <link>http://karadaharu.org/texts/wiener_process_simulation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/texts/wiener_process_simulation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>scipyの使いはじめ方</title>
       <link>http://karadaharu.org/texts/start_scipy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
