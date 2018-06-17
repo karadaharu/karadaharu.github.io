@@ -6,10 +6,19 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 18 Feb 2018 23:05:52 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 18 Jun 2018 00:05:52 +0900</lastBuildDate>
     
 	<atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018 6 18</title>
+      <link>http://karadaharu.org/log/2018-06-18/</link>
+      <pubDate>Mon, 18 Jun 2018 00:05:52 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2018-06-18/</guid>
+      <description>日記を書くことは精神の安定に良いらしいので、日記を再開する。今日はアプリの開発を進めた。もう少しでとりあえずリリースできそうだ。腸管免疫の研究を進めたい。</description>
+    </item>
     
     <item>
       <title>2018 02 18</title>
