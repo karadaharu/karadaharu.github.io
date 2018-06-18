@@ -6,17 +6,26 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 18 Jun 2018 00:05:52 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jun 2018 01:54:49 +0900</lastBuildDate>
     
 	<atom:link href="http://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>2018 6 18</title>
+      <title>2018 06 18</title>
       <link>http://karadaharu.org/log/2018-06-18/</link>
-      <pubDate>Mon, 18 Jun 2018 00:05:52 +0900</pubDate>
+      <pubDate>Tue, 19 Jun 2018 01:54:49 +0900</pubDate>
       
       <guid>http://karadaharu.org/log/2018-06-18/</guid>
+      <description>Ceroのライブを見に行った。緊張感が高まっていって最後に開放される感じのライブの演奏が好きだ。7人の演奏がすごいグルーヴを作っていて、カマシ・ワシントンを思い出した。とてもいいライブだった。</description>
+    </item>
+    
+    <item>
+      <title>2018 06 17</title>
+      <link>http://karadaharu.org/log/2018-06-17/</link>
+      <pubDate>Mon, 18 Jun 2018 00:05:52 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2018-06-17/</guid>
       <description>日記を書くことは精神の安定に良いらしいので、日記を再開する。今日はアプリの開発を進めた。もう少しでとりあえずリリースできそうだ。腸管免疫の研究を進めたい。</description>
     </item>
     
@@ -219,15 +228,6 @@ SKILLS / PROFICIENCY  dynamical systems machine learning software development (P
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://karadaharu.org/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://karadaharu.org/log/2018-06-17/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://karadaharu.org/log/2018-06-17/</guid>
       <description></description>
     </item>
     
