@@ -6,10 +6,22 @@
     <description>Recent content in Logs on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 20 Jun 2018 03:16:55 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jun 2018 01:52:47 +0900</lastBuildDate>
     
 	<atom:link href="http://karadaharu.org/log/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018 06 20</title>
+      <link>http://karadaharu.org/log/2018-06-20/</link>
+      <pubDate>Thu, 21 Jun 2018 01:52:47 +0900</pubDate>
+      
+      <guid>http://karadaharu.org/log/2018-06-20/</guid>
+      <description>アプリをもうすぐ審査に送れるが、やることが多くて一人で作るのってかなり大変だ。
+今日は買ったスパイスを使ってカレーを作った。やっぱりエアスパイスのすべての調合が完璧なやつに比べると味が劣るが、これからいろいろ作ってみようと思う。
+大学の事務に提出する書類がすべて手書きじゃないといけないという理不尽きわまりないルールになっていて、プロッターが逆にこれから流行るんじゃないかと思った。
+研究は作ったモデルの考察が進んだ。明日はさらに時間変化を再現できるようにモデルの改善をしたい。</description>
+    </item>
     
     <item>
       <title>2018 06 19</title>
