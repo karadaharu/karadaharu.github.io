@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texts &middot; Kazumasa Kaneko</title>
+    <title>累積分布関数と期待値の関係 &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
-    <meta name="description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.30.2" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="Texts &middot; Kazumasa Kaneko">
-    <meta name="twitter:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="twitter:title" content="累積分布関数と期待値の関係 &middot; Kazumasa Kaneko">
+    <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Texts &middot; Kazumasa Kaneko">
-    <meta property="og:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta property="og:title" content="累積分布関数と期待値の関係 &middot; Kazumasa Kaneko">
+    <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
@@ -102,58 +102,53 @@
 
 
     <div class="content pure-u-1 pure-u-md-12-24">
-      <div class="">
-        <header class="content-header">
-          Texts
-        </header>
+      <div>
+       <header class="content-header">
+
+           <span class="post-title">累積分布関数と期待値の関係</span>
+
+           <p class="post-meta">
+               
+               
+           </p>
+       </header>
       </div>
         <div>
             
             <div class="posts">
-                
                 <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/texts/common_linear_algebra/" class="post-title">線形代数でよく出てくる式変形</a>
-                        
-                        
-                        
-                        
-                    </header>
 
-                    
-                    
+                    <div class="post-description">
+                        <p>
+確率変数<code>$X$</code>についての確率密度関数を<code>$f_X(x)$</code>、累積分布関数を<code>$F_X(x):=\int^x_\infty f_X(x)dx$</code>としたとき、期待値について以下の式が成り立ちます。</p>
+
+<div>$$
+E(X)=\int^\infty_0 (1-F_X(x))dx
+$$</div>
+
+<h2 id="証明">証明</h2>
+
+<div>$$
+\begin{align}
+\int^\infty_0 (1-F_X(x))dx&=\int^\infty_0P(X\geq x)dx\\
+&=\int^\infty_0 \int^\infty_x f_X(t)dtdx\\
+&=\int^\infty_0\int^t_0 f_X(t)dxdt\\
+&=\int^\infty_0 tf_X(t)dt=E(x)
+\end{align}
+$$</div>
+
+<p>途中で積分の順序を交換するのがポイントです。</p>
+
+<h2 id="参考文献">参考文献</h2>
+
+<ul>
+<li><a href="https://stats.stackexchange.com/questions/10159/find-expected-value-using-cdf">self study - Find expected value using cdf - Cross Validated</a></li>
+<li><a href="https://www.ma.utexas.edu/users/m408s/m408d/CurrentWeb/LM15-3-7.php">Area and Volume Revisited</a></li>
+</ul>
+                    </div>
                     
                 </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/texts/channel_capacity/" class="post-title">通信路容量</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
             </div>
-            
-<div class="pagination">
-  <nav role="pagination" class="post-list-pagination">
-      
-      <a href="/texts/" class="post-list-pagination-item post-list-pagination-item-prev">
-        <i class="fa fa-angle-double-left"></i>&nbsp;Newer
-      </a>
-      
-    <span class="post-list-pagination-item post-list-pagination-item-current">Page 2 of 2</span>
-    
-  </nav>
-</div>
-
-
             <div class="footer">
 </div>
 
@@ -190,6 +185,7 @@ MathJax.Hub.Config({
         </div>
     </div>
 </div>
+
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
