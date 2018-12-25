@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ひとつのIPアドレスで複数のドメインを処理する仕組み &middot; Kazumasa Kaneko</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.53" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="ひとつのIPアドレスで複数のドメインを処理する仕組み &middot; Kazumasa Kaneko">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ひとつのIPアドレスで複数のドメインを処理する仕組み &middot; Kazumasa Kaneko">
+    <meta property="og:description" content="">
+
+    <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="http://karadaharu.org//css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="Kazumasa Kaneko" href="http://karadaharu.org//index.xml" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-84210686-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-7-24">
+    <div class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="http://karadaharu.org/">
+                  <h1 class="brand-title">
+                    <span>Kazumasa Kaneko</span>
+                  </h1>
+                  <h2 class="brand-title">
+                    <span>金子和正</span>
+                  </h2>
+                </a>
+              </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/about">about</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/texts">texts</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/works">works</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/research">research</a>
+                </li>
+            </ul>
+            <ul class="nav-list">
+              <li class="nav-item">
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://facebook.com/kanekokazumasa"><i class="fa fa-facebook"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://twitter.com/karadaharu"><i class="fa fa-twitter"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://github.com/karadaharu "><i class="fa fa-github-alt"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                  <a class="sns-button" href="https://karadaharu.tumblr.com "><i class="fa fa-tumblr"></i></a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-12-24">
+      <div>
+       <header class="content-header">
+
+           <span class="post-title">ひとつのIPアドレスで複数のドメインを処理する仕組み</span>
+
+           <p class="post-meta">
+               
+               
+           </p>
+       </header>
+      </div>
+        <div>
+            
+            <div class="posts">
+                <section class="post">
+
+                    <div class="post-description">
+                        <p>サーバーは一台しかないけど、複数のドメインを利用したいということはよくあります。単純にDNSサーバーで複数のドメインをひとつの同じIPアドレスを対応させるだけでは、違うドメインが同じ内容を返すことになってしまいます。この場合どうしたらいいのでしょうか？</p>
+
+<p>ひとつのIPアドレスで複数のドメインにそれぞれ別のレスポンスを返すには、Apacheなどのサーバーソフトウエアの機能であるバーチャルホストを使います。バーチャルホストは、例えばHTTPのリクエストに含まれるHostヘッダーの値によって、どのドキュメントルートを返せばよいかを判断します。(参考:<a href="https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88">バーチャルホスト - Wikipedia</a>)</p>
+
+<p>Apacheでの具体的な設定は<a href="https://httpd.apache.org/docs/2.4/vhosts/">ここ</a>などを参考に行います。また、共用レンタルサーバーでは、ウェブ上の管理画面からドメインを登録することで設定できることが多そうです(例:<a href="https://help.sakura.ad.jp/hc/ja/articles/206206431">さくら</a>)。</p>
+
+<p>では、<a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en">Postman</a>などを使って、Request URLとは異なるドメインをHostヘッダーの値にいれると、Request URLとHostヘッダーのどちらのドメインのレスポンスが返ってくるでしょうか？さくらのレンタルサーバーではRequest URLのレスポンスが返ってきました。Hostヘッダーの値で判断しているわけではないということでしょうか？おそらく、プロキシサーバーが間にあるせいでPostmanのリクエストが書き換えられたりしているのではないかと思うのですが、よく分かりません。詳しいことが分かり次第追記しようと思います。</p>
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="footer">
+</div>
+
+
+<script type="text/javascript" 
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+  TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+
+<script type="text/javascript">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    console.log(all.length);
+     for(i = 0; i < all.length; i++) {
+       all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<script src="http://karadaharu.org//js/all.min.js"></script>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

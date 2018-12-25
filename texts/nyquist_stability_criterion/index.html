@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ナイキストの安定判別法 &middot; Kazumasa Kaneko</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.53" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="ナイキストの安定判別法 &middot; Kazumasa Kaneko">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ナイキストの安定判別法 &middot; Kazumasa Kaneko">
+    <meta property="og:description" content="">
+
+    <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="http://karadaharu.org//css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="Kazumasa Kaneko" href="http://karadaharu.org//index.xml" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-84210686-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-7-24">
+    <div class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="http://karadaharu.org/">
+                  <h1 class="brand-title">
+                    <span>Kazumasa Kaneko</span>
+                  </h1>
+                  <h2 class="brand-title">
+                    <span>金子和正</span>
+                  </h2>
+                </a>
+              </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/about">about</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/texts">texts</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/works">works</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/research">research</a>
+                </li>
+            </ul>
+            <ul class="nav-list">
+              <li class="nav-item">
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://facebook.com/kanekokazumasa"><i class="fa fa-facebook"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://twitter.com/karadaharu"><i class="fa fa-twitter"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://github.com/karadaharu "><i class="fa fa-github-alt"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                  <a class="sns-button" href="https://karadaharu.tumblr.com "><i class="fa fa-tumblr"></i></a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-12-24">
+      <div>
+       <header class="content-header">
+
+           <span class="post-title">ナイキストの安定判別法</span>
+
+           <p class="post-meta">
+               
+               
+           </p>
+       </header>
+      </div>
+        <div>
+            
+            <div class="posts">
+                <section class="post">
+
+                    <div class="post-description">
+                        <p>ナイキストの安定判別法 (Nyquist stability criterion)は、簡単に閉ループ制御系の安定性を判別する方法です。ここでは、なぜナイキストの安定判別法が必要なのかを考えてから、ナイキストの安定判別法を導出してみます。</p>
+
+<p><img src="/img/feedback.png" alt="feedback system" />
+<p style="text-align:center">図1.閉ループ制御系<p></p>
+
+<h2 id="なぜナイキストの安定判別法が必要なのか">なぜナイキストの安定判別法が必要なのか</h2>
+
+<p>図1. のような一般の閉ループ制御系を考えます。この系の伝達関数 $G(s)$ は、</p>
+
+<p>$$
+G(s) := \frac{Y(s)}{R(s)} = \frac{P(s)C(s)}{1+P(s)C(s)}
+$$</p>
+
+<p>です。この系が安定かどうかは極 ($1+P(s)C(s)=0$ の $s$ についての解) の符号を調べれば分かります(極と安定性の関係については <a href="/texts/pole_and_stability/">こちら</a>)。しかし、一般の多項式の複素解を手計算で求めるのは簡単ではありません。ではどうしたらいいでしょうか？ナイキストの安定判別法は極を求めずに、実部が正の極があるかどうかを調べることで、極を求める計算が難いので安定性が分からない、という問題を解決する方法なのです。</p>
+
+<h2 id="ナイキストの安定判別法の導出">ナイキストの安定判別法の導出</h2>
+
+<p>ナイキストの安定判別法は、 $P(s)C(s)$ については、事前に設計したり、モデル化したりすることで分かっていることを利用します。</p>
+
+<p>まず、 $P(s)C(s)$ の零点を $z_i,\cdots,z_m$ 、極を $p_1, \cdots p_n$ が分かっているとして、 $P(s)C(s)$ は</p>
+
+<p>$$
+P(s)C(s) = \frac{K(s-z_1)\cdots(s-z_m)}{(s-p_1)\cdots(s-p_n)}
+$$</p>
+
+<p>と表すことができます。よって、特性方程式は</p>
+
+<p>$$
+1+P(s)C(s)=\frac{(s-p_1)\cdots(s-p_n)+K(s-z_1)\cdots(s-z_m)}{(s-p_1)\cdots(s-p_n)}
+=0
+$$</p>
+
+<p>となります。さらに、特性方程式の零点を $r_1,\cdots,r_n$ とおけば、</p>
+
+<p>$$
+1+P(s)C(s)=\frac{A(s-r_1)\cdots(s-r_n)}{(s-p_1)\cdots(s-p_n)}
+=0
+$$</p>
+
+<p>と表すことができます。ここで、伝達関数は</p>
+
+<p>$$
+\begin{align}
+G(s) &amp;= \frac{P(s)C(s)}{1+P(s)C(s)} \\ &amp;= \frac{K(s-z_1)\cdots(s-z_m)}{(s-p_1)\cdots(s-p_n)}\frac{(s-p_1)\cdots(s-p_n)}{A(s-r_1)\cdots(s-r_n)} \\ &amp;=\frac{K(s-z_1)\cdots(s-z_m)}{A(s-r_1)\cdots(s-r_n)}
+\end{align}
+$$</p>
+
+<p>となるので、特性方程式の零点 $r_1,\cdots,r_n$ は、伝達関数の極になっています。いま $1+P(s)C(s)$ の零点 $r_i,\cdots,r_n$ と極 $p_i,\cdots,p_m$ のうち、実部が正であるものの数をそれぞれ、 $R$ 、 $P$  とします。いまのところ、 $P$ は分かりますが、 $R$ は分かりません。</p>
+
+<p>次に、図2(A)に示すように、複素平面において、右半平面全体を虚軸と半径無限大の円周で囲む閉曲線 $C$ を考えます。
+$s$ を閉曲線 $C$ にそって、時計周りに1周させたときの $1+P(s)C(s)$ の軌跡 $\Gamma$ をプロットします。この $\Gamma$ が原点を中心に時計方向に回る回転数を $N$ とします。</p>
+
+<p><img src="/img/nyquist.png" alt="nyquist" />
+<p style="text-align:center">図2. (A) 閉曲線 $C$ (B)軌跡 $\Gamma$ (適当です) この場合 $N=2$  </p></p>
+
+<p>ここで、 複素数 $b_1:=c_1e^{i\theta_1}, b_2:=c_2e^{i\theta_2}$ を考えると、その積の位相は、</p>
+
+<p>$$
+\angle b_1b_2 = \angle c_1c_2 e^{i(\theta_1+\theta_2)} = \theta_1+\theta_2 = \angle b_1 + \angle b_2
+$$</p>
+
+<p>となり、それぞれの位相の和で表せることを使うと、$1+P(s)C(s)$ の位相 $\theta$  は式 () より、</p>
+
+<p>$$
+\theta = \sum_i^{n} \angle (s-r_i) - \sum_j^n \angle (s-p_j)
+$$</p>
+
+<p>となります。 $s$ を閉曲線 $C$ にそって時計回りに1周させたとき、 $\angle (s-r_i)$ 、$\angle (s-p_i)$ がどう変化するかを考えると、 $r_i$ 、 $p_i$ の実部が正のときは、ベクトル $s-r_i$ 、 $s-p_i$ が時計周りに1回転し、そうでないときには、回転しないことが分かります。よって、その和である $\theta$ について考えると、 $1+P(s)C(s)$ が原点を中心に回転する数は、 実部が正である $r_i$ の個数 $R$ から、実部が正である $p_i$ の個数 $P$ をひいたものになります。すなわち、</p>
+
+<p>$$
+N = R + P
+$$</p>
+
+<p>が成り立ちます。軌跡 $\Gamma$ のプロットから $N$ が分かり、 $P$ はもともと分かっているので、 $R$ が求めることができます！ 改めて $R$ が何を表していたのか確認すると、伝達関数の極のうち、実部が正のものの個数でした。よって、閉ループ制御系は $R=0$ なら安定、 $R&gt;0$ なら不安定です。</p>
+
+<p>ここで、軌跡 $\Gamma$ をどう描いたらいいのか考えてみましょう。虚軸上の点は $s$ を $[-i\infty,i\infty]$ の間で動かせばいいでしょう。では、半径無限大の円周上の点はどうなるでしょうか。 $s=ae^{i\varphi}$ とすると、軌跡 $\Gamma(s)$ は</p>
+
+<p>$$
+\begin{align}
+\Gamma(s)&amp; =\lim_{a\rightarrow\infty}1+P(s)C(s) \\ &amp; =\lim_{a\rightarrow\infty} \frac{A(ae^{i\varphi}-r_1)\cdots(ae^{i\varphi}-r_n)}{(ae^{i\varphi}-p_1)\cdots(ae^{i\varphi}-p_n)}\\ &amp; =A
+\end{align}
+$$</p>
+
+<p>となり、結局閉曲線 $C$ 上で $s$ を動かしたときの軌跡は区間 $[-i\infty,i\infty]$ の間で動かしたときと変わらないことが分かります。</p>
+
+<p>また、 $1+P(s)C(s)$ が原点を中心に回転する数は、$P(s)C(s)$ が複素平面上の点 $(-1,0)$ を中心に回転する数と等しいです。</p>
+
+<p>これまでのことを整理すると、</p>
+
+<ol>
+<li>$P(s)C(s)$ の実部が正の極の数を $P$ とする</li>
+<li>$s=iw$ とし $P(iw)C(iw)$ の区間 $w \in [-\infty,\infty]$ での軌道 $\Gamma$ を描き、複素平面上の点 $(-1,0)$ を中心に時計回りに回転した数を $N$ とする</li>
+<li>$R=N-P$ を計算し、$R=0$ なら安定、 $R&gt;0$ なら不安定</li>
+</ol>
+
+<p>これがナイキストの安定判別法です。</p>
+
+<p>誤りのご指摘等は<a href="https://twitter.com/karadaharu">Twitter</a>までお願いします。</p>
+
+<h2 id="参考文献">参考文献</h2>
+
+<ul>
+<li><a href="http://amzn.to/2yIRw69">線形制御理論</a></li>
+<li><a href="http://amzn.to/2yHEQwm">システムと制御</a></li>
+</ul>
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="footer">
+</div>
+
+
+<script type="text/javascript" 
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+  TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+
+<script type="text/javascript">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    console.log(all.length);
+     for(i = 0; i < all.length; i++) {
+       all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<script src="http://karadaharu.org//js/all.min.js"></script>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

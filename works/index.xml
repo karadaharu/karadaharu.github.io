@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Works on Kazumasa Kaneko</title>
+    <link>http://karadaharu.org/works/</link>
+    <description>Recent content in Works on Kazumasa Kaneko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    
+	<atom:link href="http://karadaharu.org/works/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hilty&amp;Bosch New Old School Dance live (2014)</title>
+      <link>http://karadaharu.org/works/hilty-and-bosch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/works/hilty-and-bosch/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/104100366&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

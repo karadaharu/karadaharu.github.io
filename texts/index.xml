@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Texts on Kazumasa Kaneko</title>
+    <link>http://karadaharu.org/texts/</link>
+    <description>Recent content in Texts on Kazumasa Kaneko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    
+	<atom:link href="http://karadaharu.org/texts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1階線形微分方程式の解</title>
+      <link>http://karadaharu.org/texts/first_order_ode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/first_order_ode/</guid>
+      <description>1階線形微分方程式
+$$ \frac{{\rm d}x}{{\rm d}t} + F(t) x = G(t) $$ の解は
+$$ \begin{align} \end{align} $$ となります。特に、$F(x)=a$のとき、
+$$ $$ です。 ## 解法 $$ \begin{align} \end{align} $$ 参考文献  [](http://www.geisya.or.jp/~mwm48961/electro/dif_eq_linear.htm) </description>
+    </item>
+    
+    <item>
+      <title>2値確率変数のエントロピーの最大値</title>
+      <link>http://karadaharu.org/texts/binary_entropy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/binary_entropy/</guid>
+      <description>2値確率変数$X$のエントロピーは、一方の値をとる確率を$p$とすれば
+$$ H(X) &amp; = - \sum_x p(x) \log p(x) \\ &amp; = -p\log p - (1-p) \log (1-p) $$ 微分は
+$$ \frac{{\rm d} H(X)}{{\rm d} p} = \log \frac{1-p}{p} $$ だから $p=1/2$　で 最大値 $1$ をとる。</description>
+    </item>
+    
+    <item>
+      <title>Isingモデル(1) 磁化と自由エネルギーの関係</title>
+      <link>http://karadaharu.org/texts/ising_magnetization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/ising_magnetization/</guid>
+      <description>磁性体のふるまいを記述する簡単なモデルとしてイジングモデルがあります。イジングモデルでは、格子状に配置したスピンを考えます。スピン$i$が上向きの場合は1、下向きの場合は-1をとるスピン変数$\sigma_i$を導入します。隣り合うスピンの間に方向を揃えようとする相互作用がある場合、系のハミルトニアンは、適当な単位をとれば
+ $$ H:=-\sum_{\langle i,j\rangle } \sigma_i \sigma_j - h \sum_i \sigma_i $$  となります。ただし、ここで$\sum_{\langle i,j\rangle}$は隣り合うすべてのペアについての和を表します。また、$h \in \mathbb{R}$は外部磁場の強さを表します。
+この系はスピンの数$N$、体積$V$は一定であり、温度$T$も一定である状態を考えれば、カノニカル集団であるから、分配関数$Z$は以下のように書けます。
+ $$ \begin{aligned} Z &amp;:= \sum_{\sigma_1=\pm 1, \cdots, \sigma_N =\pm 1} \exp[-\beta H(\sigma_1,\cdots, \sigma_N)]\\ &amp;= \sum_{\{\sigma_i\}} \exp[\beta (\sum_{\langle i,j\rangle } \sigma_i \sigma_j + h \sum_i \sigma_i)]\\ \end{aligned} $$  ただし、 $\beta$ は逆温度、 $\{\sigma_i\}$ は $\sigma_1, \cdots, \sigma_N$ のとりうる値の組すべてを表します。
+磁気モーメントの算術平均の期待値
+$$ m(\beta, h) := \langle \frac{1}{N} \sum_{i} \sigma_i \rangle = \frac{1}{L^d} \sum_{x\in \Lambda_L} \langle \sigma_x \rangle^{BC}_{L;\beta,h} $$ を磁化と呼ぶ。</description>
+    </item>
+    
+    <item>
+      <title>Isingモデル(2) 平均場近似</title>
+      <link>http://karadaharu.org/texts/ising_mean_field_approx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/ising_mean_field_approx/</guid>
+      <description>磁性体のふるまいを記述する簡単なモデルとしてイジングモデルがあります。イジングモデルでは、格子状に配置したスピンを考えます。スピン$i$が上向きの場合は1、下向きの場合は-1をとるスピン変数$\sigma_i$を導入します。外部磁場がなく、隣り合うスピンの間に方向を揃えようとする相互作用がある場合、系のハミルトニアンは
+ $$ H:=-J\sum_{\langle i,j\rangle } \sigma_i \sigma_j $$  となります。ただし、ここで$\sum_{\langle i,j\rangle}$は隣り合うすべてのペアについての和を表します。この系はスピンの数$N$、体積$V$は一定であり、温度$T$も一定である状態を考えれば、カノニカル集団であるから、分配関数$Z$は以下のように書けます。
+ $$ \begin{eqnarray} Z :=&amp; \sum_{\sigma_1=\pm 1, \cdots, \sigma_N =\pm 1} \exp[-\beta H(\sigma_1,\cdots, \sigma_N)]\\ &amp;=\sum_{\{\sigma_i\}} \exp[\beta J\sum_{\langle i,j\rangle} \sigma_i \sigma_j] \tag{1} \end{eqnarray} $$  この系の性質を調べるために平均場近似を導入します。平均場近似ではスピン間の相関を無視して、各格子点の状態は確率$N_A/N$で状態A:$\sigma=1$、$N_B/N$で状態B:$\sigma=-1$であるとします。平均場近似のもとでは、系の中にある最近接対のA-A、B-B、A-Bの状態の組の数を以下のように求めることができます:
+A-A対の数 $=N_{AA}\sim \frac{1}{2}zN (\frac{N_A}{N})^2$
+B-B対の数 $=N_{BB}\sim \frac{1}{2}zN (\frac{N_B}{N})^2$
+A-B対の数 $=N_{AB}\sim \frac{1}{2}zN 2(\frac{N_A}{N})(\frac{N_B}{N})$
+ここで、 $z$ は各格子点の最近接の格子点の数です。系全体の最近接格子点対の数は $zN/2$ になります。この平均場近似の結果を用いれば、分配関数の指数関数の引数は
+$$ \beta J\sum_{\langle i,j\rangle} \sigma_i \sigma_j \sim \frac{1}{2}\beta J z N [(\frac{N_A}{N})^2 -2 (\frac{N_A}{N})(\frac{N_B}{N}) +(\frac{N_B}{N})^2 ] \tag{2} $$ となります。ここで $N=N_A+N_B$ という拘束条件があるので、以下で定義される秩序パラメタ $\phi$ を導入します。</description>
+    </item>
+    
+    <item>
+      <title>scipyの使いはじめ方</title>
+      <link>http://karadaharu.org/texts/start_scipy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/start_scipy/</guid>
+      <description>scipyは他の多くのパッケージと違い、scipyに様々な関数やクラスがモジュールとして含まれているのではなくて、scipyの下に様々なサブパッケージが含まれていて、必要なサブパッケージをimportして使います。
+numpyでの線形代数の演算は (下の例は固有値、固有ベクトルの計算）、次のようにnumpyをimportすれば行えますが、
+$ python &amp;gt;&amp;gt;&amp;gt; import numpy as np &amp;gt;&amp;gt;&amp;gt; A = np.array([[1, 2], [3, 4]]) &amp;gt;&amp;gt;&amp;gt; np.linalg.eig(A) (array([-0.37228132, 5.37228132]), array([[-0.82456484, -0.41597356], [ 0.56576746, -0.90937671]]))  scipyでは、線形代数用のサブパッケージlinalgを個別にimportしなくてはいけません。
+&amp;gt;&amp;gt;&amp;gt; from scipy import linalg &amp;gt;&amp;gt;&amp;gt; linalg(A) (array([-0.37228132+0.j, 5.37228132+0.j]), array([[-0.82456484, -0.41597356], [ 0.56576746, -0.90937671]]))  scipyをimportしてやろうとするとどうなるかというと、以下のようにエラーになります。（一度linalgをimportしてからであればエラーにはなりません。）
+$ python &amp;gt;&amp;gt;&amp;gt; import numpy as np &amp;gt;&amp;gt;&amp;gt; import scipy as sp &amp;gt;&amp;gt;&amp;gt; A = np.array([[1, 2], [3, 4]]) &amp;gt;&amp;gt;&amp;gt; sp.linalg.eig(A) Traceback (most recent call last): File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt; Traceback (most recent call last): File &amp;quot;&amp;lt;stdin&amp;gt;&amp;quot;, line 1, in &amp;lt;module&amp;gt; AttributeError: module &#39;scipy&#39; has no attribute &#39;linalg&#39; &amp;gt;&amp;gt;&amp;gt; from scipy import linalg &amp;gt;&amp;gt;&amp;gt; sp.</description>
+    </item>
+    
+    <item>
+      <title>ひとつのIPアドレスで複数のドメインを処理する仕組み</title>
+      <link>http://karadaharu.org/texts/one_ip_multi_domain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/one_ip_multi_domain/</guid>
+      <description>サーバーは一台しかないけど、複数のドメインを利用したいということはよくあります。単純にDNSサーバーで複数のドメインをひとつの同じIPアドレスを対応させるだけでは、違うドメインが同じ内容を返すことになってしまいます。この場合どうしたらいいのでしょうか？
+ひとつのIPアドレスで複数のドメインにそれぞれ別のレスポンスを返すには、Apacheなどのサーバーソフトウエアの機能であるバーチャルホストを使います。バーチャルホストは、例えばHTTPのリクエストに含まれるHostヘッダーの値によって、どのドキュメントルートを返せばよいかを判断します。(参考:バーチャルホスト - Wikipedia)
+Apacheでの具体的な設定はここなどを参考に行います。また、共用レンタルサーバーでは、ウェブ上の管理画面からドメインを登録することで設定できることが多そうです(例:さくら)。
+では、Postmanなどを使って、Request URLとは異なるドメインをHostヘッダーの値にいれると、Request URLとHostヘッダーのどちらのドメインのレスポンスが返ってくるでしょうか？さくらのレンタルサーバーではRequest URLのレスポンスが返ってきました。Hostヘッダーの値で判断しているわけではないということでしょうか？おそらく、プロキシサーバーが間にあるせいでPostmanのリクエストが書き換えられたりしているのではないかと思うのですが、よく分かりません。詳しいことが分かり次第追記しようと思います。</description>
+    </item>
+    
+    <item>
+      <title>エンタングルメントとはなにか</title>
+      <link>http://karadaharu.org/texts/quantum_entanglement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/quantum_entanglement/</guid>
+      <description>2次元のヒルベルト空間の基底ベクトルを
+$$ |0\rangle := \left(\begin{array}{c}1\\0\end{array}\right) ,\ |1\rangle := \left(\begin{array}{c}0\\1\end{array}\right) \ \ , $$ とします。この空間上のベクトルで表される量子ビット$A,B$についての状態は $$ |\Psi\rangle_{AB} = a |0\rangle \otimes |0\rangle + b |0\rangle \otimes |1\rangle +c |1\rangle \otimes |0\rangle +d |1\rangle \otimes |1\rangle $$ $$ |a|^2+|b|^2+|c|^2+|d|^2=1 $$ と表せます。この状態が
+$$ |\Psi\rangle_{AB} = (u_{A} |0\rangle+v_{A}|1\rangle)\otimes (u_{B} |0\rangle+v_{B}|1\rangle) $$ $$ |u_{A}|^2+|v_{A}|^2= |u_{B}|^2+|v_{B}|^2=1 $$ という形で書けないとき、もつれあっている（エンタングルしている）といいます。
+参考文献  富田章久, 量子情報工学 </description>
+    </item>
+    
+    <item>
+      <title>クラメール-ラオの不等式の導出</title>
+      <link>http://karadaharu.org/texts/cramer_rao_bound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/cramer_rao_bound/</guid>
+      <description>クラメール-ラオの不等式(Cramer-Rao bound) パラメーター $\theta$ をもつ確率密度関数 $P(X|\theta)$ に従う確率変数 $X$ を考えます。
+観測値 $\hat{X}$ から求めた $\theta$ の不偏推定量 $\hat{\theta}$ の分散について、以下の不等式が成り立ちます。
+$$E[(\hat{\theta}-\theta)^2] \geq E^{-1}[(\frac{\partial}{\partial \theta} \log (P(\bar{X}|\theta)))^2] \ .$$
+導出 確率変数 $X\in \mathbb{R}$ について、未知パラメーター $\theta\in \mathbb{R}$ をもつ確率密度関数 $P(X|\theta)$ を考えます。
+いま、確率変数 $X$ の標本 $\bar{X} \in \mathbb{R}^N$ が得られたとします。$\bar{X}$ が得られる確率は、 $P(\bar{X}|\theta)$ であり、 $\bar{X}$ について積分すると、
+$$\int P(\bar{X}|\theta) d\bar{X} =1 \ ,$$
+となります。上式において、両辺を $\theta$ で微分すると、
+$$\frac{\partial}{\partial\theta} \int P(\bar{X}|\theta) d\bar{X} = 0 \ .$$
+微分演算子を積分の中にいれて、 $ P(\bar{X}|\theta)/P(\bar{X}|\theta)=1$ をかけると、
+$$\int \frac{P(\bar{X}|\theta)}{P(\bar{X}|\theta)} \frac{\partial}{\partial\theta} P(\bar{X}|\theta) d\bar{X} = 0 \ .</description>
+    </item>
+    
+    <item>
+      <title>ナイキストの安定判別法</title>
+      <link>http://karadaharu.org/texts/nyquist_stability_criterion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/nyquist_stability_criterion/</guid>
+      <description>ナイキストの安定判別法 (Nyquist stability criterion)は、簡単に閉ループ制御系の安定性を判別する方法です。ここでは、なぜナイキストの安定判別法が必要なのかを考えてから、ナイキストの安定判別法を導出してみます。
+図1.閉ループ制御系
+なぜナイキストの安定判別法が必要なのか 図1. のような一般の閉ループ制御系を考えます。この系の伝達関数 $G(s)$ は、
+$$ G(s) := \frac{Y(s)}{R(s)} = \frac{P(s)C(s)}{1+P(s)C(s)} $$
+です。この系が安定かどうかは極 ($1+P(s)C(s)=0$ の $s$ についての解) の符号を調べれば分かります(極と安定性の関係については こちら)。しかし、一般の多項式の複素解を手計算で求めるのは簡単ではありません。ではどうしたらいいでしょうか？ナイキストの安定判別法は極を求めずに、実部が正の極があるかどうかを調べることで、極を求める計算が難いので安定性が分からない、という問題を解決する方法なのです。
+ナイキストの安定判別法の導出 ナイキストの安定判別法は、 $P(s)C(s)$ については、事前に設計したり、モデル化したりすることで分かっていることを利用します。
+まず、 $P(s)C(s)$ の零点を $z_i,\cdots,z_m$ 、極を $p_1, \cdots p_n$ が分かっているとして、 $P(s)C(s)$ は
+$$ P(s)C(s) = \frac{K(s-z_1)\cdots(s-z_m)}{(s-p_1)\cdots(s-p_n)} $$
+と表すことができます。よって、特性方程式は
+$$ 1+P(s)C(s)=\frac{(s-p_1)\cdots(s-p_n)+K(s-z_1)\cdots(s-z_m)}{(s-p_1)\cdots(s-p_n)} =0 $$
+となります。さらに、特性方程式の零点を $r_1,\cdots,r_n$ とおけば、
+$$ 1+P(s)C(s)=\frac{A(s-r_1)\cdots(s-r_n)}{(s-p_1)\cdots(s-p_n)} =0 $$
+と表すことができます。ここで、伝達関数は
+$$ \begin{align} G(s) &amp;amp;= \frac{P(s)C(s)}{1+P(s)C(s)} \\ &amp;amp;= \frac{K(s-z_1)\cdots(s-z_m)}{(s-p_1)\cdots(s-p_n)}\frac{(s-p_1)\cdots(s-p_n)}{A(s-r_1)\cdots(s-r_n)} \\ &amp;amp;=\frac{K(s-z_1)\cdots(s-z_m)}{A(s-r_1)\cdots(s-r_n)} \end{align} $$
+となるので、特性方程式の零点 $r_1,\cdots,r_n$ は、伝達関数の極になっています。いま $1+P(s)C(s)$ の零点 $r_i,\cdots,r_n$ と極 $p_i,\cdots,p_m$ のうち、実部が正であるものの数をそれぞれ、 $R$ 、 $P$ とします。いまのところ、 $P$ は分かりますが、 $R$ は分かりません。</description>
+    </item>
+    
+    <item>
+      <title>伝達関数の極と安定性</title>
+      <link>http://karadaharu.org/texts/pole_and_stability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/pole_and_stability/</guid>
+      <description>次のような伝達関数を考えます。
+$$ G(s) = \frac{n(s)}{d(s)} = \frac{b_0 s^m +b_1s^{m-1}+\cdots+b_m}{s^n+a_1s^{n-1}+\cdots+a_n} \ \ (n \geq m) $$
+この伝達関数の分母多項式が重根をもたないときを考え、 $G(s)$ の極を $p_i\ (i=1\sim n)$ とします。このとき、
+$$ G(s) = \sum_i \frac{A_i}{s-p_i} $$
+と書くことができます。( $A_i$ は定数) よって、インパルス応答は
+$$ y(t) = \mathcal{L}^{-1}\{G(s)\}= \sum_i A_i e^{p_i t} $$
+となります。このことから、もし $p_i \ (i=1 \sim n)$ のうち、ひとつでも実部が正の値をとるものがあると、インパルス応答が発散してしまうことが分かります。</description>
+    </item>
+    
+    <item>
+      <title>変分と微分演算子の交換関係</title>
+      <link>http://karadaharu.org/texts/variation_and_differentiaion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/variation_and_differentiaion/</guid>
+      <description>解析力学などでは、変分という概念を用います。ここでは、変分と微分演算子が交換可能であることを確認します。
+ある $x$ の関数 $y(x)$ と、 $y(x)$ に対して微小な変化 $\delta y(x)$ を加えた $Y(x):=y(x)+\delta y(x)$ を考えます。
+次に、関数 $Y(x)$ 、 $y(x)$ の各点 $x$ における微分 $dY/dx$ 、 $dy/dx$ の差を $\delta(dy/dx)$ とすると、
+$$ \delta(\frac{dy}{dx})=\frac{dY}{dx}-\frac{dy}{dx}=\frac{d}{dx}(Y-y)=\frac{d}{dx}\delta y $$
+であるので、変分と微分演算子が交換可能であること
+$$ \delta(\frac{dy}{dx})=\frac{d}{dx}\delta y $$
+が確認できました。</description>
+    </item>
+    
+    <item>
+      <title>相互情報量の上限と下限</title>
+      <link>http://karadaharu.org/texts/bound_of_mutual_information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/bound_of_mutual_information/</guid>
+      <description>2つの離散確率変数$X$、$Y$の相互情報量 $I(X;Y)$ は次の式で定義されます。
+$$ I(X;Y) := \sum_{x,y} p(x,y) \log \frac{p(x,y)}{p(x)p(y)} $$ 2つの確率変数が独立なとき $\log \frac{p(x,y)}{p(x,y)}=0$ なので相互情報量は $I(X;Y)=0$ となりますが、これが下限であること、すなわち
+$$ I(X;Y) \geq 0 $$ はJensenの不等式を使って以下のように示すことができます。
+まず相互情報量はふたつの確率分布$p(x)$、$q(x)$の間のKullback-Leibler情報量:
+$$ D(p(x)||q(x)) = \sum_x p(x) \log \frac{p(x)}{q(x)} $$ を使って、
+確率分布 $p(x,y)$ と $p(x)p(y)$ の
+また、</description>
+    </item>
+    
+    <item>
+      <title>累積分布関数と期待値の関係</title>
+      <link>http://karadaharu.org/texts/cdf_expectation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/cdf_expectation/</guid>
+      <description>確率変数$X$についての確率密度関数を$f_X(x)$、累積分布関数を$F_X(x):=\int^x_\infty f_X(x)dx$としたとき、期待値について以下の式が成り立ちます。
+$$ E(X)=\int^\infty_0 (1-F_X(x))dx $$ 証明 $$ \begin{align} \int^\infty_0 (1-F_X(x))dx&amp;=\int^\infty_0P(X\geq x)dx\\ &amp;=\int^\infty_0 \int^\infty_x f_X(t)dtdx\\ &amp;=\int^\infty_0\int^t_0 f_X(t)dxdt\\ &amp;=\int^\infty_0 tf_X(t)dt=E(x) \end{align} $$ 途中で積分の順序を交換するのがポイントです。
+参考文献  self study - Find expected value using cdf - Cross Validated Area and Volume Revisited </description>
+    </item>
+    
+    <item>
+      <title>線形代数でよく出てくる式変形</title>
+      <link>http://karadaharu.org/texts/common_linear_algebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/common_linear_algebra/</guid>
+      <description>$I\times K$ 行列 $A$ と $J \times K$ 行列 $B$ を考え、$A, B$ の列ベクトルを $a_i,b_i \ (1\leq i \leq K)$ とします。
+ $$ \begin{align} A:= \begin{pmatrix} a_{1,1} &amp; \cdots &amp; a_{1,K} \\ \vdots &amp; \ddots &amp; \vdots \\ a_{I,1} &amp; \cdots &amp; a_{I,K} \\ \end{pmatrix}= [a_1 \cdots a_K] \\ B:= \begin{pmatrix} b_{1,1} &amp; \cdots &amp; b_{1,K} \\ &amp; &amp; \\ \vdots &amp; \ddots &amp; \vdots \\ &amp; &amp; \\ b_{J,1} &amp; \cdots &amp; b_{J,K} \\ \end{pmatrix}= [b_1 \cdots b_K] \end{align} $$  このとき、$A$ と $B$ の転置 $B^T$ の積 $C$ を列ベクトルで表すと次のようになります。</description>
+    </item>
+    
+    <item>
+      <title>通信路容量</title>
+      <link>http://karadaharu.org/texts/channel_capacity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/channel_capacity/</guid>
+      <description>通信路容量$C$は相互情報量の上限として定義されます:
+ $$ C:=\mathrm{sup}_{p(x)} I(X;Y) $$  次の図のような2値対称通信路を考えます。
+この通信路容量を求めます。
+まず、条件付きエントロピー $H(Y|X)$ は
+$$ H(Y|X) &amp; := \sum_x p(x) H(Y|X=x) \\ &amp;= - \sum_x p(x) \sum_y p(y|x) \log p(y|x) $$ $$ I(X;Y) = H(Y) -H(Y|X) = H(Y) - $$ </description>
+    </item>
+    
+  </channel>
+</rss>

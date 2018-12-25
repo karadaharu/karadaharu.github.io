@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isingモデル(1) 磁化と自由エネルギーの関係 &middot; Kazumasa Kaneko</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
+    <meta name="description" content="">
+
+    <meta name="generator" content="Hugo 0.53" />
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="Isingモデル(1) 磁化と自由エネルギーの関係 &middot; Kazumasa Kaneko">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Isingモデル(1) 磁化と自由エネルギーの関係 &middot; Kazumasa Kaneko">
+    <meta property="og:description" content="">
+
+    <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="http://karadaharu.org//css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="Kazumasa Kaneko" href="http://karadaharu.org//index.xml" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-84210686-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-7-24">
+    <div class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="http://karadaharu.org/">
+                  <h1 class="brand-title">
+                    <span>Kazumasa Kaneko</span>
+                  </h1>
+                  <h2 class="brand-title">
+                    <span>金子和正</span>
+                  </h2>
+                </a>
+              </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/about">about</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/texts">texts</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/works">works</a>
+                </li>
+                <li class="nav-item nav-li">
+                    <a href="http://karadaharu.org/research">research</a>
+                </li>
+            </ul>
+            <ul class="nav-list">
+              <li class="nav-item">
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://facebook.com/kanekokazumasa"><i class="fa fa-facebook"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://twitter.com/karadaharu"><i class="fa fa-twitter"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                    <a class="sns-button" href="https://github.com/karadaharu "><i class="fa fa-github-alt"></i></a>
+                </li>
+                
+                
+                <li class="nav-item nav-sns">
+                  <a class="sns-button" href="https://karadaharu.tumblr.com "><i class="fa fa-tumblr"></i></a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-12-24">
+      <div>
+       <header class="content-header">
+
+           <span class="post-title">Isingモデル(1) 磁化と自由エネルギーの関係</span>
+
+           <p class="post-meta">
+               
+               
+           </p>
+       </header>
+      </div>
+        <div>
+            
+            <div class="posts">
+                <section class="post">
+
+                    <div class="post-description">
+                        <p>磁性体のふるまいを記述する簡単なモデルとしてイジングモデルがあります。イジングモデルでは、格子状に配置したスピンを考えます。スピン<code>$i$</code>が上向きの場合は1、下向きの場合は-1をとるスピン変数<code>$\sigma_i$</code>を導入します。隣り合うスピンの間に方向を揃えようとする相互作用がある場合、系のハミルトニアンは、適当な単位をとれば</p>
+
+<div>
+$$
+H:=-\sum_{\langle i,j\rangle } \sigma_i \sigma_j - h \sum_i \sigma_i
+$$
+</div>
+
+<p>となります。ただし、ここで<code>$\sum_{\langle i,j\rangle}$</code>は隣り合うすべてのペアについての和を表します。また、<code>$h \in \mathbb{R}$</code>は外部磁場の強さを表します。</p>
+
+<p>この系はスピンの数$N$、体積$V$は一定であり、温度$T$も一定である状態を考えれば、カノニカル集団であるから、分配関数<code>$Z$</code>は以下のように書けます。</p>
+
+<div>
+$$
+\begin{aligned}
+Z &:= \sum_{\sigma_1=\pm 1, \cdots, \sigma_N =\pm 1} \exp[-\beta H(\sigma_1,\cdots, \sigma_N)]\\
+&= \sum_{\{\sigma_i\}} \exp[\beta (\sum_{\langle i,j\rangle } \sigma_i \sigma_j + h \sum_i \sigma_i)]\\
+\end{aligned}
+$$
+</div>
+
+<p>ただし、 <code>$\beta$</code> は逆温度、 <code>$\{\sigma_i\}$</code> は <code>$\sigma_1, \cdots, \sigma_N$</code> のとりうる値の組すべてを表します。</p>
+
+<p>磁気モーメントの算術平均の期待値</p>
+
+<div>$$
+m(\beta, h) := \langle \frac{1}{N} \sum_{i} \sigma_i \rangle = \frac{1}{L^d} \sum_{x\in \Lambda_L} \langle \sigma_x \rangle^{BC}_{L;\beta,h}
+$$</div>
+
+<p>を磁化と呼ぶ。</p>
+
+<p><code>$a$</code></p>
+
+<p>また、ヘルムホルツの自由エネルギー <code>$F$</code> は次のように定義されます。</p>
+
+<div>$$
+F := - \frac{1}{\beta} \log Z
+$$</div>
+
+<p>分配関数を <code>$h$</code> で偏微分すると、</p>
+
+<div>$$
+\frac{\partial Z}{\partial h} = \sum
+$$</div>
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="footer">
+</div>
+
+
+<script type="text/javascript" 
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+  TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+
+<script type="text/javascript">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    console.log(all.length);
+     for(i = 0; i < all.length; i++) {
+       all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<script src="http://karadaharu.org//js/all.min.js"></script>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
