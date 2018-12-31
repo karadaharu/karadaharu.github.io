@@ -172,6 +172,20 @@ $$ \delta(\frac{dy}{dx})=\frac{d}{dx}\delta y $$
     </item>
     
     <item>
+      <title>定数係数の2階線形常微分方程式</title>
+      <link>http://karadaharu.org/texts/cc_2nd_ode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/cc_2nd_ode/</guid>
+      <description>定数係数の2階線形常微分方程式 \begin{equation}\label{eq:ode} y&amp;rdquo; + ay&amp;rsquo; + by = f(x) \end{equation}
+は工学的な応用においてしばしば登場します。$f(x)=0$ のとき同次、そうでないときを非同次と呼びます。
+線形の常微分方程式の特徴は、次の重ね合わせの原理が成り立つことです。
+ 重ね合わせの原理
+$$ \begin{cases} y_1&#39;&#39; + ay_1&#39; + by_1 = f_1(x)\\ y_2&#39;&#39; + ay_2&#39; + by_2 = f_2(x) \end{cases} $$ のとき、$y(x):=c_1 y_1(x)+ c_2 y_2(x)$は、すべての $c_1,c_2\in R$に対して、 $y&#39;&#39; + ay&#39; + by = c_1 f_1(x) + c_2 f_2(x)$ の解です。これは、 以下の計算から簡単に分かります。
+$$ \begin{aligned} y&#39;&#39; + ay&#39; + by &amp; = c_1 (y_1&#39;&#39; + ay_1&#39; + by_1) + c_2 (y_2&#39;&#39; + ay_2&#39; + by_2) \\ &amp; = c_1 f_1(x) + c_2 f_2(x) \end{aligned} $$  (\ref{eq:ode}) の一般解 $y(x)$ は、重ね合わせの原理から、そのひとつの特殊解 $y_p(x)$ と同次形の一般解 $y_h(x)$ を用いて以下のように表せます :</description>
+    </item>
+    
+    <item>
       <title>相互情報量の上限と下限</title>
       <link>http://karadaharu.org/texts/bound_of_mutual_information/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

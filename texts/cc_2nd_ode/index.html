@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works &middot; Kazumasa Kaneko</title>
+    <title>定数係数の2階線形常微分方程式 &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
-    <meta name="description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.53" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="Works &middot; Kazumasa Kaneko">
-    <meta name="twitter:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="twitter:title" content="定数係数の2階線形常微分方程式 &middot; Kazumasa Kaneko">
+    <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Works &middot; Kazumasa Kaneko">
-    <meta property="og:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta property="og:title" content="定数係数の2階線形常微分方程式 &middot; Kazumasa Kaneko">
+    <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
@@ -102,32 +102,84 @@
 
 
     <div class="content pure-u-1 pure-u-md-12-24">
-      <div class="">
-        <header class="content-header">
-          Works
-        </header>
+      <div>
+       <header class="content-header">
+
+           <span class="post-title">定数係数の2階線形常微分方程式</span>
+
+           <p class="post-meta">
+               
+               
+           </p>
+       </header>
       </div>
         <div>
             
             <div class="posts">
-                
                 <section class="post">
-                    <header class="post-header">
-                        <a href="http://karadaharu.org/works/hilty-and-bosch/" class="post-title">Hilty&amp;Bosch New Old School Dance live (2014)</a>
-                        
-                        
-                        
-                        
-                    </header>
 
-                    
-                    
+                    <div class="post-description">
+                        <p>定数係数の2階線形常微分方程式
+<div>\begin{equation}\label{eq:ode}
+y&rdquo; + ay&rsquo; + by = f(x)
+\end{equation}</div></p>
+
+<p>は工学的な応用においてしばしば登場します。<code>$f(x)=0$</code> のとき同次、そうでないときを非同次と呼びます。</p>
+
+<p>線形の常微分方程式の特徴は、次の重ね合わせの原理が成り立つことです。</p>
+
+<hr>
+
+<p><strong>重ね合わせの原理</strong></p>
+
+<div>$$
+\begin{cases}
+y_1'' + ay_1' + by_1 = f_1(x)\\
+y_2'' + ay_2' + by_2 = f_2(x)
+\end{cases}
+$$</div>
+
+<p>のとき、<code>$y(x):=c_1 y_1(x)+ c_2 y_2(x)$</code>は、すべての <code>$c_1,c_2\in R$</code>に対して、 <code>$y'' + ay' + by = c_1 f_1(x) + c_2 f_2(x)$</code> の解です。これは、
+以下の計算から簡単に分かります。</p>
+
+<div>$$
+\begin{aligned}
+y'' + ay' + by  & = c_1 (y_1'' + ay_1' + by_1) + c_2 (y_2'' + ay_2' + by_2) \\
+& = c_1 f_1(x) + c_2 f_2(x)
+\end{aligned}
+$$</div>
+
+<hr>
+
+<p>(\ref{eq:ode}) の一般解 <code>$y(x)$</code> は、重ね合わせの原理から、そのひとつの特殊解 <code>$y_p(x)$</code> と同次形の一般解 <code>$y_h(x)$</code> を用いて以下のように表せます :</p>
+
+<div>$$
+y(x) = y_p(x)+y_h(x)
+$$</div>
+
+<p>同次形の一般解は簡単に求めることができるので、問題は特殊解を求めることです。 <code>$f(x)=0$</code> が簡単な形のときは特殊解も簡単に求めることができます。例えば、 <code>$f(x)=cx+d$</code> のときは、
+ <code>$y_p(x)=Ax + B$</code> とおけば、</p>
+
+<div>$$
+\begin{aligned}
+a A + Ax + B = cx + d\\
+A = c, B = d - ac
+\end{aligned}
+$$</div>
+
+<p>となります。</p>
+
+<p>その他、様々な <code>$f(x)$</code> に対して解を求める方法があり、定数変化法や、冪級数による方法などがあります。</p>
+
+<h1 id="参考文献">参考文献</h1>
+
+<ul>
+<li><a href="https://amzn.to/2BUZ5K6">工科系の数学 5 常微分方程式</a></li>
+</ul>
+                    </div>
                     
                 </section>
-                
             </div>
-            
-
             <div class="footer">
 </div>
 <script type="text/x-mathjax-config">
@@ -167,6 +219,7 @@ MathJax.Hub.Config({
         </div>
     </div>
 </div>
+
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
