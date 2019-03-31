@@ -206,7 +206,7 @@ $$ \begin{aligned} y&#39;&#39; + ay&#39; + by &amp; = c_1 (y_1&#39;&#39; + ay_1&
 $$ f_n := E[X_n] \ . $$ 観測されるグループ数の期待値$E[X_n]$は、グループ$i$のアイテムが観測される確率を$p_i$とすれば、
 $$ E[X_n] = \sum_{i=1}^K p_i $$ となります。さらに$p_i$は、$N$個のアイテムの中から$n$個をとる組み合わせのうち、グループ$i$のアイテムが少なくともひとつ含まれる場合の確率なので
 $$ p_i = 1 - \frac{\left(\begin{array}{c}N-N_i\\ n \end{array}\right)}{\left(\begin{array}{c}N \\ n \end{array}\right)} $$ と書けます。これらを用いれば$f_n$は以下のようになります:
-$$ \begin{eqnarray} f_n =&amp; \sum_{i=1}^K 1 - \frac{\left(\begin{array}{c}N-N_i\\ n \end{array}\right)}{\left(\begin{array}{c}N \\ n \end{array}\right)} \nonumber \\ = &amp;K - \left(\begin{array}{c}N \\ n \end{array}\right)^{-1} \sum_{i=1}^K \left(\begin{array}{c}N-N_i\\ n \end{array}\right) \ . \nonumber \end{eqnarray} $$</description>
+$$ \begin{eqnarray} f_n =&amp; \sum_{i=1}^K 1 - \frac{\left(\begin{array}{c}N-N_i\\ n \end{array}\right)}{\left(\begin{array}{c}N \\ n \end{array}\right)} \nonumber \\ = &amp;K - \left(\begin{array}{c}N \\ n \end{array}\right)^{-1} \sum_{i=1}^K \left(\begin{array}{c}N-N_i\\ n \end{array}\right) \ . \nonumber \end{eqnarray} $$ 参考文献  Rarefaction (ecology) In Wikipedia: The Free Encyclopedia.</description>
     </item>
     
     <item>
