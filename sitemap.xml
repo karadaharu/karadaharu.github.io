@@ -183,6 +183,10 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/texts/svd_low_rank_approximation/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/tags/</loc>
     <priority>0</priority>
   </url>
@@ -230,11 +234,19 @@
   </url>
   
   <url>
+    <loc>http://karadaharu.org/texts/rarefaction_curve/</loc>
+  </url>
+  
+  <url>
     <loc>http://karadaharu.org/texts/bound_of_mutual_information/</loc>
   </url>
   
   <url>
     <loc>http://karadaharu.org/texts/cdf_expectation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://karadaharu.org/texts/entropy_in_statistical_mechanics/</loc>
   </url>
   
   <url>
