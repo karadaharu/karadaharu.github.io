@@ -277,9 +277,11 @@ SKILLS / PROFICIENCY  dynamical systems machine learning software development (P
       
       <guid>http://karadaharu.org/texts/first_order_ode/</guid>
       <description>1階線形微分方程式
-$$ \frac{{\rm d}x}{{\rm d}t} + F(t) x = G(t) $$ の解は
-$$ \begin{align} \end{align} $$ となります。特に、$F(x)=a$のとき、
-$$ $$ です。 ## 解法 $$ \begin{align} \end{align} $$ 参考文献  [](http://www.geisya.or.jp/~mwm48961/electro/dif_eq_linear.htm) </description>
+$$ \frac{{\rm d}x}{{\rm d}t} + p(t) x = q(t) $$ の解は
+$$ x(t) = u(t) (\int \frac{q(t)}{u(t)}{\rm d}t + C) $$ となります。ただし$u(t) = {\rm exp}(-\int p(t){\rm d}t)$です。
+とくに$p(t)=b$、$q(t)=a$のとき、
+$$ x(t) = \frac{a}{b} + e^{-bt} (x_0 - \frac{a}{b}) $$ です。
+解法 参考文献  １階線形 微分方程式 </description>
     </item>
     
     <item>
@@ -298,8 +300,8 @@ $$ $$ です。 ## 解法 $$ \begin{align} \end{align} $$ 参考文献  [](http:
       
       <guid>http://karadaharu.org/texts/binary_entropy/</guid>
       <description>2値確率変数$X$のエントロピーは、一方の値をとる確率を$p$とすれば
-$$ H(X) &amp; = - \sum_x p(x) \log p(x) \\ &amp; = -p\log p - (1-p) \log (1-p) $$ 微分は
-$$ \frac{{\rm d} H(X)}{{\rm d} p} = \log \frac{1-p}{p} $$ だから $p=1/2$　で 最大値 $1$ をとる。</description>
+$$ \begin{aligned} H(X) &amp; = - \sum_x p(x) \log p(x) \\ &amp; = -p\log p - (1-p) \log (1-p) \end{aligned} $$ となります。微分は
+$$ \frac{{\rm d} H(X)}{{\rm d} p} = \log \frac{1-p}{p} $$ なので$p=1/2$で最大値$1$をとります。</description>
     </item>
     
     <item>
@@ -495,7 +497,7 @@ $$ \begin{aligned} y&#39;&#39; + ay&#39; + by &amp; = c_1 (y_1&#39;&#39; + ay_1&
 $$ f_n := E[X_n] \ . $$ 観測されるグループ数の期待値$E[X_n]$は、グループ$i$のアイテムが観測される確率を$p_i$とすれば、
 $$ E[X_n] = \sum_{i=1}^K p_i $$ となります。さらに$p_i$は、$N$個のアイテムの中から$n$個をとる組み合わせのうち、グループ$i$のアイテムが少なくともひとつ含まれる場合の確率なので
 $$ p_i = 1 - \frac{\left(\begin{array}{c}N-N_i\\ n \end{array}\right)}{\left(\begin{array}{c}N \\ n \end{array}\right)} $$ と書けます。これらを用いれば$f_n$は以下のようになります:
-$$ \begin{eqnarray} f_n =&amp; \sum_{i=1}^K 1 - \frac{\left(\begin{array}{c}N-N_i\\ n \end{array}\right)}{\left(\begin{array}{c}N \\ n \end{array}\right)} \nonumber \\ = &amp;K - \left(\begin{array}{c}N \\ n \end{array}\right)^{-1} \sum_{i=1}^K \left(\begin{array}{c}N-N_i\\ n \end{array}\right) \ . \nonumber \end{eqnarray} $$ 参考文献  Rarefaction (ecology) In Wikipedia: The Free Encyclopedia.</description>
+$$ \begin{eqnarray} f_n =&amp; \sum_{i=1}^K 1 - \frac{\left(\begin{array}{c}N-N_i\\ n \end{array}\right)}{\left(\begin{array}{c}N \\ n \end{array}\right)} \nonumber \\ = &amp;K - \left(\begin{array}{c}N \\ n \end{array}\right)^{-1} \sum_{i=1}^K \left(\begin{array}{c}N-N_i\\ n \end{array}\right) \ . \nonumber \end{eqnarray} $$ 参考文献  Rarefaction (ecology) (13:22, 27 July 2017 UTC) In Wikipedia: The Free Encyclopedia.</description>
     </item>
     
     <item>

@@ -122,34 +122,31 @@
                         <p>1階線形微分方程式</p>
 
 <div>$$
-\frac{{\rm d}x}{{\rm d}t} + F(t) x = G(t)
+\frac{{\rm d}x}{{\rm d}t} + p(t) x = q(t)
 $$</div>
 
 <p>の解は</p>
 
 <div>$$
-\begin{align}
-
-\end{align}
+x(t) = u(t) (\int \frac{q(t)}{u(t)}{\rm d}t + C)
 $$</div>
 
-<p>となります。特に、<code>$F(x)=a$</code>のとき、</p>
+<p>となります。ただし<code>$u(t) = {\rm exp}(-\int p(t){\rm d}t)$</code>です。</p>
+
+<p>とくに<code>$p(t)=b$</code>、<code>$q(t)=a$</code>のとき、</p>
 
 <div>$$
-
+x(t) = \frac{a}{b} + e^{-bt} (x_0 - \frac{a}{b})
 $$</div>
-です。
 
-## 解法
-<div>$$
-\begin{align}
-\end{align}
-$$</div>
+<p>です。</p>
+
+<h2 id="解法">解法</h2>
 
 <h2 id="参考文献">参考文献</h2>
 
 <ul>
-<li>[](<a href="http://www.geisya.or.jp/~mwm48961/electro/dif_eq_linear.htm">http://www.geisya.or.jp/~mwm48961/electro/dif_eq_linear.htm</a>)</li>
+<li><a href="http://www.geisya.or.jp/~mwm48961/electro/dif_eq_linear.htm">１階線形 微分方程式</a></li>
 </ul>
                     </div>
                     
