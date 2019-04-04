@@ -443,6 +443,22 @@ $$ \begin{align} G(s) &amp;amp;= \frac{P(s)C(s)}{1+P(s)C(s)} \\ &amp;amp;= \frac
     </item>
     
     <item>
+      <title>ラグランジュの運動方程式の導出</title>
+      <link>http://karadaharu.org/texts/lagrange_equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://karadaharu.org/texts/lagrange_equation/</guid>
+      <description>以下は書きかけの記事です。
+ラグランジュの運動方程式 導出 2次元の直交座標系において、質量が $m_1, m_2$ の 2個の質点の座標を $(x_1,y_1), (x_2,y_2)$ とします。
+この系の運動エネルギーは $$ T=\sum_i \frac{1}{2} m_i (\dot{x}_i^2+\dot{y}_i^2) \ \ , $$
+です。ただし、 $\dot{x}:=\frac{dx}{dt}$ です。座標 $x_1, y_1, x_2, y_2$ を一般化した表現 $x_1, x_2, x_3, x_4$ で表すことにして、各座標に対応する質量 $m_1,m_1,m_2,m_2$ も $m_1, m_2, m_3, m_4$ と置き直すと、
+$$ T=\sum_i^4 \frac{1}{2}m_i\dot{x}_i^2 \ \ , $$
+と書けます。この表記で任意の正の整数次元の任意の正の整数個の質点からなる系の運動エネルギーを表すことができます :
+$$ T=\sum_i^n \frac{1}{2}m_i\dot{x}_i^2 \ \ . $$
+ここで、一般化座標 $q_j \ (j=1, \cdots, n)$ という座標を導入し、座標 $x_i$ がこの一般化座標の関数 $x_i(q_1,\cdots,q_n)$ として表されるとします。また、運動エネルギー $T$ を $\dot{q}_i$ で偏微分したものを 一般化運動量 $p_i$ と定義します。すなわち、</description>
+    </item>
+    
+    <item>
       <title>伝達関数の極と安定性</title>
       <link>http://karadaharu.org/texts/pole_and_stability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

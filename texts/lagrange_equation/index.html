@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://karadaharu.org/favicon.ico"/>
     <meta name="description" content="">
 
-    <meta name="generator" content="Hugo 0.30.2" />
+    <meta name="generator" content="Hugo 0.53" />
     <meta name="twitter:card" content="summary">
     
     <meta name="twitter:title" content="ラグランジュの運動方程式の導出 &middot; Kazumasa Kaneko">
@@ -119,41 +119,88 @@
                 <section class="post">
 
                     <div class="post-description">
-                        <p>
-2次元の直交座標系において、質量が $m_1, m_2$ の 2個の質点の座標を $(x_1,y_1), \cdots, (x_2,y_2)$ とします。</p>
+                        <p>以下は書きかけの記事です。</p>
+
+<h2 id="ラグランジュの運動方程式">ラグランジュの運動方程式</h2>
+
+<h2 id="導出">導出</h2>
+
+<p>2次元の直交座標系において、質量が $m_1, m_2$ の 2個の質点の座標を $(x_1,y_1), (x_2,y_2)$ とします。</p>
 
 <p>この系の運動エネルギーは
 $$
-T=\sum_i \frac{1}{2} m_i (\dot{x}_i^2+\dot{y}_i^2)
+T=\sum_i \frac{1}{2} m_i (\dot{x}_i^2+\dot{y}_i^2) \ \ ,
 $$</p>
 
-<p>です。座標 $x_1, y_1, x_2, y_2$ を一般化した表現 $x_1, x_2, x_3, x_4$ で表すことにして、各座標に対応する質量 $m_1,m_1,m_2,m_2$ も $m_1, m_2, m_3, m_4$ と置き直すと、</p>
+<p>です。ただし、 $\dot{x}:=\frac{dx}{dt}$ です。座標 $x_1, y_1, x_2, y_2$ を一般化した表現 $x_1, x_2, x_3, x_4$ で表すことにして、各座標に対応する質量 $m_1,m_1,m_2,m_2$ も $m_1, m_2, m_3, m_4$ と置き直すと、</p>
 
 <p>$$
-T=\sum_i^4 \frac{1}{2}m_i\dot{x}_i^2
+T=\sum_i^4 \frac{1}{2}m_i\dot{x}_i^2 \ \ ,
 $$</p>
 
 <p>と書けます。この表記で任意の正の整数次元の任意の正の整数個の質点からなる系の運動エネルギーを表すことができます :</p>
 
 <p>$$
-T=\sum_i^n \frac{1}{2}m_i\dot{x}_i^2
+T=\sum_i^n \frac{1}{2}m_i\dot{x}_i^2 \ \ .
 $$</p>
 
-<p>一般化座標 $q_i \ (i=1, \cdots)$</p>
+<p>ここで、<strong>一般化座標</strong> $q_j \ (j=1, \cdots, n)$ という座標を導入し、座標 $x_i$ がこの一般化座標の関数 $x_i(q_1,\cdots,q_n)$ として表されるとします。また、運動エネルギー $T$ を $\dot{q}_i$ で偏微分したものを <strong>一般化運動量</strong> $p_i$ と定義します。すなわち、</p>
+
+<p>$$
+p_i := \frac{\partial T}{\partial q_i} \ \ ,
+$$</p>
+
+<p>です。この一般化運動量は</p>
+
+<p>$$
+\begin{align}
+p_i &amp;= \frac{\partial T}{\partial \dot{q}_i} \\<br />
+&amp;= \sum_j \frac{\partial T}{\partial \dot{x}_j} \frac{\partial \dot{x}_j}{\partial \dot{q}_i} \\<br />
+&amp;= \sum_j m_j \dot{x}_j \frac{\partial x_j}{\partial q_i} \<br />
+\end{align}
+$$</p>
+
+<p>$$
+\dot{p}_i =
+$$</p>
+
+<p>の時間微分</p>
                     </div>
                     
                 </section>
             </div>
             <div class="footer">
 </div>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } ,
+         extensions: ["AMSmath.js", "AMSsymbols.js"]
+  }
+});
+</script>
+<script type="text/javascript" 
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
-    // inlineMath: [['\(','\)'], ['\\(','\\)']],
     inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [ ['$$','$$'], ['\\[','\\]']]
-}
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+  }
+});
+</script>
+
+
+<script type="text/javascript">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    console.log(all.length);
+     for(i = 0; i < all.length; i++) {
+       all[i].SourceElement().parentNode.className += ' has-jax';
+    }
 });
 </script>
 <script src="http://karadaharu.org//js/all.min.js"></script>
