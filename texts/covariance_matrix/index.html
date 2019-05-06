@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logs &middot; Kazumasa Kaneko</title>
+    <title>共分散行列 &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://karadaharu.org/favicon.ico"/>
-    <meta name="description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.55.0" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="Logs &middot; Kazumasa Kaneko">
-    <meta name="twitter:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="twitter:title" content="共分散行列 &middot; Kazumasa Kaneko">
+    <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Logs &middot; Kazumasa Kaneko">
-    <meta property="og:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta property="og:title" content="共分散行列 &middot; Kazumasa Kaneko">
+    <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
@@ -102,170 +102,66 @@
 
 
     <div class="content pure-u-1 pure-u-md-12-24">
-      <div class="">
-        <header class="content-header">
-          Logs
-        </header>
+      <div>
+       <header class="content-header">
+
+           <span class="post-title">共分散行列</span>
+
+           <p class="post-meta">
+               
+               
+           </p>
+       </header>
       </div>
         <div>
             
             <div class="posts">
-                
                 <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2018-06-27/" class="post-title">2018 06 27</a>
-                        
-                        
-                        
-                        
-                    </header>
 
-                    
-                    
+                    <div class="post-description">
+                        <h2 id="分散">分散</h2>
+
+<p>1次元の確率変数<code>$X$</code>を<code>$n$</code>回サンプルした結果、 <code>$x\in R^{1 \times n}$</code> が得られたとき、分散の不偏推定量は、</p>
+
+<div>$$
+\sigma_x^2 = \frac{1}{n-1} \sum (x_i - \mu_x)^2
+$$</div>
+
+<p>です。ただし、 <code>$\mu_x = \frac{1}{n} \sum x_i$</code> は平均です。</p>
+
+<h2 id="共分散">共分散</h2>
+
+<p>2つの確率変数 <code>$X$</code>、 <code>$Y$</code>の組を同時に<code>$n$</code>回サンプルした結果、<code>$x, y\in R^{1 \times n}$</code>が得られたとき、<code>$x$</code>と<code>$y$</code>の共分散は、
+<div>$$
+\sigma_{x,y}^2 = \frac{1}{n-1} \sum (x_i - \mu_x)(y_i - \mu_y)
+$$</div>
+です。ポイントは <code>$(x_i,y_i)$</code> がペアになっていることと、次元の違う変数の組に対してスカラー値として定義されることです。</p>
+
+<h2 id="共分散行列">共分散行列</h2>
+
+<p><code>$d$</code>次元の確率変数 <code>$X$</code>を <code>$n$</code>回サンプルした結果、 <code>$x \in R^{d \times n}$</code> が得られたとき、 <code>$i$</code>行ベクトルを <code>$x_{i,:}$</code>とすれば、2つの次元の組についての共分散は、</p>
+
+<div>$$
+\sigma_{x_{i,:}, x_{j,:}} = \frac{1}{n-1} \sum_{k=1}^n (x_{i,k} - \mu_{x,i})(x_{j,k} - \mu_{x,j})^T
+$$</div>
+
+<p>です。ただし、 <code>$\mu_{x,i}$</code>は各行の平均を並べた列ベクトル<code>$\mu_x \in R^{1\times d}$</code>の <code>$i$</code>番目の成分です。これを各次元の組み合わせについて考え、 <code>$i$</code>行 <code>$j$</code>列成分が 次元<code>$i$</code>、 <code>$j$</code>の共分散である行列が共分散行列 <code>$\Sigma$</code> です。</p>
+
+<div>$$
+\Sigma_{i,j} = \sigma_{x_{i,:}, x_{j,:}}
+$$</div>
+
+<p>行列全体は、全行について考えればいいので、</p>
+
+<div>$$
+\Sigma = \frac{1}{n-1} \sum_{k=1}^n (x_{:,k} - \mu_x)(x_{:,k} - \mu_x)^T
+$$</div>
+
+<p>と書けます。</p>
+                    </div>
                     
                 </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2018-06-26/" class="post-title">2018 06 26</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2018-06-24/" class="post-title">2018 06 24</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2018-06-20/" class="post-title">2018 06 20</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2018-06-19/" class="post-title">2018 06 19</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2018-06-18/" class="post-title">2018 06 18</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2018-06-17/" class="post-title">2018 06 17</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2018-02-18/" class="post-title">2018 02 18</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2017-11-28/" class="post-title">2017 11 28</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
-                <section class="post">
-                    <header class="post-header">
-                        <a href="https://karadaharu.org/log/2017-10-01/" class="post-title">2017 10 01</a>
-                        
-                        
-                        
-                        
-                    </header>
-
-                    
-                    
-                    
-                </section>
-                
             </div>
-            
-<div class="pagination">
-  <nav role="pagination" class="post-list-pagination">
-      
-    <span class="post-list-pagination-item post-list-pagination-item-current">Page 1 of 3</span>
-    
-      <a href="/log/page/2/" class="post-list-pagination-item post-list-pagination-item-next">
-        Older&nbsp;<i class="fa fa-angle-double-right"></i>
-      </a>
-    
-  </nav>
-</div>
-
-
             <div class="footer">
 </div>
 <script type="text/x-mathjax-config">
@@ -305,6 +201,7 @@ MathJax.Hub.Config({
         </div>
     </div>
 </div>
+
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

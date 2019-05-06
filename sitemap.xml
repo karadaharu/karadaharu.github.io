@@ -8,6 +8,18 @@
   </url>
   
   <url>
+    <loc>https://karadaharu.org/</loc>
+    <lastmod>2018-06-28T00:29:02+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://karadaharu.org/log/</loc>
+    <lastmod>2018-06-28T00:29:02+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://karadaharu.org/log/2018-06-26/</loc>
     <lastmod>2018-06-27T00:26:45+09:00</lastmod>
   </url>
@@ -167,18 +179,6 @@
   </url>
   
   <url>
-    <loc>https://karadaharu.org/</loc>
-    <lastmod>2018-06-28T00:29:02+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://karadaharu.org/log/</loc>
-    <lastmod>2018-06-28T00:29:02+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://karadaharu.org/research/</loc>
   </url>
   
@@ -227,6 +227,10 @@
   
   <url>
     <loc>https://karadaharu.org/texts/pole_and_stability/</loc>
+  </url>
+  
+  <url>
+    <loc>https://karadaharu.org/texts/covariance_matrix/</loc>
   </url>
   
   <url>
