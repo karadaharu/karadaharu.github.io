@@ -171,14 +171,6 @@
   </url>
   
   <url>
-    <loc>https://karadaharu.org/texts/ising_magnetization/</loc>
-  </url>
-  
-  <url>
-    <loc>https://karadaharu.org/texts/ising_mean_field_approx/</loc>
-  </url>
-  
-  <url>
     <loc>https://karadaharu.org/research/</loc>
   </url>
   
@@ -222,10 +214,6 @@
   </url>
   
   <url>
-    <loc>https://karadaharu.org/texts/lagrange_equation/</loc>
-  </url>
-  
-  <url>
     <loc>https://karadaharu.org/texts/pole_and_stability/</loc>
   </url>
   
@@ -254,15 +242,11 @@
   </url>
   
   <url>
-    <loc>https://karadaharu.org/texts/entropy_in_statistical_mechanics/</loc>
-  </url>
-  
-  <url>
     <loc>https://karadaharu.org/texts/common_linear_algebra/</loc>
   </url>
   
   <url>
-    <loc>https://karadaharu.org/texts/channel_capacity/</loc>
+    <loc>https://karadaharu.org/texts/linear_programming/</loc>
   </url>
   
 </urlset>

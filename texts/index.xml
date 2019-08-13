@@ -29,24 +29,6 @@
     </item>
     
     <item>
-      <title>Isingモデル(1) 磁化と自由エネルギーの関係</title>
-      <link>https://karadaharu.org/texts/ising_magnetization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/texts/ising_magnetization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Isingモデル(2) 平均場近似</title>
-      <link>https://karadaharu.org/texts/ising_mean_field_approx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/texts/ising_mean_field_approx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SVDによる低ランク近似と元の行列の誤差</title>
       <link>https://karadaharu.org/texts/svd_low_rank_approximation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -97,15 +79,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://karadaharu.org/texts/nyquist_stability_criterion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ラグランジュの運動方程式の導出</title>
-      <link>https://karadaharu.org/texts/lagrange_equation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/texts/lagrange_equation/</guid>
       <description></description>
     </item>
     
@@ -173,15 +146,6 @@
     </item>
     
     <item>
-      <title>統計力学的エントロピー</title>
-      <link>https://karadaharu.org/texts/entropy_in_statistical_mechanics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/texts/entropy_in_statistical_mechanics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>線形代数でよく出てくる式変形</title>
       <link>https://karadaharu.org/texts/common_linear_algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -191,16 +155,12 @@
     </item>
     
     <item>
-      <title>通信路容量</title>
-      <link>https://karadaharu.org/texts/channel_capacity/</link>
+      <title>線形計画問題</title>
+      <link>https://karadaharu.org/texts/linear_programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://karadaharu.org/texts/channel_capacity/</guid>
-      <description>通信路容量$C$は相互情報量の上限として定義されます:
- $$ C:=\mathrm{sup}_{p(x)} I(X;Y) $$  次の図のような2値対称通信路を考えます。
-この通信路容量を求めます。
-まず、条件付きエントロピー $H(Y|X)$ は
-$$ H(Y|X) &amp; := \sum_x p(x) H(Y|X=x) \\ &amp;= - \sum_x p(x) \sum_y p(y|x) \log p(y|x) $$ $$ I(X;Y) = H(Y) -H(Y|X) = H(Y) - $$ </description>
+      <guid>https://karadaharu.org/texts/linear_programming/</guid>
+      <description></description>
     </item>
     
   </channel>
