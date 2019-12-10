@@ -175,10 +175,6 @@
   </url>
   
   <url>
-    <loc>https://karadaharu.org/texts/svd_low_rank_approximation/</loc>
-  </url>
-  
-  <url>
     <loc>https://karadaharu.org/tags/</loc>
     <priority>0</priority>
   </url>
@@ -231,10 +227,6 @@
   
   <url>
     <loc>https://karadaharu.org/texts/rarefaction_curve/</loc>
-  </url>
-  
-  <url>
-    <loc>https://karadaharu.org/texts/bound_of_mutual_information/</loc>
   </url>
   
   <url>
