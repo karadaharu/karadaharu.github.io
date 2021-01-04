@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kazumasa Kaneko &middot; Kazumasa Kaneko</title>
+    <title>レート歪み理論 &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://karadaharu.org/favicon.ico"/>
-    <meta name="description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.56.3" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="Kazumasa Kaneko &middot; Kazumasa Kaneko">
-    <meta name="twitter:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta name="twitter:title" content="レート歪み理論 &middot; Kazumasa Kaneko">
+    <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Kazumasa Kaneko &middot; Kazumasa Kaneko">
-    <meta property="og:description" content="Kaneko Kazumasa&#39;s Portofolio.">
+    <meta property="og:title" content="レート歪み理論 &middot; Kazumasa Kaneko">
+    <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
@@ -44,6 +44,7 @@
     <script data-ad-client="ca-pub-6229665392774233" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
+
 
 <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-7-24">
@@ -102,11 +103,41 @@
 
 
     <div class="content pure-u-1 pure-u-md-12-24">
+      <div>
+       <header class="content-header">
+
+           <span class="post-title">レート歪み理論</span>
+
+           <p class="post-meta">
+               
+               
+           </p>
+       </header>
+      </div>
         <div>
             
             <div class="posts">
                 <section class="post">
-                  <img src="https://karadaharu.org/main.png" alt="main visual">
+
+                    <div class="post-description">
+                        <p>ある情報源<code>$X \sim p(x)$</code>を <code>$R$</code> ビットで符号化と復号をした結果 <code>$\hat{X}$</code>が得られるとします。
+この情報源 <code>$X$</code> とその代表値<code>$\hat{X}$</code>のサンプルがどれくらい異なっているか(歪み)を表すコストとして歪み関数<code>$d(x,\hat{x})$</code>を考えます。</p>
+
+<p>許容する歪み<code>$D$</code>に対する符号化ビット数の下限 <code>$R$</code>をレート歪み関数 <code>$R(D)$</code> と呼び、これは</p>
+
+<div>$$
+R^{(I)}(D) = \min_{p(\hat{x}|x) : \sum_{(x,\hat{x})} p(x, \hat{x})d(x,\hat{x}) \leq D} I(X; \hat{X}),
+$$</div>
+
+<p>と定義される情報レート歪み関数と一致します。ここで<code>$I(X;\hat{X})$</code>は相互情報量です。</p>
+
+<h2 id="参考文献">参考文献</h2>
+
+<ul>
+<li><a href="https://amzn.to/3bJQ1bx">Cover, T. M. &amp; Thomas, J. A. (2006) Elements of Information Theory (2nd ed.). Hoboken, New Jersey: A Wiley-Interscience publication</a></li>
+</ul>
+                    </div>
+                    
                 </section>
             </div>
             <div class="footer">

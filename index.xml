@@ -6,10 +6,19 @@
     <description>Recent content on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Mar 2020 14:56:34 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://karadaharu.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>レート歪み理論</title>
+      <link>https://karadaharu.org/texts/rate_distortion_theory/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0900</pubDate>
+      
+      <guid>https://karadaharu.org/texts/rate_distortion_theory/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>KKT条件</title>
