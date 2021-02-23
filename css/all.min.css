@@ -30,7 +30,6 @@ a:hover .brand-title span{
   font-family:'Alegreya Sans',Arial,"游ゴシック体","Yu Gothic",YuGothic,sans-serif;
   font-weight:400;
   font-size: 2.0rem;
-  padding-bottom:10px;
 }
 .post-header{
   padding-bottom:10px;
@@ -160,6 +159,8 @@ table {
     table tr th :last-child, table tr td :last-child {
       margin-bottom: 0; }
 
+
+
 /******PC表示用*******/
 @media (min-width:48em){
   .header{
@@ -177,6 +178,9 @@ table {
   .content{
     padding:110px 0 0 0;
     max-width:800px;
+  }
+  .google-ad{
+    margin-top:15px;
   }
 }
 

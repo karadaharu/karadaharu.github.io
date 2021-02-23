@@ -6,10 +6,22 @@
     <description>Recent content in Texts on Kazumasa Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 19 Feb 2021 22:14:58 +0900</lastBuildDate>
     
 	<atom:link href="https://karadaharu.org/texts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rのdplyrで複数のカラムをmutateする</title>
+      <link>https://karadaharu.org/texts/dplyr_mutate_columns_using_a_column/</link>
+      <pubDate>Fri, 19 Feb 2021 22:14:58 +0900</pubDate>
+      
+      <guid>https://karadaharu.org/texts/dplyr_mutate_columns_using_a_column/</guid>
+      <description>Version 1.0.0以降のdplyrで複数のカラムを mutate するには、mutate_atは非推奨で、代わりにmutateとacrossを使います。
+例えば、irisでSepal.Lengthの値をもとにした各カラムの相対値を求める場合は、以下のように書きます。
+&amp;gt; iris %&amp;gt;% mutate(across(contains(&amp;quot;.&amp;quot;), ~ . / Sepal.Length)) %&amp;gt;% head() Sepal.Length Sepal.Width Petal.Length Petal.Width Species 1 1 0.6862745 0.2745098 0.03921569 setosa 2 1 0.6122449 0.2857143 0.04081633 setosa 3 1 0.6808511 0.2765957 0.04255319 setosa 4 1 0.6739130 0.3260870 0.04347826 setosa 5 1 0.7200000 0.2800000 0.04000000 setosa 6 1 0.7222222 0.3148148 0.07407407 setosa  1.0.0以前であれば、mutate_atを使っていたと思いますが、これにはバグがあり、上記のような計算をしようと思うと、以下のように、処理 (.funs) の中に、操作するカラム自身が含まれているときに、期待どおりの動きません。1.0.0以降ではmutat_atをはじめとした、mutateの関連メソッドは非推奨になっており、このバグは今後修正の予定はないようなので、注意が必要です。
+&amp;gt; iris %&amp;gt;% mutate_at(vars(contains(&amp;quot;.&amp;quot;)), ~ . / Sepal.Length) %&amp;gt;% head() Sepal.</description>
+    </item>
     
     <item>
       <title>レート歪み理論</title>
@@ -30,9 +42,45 @@
     </item>
     
     <item>
+      <title>線形計画問題</title>
+      <link>https://karadaharu.org/texts/linear_programming/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://karadaharu.org/texts/linear_programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>共分散行列</title>
+      <link>https://karadaharu.org/texts/covariance_matrix/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://karadaharu.org/texts/covariance_matrix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>希薄化曲線</title>
+      <link>https://karadaharu.org/texts/rarefaction_curve/</link>
+      <pubDate>Sun, 31 Mar 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://karadaharu.org/texts/rarefaction_curve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>定数係数の2階線形常微分方程式</title>
+      <link>https://karadaharu.org/texts/cc_2nd_ode/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://karadaharu.org/texts/cc_2nd_ode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>1階線形微分方程式の解</title>
       <link>https://karadaharu.org/texts/first_order_ode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/first_order_ode/</guid>
       <description></description>
@@ -41,7 +89,7 @@
     <item>
       <title>2値確率変数のエントロピーの最大値</title>
       <link>https://karadaharu.org/texts/binary_entropy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/binary_entropy/</guid>
       <description></description>
@@ -50,25 +98,16 @@
     <item>
       <title>scipyの使いはじめ方</title>
       <link>https://karadaharu.org/texts/start_scipy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/start_scipy/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ひとつのIPアドレスで複数のドメインを処理する仕組み</title>
-      <link>https://karadaharu.org/texts/one_ip_multi_domain/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/texts/one_ip_multi_domain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>エンタングルメントとはなにか</title>
       <link>https://karadaharu.org/texts/quantum_entanglement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/quantum_entanglement/</guid>
       <description></description>
@@ -77,7 +116,7 @@
     <item>
       <title>クラメール-ラオの不等式の導出</title>
       <link>https://karadaharu.org/texts/cramer_rao_bound/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/cramer_rao_bound/</guid>
       <description></description>
@@ -86,7 +125,7 @@
     <item>
       <title>ナイキストの安定判別法</title>
       <link>https://karadaharu.org/texts/nyquist_stability_criterion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/nyquist_stability_criterion/</guid>
       <description></description>
@@ -95,52 +134,25 @@
     <item>
       <title>伝達関数の極と安定性</title>
       <link>https://karadaharu.org/texts/pole_and_stability/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/pole_and_stability/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>共分散行列</title>
-      <link>https://karadaharu.org/texts/covariance_matrix/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/texts/covariance_matrix/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>変分と微分演算子の交換関係</title>
       <link>https://karadaharu.org/texts/variation_and_differentiaion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/variation_and_differentiaion/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>定数係数の2階線形常微分方程式</title>
-      <link>https://karadaharu.org/texts/cc_2nd_ode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/texts/cc_2nd_ode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>希薄化曲線</title>
-      <link>https://karadaharu.org/texts/rarefaction_curve/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/texts/rarefaction_curve/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>累積分布関数と期待値の関係</title>
       <link>https://karadaharu.org/texts/cdf_expectation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/cdf_expectation/</guid>
       <description></description>
@@ -149,18 +161,18 @@
     <item>
       <title>線形代数でよく出てくる式変形</title>
       <link>https://karadaharu.org/texts/common_linear_algebra/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0900</pubDate>
       
       <guid>https://karadaharu.org/texts/common_linear_algebra/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>線形計画問題</title>
-      <link>https://karadaharu.org/texts/linear_programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>ひとつのIPアドレスで複数のドメインを処理する仕組み</title>
+      <link>https://karadaharu.org/texts/one_ip_multi_domain/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0900</pubDate>
       
-      <guid>https://karadaharu.org/texts/linear_programming/</guid>
+      <guid>https://karadaharu.org/texts/one_ip_multi_domain/</guid>
       <description></description>
     </item>
     

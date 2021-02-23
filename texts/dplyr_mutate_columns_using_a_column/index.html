@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>希薄化曲線 &middot; Kazumasa Kaneko</title>
+    <title>Rのdplyrで複数のカラムをmutateする &middot; Kazumasa Kaneko</title>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://karadaharu.org/favicon.ico"/>
     <meta name="description" content="">
 
     <meta name="generator" content="Hugo 0.56.3" />
     <meta name="twitter:card" content="summary">
     
-    <meta name="twitter:title" content="希薄化曲線 &middot; Kazumasa Kaneko">
+    <meta name="twitter:title" content="Rのdplyrで複数のカラムをmutateする &middot; Kazumasa Kaneko">
     <meta name="twitter:description" content="">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="希薄化曲線 &middot; Kazumasa Kaneko">
+    <meta property="og:title" content="Rのdplyrで複数のカラムをmutateする &middot; Kazumasa Kaneko">
     <meta property="og:description" content="">
 
     <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
@@ -136,11 +136,11 @@
     <div class="content pure-u-1 pure-u-md-12-24">
       <div>
        <header class="content-header">
-           <span class="post-title">希薄化曲線</span>
+           <span class="post-title">Rのdplyrで複数のカラムをmutateする</span>
            <p class="post-meta">
                
                
-                   <strong class="post-date_iso8601">2019-03-31</strong>
+                   <strong class="post-date_iso8601">2021-02-19</strong>
                
                
            </p>
@@ -153,40 +153,32 @@
                 <section class="post">
 
                     <div class="post-description">
-                        <p>希薄化曲線(rarefaction curve)は生態学の分野で使われる種数を評価する方法です。</p>
+                        <p>Version 1.0.0以降のdplyrで複数のカラムを    <code>mutate</code> するには、<code>mutate_at</code>は非推奨で、代わりに<code>mutate</code>と<code>across</code>を使います。</p>
 
-<p>あるサンプルにおいて合計<code>$N$</code>個のアイテムが、<code>$K$</code>種類のグループにわかれ、グループ<code>$i \ (i = 1, \cdots K)$</code>には<code>$N_i$</code>個のアイテムが属するとします。このとき、<code>$N$</code>個のアイテムから<code>$n$</code>個をリサンプリングしたときに観測されるグループの数を<code>$X_n$</code>として、その期待値がリサンプリング数<code>$n$</code>に対する関数である希薄化曲線<code>$f_n$</code>として定義されます:</p>
+<p>例えば、<code>iris</code>で<code>Sepal.Length</code>の値をもとにした各カラムの相対値を求める場合は、以下のように書きます。</p>
 
-<div>$$
-f_n := E[X_n] \ .
-$$</div>
+<pre><code>&gt; iris %&gt;% mutate(across(contains(&quot;.&quot;), ~ . / Sepal.Length)) %&gt;% head()
+  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+1            1   0.6862745    0.2745098  0.03921569  setosa
+2            1   0.6122449    0.2857143  0.04081633  setosa
+3            1   0.6808511    0.2765957  0.04255319  setosa
+4            1   0.6739130    0.3260870  0.04347826  setosa
+5            1   0.7200000    0.2800000  0.04000000  setosa
+6            1   0.7222222    0.3148148  0.07407407  setosa
+</code></pre>
 
-<p>観測されるグループ数の期待値<code>$E[X_n]$</code>は、グループ<code>$i$</code>のアイテムが観測される確率を<code>$p_i$</code>とすれば、</p>
+<p>1.0.0以前であれば、<code>mutate_at</code>を使っていたと思いますが、これには<a href="https://github.com/tidyverse/dplyr/issues/4183">バグ</a>があり、上記のような計算をしようと思うと、以下のように、処理 (<code>.funs</code>) の中に、操作するカラム自身が含まれているときに、期待どおりの動きません。1.0.0以降では<code>mutat_at</code>をはじめとした、<code>mutate</code>の関連メソッドは非推奨になっており、このバグは今後修正の予定はないようなので、注意が必要です。</p>
 
-<div>$$
-E[X_n] = \sum_{i=1}^K p_i
-$$</div>
+<pre><code>&gt; iris %&gt;% mutate_at(vars(contains(&quot;.&quot;)), ~ . / Sepal.Length) %&gt;% head()
+  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+1            1         3.5          1.4         0.2  setosa
+2            1         3.0          1.4         0.2  setosa
+3            1         3.2          1.3         0.2  setosa
+4            1         3.1          1.5         0.2  setosa
+5            1         3.6          1.4         0.2  setosa
+6            1         3.9          1.7         0.4  setosa
+</code></pre>
 
-<p>となります。さらに<code>$p_i$</code>は、<code>$N$</code>個のアイテムの中から<code>$n$</code>個をとる組み合わせのうち、グループ<code>$i$</code>のアイテムが少なくともひとつ含まれる場合の確率なので</p>
-
-<div>$$
-p_i = 1 - \frac{\left(\begin{array}{c}N-N_i\\ n \end{array}\right)}{\left(\begin{array}{c}N \\ n \end{array}\right)}
-$$</div>
-
-<p>と書けます。これらを用いれば<code>$f_n$</code>は以下のようになります:</p>
-
-<div>$$
-\begin{eqnarray}
-f_n =& \sum_{i=1}^K 1 - \frac{\left(\begin{array}{c}N-N_i\\ n \end{array}\right)}{\left(\begin{array}{c}N \\ n \end{array}\right)} \nonumber \\
- = &K - \left(\begin{array}{c}N \\ n \end{array}\right)^{-1} \sum_{i=1}^K \left(\begin{array}{c}N-N_i\\ n \end{array}\right) \ . \nonumber
- \end{eqnarray}
-$$</div>
-
-<h2 id="参考文献">参考文献</h2>
-
-<ul>
-<li><a href="https://en.wikipedia.org/w/index.php?title=Rarefaction_(ecology)&amp;oldid=792598276">Rarefaction (ecology)</a> (13:22, 27 July 2017 UTC) In Wikipedia: The Free Encyclopedia.</li>
-</ul>
                     </div>
                     
                 </section>
