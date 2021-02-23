@@ -177,33 +177,13 @@
     </item>
     
     <item>
-      <title></title>
+      <title>プロフィール</title>
       <link>https://karadaharu.org/about/</link>
-      <pubDate>Sat, 05 Mar 2016 13:19:40 +0900</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://karadaharu.org/about/</guid>
-      <description>PROFILE Kazumasa KANEKO was born in 1992. He is currently a Master&amp;rsquo;s student in theoretical biology at The University of Tokyo Graduate School of Engineering. His main interest is a structure of complex systems; life and society.
-SKILLS / PROFICIENCY  dynamical systems machine learning software development (PHP, openFrameworks, iOS) generative design  EDUCATION 2015- M.Eng., Department of Electrical Engineering and Information Systems, Graduate Shool of Engineering, The University of Tokyo, Japan</description>
-    </item>
-    
-    <item>
-      <title>Hilty&amp;Bosch New Old School Dance live (2014)</title>
-      <link>https://karadaharu.org/works/hilty-and-bosch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/works/hilty-and-bosch/</guid>
-      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//player.vimeo.com/video/104100366&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
- &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>RESEACH</title>
-      <link>https://karadaharu.org/research/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karadaharu.org/research/</guid>
-      <description>CURRENT PROJECT -Population dynamics on immune cell development- T cell, one of immune cells, gets matured step by step from immature cells in thymus. In this maturation process, only T cells which recognize antigens such as bacterium and don&amp;rsquo;t recognize cell from self by mistake, can proliferate and get matured through an interaction with thymic epithelial cells(TECs) and thus T cells which only attack enemy are selected. We are developing a mathematical model of the T cell development.</description>
+      <description>金子和正 / Kazumasa Kaneko 1992年群馬生まれ。スティーブ・ビコに感化され、現在に至る。
+CONTACT kkaneko11 (at) gmail.com</description>
     </item>
     
   </channel>
