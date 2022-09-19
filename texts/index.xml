@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Texts on Kazumasa Kaneko</title>
+    <title>Texts on Beki Kaneko</title>
     <link>https://karadaharu.org/texts/</link>
-    <description>Recent content in Texts on Kazumasa Kaneko</description>
+    <description>Recent content in Texts on Beki Kaneko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 19 Feb 2021 22:14:58 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 19 Sep 2022 13:45:42 +0900</lastBuildDate>
     
 	<atom:link href="https://karadaharu.org/texts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>書評「ブルシット・ジョブ―クソどうでもいい仕事の理論」</title>
+      <link>https://karadaharu.org/texts/bullshit_jobs/</link>
+      <pubDate>Mon, 19 Sep 2022 13:45:42 +0900</pubDate>
+      
+      <guid>https://karadaharu.org/texts/bullshit_jobs/</guid>
+      <description>デヴィッド・グレーバー
+「ブルシット・ジョブ ― クソどうでもいい仕事の理論」
+岩波書店, 2020
+クソどうでもいい仕事、と聞いて心当たりがまったくない人というのは少ないのではないか。仕事に充足感を感じられるかどうか、というのが現代に生きる人々にとって重要な関心事になっているであろうことは、「やりがい搾取」という言葉が広まったり、「働きがいのある会社ランキング」といったランキングが毎年発表されたりしていることからも伺える。
+本書では、こうした仕事への充足感を求める動向とは裏腹に、著者のもとに寄せられた、クソどうでもいい仕事につく人からの嘆きの声をもとに 、クソどうでもいい仕事すなわち&amp;rdquo;ブルシット・ジョブ&amp;rdquo;を定義し、なぜ現代においてブルシット・ジョブが増えていているのか、なぜそれがまかり通ってしまっているのかに鋭く切り込む。軽快な筆致で著者が暴き出す人々の労働に対する考え方の不合理さとその歴史的背景についての鋭い視点には、興奮せざるをえない。
+中でも、実は労働者はみずからブルシット・ジョブを求めているのであるという洞察はかなりヤバい。労働者はみずからの仕事を嫌悪しているがゆえに、それに耐えるということで自尊心の感覚を得ているというのだ。その感覚の裏返しとして、我々はなんの価値も感じない労働に耐えた対価として金銭を得ているのだから、好きで絵を描いているイラストレーターのイラストには報酬を払う必要がない、学校の先生は子どもを育てるという重要な役割を担っているのだから給与は低くあるべきだ、という考えが出てきてしまう。これは千葉雅也が「現代思想入門」で解説している、フーコーが論じた権力の脱構築と似た関係にある。フーコーは、権力によって支配される側は支配されることを望んでいる側面があり、権力というのは双方向的なより複雑なものなのであると論じた。フーコーと対応させてみれば、グレーバーの指摘は労働の脱構築なのである。
+本書は、著者がいう通り、あくまでブルシット・ジョブが増えていること、それが忌避されていることの文化的起源を考察する本で、ではどうしたらよいか、を考える本ではない。労働の脱構築の先に我々は何を目指すのか。一労働者として考えていかなくてはいけない。</description>
+    </item>
     
     <item>
       <title>Rのdplyrで複数のカラムをmutateする</title>
